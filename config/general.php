@@ -14,6 +14,12 @@ $isDev = App::env('ENVIRONMENT') === 'dev';
 $isProd = App::env('ENVIRONMENT') === 'production';
 
 return [
+
+    'aliases' => [
+        '@web' => craft\helpers\App::env('BASE_URL'),
+        '@webroot' => dirname(__DIR__) . '/web',
+    ],
+
     // Default Week Start Day (0 = Sunday, 1 = Monday...)
     'defaultWeekStartDay' => 1,
 
