@@ -1,0 +1,22 @@
+dateModified: 1649448683
+email:
+  fromEmail: angelo.keirsebilck1@telenet.be
+  fromName: 'AK Craft'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    402cf776-37d6-4867-a9cf-44e518322e88: 'AK Craft' # AK Craft
+    5690ad28-4a4d-4900-b69b-02d69030f2c5: 'AK Craft' # AK Craft
+    ec9da726-1b22-4a29-9ba2-b6d45638c18c: Common # Common
+system:
+  edition: pro
+  live: true
+  name: 'AK Craft'
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

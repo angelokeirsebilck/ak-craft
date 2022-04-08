@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: nl
+name: 'AK Craft'
+primary: true
+siteGroup: 402cf776-37d6-4867-a9cf-44e518322e88 # AK Craft
+sortOrder: 1
