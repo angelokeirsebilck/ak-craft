@@ -1,0 +1,9 @@
+baseUrl: '@webKerotec/nl'
+enabled: true
+handle: kerotecNl
+hasUrls: true
+language: nl
+name: 'Kerotec NL'
+primary: false
+siteGroup: 181f7be8-f62e-4cb0-869e-fa81544c806c # KEROTEC
+sortOrder: 2

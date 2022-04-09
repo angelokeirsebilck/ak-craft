@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pagesAk
+name: 'Pages aK'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  5690ad28-4a4d-4900-b69b-02d69030f2c5: # aK NL
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+type: channel

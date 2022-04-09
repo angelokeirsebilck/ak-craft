@@ -1,0 +1,129 @@
+field: 39546ded-9c49-42f1-93dd-10d03d9ee427 # Home Banner Kero
+fieldLayouts:
+  236d54e8-65ab-4a92-af15-72e282f49c5e:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c792ad5b-761b-48be-bce6-26b76264a1d7 # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 216a063d-0eac-465e-9a4e-24018fbf1ea9 # Intro
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 61098cc8-fe0c-42f3-911e-089d747658ff # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  216a063d-0eac-465e-9a4e-24018fbf1ea9: # Intro
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemIntro
+    instructions: ''
+    name: Intro
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - 20378ac5-a6a7-43d3-87a7-a0d9fcd88b44 # Images KEROTEC
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  61098cc8-fe0c-42f3-911e-089d747658ff: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemImage
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+      defaultUploadLocationSubpath: home
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c792ad5b-761b-48be-bce6-26b76264a1d7: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - 20378ac5-a6a7-43d3-87a7-a0d9fcd88b44 # Images KEROTEC
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field

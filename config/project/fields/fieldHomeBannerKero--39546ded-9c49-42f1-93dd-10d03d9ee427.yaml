@@ -1,0 +1,43 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: af2d83da-9397-4fdd-ae4b-3330cd82854c # KEROTEC
+handle: fieldHomeBannerKero
+instructions: ''
+name: 'Home Banner Kero'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - c792ad5b-761b-48be-bce6-26b76264a1d7 # Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 216a063d-0eac-465e-9a4e-24018fbf1ea9 # Intro
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 61098cc8-fe0c-42f3-911e-089d747658ff # Image
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_fieldhomebannerkero}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

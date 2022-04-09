@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pagesKerotec
+name: 'Pages KEROTEC'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  92213a96-10dd-4374-90e8-91000f082c2f: # Kerotec NL
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: dc82eaf9-c3ba-4ab5-a1b3-9f62625818cc
+type: structure

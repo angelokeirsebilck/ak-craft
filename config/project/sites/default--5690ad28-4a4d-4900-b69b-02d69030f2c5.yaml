@@ -1,8 +1,9 @@
-baseUrl: $PRIMARY_SITE_URL
+baseUrl: '@webAk/nl'
+enabled: true
 handle: default
 hasUrls: true
 language: nl
-name: 'AK Craft'
+name: 'aK NL'
 primary: true
-siteGroup: 402cf776-37d6-4867-a9cf-44e518322e88 # AK Craft
+siteGroup: 402cf776-37d6-4867-a9cf-44e518322e88 # aK
 sortOrder: 1

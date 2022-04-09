@@ -18,6 +18,9 @@ return [
     'aliases' => [
         '@web' => craft\helpers\App::env('BASE_URL'),
         '@webroot' => dirname(__DIR__) . '/web',
+        '@doBaseUrl' => craft\helpers\App::env('DO_BASE_URL'),
+        '@webAk' => craft\helpers\App::env('BASE_AK'),
+        '@webKerotec' => craft\helpers\App::env('BASE_KEROTEC'),
     ],
 
     // Default Week Start Day (0 = Sunday, 1 = Monday...)
@@ -40,4 +43,17 @@ return [
 
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
+
+
+//    'kerotec' => [
+//        'aliases' => [
+//            '@web' => craft\helpers\App::env('BASE_KEROTEC'),
+//        ],
+//    ],
+//
+//    'ak' => [
+//        'aliases' => [
+//            '@web' => craft\helpers\App::env('BASE_AK'),
+//        ],
+//    ]
 ];

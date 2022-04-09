@@ -1,5 +1,5 @@
 fieldLayouts:
-  7f1628ab-2fb1-4d6d-8e6c-6190ab299dfb:
+  0b72c7e9-d60e-4ba1-87a9-95802ec074c2:
     tabs:
       -
         elements:
@@ -23,18 +23,25 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 39546ded-9c49-42f1-93dd-10d03d9ee427 # Home Banner Kero
+            instructions: ''
+            label: Banner
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
         name: Inhoud
         sortOrder: 1
-handle: images
-hasUrls: true
-name: Images
-settings:
-  path: '@webroot/uploads/images'
+handle: homeKerotec
+hasTitleField: false
+name: 'Home Kerotec'
+section: c5f9eef8-26da-4424-bb7e-34fde589e608 # Home Kerotec
 sortOrder: 1
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
-type: craft\volumes\Local
-url: '@web/uploads/images'
+titleTranslationMethod: site
