@@ -1,0 +1,86 @@
+field: f7b2f612-da3a-4044-9230-47616d46e132 # Content Kerotec
+fieldLayouts:
+  9b3bdb5f-c558-4106-99c3-32ba2f48d3d5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4455348d-5047-4b0e-91ae-79e6599d7f6a # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 771bfdd2-6549-4fe3-953a-9d5415ecd1f0 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  771bfdd2-6549-4fe3-953a-9d5415ecd1f0: # Text
+    columnSuffix: rhzovcvh
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemText
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  4455348d-5047-4b0e-91ae-79e6599d7f6a: # Title
+    columnSuffix: zagmyrbn
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+handle: typeTextMedia
+name: 'Text / Media'
+sortOrder: 1

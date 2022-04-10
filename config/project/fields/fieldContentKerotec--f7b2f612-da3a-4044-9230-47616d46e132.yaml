@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: af2d83da-9397-4fdd-ae4b-3330cd82854c # KEROTEC
+handle: fieldContentKerotec
+instructions: ''
+name: 'Content Kerotec'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_fieldcontentkerotec}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
