@@ -1,0 +1,41 @@
+field: dd47c6f3-2579-4634-a86b-44112604b851 # aK Content
+fieldLayouts:
+  cf494fdb-ed9a-4c42-a731-275450e97cbd:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 9559b22c-c5b0-4f50-ae0b-2d627bb0beb6 # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  9559b22c-c5b0-4f50-ae0b-2d627bb0beb6: # Title
+    columnSuffix: jrccbpyz
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: typeTextMedia
+name: 'Text / Media'
+sortOrder: 1
