@@ -1,4 +1,4 @@
-dateModified: 1649566030
+dateModified: 1649566967
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
@@ -29,7 +29,7 @@ meta:
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
     e00c56a0-9048-4b7f-b5d4-3036129d02f0: Standaard # Standaard
     ec9da726-1b22-4a29-9ba2-b6d45638c18c: Common # Common
-    f7b2f612-da3a-4044-9230-47616d46e132: 'Content Kerotec' # Content Kerotec
+    f7b2f612-da3a-4044-9230-47616d46e132: 'Kerotec Content' # Kerotec Content
 plugins:
   dospaces:
     edition: standard

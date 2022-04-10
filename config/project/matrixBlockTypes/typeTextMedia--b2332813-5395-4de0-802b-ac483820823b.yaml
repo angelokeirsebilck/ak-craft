@@ -1,4 +1,4 @@
-field: f7b2f612-da3a-4044-9230-47616d46e132 # Content Kerotec
+field: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
 fieldLayouts:
   9b3bdb5f-c558-4106-99c3-32ba2f48d3d5:
     tabs:
@@ -26,7 +26,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   771bfdd2-6549-4fe3-953a-9d5415ecd1f0: # Text
-    columnSuffix: rhzovcvh
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemText
@@ -54,7 +54,7 @@ fields:
     translationMethod: site
     type: craft\redactor\Field
   4455348d-5047-4b0e-91ae-79e6599d7f6a: # Title
-    columnSuffix: zagmyrbn
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
