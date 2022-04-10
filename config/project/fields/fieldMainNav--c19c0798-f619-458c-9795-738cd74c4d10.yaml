@@ -1,0 +1,29 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ec9da726-1b22-4a29-9ba2-b6d45638c18c # Common
+handle: fieldMainNav
+instructions: ''
+name: 'Main Nav'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - ca46e5e1-f025-4715-a506-8ec65ef7eaab # Link
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_fieldmainnav}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: siteGroup
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

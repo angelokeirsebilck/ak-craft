@@ -1,12 +1,14 @@
-dateModified: 1649568035
+dateModified: 1649616982
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0ddcbf11-8b53-4839-b2af-3b18f9581e0a: Preview # Preview
     2cad2871-83ab-4d53-adec-fd96958a90a5: Image # Image
     4fd9f2ab-dfaa-4404-ba4a-47548a90d471: 'Home Kerotec' # Home Kerotec
+    73f2882a-d051-4f79-9a5f-624277004d5a: Navigation # Navigation
     85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
@@ -26,7 +28,10 @@ meta:
     b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
     b2332813-5395-4de0-802b-ac483820823b: 'Text / Media' # Text / Media
     c5f9eef8-26da-4424-bb7e-34fde589e608: 'Home Kerotec' # Home Kerotec
+    c19c0798-f619-458c-9795-738cd74c4d10: 'Main Nav' # Main Nav
+    c39b2c60-002c-4db1-ad99-3e3465d32e19: Image # Image
     c792ad5b-761b-48be-bce6-26b76264a1d7: Title # Title
+    ca46e5e1-f025-4715-a506-8ec65ef7eaab: Link # Link
     cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
     dd47c6f3-2579-4634-a86b-44112604b851: 'aK Content' # aK Content

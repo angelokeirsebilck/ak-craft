@@ -1,0 +1,43 @@
+field: c19c0798-f619-458c-9795-738cd74c4d10 # Main Nav
+fieldLayouts:
+  f9d3f105-1bed-45d5-9e53-9c84df3de587:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ca46e5e1-f025-4715-a506-8ec65ef7eaab # Link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ca46e5e1-f025-4715-a506-8ec65ef7eaab: # Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemLink
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - singles
+        - 'section:ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5' # Pages aK
+        - 'section:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries

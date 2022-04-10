@@ -1,5 +1,5 @@
-isPublic: true
-name: 'Public Schema'
+isPublic: false
+name: Preview
 scope:
   - 'sections.c5f9eef8-26da-4424-bb7e-34fde589e608:read' # Home Kerotec
   - 'entrytypes.4fd9f2ab-dfaa-4404-ba4a-47548a90d471:read' # Home Kerotec
@@ -9,4 +9,3 @@ scope:
   - 'entrytypes.e00c56a0-9048-4b7f-b5d4-3036129d02f0:read' # Standaard
   - 'volumes.d21b4646-668b-477d-b8bd-0b619d836508:read' # Images AK
   - 'volumes.20378ac5-a6a7-43d3-87a7-a0d9fcd88b44:read' # Images KEROTEC
-  - 'globalsets.73f2882a-d051-4f79-9a5f-624277004d5a:read' # Navigation
