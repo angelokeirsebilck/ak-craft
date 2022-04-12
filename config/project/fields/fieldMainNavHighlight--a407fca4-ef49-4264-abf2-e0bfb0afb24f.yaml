@@ -1,0 +1,24 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ec9da726-1b22-4a29-9ba2-b6d45638c18c # Common
+handle: fieldMainNavHighlight
+instructions: ''
+name: 'Main Nav Highlight'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - singles
+    - 'section:ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5' # Pages aK
+    - 'section:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

@@ -11,7 +11,16 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
+          -
+            fieldUid: a407fca4-ef49-4264-abf2-e0bfb0afb24f # Main Nav Highlight
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
         name: Main
         sortOrder: 1
 handle: globalNavigation

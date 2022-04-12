@@ -1,4 +1,4 @@
-dateModified: 1649616982
+dateModified: 1649753069
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
@@ -23,6 +23,7 @@ meta:
     92213a96-10dd-4374-90e8-91000f082c2f: 'Kerotec NL' # Kerotec NL
     4455348d-5047-4b0e-91ae-79e6599d7f6a: Title # Title
     29159395-d6dc-45e5-aa30-5347f769d03d: 'Pages KEROTEC' # Pages KEROTEC
+    a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
     ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5: 'Pages aK' # Pages aK
     af2d83da-9397-4fdd-ae4b-3330cd82854c: KEROTEC # KEROTEC
     b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
@@ -51,6 +52,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.11
   super-table:
     edition: standard
     enabled: true
