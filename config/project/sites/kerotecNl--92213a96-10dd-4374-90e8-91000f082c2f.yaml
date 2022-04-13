@@ -1,4 +1,4 @@
-baseUrl: '@webKerotec/nl'
+baseUrl: '@webKerotec'
 enabled: true
 handle: kerotecNl
 hasUrls: true

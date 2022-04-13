@@ -35,13 +35,13 @@ settings:
   bucket: angelokeirsebilck
   contentDisposition: ''
   endpoint: 'https://ams3.digitaloceanspaces.com'
-  expires: '15 minutes'
+  expires: '6 months'
   keyId: $DO_SPACES_API_KEY
   region: ams3
   secret: $DO_SPACES_SECRET
   subfolder: ak/uploads/images
 sortOrder: 1
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
+titleTranslationMethod: site
 type: vaersaagod\dospaces\Volume
 url: '@doBaseUrl'

@@ -1,0 +1,22 @@
+columnSuffix: tshdxagn
+contentColumnType: text
+fieldGroup: ec9da726-1b22-4a29-9ba2-b6d45638c18c # Common
+handle: seo
+instructions: ''
+name: SEO
+searchable: false
+settings:
+  elementDisplayPreviewType: google
+  facebookTabEnabled: ''
+  generalEnabledFields:
+    - seoPreview
+    - seoTitle
+    - seoDescription
+    - seoKeywords
+    - seoImage
+  generalTabEnabled: '1'
+  sitemapTabEnabled: ''
+  twitterTabEnabled: ''
+translationKeyFormat: null
+translationMethod: site
+type: nystudio107\seomatic\fields\SeoSettings
