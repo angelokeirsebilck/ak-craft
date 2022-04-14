@@ -1,0 +1,20 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ec9da726-1b22-4a29-9ba2-b6d45638c18c # Common
+handle: fieldKerotecUsp
+instructions: ''
+name: 'Kerotec USP'
+searchable: false
+settings:
+  contentTable: '{{%stc_fieldkerotecusp}}'
+  fieldLayout: row
+  maxRows: '4'
+  minRows: '4'
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: ''
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

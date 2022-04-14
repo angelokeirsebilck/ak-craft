@@ -44,7 +44,26 @@ return [
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
 
-    'headlessMode' => true
+    'headlessMode' => true,
+
+    'extraFileKinds' => [
+        'svg' => [
+            'label' => 'SVG',
+            'extensions' => ['svg']
+        ],
+        'MP4' => [
+            'label' => 'MP4',
+            'extensions' => ['mp4']
+        ],
+        'WebM' => [
+            'label' => 'WebM',
+            'extensions' => ['webm']
+        ],
+        'PNG' => [
+            'label' => 'PNG',
+            'extensions' => ['png']
+        ]
+    ],
 
 
 //    'kerotec' => [

@@ -13,7 +13,8 @@
   },
   "autoload": {
     "psr-4": {
-      "modules\\": "modules/"
+      "modules\\": "modules/",
+      "custommodule\\": "modules/custom-module/src"
     }
   },
   "config": {

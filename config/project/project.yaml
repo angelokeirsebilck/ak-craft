@@ -1,34 +1,44 @@
-dateModified: 1649915220
+dateModified: 1649941284
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0d490fc5-8be5-4e2d-88e6-4dd5a45a558b: 'Text Alignment' # Text Alignment
     0ddcbf11-8b53-4839-b2af-3b18f9581e0a: Preview # Preview
     2cad2871-83ab-4d53-adec-fd96958a90a5: Image # Image
     3e7fdee3-0860-47ba-a8cf-516bc6e161dc: Text # Text
     4fd9f2ab-dfaa-4404-ba4a-47548a90d471: 'Home Kerotec' # Home Kerotec
+    6d3f9446-799c-4acb-9ab8-d9e11b148b54: Link # Link
     9ba41756-ffd1-42e9-a1ab-479d225d4919: Title # Title
     9bd51bcd-1aa8-4def-ae5c-bf2470665d63: Text # Text
+    56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
+    71cad8ae-bad6-4639-a39f-5e54e0bd626b: USP # USP
     73f2882a-d051-4f79-9a5f-624277004d5a: Navigation # Navigation
     85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
+    98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
+    386ffdca-58d6-49a9-91d0-2a601508dd26: Icon # Icon
     402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
     771bfdd2-6549-4fe3-953a-9d5415ecd1f0: Text # Text
     3973a73c-440e-4767-b7a2-967c259a7331: 'Legal KEROTEC' # Legal KEROTEC
     5690ad28-4a4d-4900-b69b-02d69030f2c5: 'aK NL' # aK NL
+    6081ef70-29ac-4075-a579-f5be60125444: Label # Label
+    8935bcf9-eec9-483e-85c1-d7b96d0f351d: 'Background Color' # Background Color
     9559b22c-c5b0-4f50-ae0b-2d627bb0beb6: Title # Title
     20378ac5-a6a7-43d3-87a7-a0d9fcd88b44: 'Images KEROTEC' # Images KEROTEC
     39546ded-9c49-42f1-93dd-10d03d9ee427: 'Home Banner Kerotec' # Home Banner Kerotec
     47142bfd-e33e-4883-ac89-050ffdc2a9cd: 'Public Schema' # Public Schema
     61098cc8-fe0c-42f3-911e-089d747658ff: Image # Image
+    91815f01-4d01-4b69-9988-b6fd3e599549: 'Background Color' # Background Color
     92213a96-10dd-4374-90e8-91000f082c2f: 'Kerotec NL' # Kerotec NL
     4455348d-5047-4b0e-91ae-79e6599d7f6a: Title # Title
     29159395-d6dc-45e5-aa30-5347f769d03d: 'Pages KEROTEC' # Pages KEROTEC
     73565395-0f0b-4846-b8db-e5b9eb2b5ec9: SEO # SEO
     a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
+    ad6e8279-954b-405f-ba63-dce6223d9ebc: 'Kerotec USP' # Kerotec USP
     ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5: 'Pages aK' # Pages aK
     af2d83da-9397-4fdd-ae4b-3330cd82854c: KEROTEC # KEROTEC
     b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
@@ -40,11 +50,13 @@ meta:
     ca46e5e1-f025-4715-a506-8ec65ef7eaab: Link # Link
     cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
+    d630936a-542d-48c6-9549-34144ec0a96c: 'Media Position' # Media Position
     dd47c6f3-2579-4634-a86b-44112604b851: 'aK Content' # aK Content
     dfd3ecdb-749b-4fc2-9812-00946dc09d63: Standaard # Standaard
     e00c56a0-9048-4b7f-b5d4-3036129d02f0: Standaard # Standaard
     ec9da726-1b22-4a29-9ba2-b6d45638c18c: Common # Common
     f7b2f612-da3a-4044-9230-47616d46e132: 'Kerotec Content' # Kerotec Content
+    fd13a2dc-8740-406f-a266-ef3ec9f0f684: 'USP Kerotec' # USP Kerotec
 plugins:
   dospaces:
     edition: standard

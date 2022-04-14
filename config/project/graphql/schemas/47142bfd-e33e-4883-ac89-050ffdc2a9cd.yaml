@@ -12,4 +12,5 @@ scope:
   - 'volumes.d21b4646-668b-477d-b8bd-0b619d836508:read' # Images AK
   - 'volumes.20378ac5-a6a7-43d3-87a7-a0d9fcd88b44:read' # Images KEROTEC
   - 'globalsets.73f2882a-d051-4f79-9a5f-624277004d5a:read' # Navigation
+  - 'globalsets.fd13a2dc-8740-406f-a266-ef3ec9f0f684:read' # USP Kerotec
   - 'seomatic.all:read'

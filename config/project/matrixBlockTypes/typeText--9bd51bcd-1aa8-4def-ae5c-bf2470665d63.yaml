@@ -26,7 +26,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   3e7fdee3-0860-47ba-a8cf-516bc6e161dc: # Text
-    columnSuffix: oxynwisa
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemText
@@ -55,7 +55,7 @@ fields:
     translationMethod: none
     type: craft\redactor\Field
   9ba41756-ffd1-42e9-a1ab-479d225d4919: # Title
-    columnSuffix: enqbwfzr
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle

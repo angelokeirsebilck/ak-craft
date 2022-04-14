@@ -1,0 +1,82 @@
+field: ad6e8279-954b-405f-ba63-dce6223d9ebc # Kerotec USP
+fieldLayouts:
+  5af8b09e-7c29-476b-bdcb-8455734b160f:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 386ffdca-58d6-49a9-91d0-2a601508dd26 # Icon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 56ee6bef-32e6-4203-b7a3-1a99768b2894 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  56ee6bef-32e6-4203-b7a3-1a99768b2894: # Text
+    columnSuffix: bufuupvu
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemText
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  386ffdca-58d6-49a9-91d0-2a601508dd26: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemIcon
+    instructions: ''
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - svg
+      defaultUploadLocationSource: 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+      defaultUploadLocationSubpath: /icons
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets

@@ -1,0 +1,62 @@
+field: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
+fieldLayouts:
+  afcd3567-ef94-42c5-90ab-821352e86148:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8935bcf9-eec9-483e-85c1-d7b96d0f351d # Background Color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Content
+        sortOrder: 1
+fields:
+  8935bcf9-eec9-483e-85c1-d7b96d0f351d: # Background Color
+    columnSuffix: giiziepe
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemBackgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Choose a color'
+            -
+              - value
+              - ''
+            -
+              - disabled
+              - true
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Yellow'
+            -
+              - value
+              - light
+    translationKeyFormat: null
+    translationMethod: none
+    type: custommodule\fields\BackgroundColor
+handle: typeUsp
+name: USP
+sortOrder: 3

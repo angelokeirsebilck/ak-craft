@@ -23,6 +23,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 98f33ea8-d57c-4bff-bf01-4fef7666c145 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
             fieldUid: c39b2c60-002c-4db1-ad99-3e3465d32e19 # Image
             instructions: null
             label: null
@@ -30,10 +39,110 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
+          -
+            fieldUid: 91815f01-4d01-4b69-9988-b6fd3e599549 # Background Color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 0d490fc5-8be5-4e2d-88e6-4dd5a45a558b # Text Alignment
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: d630936a-542d-48c6-9549-34144ec0a96c # Media Position
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
         name: Content
         sortOrder: 1
 fields:
+  0d490fc5-8be5-4e2d-88e6-4dd5a45a558b: # Text Alignment
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemTextAlignment
+    instructions: ''
+    name: 'Text Alignment'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Center
+            -
+              - value
+              - center
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - Top
+            -
+              - value
+              - top
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  98f33ea8-d57c-4bff-bf01-4fef7666c145: # Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemLink
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 6d3f9446-799c-4acb-9ab8-d9e11b148b54 # Link
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 6081ef70-29ac-4075-a579-f5be60125444 # Label
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_1_itemlink}}'
+      fieldLayout: row
+      maxRows: '1'
+      minRows: ''
+      placeholderKey: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: 'Add link'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
   771bfdd2-6549-4fe3-953a-9d5415ecd1f0: # Text
     columnSuffix: null
     contentColumnType: text
@@ -62,6 +171,47 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
+  91815f01-4d01-4b69-9988-b6fd3e599549: # Background Color
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemBackgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Choose a color'
+            -
+              - value
+              - ''
+            -
+              - disabled
+              - true
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Yellow'
+            -
+              - value
+              - light
+    translationKeyFormat: null
+    translationMethod: none
+    type: custommodule\fields\BackgroundColor
   4455348d-5047-4b0e-91ae-79e6599d7f6a: # Title
     columnSuffix: null
     contentColumnType: text
@@ -71,25 +221,17 @@ fields:
     name: Title
     searchable: false
     settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      uiMode: enlarged
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
-    translationMethod: site
-    type: craft\redactor\Field
+    translationMethod: none
+    type: craft\fields\PlainText
   c39b2c60-002c-4db1-ad99-3e3465d32e19: # Image
     columnSuffix: null
     contentColumnType: string
@@ -125,6 +267,42 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  d630936a-542d-48c6-9549-34144ec0a96c: # Media Position
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemMediaPosition
+    instructions: ''
+    name: 'Media Position'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - Left
+            -
+              - value
+              - left
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - right
+            -
+              - value
+              - right
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
 handle: typeTextMedia
 name: 'Text / Media'
 sortOrder: 2
