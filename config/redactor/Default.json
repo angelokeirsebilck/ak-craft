@@ -1,18 +1,14 @@
 {
   "buttons": [
-    "html",
     "formatting",
     "bold",
     "italic",
     "unorderedlist",
-    "orderedlist",
-    "link",
-    "image",
-    "video"
+    "orderedlist"
   ],
+  "formatting": ["p","h2","h3","h4"],
   "plugins": [
-    "fullscreen",
-    "video"
+    "fullscreen"
   ],
   "linkNewTab": true,
   "toolbarFixed": true

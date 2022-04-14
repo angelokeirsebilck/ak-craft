@@ -1,4 +1,4 @@
-dateModified: 1649839174
+dateModified: 1649915220
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
@@ -7,13 +7,17 @@ meta:
   __names__:
     0ddcbf11-8b53-4839-b2af-3b18f9581e0a: Preview # Preview
     2cad2871-83ab-4d53-adec-fd96958a90a5: Image # Image
+    3e7fdee3-0860-47ba-a8cf-516bc6e161dc: Text # Text
     4fd9f2ab-dfaa-4404-ba4a-47548a90d471: 'Home Kerotec' # Home Kerotec
+    9ba41756-ffd1-42e9-a1ab-479d225d4919: Title # Title
+    9bd51bcd-1aa8-4def-ae5c-bf2470665d63: Text # Text
     73f2882a-d051-4f79-9a5f-624277004d5a: Navigation # Navigation
     85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
     402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
     771bfdd2-6549-4fe3-953a-9d5415ecd1f0: Text # Text
+    3973a73c-440e-4767-b7a2-967c259a7331: 'Legal KEROTEC' # Legal KEROTEC
     5690ad28-4a4d-4900-b69b-02d69030f2c5: 'aK NL' # aK NL
     9559b22c-c5b0-4f50-ae0b-2d627bb0beb6: Title # Title
     20378ac5-a6a7-43d3-87a7-a0d9fcd88b44: 'Images KEROTEC' # Images KEROTEC
@@ -37,6 +41,7 @@ meta:
     cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
     dd47c6f3-2579-4634-a86b-44112604b851: 'aK Content' # aK Content
+    dfd3ecdb-749b-4fc2-9812-00946dc09d63: Standaard # Standaard
     e00c56a0-9048-4b7f-b5d4-3036129d02f0: Standaard # Standaard
     ec9da726-1b22-4a29-9ba2-b6d45638c18c: Common # Common
     f7b2f612-da3a-4044-9230-47616d46e132: 'Kerotec Content' # Kerotec Content

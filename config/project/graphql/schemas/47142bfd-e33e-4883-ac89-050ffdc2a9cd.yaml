@@ -3,6 +3,8 @@ name: 'Public Schema'
 scope:
   - 'sections.c5f9eef8-26da-4424-bb7e-34fde589e608:read' # Home Kerotec
   - 'entrytypes.4fd9f2ab-dfaa-4404-ba4a-47548a90d471:read' # Home Kerotec
+  - 'sections.3973a73c-440e-4767-b7a2-967c259a7331:read' # Legal KEROTEC
+  - 'entrytypes.dfd3ecdb-749b-4fc2-9812-00946dc09d63:read' # Standaard
   - 'sections.ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5:read' # Pages aK
   - 'entrytypes.cd364aa4-c870-4611-93ec-f51df6990d5a:read' # Standaard
   - 'sections.29159395-d6dc-45e5-aa30-5347f769d03d:read' # Pages KEROTEC

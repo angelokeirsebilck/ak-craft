@@ -1,11 +1,11 @@
 field: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
 fieldLayouts:
-  9b3bdb5f-c558-4106-99c3-32ba2f48d3d5:
+  b4e958b6-d4ea-4342-b42d-2457f7f80ffb:
     tabs:
       -
         elements:
           -
-            fieldUid: 4455348d-5047-4b0e-91ae-79e6599d7f6a # Title
+            fieldUid: 9ba41756-ffd1-42e9-a1ab-479d225d4919 # Title
             instructions: null
             label: null
             required: false
@@ -14,16 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 771bfdd2-6549-4fe3-953a-9d5415ecd1f0 # Text
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: c39b2c60-002c-4db1-ad99-3e3465d32e19 # Image
+            fieldUid: 3e7fdee3-0860-47ba-a8cf-516bc6e161dc # Text
             instructions: null
             label: null
             required: true
@@ -34,8 +25,8 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  771bfdd2-6549-4fe3-953a-9d5415ecd1f0: # Text
-    columnSuffix: null
+  3e7fdee3-0860-47ba-a8cf-516bc6e161dc: # Text
+    columnSuffix: oxynwisa
     contentColumnType: text
     fieldGroup: null
     handle: itemText
@@ -44,7 +35,8 @@ fields:
     searchable: false
     settings:
       availableTransforms: '*'
-      availableVolumes: '*'
+      availableVolumes:
+        - 20378ac5-a6a7-43d3-87a7-a0d9fcd88b44 # Images KEROTEC
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
@@ -60,10 +52,10 @@ fields:
       showUnpermittedVolumes: false
       uiMode: enlarged
     translationKeyFormat: null
-    translationMethod: site
+    translationMethod: none
     type: craft\redactor\Field
-  4455348d-5047-4b0e-91ae-79e6599d7f6a: # Title
-    columnSuffix: null
+  9ba41756-ffd1-42e9-a1ab-479d225d4919: # Title
+    columnSuffix: enqbwfzr
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
@@ -90,41 +82,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
-  c39b2c60-002c-4db1-ad99-3e3465d32e19: # Image
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: itemImage
-    instructions: ''
-    name: Image
-    searchable: false
-    settings:
-      allowSelfRelations: false
-      allowUploads: true
-      allowedKinds:
-        - image
-      defaultUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      defaultUploadLocationSubpath: ''
-      limit: '1'
-      localizeRelations: false
-      previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
-      showSiteMenu: false
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      singleUploadLocationSubpath: ''
-      source: null
-      sources:
-        - 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-      targetSiteId: null
-      useSingleFolder: false
-      validateRelatedElements: false
-      viewMode: list
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Assets
-handle: typeTextMedia
-name: 'Text / Media'
-sortOrder: 2
+handle: typeText
+name: Text
+sortOrder: 1

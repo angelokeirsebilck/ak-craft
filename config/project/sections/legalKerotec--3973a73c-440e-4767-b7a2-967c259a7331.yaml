@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: legalKerotec
+name: 'Legal KEROTEC'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  92213a96-10dd-4374-90e8-91000f082c2f: # Kerotec NL
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+type: channel
