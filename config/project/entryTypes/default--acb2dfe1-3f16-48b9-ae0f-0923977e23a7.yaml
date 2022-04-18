@@ -1,0 +1,47 @@
+fieldLayouts:
+  54c6a94c-7c91-4220-a676-a91c8189e500:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 57f24831-8db3-4239-b500-787afe0b7422 # Kerotec Cta Content
+            instructions: ''
+            label: __blank__
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: default
+hasTitleField: false
+name: Standaard
+section: 0e29d1e7-3766-416c-a6aa-f559b86928a2 # Kerotec CTA
+sortOrder: 1
+titleFormat: '{fieldKerotecCtaContent.itemTitle}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

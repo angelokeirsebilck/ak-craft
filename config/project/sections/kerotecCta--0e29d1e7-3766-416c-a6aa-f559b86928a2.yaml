@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: kerotecCta
+name: 'Kerotec CTA'
+propagationMethod: all
+siteSettings:
+  92213a96-10dd-4374-90e8-91000f082c2f: # Kerotec NL
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

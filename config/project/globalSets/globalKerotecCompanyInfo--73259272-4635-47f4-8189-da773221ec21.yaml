@@ -1,0 +1,52 @@
+fieldLayouts:
+  34bc981c-b433-4958-bb14-df0f92025b33:
+    tabs:
+      -
+        elements:
+          -
+            heading: Contact
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: cf0736f7-9894-4c14-85c7-8f4153818c72 # Tel 1
+            instructions: ''
+            label: 'Tel Diego'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: eeb3731d-1450-4343-975c-602a8f77fd79 # Tel 2
+            instructions: ''
+            label: 'Tel Jeroen'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 22dbbbb6-573d-49ad-875c-2a8f8451b7cc # Email
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            heading: Socials
+            type: craft\fieldlayoutelements\Heading
+          -
+            fieldUid: b92519cf-e415-4f20-af0b-b02eabf460d4 # Facebook
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Content
+        sortOrder: 1
+handle: globalKerotecCompanyInfo
+name: 'Company Info'
+sortOrder: 3

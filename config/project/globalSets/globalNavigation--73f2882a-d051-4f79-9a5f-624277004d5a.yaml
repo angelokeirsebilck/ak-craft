@@ -23,6 +23,19 @@ fieldLayouts:
             width: 50
         name: Main
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 5b31df2d-3af7-44b6-88fd-211d07122274 # Footer Nav
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Footer
+        sortOrder: 2
 handle: globalNavigation
 name: Navigation
 sortOrder: 1

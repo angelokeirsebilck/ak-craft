@@ -1,11 +1,20 @@
 field: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
 fieldLayouts:
-  afcd3567-ef94-42c5-90ab-821352e86148:
+  df4aa729-bb29-4800-9392-c5313288fb18:
     tabs:
       -
         elements:
           -
-            fieldUid: 8935bcf9-eec9-483e-85c1-d7b96d0f351d # Background Color
+            fieldUid: 6eb16d71-fd69-4587-8d3c-56a87696049e # Cta
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7f4a44e6-2104-45c9-a348-781fc2e32991 # Background Color
             instructions: null
             label: null
             required: true
@@ -16,8 +25,31 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  8935bcf9-eec9-483e-85c1-d7b96d0f351d: # Background Color
+  6eb16d71-fd69-4587-8d3c-56a87696049e: # Cta
     columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemCta
+    instructions: ''
+    name: Cta
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  7f4a44e6-2104-45c9-a348-781fc2e32991: # Background Color
+    columnSuffix: ycdslwyv
     contentColumnType: string
     fieldGroup: null
     handle: itemBackgroundColor
@@ -57,6 +89,6 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: custommodule\fields\BackgroundColor
-handle: typeUsp
-name: USP
-sortOrder: 3
+handle: typeCta
+name: Cta
+sortOrder: 4

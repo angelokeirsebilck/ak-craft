@@ -1,0 +1,50 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: af2d83da-9397-4fdd-ae4b-3330cd82854c # KEROTEC
+handle: fieldKerotecCtaContent
+instructions: ''
+name: 'Kerotec Cta Content'
+searchable: false
+settings:
+  columns:
+    __assoc__:
+      -
+        - 8b995879-332a-4e28-bb82-eb5b4e3b42e2 # Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - ed012596-c927-4b00-9e7d-9fec3eb45f27 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 1adf90bc-b79b-41e4-90a4-736a424758cc # Link
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 9b95db5c-d503-489b-8025-40c72a236aed # Link Label
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_fieldkerotecctacontent}}'
+  fieldLayout: row
+  maxRows: ''
+  minRows: ''
+  placeholderKey: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: ''
+  staticField: '1'
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

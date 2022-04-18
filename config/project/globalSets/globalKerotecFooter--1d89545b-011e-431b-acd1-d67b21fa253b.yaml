@@ -1,0 +1,19 @@
+fieldLayouts:
+  b934d781-80d3-439f-a223-5e240a86792c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c8dde2ad-0261-4602-977c-f192e36b6bfb # Kerotec Footer Link
+            instructions: ''
+            label: 'Footer Link'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Content
+        sortOrder: 1
+handle: globalKerotecFooter
+name: 'Kerotec Footer'
+sortOrder: 4
