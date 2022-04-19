@@ -49,7 +49,7 @@ fields:
     translationMethod: site
     type: craft\fields\Entries
   7f4a44e6-2104-45c9-a348-781fc2e32991: # Background Color
-    columnSuffix: ycdslwyv
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemBackgroundColor
