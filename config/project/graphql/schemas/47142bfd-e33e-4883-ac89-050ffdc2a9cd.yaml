@@ -11,10 +11,11 @@ scope:
   - 'entrytypes.cd364aa4-c870-4611-93ec-f51df6990d5a:read' # Standaard
   - 'sections.29159395-d6dc-45e5-aa30-5347f769d03d:read' # Pages KEROTEC
   - 'entrytypes.e00c56a0-9048-4b7f-b5d4-3036129d02f0:read' # Standaard
+  - 'entrytypes.7e74a447-4f0a-4130-b15e-f1df3175e103:read' # Thanks
   - 'volumes.d21b4646-668b-477d-b8bd-0b619d836508:read' # Images AK
   - 'volumes.20378ac5-a6a7-43d3-87a7-a0d9fcd88b44:read' # Images KEROTEC
-  - 'globalsets.73f2882a-d051-4f79-9a5f-624277004d5a:read' # Navigation
-  - 'globalsets.fd13a2dc-8740-406f-a266-ef3ec9f0f684:read' # USP Kerotec
-  - 'globalsets.73259272-4635-47f4-8189-da773221ec21:read' # Company Info
+  - 'globalsets.73f2882a-d051-4f79-9a5f-624277004d5a:read' # Kerotec Navigation
+  - 'globalsets.fd13a2dc-8740-406f-a266-ef3ec9f0f684:read' # Kerotec USP
+  - 'globalsets.73259272-4635-47f4-8189-da773221ec21:read' # Kerotec Company Info
   - 'globalsets.1d89545b-011e-431b-acd1-d67b21fa253b:read' # Kerotec Footer
   - 'seomatic.all:read'

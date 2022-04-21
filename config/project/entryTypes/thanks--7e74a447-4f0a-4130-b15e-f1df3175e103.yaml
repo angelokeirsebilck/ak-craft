@@ -1,0 +1,60 @@
+fieldLayouts:
+  0d30eaab-9dd8-4fb2-bb73-ec70cd335431:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 73565395-0f0b-4846-b8db-e5b9eb2b5ec9 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
+handle: thanks
+hasTitleField: true
+name: Thanks
+section: 29159395-d6dc-45e5-aa30-5347f769d03d # Pages KEROTEC
+sortOrder: 2
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

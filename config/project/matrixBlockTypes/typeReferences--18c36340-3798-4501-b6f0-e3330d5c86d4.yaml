@@ -1,0 +1,137 @@
+field: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
+fieldLayouts:
+  1e40a4e5-c22e-4582-b2a0-f88bab7009fc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e70f1d40-fc20-488d-97bb-cb61aec7cc26 # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 61f62f82-cbc9-49d8-a8ca-33c3a3b98231 # References
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 2c532e68-55b9-46e0-8ff3-837835d606c6 # Background Color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Content
+        sortOrder: 1
+fields:
+  2c532e68-55b9-46e0-8ff3-837835d606c6: # Background Color
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemBackgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Choose a color'
+            -
+              - value
+              - ''
+            -
+              - disabled
+              - true
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Yellow'
+            -
+              - value
+              - light
+    translationKeyFormat: null
+    translationMethod: none
+    type: custommodule\fields\BackgroundColor
+  61f62f82-cbc9-49d8-a8ca-33c3a3b98231: # References
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemRefs
+    instructions: ''
+    name: References
+    searchable: false
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 108034c7-d987-4de8-886e-09d9d92e2496 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - fbaa787d-4cdf-42fe-9f76-77c086e924e3 # Author
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_7_itemrefs}}'
+      fieldLayout: row
+      maxRows: ''
+      minRows: ''
+      placeholderKey: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: ''
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  e70f1d40-fc20-488d-97bb-cb61aec7cc26: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: typeReferences
+name: References
+sortOrder: 6

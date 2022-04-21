@@ -48,5 +48,5 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 handle: globalKerotecCompanyInfo
-name: 'Company Info'
+name: 'Kerotec Company Info'
 sortOrder: 3

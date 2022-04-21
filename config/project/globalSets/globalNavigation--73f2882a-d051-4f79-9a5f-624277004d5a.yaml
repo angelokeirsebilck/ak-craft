@@ -37,5 +37,5 @@ fieldLayouts:
         name: Footer
         sortOrder: 2
 handle: globalNavigation
-name: Navigation
+name: 'Kerotec Navigation'
 sortOrder: 1
