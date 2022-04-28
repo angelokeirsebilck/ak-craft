@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: portfolioPages
+name: 'Portfolio Pages'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9f70fad4-911f-44e3-a43f-fdb17a9dfe38: # Portfolio NL
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 4c1d65fc-d1d7-4380-ae7d-0ff1eb0f1ca3
+type: structure

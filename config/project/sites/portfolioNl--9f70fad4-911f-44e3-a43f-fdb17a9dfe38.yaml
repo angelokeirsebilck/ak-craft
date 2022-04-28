@@ -1,0 +1,9 @@
+baseUrl: '@web/portfolio'
+enabled: true
+handle: portfolioNl
+hasUrls: true
+language: nl
+name: 'Portfolio NL'
+primary: false
+siteGroup: 4f2d371f-babc-42bf-9015-c504775f085b # Portfolio
+sortOrder: 3

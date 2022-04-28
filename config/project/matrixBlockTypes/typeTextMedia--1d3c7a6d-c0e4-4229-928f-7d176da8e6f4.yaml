@@ -1,0 +1,93 @@
+field: a1441023-555b-45a7-8461-ba6613008258 # Portfolio Content
+fieldLayouts:
+  7163407d-cde3-42f5-b142-f18e6db31873:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 8ed4ac99-1404-4f75-9d5f-6d7454d9e078 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 13a120bf-c8a5-4d82-ac79-ba44d99c869f # Media
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  8ed4ac99-1404-4f75-9d5f-6d7454d9e078: # Text
+    columnSuffix: tebwoywx
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemText
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  13a120bf-c8a5-4d82-ac79-ba44d99c869f: # Media
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemMedia
+    instructions: ''
+    name: Media
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:bdbc04de-8344-4c00-bdf0-b816a54c869b' # Images Portfolio
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:bdbc04de-8344-4c00-bdf0-b816a54c869b' # Images Portfolio
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: typeTextMedia
+name: 'Text / Media'
+sortOrder: 1

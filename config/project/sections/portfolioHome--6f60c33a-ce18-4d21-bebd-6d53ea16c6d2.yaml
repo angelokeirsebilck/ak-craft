@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: portfolioHome
+name: 'Portfolio Home'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primaire invoer-pagina'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  9f70fad4-911f-44e3-a43f-fdb17a9dfe38: # Portfolio NL
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: __home__
+type: single

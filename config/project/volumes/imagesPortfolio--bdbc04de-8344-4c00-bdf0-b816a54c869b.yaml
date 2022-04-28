@@ -1,0 +1,65 @@
+fieldLayouts:
+  7d9a5664-db92-4fd8-a48f-75c86e79b489:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: e858e6e9-26e4-4e72-aa50-13999c183bb1 # Portfolio Default Img Opt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: aed1c586-a3d3-4f18-b962-19ef9a594b6a # Portfolio Homebanner Opt Img
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: imagesPortfolio
+hasUrls: true
+name: 'Images Portfolio'
+settings:
+  bucket: angelokeirsebilck
+  contentDisposition: ''
+  endpoint: 'https://ams3.digitaloceanspaces.com'
+  expires: '6 months'
+  keyId: $DO_SPACES_API_KEY
+  region: ams3
+  secret: $DO_SPACES_SECRET
+  subfolder: portfolio/uploads/images
+sortOrder: 3
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+type: vaersaagod\dospaces\Volume
+url: '@doBaseUrl'

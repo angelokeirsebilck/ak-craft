@@ -1,0 +1,41 @@
+field: 914da9e8-cd79-4ed2-81fa-fac242b24f4b # Portfolio Main Nav
+fieldLayouts:
+  e997d1e8-a38a-4777-87eb-951706922ac6:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: dffe2681-8efd-46d3-a68a-cc2f9b71cf82 # Link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  dffe2681-8efd-46d3-a68a-cc2f9b71cf82: # Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemLink
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:2c01be0c-0ef0-43c7-a7c9-fd3f6a74a10d' # Portfolio Pages
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
