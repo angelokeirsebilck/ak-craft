@@ -1,4 +1,4 @@
-dateModified: 1650995376
+dateModified: 1651382128
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
@@ -47,6 +47,7 @@ meta:
     98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
+    365a4d01-5a9f-4f37-88a3-2e5f67dcfd28: 'aK Home' # aK Home
     386ffdca-58d6-49a9-91d0-2a601508dd26: Icon # Icon
     402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
     501e8a5c-932c-4e25-b2c6-7dfb53db6e41: Intro # Intro
@@ -100,6 +101,7 @@ meta:
     e8a79905-5681-4a6f-b4f5-d4d52d9063a3: Link # Link
     e70f1d40-fc20-488d-97bb-cb61aec7cc26: Title # Title
     e858e6e9-26e4-4e72-aa50-13999c183bb1: 'Portfolio Default Img Opt' # Portfolio Default Img Opt
+    e86844c0-b413-45a9-ad54-cb29f9b1f299: 'aK Home' # aK Home
     ebb2fbd0-c538-4f49-b238-94b2fc1956d6: Form # Form
     ec9da726-1b22-4a29-9ba2-b6d45638c18c: Common # Common
     ed012596-c927-4b00-9e7d-9fec3eb45f27: Text # Text
@@ -166,6 +168,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
@@ -224,6 +230,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.2.1
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: pro
   live: true

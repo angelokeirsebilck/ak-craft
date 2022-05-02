@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.test{
+    @apply bg-amber-600 leading-5
+}
+
+.lcp{
+    @apply py-4
+}

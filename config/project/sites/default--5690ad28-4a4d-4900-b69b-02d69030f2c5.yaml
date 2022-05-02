@@ -1,4 +1,4 @@
-baseUrl: '@webAk/nl'
+baseUrl: '@webAk'
 enabled: true
 handle: default
 hasUrls: true

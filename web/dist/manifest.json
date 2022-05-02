@@ -1,0 +1,23 @@
+{
+  "src/js/app-legacy.js": {
+    "file": "assets/app-legacy.3d8a9aaf.js",
+    "src": "src/js/app-legacy.js",
+    "isEntry": true,
+    "integrity": "sha384-B88XbMR1tcgXaw5T84t408K/ktjgb88YhmvWpXXCXnSeneJJ+BwVYy18h44LCTlw"
+  },
+  "vite/legacy-polyfills": {
+    "file": "assets/polyfills-legacy.d5655e5f.js",
+    "src": "vite/legacy-polyfills",
+    "isEntry": true,
+    "integrity": "sha384-IqNYeun1LS7l7+p3bqNOp2GKRc2tldf/ILGsj7FjXAJiwPuOP8ZCNXCTs4giQ5T2"
+  },
+  "src/js/app.js": {
+    "file": "assets/app.d4ec0cc5.js",
+    "src": "src/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app.3ea33ae3.css"
+    ],
+    "integrity": "sha384-RXJQSMvZDQbcEprM85kuGAQPavAcoHzHcMt8tkbZ3aVAOd5L4gcNVJszTa1xL7B7"
+  }
+}
