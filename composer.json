@@ -1,9 +1,9 @@
 {
   "require": {
     "craftcms/cms": "^3.7.26",
-    "craftcms/redactor": "2.10.6",
+    "craftcms/redactor": "^2.10.6",
     "nystudio107/craft-imageoptimize": "1.6.44",
-    "nystudio107/craft-seomatic": "3.4.29",
+    "nystudio107/craft-seomatic": "^3.4.29",
     "vaersaagod/dospaces": "^1.1",
     "verbb/image-resizer": "2.1.1",
     "verbb/super-table": "2.7.1",
