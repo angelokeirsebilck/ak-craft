@@ -9,6 +9,12 @@ settings:
   displayDominantColorPalette: '1'
   displayLazyLoadPlaceholderImages: '1'
   displayOptimizedImageVariants: '1'
+  fieldVolumeSettings:
+    __assoc__:
+      -
+        - imagesPortfolio
+        -
+          - Text-Media
   variants:
     -
       __assoc__:
