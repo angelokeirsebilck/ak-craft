@@ -1,4 +1,4 @@
-dateModified: 1652588940
+dateModified: 1652632132
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
@@ -25,6 +25,7 @@ meta:
     6d3f9446-799c-4acb-9ab8-d9e11b148b54: Link # Link
     6eb16d71-fd69-4587-8d3c-56a87696049e: Cta # Cta
     6f60c33a-ce18-4d21-bebd-6d53ea16c6d2: 'Portfolio Home' # Portfolio Home
+    7ac4ed8e-eb27-4c90-8daf-0a99a4fdd693: Link # Link
     7e74a447-4f0a-4130-b15e-f1df3175e103: Thanks # Thanks
     7f4a44e6-2104-45c9-a348-781fc2e32991: 'Background Color' # Background Color
     8b995879-332a-4e28-bb82-eb5b4e3b42e2: Title # Title
@@ -36,6 +37,7 @@ meta:
     13a120bf-c8a5-4d82-ac79-ba44d99c869f: Media # Media
     18c36340-3798-4501-b6f0-e3330d5c86d4: References # References
     22dbbbb6-573d-49ad-875c-2a8f8451b7cc: Email # Email
+    37b41c08-b9d5-4839-bd5e-1da7203723d3: Link # Link
     56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
     57f24831-8db3-4239-b500-787afe0b7422: 'Kerotec Cta Content' # Kerotec Cta Content
     61f62f82-cbc9-49d8-a8ca-33c3a3b98231: References # References
@@ -44,6 +46,7 @@ meta:
     73f2882a-d051-4f79-9a5f-624277004d5a: 'Kerotec Navigation' # Kerotec Navigation
     80bdfde6-b6a4-45a2-8d64-45438ba278e0: Standaard # Standaard
     85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
+    86be1713-0ffe-4406-b8ee-4f18b6ea52a0: Label # Label
     98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
@@ -71,6 +74,7 @@ meta:
     73565395-0f0b-4846-b8db-e5b9eb2b5ec9: SEO # SEO
     a4c67e6a-9c78-47d7-b3f8-c5e687a624af: Portfolio # Portfolio
     a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
+    a97918b0-0260-45dc-ad5c-a6289f0f7041: Link # Link
     a1441023-555b-45a7-8461-ba6613008258: 'Portfolio Content' # Portfolio Content
     acb2dfe1-3f16-48b9-ae0f-0923977e23a7: Standaard # Standaard
     ad6e8279-954b-405f-ba63-dce6223d9ebc: 'Kerotec USP' # Kerotec USP

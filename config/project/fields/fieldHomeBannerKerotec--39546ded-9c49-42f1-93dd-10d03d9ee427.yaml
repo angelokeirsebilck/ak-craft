@@ -29,6 +29,13 @@ settings:
             -
               - width
               - ''
+      -
+        - a97918b0-0260-45dc-ad5c-a6289f0f7041 # Link
+        -
+          __assoc__:
+            -
+              - width
+              - ''
   contentTable: '{{%stc_fieldhomebannerkerotec}}'
   fieldLayout: row
   maxRows: ''

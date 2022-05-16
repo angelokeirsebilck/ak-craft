@@ -31,6 +31,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: a97918b0-0260-45dc-ad5c-a6289f0f7041 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -98,6 +107,23 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  a97918b0-0260-45dc-ad5c-a6289f0f7041: # Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemLink
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      contentTable: '{{%matrixcontent_itemlink}}'
+      maxBlocks: '1'
+      minBlocks: ''
+      propagationKeyFormat: null
+      propagationMethod: all
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   c792ad5b-761b-48be-bce6-26b76264a1d7: # Title
     columnSuffix: null
     contentColumnType: text
