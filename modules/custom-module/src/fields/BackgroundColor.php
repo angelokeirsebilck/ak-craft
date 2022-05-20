@@ -22,7 +22,7 @@ class BackgroundColor extends Dropdown
 
         $backgroundColors = [
             'White' => 'white',
-            'Light Yellow' => 'light',
+            'Light Green' => 'light',
         ];
 
         $this->options = [

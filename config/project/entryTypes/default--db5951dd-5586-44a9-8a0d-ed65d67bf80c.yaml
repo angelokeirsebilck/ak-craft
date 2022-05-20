@@ -1,0 +1,78 @@
+fieldLayouts:
+  ea66a99e-53ca-4be7-bcc6-d75f54b936e8:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: ''
+            label: __blank__
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: fbd049a5-5396-464a-9c6d-ffc6ffbe7216 # Kerotec SEO Title
+            instructions: ''
+            label: Title
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b113940c-2a49-456f-b10d-862587b1acda # Kerotec SEO Place
+            instructions: ''
+            label: Place
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c963b7e9-ac8f-47c6-a7eb-2de181771450 # Kerotec SEO Content
+            instructions: ''
+            label: 'SEO Content Item'
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 73565395-0f0b-4846-b8db-e5b9eb2b5ec9 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: SEO
+        sortOrder: 2
+handle: default
+hasTitleField: false
+name: Standaard
+section: 5f9e8b14-1faf-4f70-97ae-db745b38d643 # Kerotec SEO Pages
+sortOrder: 1
+titleFormat: '{fieldKerotecSeoTitle} {fieldKerotecSeoPlace}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

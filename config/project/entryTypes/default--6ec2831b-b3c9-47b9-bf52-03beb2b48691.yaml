@@ -1,0 +1,56 @@
+fieldLayouts:
+  b34a3245-76a5-4d7e-8c7b-75525fa5ce90:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 33773167-d760-4bd1-8da7-270c3802070e # Kerotec SEO Descripton
+            instructions: ''
+            label: ''
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: default
+hasTitleField: true
+name: Standaard
+section: 7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd # Kerotec SEO Pages Content
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

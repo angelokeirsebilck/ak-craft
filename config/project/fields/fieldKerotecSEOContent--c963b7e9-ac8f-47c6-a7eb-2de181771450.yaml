@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: af2d83da-9397-4fdd-ae4b-3330cd82854c # KEROTEC
+handle: fieldKerotecSEOContent
+instructions: ''
+name: 'Kerotec SEO Content'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd' # Kerotec SEO Pages Content
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

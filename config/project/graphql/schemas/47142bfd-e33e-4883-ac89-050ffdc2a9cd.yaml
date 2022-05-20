@@ -5,6 +5,10 @@ scope:
   - 'entrytypes.4fd9f2ab-dfaa-4404-ba4a-47548a90d471:read' # Home Kerotec
   - 'sections.0e29d1e7-3766-416c-a6aa-f559b86928a2:read' # Kerotec CTA
   - 'entrytypes.acb2dfe1-3f16-48b9-ae0f-0923977e23a7:read' # Standaard
+  - 'sections.5f9e8b14-1faf-4f70-97ae-db745b38d643:read' # Kerotec SEO Pages
+  - 'entrytypes.db5951dd-5586-44a9-8a0d-ed65d67bf80c:read' # Standaard
+  - 'sections.7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd:read' # Kerotec SEO Pages Content
+  - 'entrytypes.6ec2831b-b3c9-47b9-bf52-03beb2b48691:read' # Standaard
   - 'sections.3973a73c-440e-4767-b7a2-967c259a7331:read' # Legal KEROTEC
   - 'entrytypes.dfd3ecdb-749b-4fc2-9812-00946dc09d63:read' # Standaard
   - 'sections.ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5:read' # Pages aK
@@ -24,4 +28,5 @@ scope:
   - 'globalsets.73259272-4635-47f4-8189-da773221ec21:read' # Kerotec Company Info
   - 'globalsets.1d89545b-011e-431b-acd1-d67b21fa253b:read' # Kerotec Footer
   - 'globalsets.bae4c5fc-38f8-4dfc-92ff-0cd99f421e40:read' # Portfolio Navigation
+  - 'globalsets.09f0e527-d102-4975-8f40-ac2a23f6822b:read'
   - 'seomatic.all:read'
