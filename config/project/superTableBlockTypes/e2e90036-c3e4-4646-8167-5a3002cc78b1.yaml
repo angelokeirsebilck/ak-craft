@@ -1,0 +1,71 @@
+field: db1862c9-bc64-439c-86a8-cf4335bb24fd # Link
+fieldLayouts:
+  a2429d06-1d67-4da6-8dd4-3ebe19fe40b7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: c7c98775-2843-4fd6-b368-8443519e870e # Link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e59b830a-0bb1-418a-bb93-e3d8209e4ef3 # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  c7c98775-2843-4fd6-b368-8443519e870e: # Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemLink
+    instructions: ''
+    name: Link
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: false
+      source: null
+      sources:
+        - singles
+        - 'section:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  e59b830a-0bb1-418a-bb93-e3d8209e4ef3: # Label
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemLabel
+    instructions: ''
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText

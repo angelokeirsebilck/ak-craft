@@ -205,7 +205,7 @@ fields:
           __assoc__:
             -
               - label
-              - 'Light Yellow'
+              - 'Light Green'
             -
               - value
               - light

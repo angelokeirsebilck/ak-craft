@@ -1,4 +1,4 @@
-dateModified: 1653078800
+dateModified: 1653110251
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
@@ -92,6 +92,7 @@ meta:
     bae4c5fc-38f8-4dfc-92ff-0cd99f421e40: 'Portfolio Navigation' # Portfolio Navigation
     bdbc04de-8344-4c00-bdf0-b816a54c869b: 'Images Portfolio' # Images Portfolio
     c5f9eef8-26da-4424-bb7e-34fde589e608: 'Home Kerotec' # Home Kerotec
+    c7c98775-2843-4fd6-b368-8443519e870e: Link # Link
     c8dde2ad-0261-4602-977c-f192e36b6bfb: 'Kerotec Footer Link' # Kerotec Footer Link
     c19c0798-f619-458c-9795-738cd74c4d10: 'Main Nav' # Main Nav
     c39b2c60-002c-4db1-ad99-3e3465d32e19: Image # Image
@@ -103,12 +104,14 @@ meta:
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
     d6037e3b-a18e-4e22-84b7-d7aac2d5c24e: Editor # Editor
     d630936a-542d-48c6-9549-34144ec0a96c: 'Media Position' # Media Position
+    db1862c9-bc64-439c-86a8-cf4335bb24fd: Link # Link
     db5951dd-5586-44a9-8a0d-ed65d67bf80c: Standaard # Standaard
     dd47c6f3-2579-4634-a86b-44112604b851: 'aK Content' # aK Content
     dfd3ecdb-749b-4fc2-9812-00946dc09d63: Standaard # Standaard
     dffe2681-8efd-46d3-a68a-cc2f9b71cf82: Link # Link
     e00c56a0-9048-4b7f-b5d4-3036129d02f0: Standaard # Standaard
     e8a79905-5681-4a6f-b4f5-d4d52d9063a3: Link # Link
+    e59b830a-0bb1-418a-bb93-e3d8209e4ef3: Label # Label
     e70f1d40-fc20-488d-97bb-cb61aec7cc26: Title # Title
     e858e6e9-26e4-4e72-aa50-13999c183bb1: 'Portfolio Default Img Opt' # Portfolio Default Img Opt
     ebb2fbd0-c538-4f49-b238-94b2fc1956d6: Form # Form
