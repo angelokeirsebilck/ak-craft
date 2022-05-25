@@ -6,6 +6,22 @@ instructions: ''
 name: 'Kerotec USP'
 searchable: false
 settings:
+  columns:
+    __assoc__:
+      -
+        - 386ffdca-58d6-49a9-91d0-2a601508dd26 # Icon
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 56ee6bef-32e6-4203-b7a3-1a99768b2894 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
   contentTable: '{{%stc_fieldkerotecusp}}'
   fieldLayout: row
   maxRows: '4'

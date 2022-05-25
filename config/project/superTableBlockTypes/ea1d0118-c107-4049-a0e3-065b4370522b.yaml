@@ -14,6 +14,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 66f1be27-81fd-4669-9a51-be3292e7462a # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 56ee6bef-32e6-4203-b7a3-1a99768b2894 # Text
             instructions: null
             label: null
@@ -26,12 +35,32 @@ fieldLayouts:
         sortOrder: 1
 fields:
   56ee6bef-32e6-4203-b7a3-1a99768b2894: # Text
-    columnSuffix: bufuupvu
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemText
     instructions: ''
     name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  66f1be27-81fd-4669-9a51-be3292e7462a: # Title
+    columnSuffix: bzkzmeuw
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: ''
+    name: Title
     searchable: false
     settings:
       byteLimit: null
