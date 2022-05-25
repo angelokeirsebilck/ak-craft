@@ -1,10 +1,11 @@
-dateModified: 1653110251
+dateModified: 1653454180
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0a70e957-2165-4336-99c1-12316a86db89: Services # Services
     0b6cd4f6-3599-4b39-8eaa-6975556e68f1: SubTitle # SubTitle
     0d490fc5-8be5-4e2d-88e6-4dd5a45a558b: 'Text Alignment' # Text Alignment
     0ddcbf11-8b53-4839-b2af-3b18f9581e0a: Preview # Preview
@@ -43,6 +44,7 @@ meta:
     37b41c08-b9d5-4839-bd5e-1da7203723d3: Link # Link
     56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
     57f24831-8db3-4239-b500-787afe0b7422: 'Kerotec Cta Content' # Kerotec Cta Content
+    61f15c29-bc3f-4925-bb5d-3da1bf9a8a0d: 'Kerotec Services Category' # Kerotec Services Category
     61f62f82-cbc9-49d8-a8ca-33c3a3b98231: References # References
     64eed068-1f00-44e1-9210-e8ff7f8a693c: 'Portfolio Home Banner' # Portfolio Home Banner
     71cad8ae-bad6-4639-a39f-5e54e0bd626b: USP # USP
@@ -53,6 +55,7 @@ meta:
     98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
+    293c8a21-558c-40da-bae9-ecd978e0a424: 'Background Color' # Background Color
     386ffdca-58d6-49a9-91d0-2a601508dd26: Icon # Icon
     402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
     501e8a5c-932c-4e25-b2c6-7dfb53db6e41: Intro # Intro
@@ -65,6 +68,7 @@ meta:
     8935bcf9-eec9-483e-85c1-d7b96d0f351d: 'Background Color' # Background Color
     9559b22c-c5b0-4f50-ae0b-2d627bb0beb6: Title # Title
     20378ac5-a6a7-43d3-87a7-a0d9fcd88b44: 'Images KEROTEC' # Images KEROTEC
+    35894e6f-c18b-4f35-8a91-b12f97b81452: Title # Title
     39546ded-9c49-42f1-93dd-10d03d9ee427: 'Home Banner Kerotec' # Home Banner Kerotec
     47142bfd-e33e-4883-ac89-050ffdc2a9cd: 'Public Schema' # Public Schema
     61098cc8-fe0c-42f3-911e-089d747658ff: Image # Image
@@ -104,6 +108,7 @@ meta:
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
     d6037e3b-a18e-4e22-84b7-d7aac2d5c24e: Editor # Editor
     d630936a-542d-48c6-9549-34144ec0a96c: 'Media Position' # Media Position
+    da642b21-f45b-4456-9422-08fe4f3b8418: 'Simple Text' # Simple Text
     db1862c9-bc64-439c-86a8-cf4335bb24fd: Link # Link
     db5951dd-5586-44a9-8a0d-ed65d67bf80c: Standaard # Standaard
     dd47c6f3-2579-4634-a86b-44112604b851: 'aK Content' # aK Content

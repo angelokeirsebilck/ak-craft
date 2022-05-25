@@ -1,0 +1,58 @@
+defaultPlacement: end
+fieldLayouts:
+  5589bc77-007d-4353-8e0c-b1f69d8c1608:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: da642b21-f45b-4456-9422-08fe4f3b8418 # Simple Text
+            instructions: ''
+            label: Text
+            required: '1'
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Inhoud
+        sortOrder: 1
+handle: kerotecServicesCategory
+name: 'Kerotec Services Category'
+siteSettings:
+  9f70fad4-911f-44e3-a43f-fdb17a9dfe38: # Portfolio NL
+    hasUrls: false
+    template: null
+    uriFormat: null
+  5690ad28-4a4d-4900-b69b-02d69030f2c5: # aK NL
+    hasUrls: false
+    template: null
+    uriFormat: null
+  92213a96-10dd-4374-90e8-91000f082c2f: # Kerotec NL
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: dd68fd33-b93f-4f0f-a139-6808ef214d44

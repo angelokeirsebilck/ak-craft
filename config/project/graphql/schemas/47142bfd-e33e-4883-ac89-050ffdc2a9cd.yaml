@@ -28,5 +28,5 @@ scope:
   - 'globalsets.73259272-4635-47f4-8189-da773221ec21:read' # Kerotec Company Info
   - 'globalsets.1d89545b-011e-431b-acd1-d67b21fa253b:read' # Kerotec Footer
   - 'globalsets.bae4c5fc-38f8-4dfc-92ff-0cd99f421e40:read' # Portfolio Navigation
-  - 'globalsets.09f0e527-d102-4975-8f40-ac2a23f6822b:read'
+  - 'categorygroups.61f15c29-bc3f-4925-bb5d-3da1bf9a8a0d:read' # Kerotec Services Category
   - 'seomatic.all:read'

@@ -1,0 +1,91 @@
+field: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
+fieldLayouts:
+  0ac71dfc-7cae-4b6e-af00-c8f80228687b:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 35894e6f-c18b-4f35-8a91-b12f97b81452 # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+          -
+            fieldUid: 293c8a21-558c-40da-bae9-ecd978e0a424 # Background Color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
+        name: Content
+        sortOrder: 1
+fields:
+  293c8a21-558c-40da-bae9-ecd978e0a424: # Background Color
+    columnSuffix: ejiagrct
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemBackgroundColor
+    instructions: ''
+    name: 'Background Color'
+    searchable: false
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Choose a color'
+            -
+              - value
+              - ''
+            -
+              - disabled
+              - true
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+        -
+          __assoc__:
+            -
+              - label
+              - 'Light Green'
+            -
+              - value
+              - light
+    translationKeyFormat: null
+    translationMethod: none
+    type: custommodule\fields\BackgroundColor
+  35894e6f-c18b-4f35-8a91-b12f97b81452: # Title
+    columnSuffix: uiqkjpcm
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: ''
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: typeServices
+name: Services
+sortOrder: 7
