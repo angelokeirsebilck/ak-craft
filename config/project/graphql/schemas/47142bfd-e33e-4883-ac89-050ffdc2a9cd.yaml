@@ -30,3 +30,6 @@ scope:
   - 'globalsets.bae4c5fc-38f8-4dfc-92ff-0cd99f421e40:read' # Portfolio Navigation
   - 'categorygroups.61f15c29-bc3f-4925-bb5d-3da1bf9a8a0d:read' # Kerotec Services Category
   - 'seomatic.all:read'
+  - 'sites.9f70fad4-911f-44e3-a43f-fdb17a9dfe38:read' # Portfolio NL
+  - 'sites.5690ad28-4a4d-4900-b69b-02d69030f2c5:read' # aK NL
+  - 'sites.92213a96-10dd-4374-90e8-91000f082c2f:read' # Kerotec NL

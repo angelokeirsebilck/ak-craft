@@ -23,25 +23,17 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: dd7eba61-f3d2-4c32-a8f5-7787d4fe710a
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
+        uid: e3307dee-8942-44ce-8a83-0749d454b2b5
+fs: imagesAK
 handle: imagesAK
-hasUrls: true
 name: 'Images AK'
-settings:
-  bucket: angelokeirsebilck
-  contentDisposition: ''
-  endpoint: 'https://ams3.digitaloceanspaces.com'
-  expires: '6 months'
-  keyId: $DO_SPACES_API_KEY
-  region: ams3
-  secret: $DO_SPACES_SECRET
-  subfolder: ak/uploads/images
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: vaersaagod\dospaces\Volume
-url: '@doBaseUrl'
+transformFs: ''
+transformSubpath: ''

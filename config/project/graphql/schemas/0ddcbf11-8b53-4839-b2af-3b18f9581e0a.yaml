@@ -9,3 +9,6 @@ scope:
   - 'entrytypes.e00c56a0-9048-4b7f-b5d4-3036129d02f0:read' # Standaard
   - 'volumes.d21b4646-668b-477d-b8bd-0b619d836508:read' # Images AK
   - 'volumes.20378ac5-a6a7-43d3-87a7-a0d9fcd88b44:read' # Images KEROTEC
+  - 'sites.9f70fad4-911f-44e3-a43f-fdb17a9dfe38:read' # Portfolio NL
+  - 'sites.5690ad28-4a4d-4900-b69b-02d69030f2c5:read' # aK NL
+  - 'sites.92213a96-10dd-4374-90e8-91000f082c2f:read' # Kerotec NL

@@ -1,8 +1,118 @@
-dateModified: 1653660144
+dateModified: 1654622260
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: Content
+      type: heading
+    -
+      key: 'section:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+      type: native
+    -
+      key: 'section:7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd' # Kerotec SEO Pages Content
+      type: native
+    -
+      heading: Pages
+      type: heading
+    -
+      key: 'section:ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5' # Pages aK
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+        - slug
+        - 'field:73565395-0f0b-4846-b8db-e5b9eb2b5ec9' # SEO
+      type: native
+    -
+      key: 'section:5f9e8b14-1faf-4f70-97ae-db745b38d643' # Kerotec SEO Pages
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+        - slug
+      type: native
+    -
+      key: 'section:3973a73c-440e-4767-b7a2-967c259a7331' # Legal KEROTEC
+      type: native
+    -
+      heading: ''
+      type: heading
+    -
+      key: 'section:2c01be0c-0ef0-43c7-a7c9-fd3f6a74a10d' # Portfolio Pages
+      type: native
+    -
+      heading: ''
+      type: heading
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
   fromName: 'AK Craft'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  imagesAK:
+    hasUrls: true
+    name: 'Images AK'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: ak/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
+  imagesKerotec:
+    hasUrls: true
+    name: 'Images KEROTEC'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: kerotec/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
+  imagesPortfolio:
+    hasUrls: true
+    name: 'Images Portfolio'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: portfolio/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
 meta:
   __names__:
     0a70e957-2165-4336-99c1-12316a86db89: Services # Services
@@ -132,7 +242,7 @@ plugins:
   dospaces:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 2.0.0
   image-optimize:
     edition: standard
     enabled: true
@@ -244,10 +354,10 @@ plugins:
   super-table:
     edition: standard
     enabled: true
-    schemaVersion: 2.2.1
+    schemaVersion: 3.0.0
 system:
   edition: pro
   live: true
   name: 'AK Craft'
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles

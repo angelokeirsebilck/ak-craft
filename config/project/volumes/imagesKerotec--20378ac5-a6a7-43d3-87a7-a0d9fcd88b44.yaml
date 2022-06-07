@@ -23,25 +23,17 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 6c370339-a6a1-42c8-a087-54e0bcfaf33b
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
+        uid: 729279e1-f38f-443a-abbc-1c334b23aa19
+fs: imagesKerotec
 handle: imagesKerotec
-hasUrls: true
 name: 'Images KEROTEC'
-settings:
-  bucket: angelokeirsebilck
-  contentDisposition: ''
-  endpoint: 'https://ams3.digitaloceanspaces.com'
-  expires: '6 months'
-  keyId: $DO_SPACES_API_KEY
-  region: ams3
-  secret: $DO_SPACES_SECRET
-  subfolder: kerotec/uploads/images
 sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: vaersaagod\dospaces\Volume
-url: '@doBaseUrl'
+transformFs: ''
+transformSubpath: ''

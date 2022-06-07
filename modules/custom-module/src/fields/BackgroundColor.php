@@ -6,7 +6,7 @@ use \craft\db\Query;
 class BackgroundColor extends Dropdown
 {
 
-    public function init()
+    public function init(): void
     {
         $this->setBackgroundColors();
         parent::init();
@@ -41,8 +41,8 @@ class BackgroundColor extends Dropdown
         }
     }
 
-    public function getSettingsHtml()
+    public function getSettingsHtml(): string
     {
-        return;
+        return "";
     }
 }
