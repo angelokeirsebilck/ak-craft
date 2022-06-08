@@ -1,5 +1,5 @@
 fieldLayouts:
-  0581287c-adf6-4a6e-9379-523497a37ab2:
+  a738d624-abd1-4be4-8faf-f9aacbe05926:
     tabs:
       -
         elements:
@@ -24,15 +24,16 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c7ab9ec1-2b19-42de-9010-10897f6ed145
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
-handle: default
-hasTitleField: true
-name: Standaard
-section: ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5 # aK Pages
+        uid: 1e4b8790-67e2-4dc6-88cb-9827807e806a
+handle: AkHome
+hasTitleField: false
+name: 'aK Home'
+section: bfaf1252-6172-43fa-a05b-2bac23a46f4e # aK Home
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

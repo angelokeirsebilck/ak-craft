@@ -1,0 +1,20 @@
+fieldLayouts:
+  c178f7b3-3dcc-4c05-8beb-41ad737bb16d:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 378bbbf1-f8ba-4c41-874b-c936fea3f11e # aK Logo Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4599651d-e0a8-40fd-9f07-0b8fc142b30c
+            warning: null
+            width: 100
+        name: General
+        uid: 6736ab11-2edb-4e91-b1c3-360f6c8d7378
+handle: globlaAkCompany
+name: 'aK Company'
+sortOrder: 8
