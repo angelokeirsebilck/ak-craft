@@ -13,17 +13,8 @@
         {{ craft.vite.includeCriticalCssTags() }}
 
         {% include '_inc/_fonts.twig' %}
-
     {% endapply %}
 </head>
-
-{% set defaultMarginY  = 'my-5 my-lg-14' %}
-{% set defaultPaddingY = 'py-5 py-lg-14' %}
-{% set buttonMarginT   = 'mt-4' %}
-{% set defaultMarginT  = 'mt-5 mt-lg-14' %}
-{% set defaultMarginB  = 'mb-5 mb-lg-14' %}
-{% set marginTsm       = 'mt-5 mt-lg-7' %}
-
 
 <body data-entry-id="{{ entry is defined ? entry.id : '?' }}" data-entry-type="{{ entry is defined ? entry.type : '?' }}">
 
@@ -38,7 +29,6 @@
     {% block footer %}
         {% include '_layout/_footer.twig' %}
     {% endblock %}
-	{#{% include '_layout/_searchForm.twig' %}#}
 </div>
 </body>
 </html>

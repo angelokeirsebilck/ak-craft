@@ -1,4 +1,4 @@
-dateModified: 1654632668
+dateModified: 1654662952
 elementSources:
   craft\elements\Entry:
     -
@@ -348,13 +348,13 @@ plugins:
         - google
         - twitter
         - facebook
-      siteGroupsSeparate: '1'
-      siteUrlOverride: $BASE_KEROTEC
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
       sitemapsEnabled: true
       socialMediaPreviewTarget: true
       submitSitemaps: true
-      truncateDescriptionTags: '1'
-      truncateTitleTags: '1'
+      truncateDescriptionTags: true
+      truncateTitleTags: true
   super-table:
     edition: standard
     enabled: true

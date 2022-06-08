@@ -64,17 +64,4 @@ return [
             'extensions' => ['png']
         ]
     ],
-
-
-//    'kerotec' => [
-//        'aliases' => [
-//            '@web' => craft\helpers\App::env('BASE_KEROTEC'),
-//        ],
-//    ],
-//
-//    'ak' => [
-//        'aliases' => [
-//            '@web' => craft\helpers\App::env('BASE_AK'),
-//        ],
-//    ]
 ];
