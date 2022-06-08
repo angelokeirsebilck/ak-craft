@@ -8,7 +8,9 @@
     <div class="container">
       <div class="flex justify-between items-center py-6">
         <a href="{{ siteUrl }}" class="inline-block">
-          <img src="{{ globalAkCompany.fieldaKLogoHeader.one().url }}" width="171" height="61" alt="Angelo Keirsebilck Logo">
+            {% if globalAkCompany.fieldaKLogoHeader %}
+                <img src="{{ globalAkCompany.fieldaKLogoHeader.one().url }}" width="171" height="61" alt="Angelo Keirsebilck Logo">
+            {% endif %}
         </a>
         <div class="flex items-center">
             {% for navItem in mainNav %}

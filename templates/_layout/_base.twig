@@ -5,7 +5,6 @@
     {% apply spaceless %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1{% if devMode %},user-scalable=no{% endif %}">
-        <meta name="robots" content="{% if devMode or entry.section.handle=='errorPages' %}noindex,nofollow{% else %}all{% endif %}">
 
         {{ craft.vite.script("src/js/app.js") }}
 
