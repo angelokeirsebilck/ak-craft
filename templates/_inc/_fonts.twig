@@ -1,5 +1,25 @@
 {% minify css %}
-    <style>
-
+    <link rel="preload" href="/fonts/Poppins-Light.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="/fonts/Poppins-Medium.woff2" as="font" crossorigin="anonymous">
+    <style >
+        @font-face {
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Poppins';
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
     </style>
 {% endminify %}

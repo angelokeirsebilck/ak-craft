@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: pagesAk
-name: 'Pages aK'
+handle: AkHome
+name: 'aK Home'
 previewTargets:
   -
     __assoc__:
@@ -19,6 +19,6 @@ siteSettings:
   5690ad28-4a4d-4900-b69b-02d69030f2c5: # aK NL
     enabledByDefault: true
     hasUrls: true
-    template: null
-    uriFormat: '{slug}'
-type: channel
+    template: index.twig
+    uriFormat: __home__
+type: single

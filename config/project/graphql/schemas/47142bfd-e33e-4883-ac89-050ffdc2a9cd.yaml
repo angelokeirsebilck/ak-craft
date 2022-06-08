@@ -11,7 +11,7 @@ scope:
   - 'entrytypes.6ec2831b-b3c9-47b9-bf52-03beb2b48691:read' # Standaard
   - 'sections.3973a73c-440e-4767-b7a2-967c259a7331:read' # Legal KEROTEC
   - 'entrytypes.dfd3ecdb-749b-4fc2-9812-00946dc09d63:read' # Standaard
-  - 'sections.ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5:read' # Pages aK
+  - 'sections.ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5:read' # aK Pages
   - 'entrytypes.cd364aa4-c870-4611-93ec-f51df6990d5a:read' # Standaard
   - 'sections.29159395-d6dc-45e5-aa30-5347f769d03d:read' # Pages KEROTEC
   - 'entrytypes.e00c56a0-9048-4b7f-b5d4-3036129d02f0:read' # Standaard

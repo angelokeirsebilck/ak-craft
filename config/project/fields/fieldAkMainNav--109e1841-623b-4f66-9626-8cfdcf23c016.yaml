@@ -1,0 +1,21 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 85bcc920-ddf3-4a07-9a21-294989596b05 # aK
+handle: fieldAkMainNav
+instructions: null
+name: 'aK Main Navigation'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 832636164
+  contentTable: '{{%stc_fieldakmainnav}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

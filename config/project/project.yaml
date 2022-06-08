@@ -1,4 +1,4 @@
-dateModified: 1654632668
+dateModified: 1654712988
 elementSources:
   craft\elements\Entry:
     -
@@ -28,7 +28,7 @@ elementSources:
       heading: Pages
       type: heading
     -
-      key: 'section:ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5' # Pages aK
+      key: 'section:ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5' # aK Pages
       tableAttributes:
         - postDate
         - expiryDate
@@ -154,6 +154,7 @@ meta:
     37b41c08-b9d5-4839-bd5e-1da7203723d3: Link # Link
     56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
     57f24831-8db3-4239-b500-787afe0b7422: 'Kerotec Cta Content' # Kerotec Cta Content
+    61ed6125-1194-4538-94b9-9c530f78a246: 'aK Company' # aK Company
     61f15c29-bc3f-4925-bb5d-3da1bf9a8a0d: 'Kerotec Services Category' # Kerotec Services Category
     61f62f82-cbc9-49d8-a8ca-33c3a3b98231: References # References
     64eed068-1f00-44e1-9210-e8ff7f8a693c: 'Portfolio Home Banner' # Portfolio Home Banner
@@ -164,9 +165,11 @@ meta:
     85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
     86be1713-0ffe-4406-b8ee-4f18b6ea52a0: Label # Label
     98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
+    109e1841-623b-4f66-9626-8cfdcf23c016: 'aK Main Navigation' # aK Main Navigation
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
     293c8a21-558c-40da-bae9-ecd978e0a424: 'Background Color' # Background Color
+    378bbbf1-f8ba-4c41-874b-c936fea3f11e: 'aK Logo Header' # aK Logo Header
     386ffdca-58d6-49a9-91d0-2a601508dd26: Icon # Icon
     402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
     501e8a5c-932c-4e25-b2c6-7dfb53db6e41: Intro # Intro
@@ -197,15 +200,20 @@ meta:
     a1441023-555b-45a7-8461-ba6613008258: 'Portfolio Content' # Portfolio Content
     acb2dfe1-3f16-48b9-ae0f-0923977e23a7: Standaard # Standaard
     ad6e8279-954b-405f-ba63-dce6223d9ebc: 'Kerotec USP' # Kerotec USP
-    ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5: 'Pages aK' # Pages aK
+    ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5: 'aK Pages' # aK Pages
     aed1c586-a3d3-4f18-b962-19ef9a594b6a: 'Portfolio Homebanner Opt Img' # Portfolio Homebanner Opt Img
     af2d83da-9397-4fdd-ae4b-3330cd82854c: KEROTEC # KEROTEC
+    b1fbd584-8a4a-4b09-9fdf-41aadc84322c: 'aK Highlight Nav' # aK Highlight Nav
+    b75a0cb6-184e-43d3-8ef0-7815036e946d: 'aK Home' # aK Home
     b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
     b92519cf-e415-4f20-af0b-b02eabf460d4: Facebook # Facebook
     b113940c-2a49-456f-b10d-862587b1acda: 'Kerotec SEO Place' # Kerotec SEO Place
     b2332813-5395-4de0-802b-ac483820823b: 'Text / Media' # Text / Media
     bae4c5fc-38f8-4dfc-92ff-0cd99f421e40: 'Portfolio Navigation' # Portfolio Navigation
     bdbc04de-8344-4c00-bdf0-b816a54c869b: 'Images Portfolio' # Images Portfolio
+    bfaf1252-6172-43fa-a05b-2bac23a46f4e: 'aK Home' # aK Home
+    bfef29c2-5528-446b-a1e1-08dc3b376b65: 'aK Navigation' # aK Navigation
+    c5be86d8-4831-4e27-a131-35c7f71d2b04: Link # Link
     c5f9eef8-26da-4424-bb7e-34fde589e608: 'Home Kerotec' # Home Kerotec
     c7c98775-2843-4fd6-b368-8443519e870e: Link # Link
     c8dde2ad-0261-4602-977c-f192e36b6bfb: 'Kerotec Footer Link' # Kerotec Footer Link
@@ -348,17 +356,21 @@ plugins:
         - google
         - twitter
         - facebook
-      siteGroupsSeparate: '1'
-      siteUrlOverride: $BASE_KEROTEC
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
       sitemapsEnabled: true
       socialMediaPreviewTarget: true
       submitSitemaps: true
-      truncateDescriptionTags: '1'
-      truncateTitleTags: '1'
+      truncateDescriptionTags: true
+      truncateTitleTags: true
   super-table:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
   vite:
     edition: standard
     enabled: true
