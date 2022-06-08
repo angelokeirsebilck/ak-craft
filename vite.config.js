@@ -39,9 +39,9 @@ export default defineConfig(({command}) => ({
             ],
             criticalConfig: {}
         }),
-        legacy({
-            targets: ['defaults', 'not IE 11']
-        }),
+        // legacy({
+        //     targets: ['defaults', 'not IE 11']
+        // }),
         nodeResolve({
             moduleDirectories: [
                 path.resolve('./node_modules'),
