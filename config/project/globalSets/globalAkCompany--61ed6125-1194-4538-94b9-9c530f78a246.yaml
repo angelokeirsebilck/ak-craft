@@ -15,6 +15,6 @@ fieldLayouts:
             width: 100
         name: General
         uid: 6736ab11-2edb-4e91-b1c3-360f6c8d7378
-handle: globlaAkCompany
+handle: globalAkCompany
 name: 'aK Company'
 sortOrder: 8

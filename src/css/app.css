@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-.test{
-    @apply bg-green-600 leading-5
+@layer base {
+   html {
+      font-family: Poppins, sans-serif;
+   }
+}
+
+.btn{
+   @apply py-4 px-6 flex items-center justify-center lowercase rounded-lg
+}
+
+.btn-primary{
+   @apply bg-primary-default}
+
+.container{
+   @apply max-w-container mx-auto w-full px-5 md:px-10
 }

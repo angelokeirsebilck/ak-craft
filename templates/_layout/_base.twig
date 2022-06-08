@@ -16,14 +16,13 @@
     {% endapply %}
 </head>
 
-<body data-entry-id="{{ entry is defined ? entry.id : '?' }}" data-entry-type="{{ entry is defined ? entry.type : '?' }}">
+<body>
 
 <div id="wrapper" class="d-flex flex-column min-vh-100">
     {% block header %}
         {% include '_layout/_header' %}
     {% endblock %}
     <main class="position-relative">
-        <div class="confetti"></div>
         {% block content %}{% endblock %}
     </main>
     {% block footer %}

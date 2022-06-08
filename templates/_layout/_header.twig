@@ -1,7 +1,32 @@
-{#{% set mainNav = globalNavigation.fieldMainNav.all() %}#}
+{% import "_macros/_tools.twig" as macros %}
+
+{% set mainNav = globalAkNav.fieldAkMainNav.all() %}
+{% set highLightNav = globalAkNav.fieldAkHighlightNav %}
 
 {% apply spaceless %}
-  <header class="header bg-light d-flex align-items-center">
-
+  <header class="flex bg-bg-default">
+    <div class="container">
+      <div class="flex justify-between items-center py-6">
+        <a href="{{ siteUrl }}" class="inline-block">
+          <img src="{{ globalAkCompany.fieldaKLogoHeader.one().url }}" width="171" height="61" alt="Angelo Keirsebilck Logo">
+        </a>
+        <div class="flex items-center">
+            {% for navItem in mainNav %}
+                {% if navItem.itemLink.getLink() %}
+                    <a href="{{ navItem.itemLink.getUrl() }}" class="leading-none font-light lowercase text-2xl text-white-default {{ not loop.last ? 'mr-14' }}"> {{ navItem.itemLink.getText() }} </a>
+                {% endif %}
+            {% endfor %}
+            {% if highLightNav.getLink() %}
+                <div class="ml-14">
+                    {{ macros.button(
+                        highLightNav.getUrl(),
+                        highLightNav.getText(),
+                        'btn-primary')
+                    }}
+                </div>
+            {% endif %}
+        </div>
+      </div>
+    </div>
   </header>
 {% endapply %}
