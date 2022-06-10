@@ -69,10 +69,10 @@ export default defineConfig(({command}) => ({
         //     template: 'treemap',
         //     sourcemap: true,
         // }),
-        copy({
-            targets: [{src: 'src/fonts/*', dest: 'web/dist/fonts'}],
-            hook: 'writeBundle'
-        }),
+        // copy({
+        //     targets: [{src: 'src/fonts/*', dest: 'web/dist/fonts'}],
+        //     hook: 'writeBundle'
+        // }),
     ],
     publicDir: './src/public',
     resolve: {
