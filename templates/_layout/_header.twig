@@ -4,9 +4,9 @@
 {% set highLightNav = globalAkNav.fieldAkHighlightNav %}
 
 {% apply spaceless %}
-  <header class="flex bg-bg-default">
-    <div class="container">
-      <div class="flex justify-between items-center py-6">
+  <header class="flex bg-bg-default h-[100px]">
+    <div class="container h-full">
+      <div class="flex justify-between items-center h-full">
         <a href="{{ siteUrl }}" class="inline-block">
             {% if globalAkCompany.fieldaKLogoHeader %}
                 <img src="{{ globalAkCompany.fieldaKLogoHeader.one().url }}" width="171" height="61" alt="Angelo Keirsebilck Logo">

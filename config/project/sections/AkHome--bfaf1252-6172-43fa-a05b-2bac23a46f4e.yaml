@@ -16,6 +16,11 @@ previewTargets:
         - '1'
 propagationMethod: all
 siteSettings:
+  720b40eb-b03a-414f-9325-147c8050f443: # aK EN
+    enabledByDefault: true
+    hasUrls: true
+    template: index.twig
+    uriFormat: __home__
   5690ad28-4a4d-4900-b69b-02d69030f2c5: # aK NL
     enabledByDefault: true
     hasUrls: true

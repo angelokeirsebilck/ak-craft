@@ -9,7 +9,7 @@
 }
 
 .btn{
-   @apply py-4 px-6 flex items-center justify-center lowercase rounded-lg
+   @apply py-3 px-6 flex items-center justify-center lowercase rounded-lg
 }
 
 .btn-primary{
