@@ -3,11 +3,6 @@ module.exports = {
     './templates/**/*.twig',
   ],
   theme: {
-    fontSize:{
-      'copy': ['18px', {
-        lineHeight: '30px',
-      }],
-    },
     colors: {
       bg:{
         'default': '#2F3137'
@@ -24,6 +19,11 @@ module.exports = {
       transparent: 'transparent'
     },
     extend: {
+      fontSize:{
+        'copy': ['18px', {
+          lineHeight: '30px',
+        }],
+      },
       maxWidth:{
         'container' : '1440px'
       },
