@@ -1,0 +1,126 @@
+field: 195519cf-1e81-4891-983a-4ff3756cd22a # aK Home Banner
+fieldLayouts:
+  a73b5556-04ea-48bd-b4eb-bb460eb3c9c4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: dd5517ea-70f5-48bf-ab6d-38c6f70ea79d # JS Icos
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 84f44302-f2e6-4296-b74f-1735d794201a
+            warning: null
+            width: 100
+          -
+            fieldUid: ce47be10-c35f-4ff2-b8e6-40055deb9614 # Portrait
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d7ba6346-1cd5-4ddd-81b9-7c79bc0b529b
+            warning: null
+            width: 100
+        name: Content
+        uid: ade3a5c9-33b7-4e04-bc7d-12dae230e81e
+fields:
+  ce47be10-c35f-4ff2-b8e6-40055deb9614: # Portrait
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemPortrait
+    instructions: null
+    name: Portrait
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources:
+        - 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  dd5517ea-70f5-48bf-ab6d-38c6f70ea79d: # JS Icos
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemJsIcons
+    instructions: null
+    name: 'JS Icos'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources:
+        - 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets

@@ -9,7 +9,7 @@
       <div class="flex justify-between items-center h-full">
         <a href="{{ siteUrl }}" class="inline-block">
             {% if globalAkCompany.fieldaKLogoHeader %}
-                <img src="{{ globalAkCompany.fieldaKLogoHeader.one().url }}" width="171" height="61" alt="Angelo Keirsebilck Logo">
+                <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({ format: 'webp' }) }}" width="171" height="61" alt="Angelo Keirsebilck Logo">
             {% endif %}
         </a>
         <div class="flex items-center">

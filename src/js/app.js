@@ -9,15 +9,15 @@ const main = async () => {
     // const app = createApp(ConfettiParty);
     // // Mount the app
     // app.mount('.confetti');
-};
+    // app.mount('.confetti');
+}
 
 main().then(() => {
-
-});
-
+    console.log('qdqz')
+})
 
 if (import.meta.hot) {
     import.meta.hot.accept(() => {
-        console.log("HMR")
-    });
+        console.log('HMR')
+    })
 }

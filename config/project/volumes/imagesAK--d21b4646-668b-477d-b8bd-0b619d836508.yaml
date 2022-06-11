@@ -27,6 +27,37 @@ fieldLayouts:
             uid: dd7eba61-f3d2-4c32-a8f5-7787d4fe710a
             warning: null
             width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: d41166ad-c578-432e-9841-c8516179f963
+            warning: null
+            width: 100
+          -
+            fieldUid: 03961606-fb2c-41f6-96f4-7aac72976f67 # Home Portrait Image Optimize
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d9c6c9f-a84e-4fa9-bac3-ca74fd56403c
+            warning: null
+            width: 100
         name: Inhoud
         uid: e3307dee-8942-44ce-8a83-0749d454b2b5
 fs: imagesAK

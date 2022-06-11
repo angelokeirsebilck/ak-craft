@@ -3,13 +3,13 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
-import Confetti from 'vue-confetti/src/confetti.js';
+import { onMounted } from "vue";
+import Confetti from "vue-confetti/src/confetti.js";
 
 const config = {
-  defaultType: 'heart',
+  defaultType: "heart",
   defaultSize: 50,
-  defaultColors: ['Pink','Green','Red','Yellow'],
+  defaultColors: ["Pink", "Green", "Red", "Yellow"],
 };
 const confetti = new Confetti();
 
