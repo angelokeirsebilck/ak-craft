@@ -1,2 +1,2 @@
 const t=async()=>{};t().then(()=>{console.log("qdqz")});
-//# sourceMappingURL=app.29fe623f.js.map
+//# sourceMappingURL=app.dcfb0fd3.js.map
