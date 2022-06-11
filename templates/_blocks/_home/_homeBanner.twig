@@ -60,11 +60,11 @@
                 %}
                 <picture>
                     <source srcset="{{ optimizedImage.srcsetWebP() }}"
-                        sizes="(max-width: 375) 222px, (max-width: 640) 400px, (max-width: 768) 484px, (max-width: 1024) 508px, (max-width: 1280) 509px, 576px"
+                        sizes="(max-width: 375px) 222px, (max-width: 640px) 400px, (max-width: 768px) 484px, (max-width: 1024px) 508px, (max-width: 1280px) 509px, 576px"
                         type="image/webp" />
                     <img src="{{ optimizedImage.src() }}"
                         srcset="{{ optimizedImage.srcset() }}"
-                        sizes="(max-width: 375) 222px, (max-width: 640) 400px, (max-width: 768) 484px, (max-width: 1024) 508px, (max-width: 1280) 509px, 576px"
+                        sizes="(max-width: 375px) 222px, (max-width: 640px) 400px, (max-width: 768px) 484px, (max-width: 1024px) 508px, (max-width: 1280px) 509px, 576px"
                         class="relative z-10"
                         width="{{ block.itemPortrait.one().getWidth() }}"
                         height="{{ block.itemPortrait.one().getHeight() }}"
