@@ -53,7 +53,7 @@
                 </span>
             </span>
         </div>
-        <div class="col-span-8 col-start-3 lg:col-span-7 xl:col-span-5 self-end mt-28">
+        <div class="col-span-8 col-start-3 lg:col-span-5 self-end mt-28">
             <div class="relative">
                 {% set optimizedImage =
                     block.itemPortrait.one().fieldHomePortraitImgOpt
@@ -65,7 +65,7 @@
                     <img src="{{ optimizedImage.src() }}"
                         srcset="{{ optimizedImage.srcset() }}"
                         sizes="(max-width: 375) 222px, (max-width: 640) 400px, (max-width: 768) 484px, (max-width: 1024) 508px, (max-width: 1280) 509px, 576px"
-                        class="relative z-10 max-h-[40rem] xl:max-h-[initial]"
+                        class="relative z-10"
                         width="{{ block.itemPortrait.one().getWidth() }}"
                         height="{{ block.itemPortrait.one().getHeight() }}"
                         alt="{{
