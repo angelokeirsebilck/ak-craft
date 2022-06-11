@@ -1,17 +1,43 @@
-<div class="md:h-[calc(100vh_-_100px)] bg-bg-default flex items-center">
-    <div class="container grid grid-cols-12">
-        <div class="col-span-5">
-            <span class="inline-flex items-center font-light text-copy text-white-default">
+<div class="md:h-[calc(100vh_-_100px)] bg-bg-default flex items-center overflow-hidden max-h-[1024px]">
+    <div class="container grid grid-cols-12 h-full">
+        <div class="col-span-7 flex flex-col self-center transform -translate-y-1/2">
+            <span class="inline-flex items-center font-light text-copy text-white-default inline-block">
                 {{ svg('img/svg/emojione_waving-hand.svg')|attr({
                     class: 'w-[29px] h-[29px] mr-2'
                 }) }}
                 Hi, ik ben Angelo Keirsebilck,
+                <br>
             </span>
-            <span class="text-[61px] leading-[70px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary-default to-secondary-default">Freelance <br> web developer</span>
-            <span class="inline-block text-[45px] leading-[60px] text-white-default font-light">met een passie voor design en <span class="bg-underline transition-all bg-no-repeat  bg-left-bottom bg-[length:100%_12px]">JavaScript</span> </span>
-{#            {{ svg('img/svg/underline.svg')|attr({#}
-{#                class: ''#}
-{#            }) }}#}
+            <span class="inline-block text-[61px] leading-[70px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary-default to-secondary-default self-start">Freelance <br> web developer</span>
+            <span class="inline-block text-[45px] leading-[60px] text-white-default font-light">met een passie voor <br> design en
+                <span class="relative whitespace-nowrap">
+                    <span class="relative z-20">JavaScript</span>
+                    {{ svg('img/svg/underline.svg')|attr({
+                        class: 'absolute bottom-0 left-0 w-full h-3 z-10'
+                    }) }}
+                    {{ svg('img/svg/swirl1.svg')|attr({
+                        class: 'absolute -bottom-16 left-5'
+                    }) }}
+                    <div class="flex absolute -bottom-14 left-28">
+                        {{ svg('img/svg/react-icon.svg')|attr({
+                            class: 'h-[30px]'
+                        }) }}
+                        {{ svg('img/svg/vue-icon.svg')|attr({
+                            class: 'ml-2 h-[30px]'
+                        }) }}
+                    </div>
+                </span>
+            </span>
+        </div>
+        <div class="col-span-5 self-end">
+            <div class="relative">
+                <img src="/img/angelo-portret.png" alt="Angelo Keirsebilck Portret" width="491" height="619" class="relative z-10">
+                <div class="absolute top-32 -left-4 w-72 h-72 bg-primary-default rounded-full  filter blur-circle opacity-50 animate-blob"></div>
+                <div class="absolute top-32 -right-4 w-80 h-60 bg-secondary-default rounded-full  filter blur-circle opacity-50 animate-blob animation-delay-2000"></div>
+                <div class="absolute -bottom-8 left-20 w-96 h-56 bg-tertiary-default rounded-full  filter blur-circle opacity-50 animate-blob animation-delay-4000"></div>
+            </div>
         </div>
     </div>
 </div>
+
+{#<span class="bg-underline transition-all bg-no-repeat  bg-left-bottom bg-[length:100%_12px]">JavaScript </span>#}

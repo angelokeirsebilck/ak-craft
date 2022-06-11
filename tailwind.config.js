@@ -16,6 +16,9 @@ module.exports = {
       secondary:{
         'default': '#D14BE7'
       },
+      tertiary:{
+        'default' : '#75BDD3'
+      },
       transparent: 'transparent'
     },
     extend: {
@@ -29,7 +32,29 @@ module.exports = {
       },
       backgroundImage: {
         'underline': "url('/img/svg/underline.svg')",
-      }
+      },
+      blur: {
+        circle: '150px',
+      },
+      animation: {
+        blob: "blob 6s infinite",
+      },
+      keyframes: {
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(30px, -50px) scale(1.1)",
+          },
+          "66%": {
+            transform: "translate(-20px, 20px) scale(0.9)",
+          },
+          "100%": {
+            transform: "tranlate(0px, 0px) scale(1)",
+          },
+        },
+      },
     },
   },
   plugins: [],

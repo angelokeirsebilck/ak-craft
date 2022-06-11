@@ -1,5 +1,9 @@
 {% extends "_layout/_base" %}
 {#{% set content = entry.fieldContentBuilder.all() %}#}
+{% block preload %}
+    <link rel="preload" as="image" href="/img/angelo-portret.png">
+{% endblock %}
+
 
 {% block content %}
     {% include "_blocks/_home/_homeBanner.twig" %}
