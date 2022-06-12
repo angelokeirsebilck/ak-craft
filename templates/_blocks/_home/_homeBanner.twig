@@ -24,17 +24,17 @@
                     }}
                     {{
                         svg('img/svg/swirl1.svg')|attr({
-                            class: 'absolute -bottom-12 md:-bottom-16 w-[3rem] h-[3rem] md:w-[77px] md:h-[77px] left-2 md:left-5'
+                            class: 'absolute -bottom-10 md:-bottom-16 w-[3rem] h-[3rem] md:w-[77px] md:h-[77px] left-2 md:left-5'
                         })
                     }}
-                    <div class="flex absolute -bottom-12 md:-bottom-14 left-16 md:left-28">
+                    <div class="flex absolute -bottom-10 md:-bottom-14 left-16 md:left-28">
                         {% for img in block.itemJsIcons.all() %}
                             <img src="{{
                                 img.getUrl({
                                     format: 'webp'
                                 })
                                 }}"
-                                class="h-[25px] w-[25px] md:h-[30px] md:w-[34px] md:min-w-[34px] max-w-[initial] {{
+                                class="  min-w-[25px] md:h-[30px] md:w-[34px] md:min-w-[34px] md:max-w-[initial] {{
                                 not loop.first
                                     ? 'ml-2'
                                 }}"
@@ -43,12 +43,6 @@
                                 type="image/webp"
                                 alt="{{ img.alt ? img.alt : img.title }}" />
                         {% endfor %}
-                        {# {{ svg('img/svg/react-icon.svg')|attr({ #}
-                        {# class: 'h-[30px]' #}
-                        {# }) }} #}
-                        {# {{ svg('img/svg/vue-icon.svg')|attr({ #}
-                        {# class: 'ml-2 h-[30px]' #}
-                        {# }) }} #}
                     </div>
                 </span>
             </span>
@@ -60,11 +54,11 @@
                 %}
                 <picture>
                     <source srcset="{{ optimizedImage.srcsetWebP() }}"
-                        sizes="(max-width: 375px) 222px, (max-width: 640px) 400px, (max-width: 768px) 484px, (max-width: 1024px) 508px, (max-width: 1280px) 509px, 576px"
+                        sizes="{{ sizes }}"
                         type="image/webp" />
                     <img src="{{ optimizedImage.src() }}"
                         srcset="{{ optimizedImage.srcset() }}"
-                        sizes="(max-width: 375px) 222px, (max-width: 640px) 400px, (max-width: 768px) 484px, (max-width: 1024px) 508px, (max-width: 1280px) 509px, 576px"
+                        sizes="{{ sizes }}"
                         class="relative z-10"
                         width="{{ block.itemPortrait.one().getWidth() }}"
                         height="{{ block.itemPortrait.one().getHeight() }}"
@@ -74,12 +68,6 @@
                             : block.itemPortrait.one().title
                         }}" />
                 </picture>
-
-                {# <img src="/img/agkiz-8o5wp.webp" #}
-                {# alt="Angelo Keirsebilck Portret" #}
-                {# width="491" #}
-                {# height="619" #}
-                {# class="relative z-10" /> #}
                 <div class="absolute top-32 -left-4 w-72 h-72 bg-primary-default rounded-full filter blur-circle opacity-50 animate-blob"></div>
                 <div class="absolute top-32 -right-4 w-80 h-60 bg-secondary-default rounded-full filter blur-circle opacity-50 animate-blob animation-delay-2000"></div>
                 <div class="absolute -bottom-8 left-20 w-96 h-56 bg-tertiary-default rounded-full filter blur-circle opacity-50 animate-blob animation-delay-4000"></div>
