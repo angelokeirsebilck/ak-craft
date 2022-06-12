@@ -1,11 +1,11 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.dcfb0fd3.js",
+    "file": "assets/app.b08dcd29.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "css": [
-      "assets/app.a8d7a908.css"
+      "assets/app.83386a84.css"
     ],
-    "integrity": "sha384-xaVXpdyaxF4fLUajtbiKT+MRMYbK5vGuapxL4devdM/zRCN2iubyO1q4GmtV8h2D"
+    "integrity": "sha384-E0cgoVAq/6N6BMFcC2yU0KqFv18x4os4AL/j5so9xgXIebcfd7TSAKDfbHM5fKwj"
   }
 }

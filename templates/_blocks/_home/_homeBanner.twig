@@ -1,7 +1,7 @@
 <div class="pt-8 lg:h-[calc(100vh_-_100px)] bg-bg-default flex items-center overflow-hidden lg:max-h-[1024px]">
     <div class="container grid grid-cols-12 h-full">
         <div class="col-span-11 lg:col-start-1 lg:col-end-7 flex flex-col self-center transform lg:-translate-y-1/2">
-            <span class="inline-flex items-start md:items-center font-light text-copy text-white-default inline-block mb-2 sm:mb-4">
+            <span class="inline-flex flex-col md:flex-row items-start md:items-center font-light text-copy text-white-default inline-block mb-2 sm:mb-4">
                 {{
                     svg('img/svg/emojione_waving-hand.svg')|attr({
                         class: 'w-[29px] h-[29px] mr-2'
@@ -10,7 +10,7 @@
                 Hi, ik ben Angelo Keirsebilck,
                 <br />
             </span>
-            <span class="mb-2 inline-block text-[30px] leading-[40px] sm:text-[40px] lg:text-[61px] sm:leading-[50px] lg:leading-[70px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary-default to-secondary-default self-start">
+            <span class="mb-0 sm:mb-2 inline-block text-[30px] leading-[40px] sm:text-[40px] lg:text-[61px] sm:leading-[50px] lg:leading-[70px] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-primary-default to-secondary-default self-start">
                 Freelance <br /> web developer
             </span>
             <span class="inline-block text-[23px] leading-[30px] sm:text-[30px] lg:text-[45px] sm:leading-[38px] lg:leading-[60px] text-white-default font-light">
@@ -24,17 +24,17 @@
                     }}
                     {{
                         svg('img/svg/swirl1.svg')|attr({
-                            class: 'absolute -bottom-16 left-2 md:left-5'
+                            class: 'absolute -bottom-12 md:-bottom-16 w-[3rem] h-[3rem] md:w-[77px] md:h-[77px] left-2 md:left-5'
                         })
                     }}
-                    <div class="flex absolute -bottom-14 left-24 md:left-28">
+                    <div class="flex absolute -bottom-12 md:-bottom-14 left-16 md:left-28">
                         {% for img in block.itemJsIcons.all() %}
                             <img src="{{
                                 img.getUrl({
                                     format: 'webp'
                                 })
                                 }}"
-                                class=" min-w-[34px] min-h-[30px] {{
+                                class="h-[25px] w-[25px] md:h-[34px] md:w-[34] md:min-w-[34px] max-w-[initial] {{
                                 not loop.first
                                     ? 'ml-2'
                                 }}"
@@ -53,7 +53,7 @@
                 </span>
             </span>
         </div>
-        <div class="col-span-8 col-start-3 lg:col-start-7 lg:col-end-12 self-end mt-28">
+        <div class="col-span-8 col-start-3 lg:col-start-7 lg:col-end-12 self-end mt-24">
             <div class="relative">
                 {% set optimizedImage =
                     block.itemPortrait.one().fieldHomePortraitImgOpt

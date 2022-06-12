@@ -1,34 +1,49 @@
-{% import "_macros/_tools.twig" as macros %}
+{% import '_macros/_tools.twig' as macros %}
 
 {% set mainNav = globalAkNav.fieldAkMainNav.all() %}
 {% set highLightNav = globalAkNav.fieldAkHighlightNav %}
 
 {% apply spaceless %}
-  <header class="flex bg-bg-default h-[100px]">
+<header class="flex bg-bg-default h-[70px] md:h-[100px]">
     <div class="container h-full">
-      <div class="flex justify-between items-center h-full">
-        <a href="{{ siteUrl }}" class="inline-block">
-            {% if globalAkCompany.fieldaKLogoHeader %}
-                <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({ format: 'webp' }) }}" width="171" height="61" alt="Angelo Keirsebilck Logo">
-            {% endif %}
-        </a>
-        <div class="flex items-center">
-            {% for navItem in mainNav %}
-                {% if navItem.itemLink.getLink() %}
-                    <a href="{{ navItem.itemLink.getUrl() }}" class="leading-none font-light lowercase text-2xl text-white-default {{ not loop.last ? 'mr-14' }}"> {{ navItem.itemLink.getText() }} </a>
+        <div class="flex justify-between items-center h-full">
+            <a href="{{ siteUrl }}" class="inline-block w-[120px] md:w-[171px]">
+                {% if globalAkCompany.fieldaKLogoHeader %}
+                    <img src="{{
+                        globalAkCompany.fieldaKLogoHeader.one().getUrl({
+                            format: 'webp'
+                        })
+                        }}"
+                        width="171"
+                        height="61"
+                        alt="Angelo Keirsebilck Logo" />
                 {% endif %}
-            {% endfor %}
-            {% if highLightNav.getLink() %}
-                <div class="ml-14">
-                    {{ macros.button(
-                        highLightNav.getUrl(),
-                        highLightNav.getText(),
-                        'btn-primary')
-                    }}
-                </div>
-            {% endif %}
+            </a>
+            <div class="flex items-center hidden lg:flex">
+                {% for navItem in mainNav %}
+                    {% if navItem.itemLink.getLink() %}
+                        <a href="{{ navItem.itemLink.getUrl() }}"
+                            class="leading-none font-light lowercase text-2xl text-white-default {{
+                            not loop.last
+                                ? 'mr-14'
+                            }}">
+                            {{ navItem.itemLink.getText() }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
+                {% if highLightNav.getLink() %}
+                    <div class="ml-14">
+                        {{
+                            macros.button(
+                                highLightNav.getUrl(),
+                                highLightNav.getText(),
+                                'btn-primary'
+                            )
+                        }}
+                    </div>
+                {% endif %}
+            </div>
         </div>
-      </div>
     </div>
-  </header>
+</header>
 {% endapply %}
