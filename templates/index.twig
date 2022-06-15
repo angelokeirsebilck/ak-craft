@@ -1,5 +1,5 @@
 {% extends '_layout/_base' %}
-{# {% set content = entry.fieldContentBuilder.all() %} #}
+{% set content = entry.fieldAkContent.all() %}
 
 {% set homeBanner = entry.fieldAkHomeBanner.one() %}
 {% set sizes =
@@ -26,9 +26,11 @@
         sizes: sizes
     } %}
 
-    {# {% for block in content %} #}
-    {# {% include "/_blocks/_#{block.type.handle|replace('type','')|lower}.twig" with { #}
-    {# "block": block #}
-    {# } %} #}
-    {# {% endfor %} #}
+    {% for block in content %}
+        {% include "/_blocks/_#{block.type.handle
+            |replace('type', '')
+            |lower}.twig" with {
+            block: block
+        } %}
+    {% endfor %}
 {% endblock %}

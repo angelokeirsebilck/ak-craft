@@ -1,0 +1,220 @@
+field: dd47c6f3-2579-4634-a86b-44112604b851 # aK Content
+fieldLayouts:
+  1fd4cffc-d3d2-48f9-8bda-a0a31c5ff79a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 47e0d4b9-cda8-4353-b888-56e7d00e7126 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a9819af6-8181-4ced-a550-a89e8ddbd558
+            warning: null
+            width: 100
+          -
+            fieldUid: 0a19b894-b243-4e76-a249-6602c5b5a90d # Left Column
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8b553c9c-dda3-40e0-8ed6-91632150fbe7
+            warning: null
+            width: 100
+          -
+            fieldUid: 71b63819-458c-4da8-a4f3-b417bed19e90 # Right Column
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 342c7d4e-8c56-4017-9ab3-52510f8bdb45
+            warning: null
+            width: 100
+          -
+            fieldUid: 99b425f2-4418-4689-8935-4a37ac7981e4 # Background Color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95938d96-97fe-4bd1-82f0-41ee73544af1
+            warning: null
+            width: 50
+          -
+            fieldUid: 81f6e926-358d-49b5-9c11-b9b21d524b08 # Span Background
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4091c878-5ed9-45d5-a8d2-bd358f269969
+            warning: null
+            width: 25
+        name: Content
+        uid: b12d2eaf-dc10-4813-acef-cf21718b41dc
+fields:
+  0a19b894-b243-4e76-a249-6602c5b5a90d: # Left Column
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemLeftColumn
+    instructions: null
+    name: 'Left Column'
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 2002697679
+      columns:
+        __assoc__:
+          -
+            - 6a3e1418-ce26-4ddc-ac39-c59aff8fed94 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 2830461d-5863-4055-a122-8d114a5fc2da # Link
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_11_itemleftcolumn}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: true
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  47e0d4b9-cda8-4353-b888-56e7d00e7126: # Title
+    columnSuffix: eawnwugz
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 1
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  71b63819-458c-4da8-a4f3-b417bed19e90: # Right Column
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemRightColumn
+    instructions: null
+    name: 'Right Column'
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 809194936
+      columns:
+        __assoc__:
+          -
+            - c572752c-6407-4ce5-9d56-3cc22352646c # Title
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - a607b8a6-e61c-47cc-b593-f34192c7d9a7 # Show Party Icon
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 77b39d19-3553-4a62-9302-c3ccf418e7dd # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_11_itemrightcolumn}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: true
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  81f6e926-358d-49b5-9c11-b9b21d524b08: # Span Background
+    columnSuffix: mivddjfc
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: itemSpanBackground
+    instructions: null
+    name: 'Span Background'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  99b425f2-4418-4689-8935-4a37ac7981e4: # Background Color
+    columnSuffix: izhtqggc
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemBackgroundColor
+    instructions: null
+    name: 'Background Color'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Choose a color'
+            -
+              - value
+              - ''
+            -
+              - disabled
+              - true
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+        -
+          __assoc__:
+            -
+              - label
+              - Dark
+            -
+              - value
+              - dark
+    translationKeyFormat: null
+    translationMethod: none
+    type: custommodule\fields\BackgroundColor
+handle: typeTextColumns
+name: 'Text Columns'
+sortOrder: 2

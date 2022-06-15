@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 85bcc920-ddf3-4a07-9a21-294989596b05 # aK
 handle: fieldAkContent
-instructions: ''
+instructions: null
 name: 'aK Content'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_fieldakcontent}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

@@ -18,12 +18,21 @@
 }
 
 .btn{
-   @apply py-3 px-6 flex items-center justify-center lowercase rounded-lg
+   @apply py-3 px-6 items-center justify-center lowercase rounded-lg inline-flex text-bg-default text-center
 }
 
 .btn-primary{
-   @apply bg-primary-default}
+   @apply bg-primary-default
+}
 
 .container{
    @apply max-w-container mx-auto w-full px-5 md:px-10
+}
+
+.section{
+   @apply my-10 md:my-32
+}
+
+.section-bg{
+   @apply py-10 md:py-32
 }

@@ -1,0 +1,90 @@
+{% import '_macros/_tools.twig' as macros %}
+
+<div class="{{
+    block.itemBackgroundColor.value == 'white'
+        ? 'section bg-white-default'
+        : 'section-bg bg-bg-default text-white-default'
+    }}">
+    <div class="container">
+        {% if block.itemTitle %}
+            <h2 class="text-h1Sm md:text-h1 mb-1em font-medium text-inherit">
+                {{ block.itemTitle|nl2br }}
+            </h2>
+        {% endif %}
+        <div class="md:grid grid-cols-12 gap-8">
+            <div class="col-span-7">
+                <div class="{{
+                    not block.itemSpanBackground
+                        ? 'p-8'
+                        : 'pr-8 py-8'
+                    }} rounded-tr-30 relative {{
+                    block.itemBackgroundColor.value == 'white'
+                        ? 'bg-bg-default text-white-default'
+                        : 'bg-white-default text-bg-default'
+                    }}">
+                    {% if block.itemSpanBackground %}
+                        <div class="{{
+                            block.itemBackgroundColor.value == 'white'
+                                ? 'bg-bg-default'
+                                : 'bg-white-default'
+                            }} -left-[50vw] top-0 absolute h-full w-[50vw]"></div>
+                    {% endif %}
+                    {# <div class="absolute top-32 right-16 w-40 h-60 bg-secondary-default rounded-full filter blur-circle opacity-10"></div> #}
+                    {# <div class="absolute -bottom-4 -right-6 w-40 h-56 bg-tertiary-default rounded-full filter blur-circle opacity-20"></div> #}
+                    <div class="prose md:prose-lg text-inherit relative z-10">
+                        {{ block.itemLeftColumn.itemText }}
+                    </div>
+                    {% if block.itemLeftColumn.itemLink.getLink() %}
+                        <div class="mt-5 md:mt-8">
+                            {{
+                                macros.button(
+                                    block.itemLeftColumn.itemLink.getUrl(),
+                                    block.itemLeftColumn.itemLink.getText(),
+                                    'btn-primary'
+                                )
+                            }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-span-5 mt-8 flex flex-col {{
+                block.itemBackgroundColor.value == 'dark'
+                    ? 'text-white-default'
+                }}">
+                <div class="flex items-start">
+                    {% if block.itemRightColumn.itemTitle %}
+                        <h2 class="text-h1Sm md:text-h1 mb-1em font-medium text-inherit">
+                            {{ block.itemRightColumn.itemTitle|nl2br }}
+                        </h2>
+                    {% endif %}
+                    {% if block.itemRightColumn.itemShowIcon %}
+                        <img src="img/svg/logos_partytown-icon.svg"
+                            width="45"
+                            height="47"
+                            class="w-[32px] md:w-[45px] md:h-[47px] ml-3"
+                            alt="Live Preview Logo" />
+                    {% endif %}
+                </div>
+
+                <div class="prose md:prose-lg text-inherit {{
+                    block.itemBackgroundColor.value == 'dark'
+                        ? 'prose-dark'
+                    }}">
+                    {{ block.itemRightColumn.itemText }}
+                </div>
+
+                {% if block.itemRightColumn.itemArrowDown %}
+                    <img src="{{
+                        block.itemBackgroundColor.value == 'dark'
+                            ? 'img/svg/swirl-down-white.svg'
+                            : 'img/svg/swirl-down.svg'
+                        }} "
+                        width="89"
+                        height="64"
+                        class="w-[89px] h-[64px] self-center md:self-start mt-10 md:ml-14"
+                        alt="Live Preview Logo" />
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

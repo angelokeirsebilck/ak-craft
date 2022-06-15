@@ -12,8 +12,12 @@ const main = async () => {
     // app.mount('.confetti');
 }
 
+const spanBackgroundWidth = () => {}
+
 main().then(() => {
-    console.log('qdqz')
+    window.onload = (event) => {
+        spanBackgroundWidth()
+    }
 })
 
 if (import.meta.hot) {

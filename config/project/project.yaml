@@ -1,4 +1,4 @@
-dateModified: 1654935086
+dateModified: 1655240807
 elementSources:
   craft\elements\Entry:
     -
@@ -115,6 +115,7 @@ fs:
     url: '@doBaseUrl'
 meta:
   __names__:
+    0a19b894-b243-4e76-a249-6602c5b5a90d: 'Left Column' # Left Column
     0a70e957-2165-4336-99c1-12316a86db89: Services # Services
     0b6cd4f6-3599-4b39-8eaa-6975556e68f1: SubTitle # SubTitle
     0d490fc5-8be5-4e2d-88e6-4dd5a45a558b: 'Text Alignment' # Text Alignment
@@ -134,6 +135,7 @@ meta:
     4fd9f2ab-dfaa-4404-ba4a-47548a90d471: 'Home Kerotec' # Home Kerotec
     5b31df2d-3af7-44b6-88fd-211d07122274: 'Footer Nav' # Footer Nav
     5f9e8b14-1faf-4f70-97ae-db745b38d643: 'Kerotec SEO Pages' # Kerotec SEO Pages
+    6a3e1418-ce26-4ddc-ac39-c59aff8fed94: Text # Text
     6d3f9446-799c-4acb-9ab8-d9e11b148b54: Link # Link
     6eb16d71-fd69-4587-8d3c-56a87696049e: Cta # Cta
     6ec2831b-b3c9-47b9-bf52-03beb2b48691: Standaard # Standaard
@@ -152,6 +154,7 @@ meta:
     18c36340-3798-4501-b6f0-e3330d5c86d4: References # References
     22dbbbb6-573d-49ad-875c-2a8f8451b7cc: Email # Email
     37b41c08-b9d5-4839-bd5e-1da7203723d3: Link # Link
+    47e0d4b9-cda8-4353-b888-56e7d00e7126: Title # Title
     56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
     57f24831-8db3-4239-b500-787afe0b7422: 'Kerotec Cta Content' # Kerotec Cta Content
     61ed6125-1194-4538-94b9-9c530f78a246: 'aK Company' # aK Company
@@ -159,12 +162,16 @@ meta:
     61f62f82-cbc9-49d8-a8ca-33c3a3b98231: References # References
     64eed068-1f00-44e1-9210-e8ff7f8a693c: 'Portfolio Home Banner' # Portfolio Home Banner
     66f1be27-81fd-4669-9a51-be3292e7462a: Title # Title
+    71b63819-458c-4da8-a4f3-b417bed19e90: 'Right Column' # Right Column
     71cad8ae-bad6-4639-a39f-5e54e0bd626b: USP # USP
     73f2882a-d051-4f79-9a5f-624277004d5a: 'Kerotec Navigation' # Kerotec Navigation
+    77b39d19-3553-4a62-9302-c3ccf418e7dd: Text # Text
     80bdfde6-b6a4-45a2-8d64-45438ba278e0: Standaard # Standaard
+    81f6e926-358d-49b5-9c11-b9b21d524b08: 'Span Background' # Span Background
     85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
     86be1713-0ffe-4406-b8ee-4f18b6ea52a0: Label # Label
     98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
+    99b425f2-4418-4689-8935-4a37ac7981e4: 'Background Color' # Background Color
     109e1841-623b-4f66-9626-8cfdcf23c016: 'aK Main Navigation' # aK Main Navigation
     181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
     216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
@@ -173,6 +180,7 @@ meta:
     386ffdca-58d6-49a9-91d0-2a601508dd26: Icon # Icon
     402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
     501e8a5c-932c-4e25-b2c6-7dfb53db6e41: Intro # Intro
+    602b45f2-9a9d-4b49-b368-c0eddd131c82: 'Show Arrow Down'
     720b40eb-b03a-414f-9325-147c8050f443: 'aK EN' # aK EN
     771bfdd2-6549-4fe3-953a-9d5415ecd1f0: Text # Text
     851e7b15-fc39-48e5-b7d5-ac9644bd6d43: 'Thanks Page' # Thanks Page
@@ -191,6 +199,7 @@ meta:
     92213a96-10dd-4374-90e8-91000f082c2f: 'Kerotec NL' # Kerotec NL
     108034c7-d987-4de8-886e-09d9d92e2496: Text # Text
     195519cf-1e81-4891-983a-4ff3756cd22a: 'aK Home Banner' # aK Home Banner
+    2830461d-5863-4055-a122-8d114a5fc2da: Link # Link
     03961606-fb2c-41f6-96f4-7aac72976f67: 'Home Portrait Image Optimize' # Home Portrait Image Optimize
     4455348d-5047-4b0e-91ae-79e6599d7f6a: Title # Title
     29159395-d6dc-45e5-aa30-5347f769d03d: 'Pages KEROTEC' # Pages KEROTEC
@@ -199,6 +208,7 @@ meta:
     73565395-0f0b-4846-b8db-e5b9eb2b5ec9: SEO # SEO
     a4c67e6a-9c78-47d7-b3f8-c5e687a624af: Portfolio # Portfolio
     a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
+    a607b8a6-e61c-47cc-b593-f34192c7d9a7: 'Show Party Icon' # Show Party Icon
     a97918b0-0260-45dc-ad5c-a6289f0f7041: Link # Link
     a1441023-555b-45a7-8461-ba6613008258: 'Portfolio Content' # Portfolio Content
     acb2dfe1-3f16-48b9-ae0f-0923977e23a7: Standaard # Standaard
@@ -207,6 +217,7 @@ meta:
     aed1c586-a3d3-4f18-b962-19ef9a594b6a: 'Portfolio Homebanner Opt Img' # Portfolio Homebanner Opt Img
     af2d83da-9397-4fdd-ae4b-3330cd82854c: KEROTEC # KEROTEC
     b1fbd584-8a4a-4b09-9fdf-41aadc84322c: 'aK Highlight Nav' # aK Highlight Nav
+    b5daeeab-9a80-4ee3-955e-c65774b6bb5b: 'Text Columns' # Text Columns
     b75a0cb6-184e-43d3-8ef0-7815036e946d: 'aK Home' # aK Home
     b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
     b92519cf-e415-4f20-af0b-b02eabf460d4: Facebook # Facebook
@@ -225,6 +236,7 @@ meta:
     c792ad5b-761b-48be-bce6-26b76264a1d7: Title # Title
     c963b7e9-ac8f-47c6-a7eb-2de181771450: 'Kerotec SEO Content' # Kerotec SEO Content
     c964ef51-ae37-4a14-aed6-fd8dc72f17e2: 'aK Image Optimize' # aK Image Optimize
+    c572752c-6407-4ce5-9d56-3cc22352646c: Title # Title
     ca46e5e1-f025-4715-a506-8ec65ef7eaab: Link # Link
     cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard
     ce47be10-c35f-4ff2-b8e6-40055deb9614: Portrait # Portrait
