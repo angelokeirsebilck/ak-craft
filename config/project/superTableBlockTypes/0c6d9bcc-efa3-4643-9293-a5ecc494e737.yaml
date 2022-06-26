@@ -5,35 +5,146 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: dd5517ea-70f5-48bf-ab6d-38c6f70ea79d # JS Icos
+            fieldUid: bc3b158f-80ae-479a-a32a-315706955aef # Title
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 84f44302-f2e6-4296-b74f-1735d794201a
+            uid: bf3f9828-973e-45b0-a205-de7cca994789
             warning: null
             width: 100
           -
-            fieldUid: ce47be10-c35f-4ff2-b8e6-40055deb9614 # Portrait
+            fieldUid: d602b57e-889e-4854-b2c2-20f6725f0d9a # Intro
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d7ba6346-1cd5-4ddd-81b9-7c79bc0b529b
+            uid: 4ee4052a-5e93-4af2-bef5-a6feabc32cfe
+            warning: null
+            width: 100
+          -
+            fieldUid: 7daba989-33a7-4cd0-8b14-94126c95d131 # Link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52f6f567-7de2-4ff4-9121-33fd16d941a8
+            warning: null
+            width: 100
+          -
+            fieldUid: ce47be10-c35f-4ff2-b8e6-40055deb9614 # Figure
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6565498b-3dae-441c-b780-88452ebb243a
             warning: null
             width: 100
         name: Content
         uid: ade3a5c9-33b7-4e04-bc7d-12dae230e81e
 fields:
-  ce47be10-c35f-4ff2-b8e6-40055deb9614: # Portrait
+  7daba989-33a7-4cd0-8b14-94126c95d131: # Link
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
-    handle: itemPortrait
+    handle: itemLink
     instructions: null
-    name: Portrait
+    name: Link
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: ''
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: site
+    type: lenz\linkfield\fields\LinkField
+  bc3b158f-80ae-479a-a32a-315706955aef: # Title
+    columnSuffix: kywucwup
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Title.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  ce47be10-c35f-4ff2-b8e6-40055deb9614: # Figure
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemFigure
+    instructions: null
+    name: Figure
     searchable: false
     settings:
       allowSelfRelations: false
@@ -76,51 +187,23 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  dd5517ea-70f5-48bf-ab6d-38c6f70ea79d: # JS Icos
-    columnSuffix: null
-    contentColumnType: string
+  d602b57e-889e-4854-b2c2-20f6725f0d9a: # Intro
+    columnSuffix: vbhlqgrh
+    contentColumnType: text
     fieldGroup: null
-    handle: itemJsIcons
+    handle: itemIntro
     instructions: null
-    name: 'JS Icos'
+    name: Intro
     searchable: false
     settings:
-      allowSelfRelations: false
-      allowSubfolders: false
-      allowUploads: true
-      allowedKinds: null
-      defaultUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      defaultUploadLocationSubpath: null
-      localizeRelations: false
-      maxRelations: null
-      minRelations: null
-      previewMode: full
-      restrictFiles: false
-      restrictLocation: false
-      restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
-      selectionLabel: null
-      showSiteMenu: false
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      source: null
-      sources:
-        - 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: list
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
-    type: craft\fields\Assets
+    type: craft\fields\PlainText

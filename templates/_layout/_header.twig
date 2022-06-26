@@ -4,26 +4,22 @@
 {% set highLightNav = globalAkNav.fieldAkHighlightNav %}
 
 {% apply spaceless %}
-<header class="flex bg-bg-default h-[70px] md:h-[100px]">
+<header class="flex h-[70px] md:h-[125px]">
     <div class="container h-full">
         <div class="flex justify-between items-center h-full">
             <a href="{{ siteUrl }}" class="inline-block w-[90px] md:w-[171px]">
                 {% if globalAkCompany.fieldaKLogoHeader %}
-                    <img src="{{
-                        globalAkCompany.fieldaKLogoHeader.one().getUrl({
-                            format: 'webp'
-                        })
-                        }}"
+                    <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}"
                         width="171"
                         height="61"
                         alt="Angelo Keirsebilck Logo" />
                 {% endif %}
             </a>
-            <div class="flex items-center hidden lg:flex">
+            <div class="hidden lg:flex items-center">
                 {% for navItem in mainNav %}
                     {% if navItem.itemLink.getLink() %}
                         <a href="{{ navItem.itemLink.getUrl() }}"
-                            class="leading-none font-light lowercase text-2xl text-white-default {{
+                            class="leading-none lowercase font-normal text-22 text-black-default transition-colors hover:text-primary-default {{
                             not loop.last
                                 ? 'mr-14'
                             }}">
@@ -37,7 +33,8 @@
                             macros.button(
                                 highLightNav.getUrl(),
                                 highLightNav.getText(),
-                                'btn-primary'
+                                'btn-black',
+                                'bg-black-default'
                             )
                         }}
                     </div>

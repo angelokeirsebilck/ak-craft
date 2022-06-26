@@ -1,0 +1,49 @@
+fieldLayouts:
+  9a2b88d8-c240-45d8-bc2f-bed28ef5abd9:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: a09ffd39-c5ef-40fc-ad67-accc63213591
+            warning: null
+            width: 100
+          -
+            fieldUid: bd8a53d4-23ba-4940-8ce4-fe197eaee782 # aK Usp Content
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: be133143-1eb4-4755-8f3c-988c132b707c
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: f6cfecdf-2571-4003-bb7a-a3ba9fde0834
+handle: default
+hasTitleField: true
+name: Standaard
+section: ed2ac2de-4798-4162-9921-19e31c6c14c4 # aK USP
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

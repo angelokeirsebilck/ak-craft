@@ -1,5 +1,13 @@
 {
-  "buttons": [
-    "bold"
-  ]
+    "buttons": ["bold", "html", "format"],
+    "formattingAdd": {
+        "Background": {
+            "title": "Underline",
+            "api": "module.inline.format",
+            "args": {
+                "tag": "span",
+                "class": "underline"
+            }
+        }
+    }
 }

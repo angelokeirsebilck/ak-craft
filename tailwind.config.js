@@ -1,51 +1,77 @@
+const { url } = require('inspector')
+
 module.exports = {
     content: ['./templates/**/*.twig'],
     theme: {
+        fontSize: {
+            copy: [
+                '18px',
+                {
+                    lineHeight: '30px'
+                }
+            ],
+            56: [
+                '56px',
+                {
+                    lineHeight: '65px'
+                }
+            ],
+            48: [
+                '48px',
+                {
+                    lineHeight: '55px'
+                }
+            ],
+            40: [
+                '40px',
+                {
+                    lineHeight: '50px'
+                }
+            ],
+            31: [
+                '31px',
+                {
+                    lineHeight: '36px'
+                }
+            ],
+            24: [
+                '24px',
+                {
+                    lineHeight: '30px'
+                }
+            ],
+            20: [
+                '20px',
+                {
+                    lineHeight: '28px'
+                }
+            ]
+        },
         colors: {
-            bg: {
-                default: '#2F3137'
+            black: {
+                default: '#3D405B'
             },
             white: {
                 default: '#FFF'
             },
             primary: {
-                default: '#49F2CA'
+                default: '#E07A5F'
             },
             secondary: {
-                default: '#D14BE7'
+                default: '#81B29A'
             },
             tertiary: {
-                default: '#75BDD3'
+                default: '#F4F1DE'
+            },
+            quaternary: {
+                default: '#F2CC8F'
             },
             transparent: 'transparent',
             inherit: 'inherit'
         },
         extend: {
-            fontSize: {
-                copy: [
-                    '18px',
-                    {
-                        lineHeight: '30px'
-                    }
-                ],
-                h1Sm: [
-                    '30px',
-                    {
-                        lineHeight: '35px'
-                    }
-                ],
-                h1: [
-                    '48px',
-                    {
-                        lineHeight: '55px'
-                    }
-                ]
-            },
-            spacing: {
-                '1em': '1em'
-            },
-            borderRadius: {
-                30: '30px'
+            borderWidth: {
+                3: '3px'
             },
             maxWidth: {
                 container: '1440px'
@@ -53,31 +79,10 @@ module.exports = {
             backgroundImage: {
                 underline: "url('/img/svg/underline.svg')"
             },
-            blur: {
-                circle: '60px'
-            },
-            animation: {
-                blob: 'blob 10s infinite'
-            },
-            keyframes: {
-                blob: {
-                    '0%': {
-                        transform: 'translate(0px, 0px) scale(1)'
-                    },
-                    '33%': {
-                        transform: 'translate(50px, -80px) scale(1.2)'
-                    },
-                    '66%': {
-                        transform: 'translate(-20px, 20px) scale(0.9)'
-                    },
-                    '100%': {
-                        transform: 'tranlate(0px, 0px) scale(1)'
-                    }
-                }
-            },
             typography: (theme) => ({
                 DEFAULT: {
                     css: {
+                        '--tw-prose-headings': theme('colors.black.default'),
                         p: {
                             fontWeight: 300,
                             fontSize: '18px',
@@ -85,11 +90,15 @@ module.exports = {
                         },
                         strong: {
                             color: 'inherit',
-                            fontWeight: 400
+                            fontWeight: 'inherit',
+                            backgroundImage: "url('/img/svg/marked3.svg')",
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: '100% 22px',
+                            backgroundPosition: 'bottom'
                         },
                         h2: {
                             fontSize: '26px',
-                            marginBottom: '1em',
+                            lineHeight: '30px',
                             fontWeight: 500
                         },
                         ul: {
@@ -102,6 +111,7 @@ module.exports = {
                             marginBottom: '12px !important',
                             fontSize: '20px',
                             fontWeight: 500,
+                            color: theme('colors.black.default'),
                             paddingLeft: '38px !important',
 
                             '&::before': {
@@ -117,23 +127,13 @@ module.exports = {
                         }
                     }
                 },
-                lg: {
+                md: {
                     css: {
                         h2: {
                             fontSize: '31px',
                             fontWeight: 500,
-                            marginBottom: '1em'
-                        },
-                        ul: {
-                            listStyleType: 'none',
-                            paddingLeft: 0
+                            lineHeight: '36px'
                         }
-                    }
-                },
-                dark: {
-                    css: {
-                        '--tw-prose-headings': theme('colors.white.default'),
-                        color: theme('colors.white.default')
                     }
                 }
             })

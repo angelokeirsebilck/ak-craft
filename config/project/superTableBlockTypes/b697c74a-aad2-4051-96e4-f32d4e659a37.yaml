@@ -11,17 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 71791dca-38e4-4335-a258-e8f035ee3218
-            warning: null
-            width: 100
-          -
-            fieldUid: a607b8a6-e61c-47cc-b593-f34192c7d9a7 # Show Party Icon
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3a3a23e8-a684-4fe0-9a2b-d32d577f1405
+            uid: f45604ce-e34c-4c55-ac53-cfee74192c05
             warning: null
             width: 100
           -
@@ -31,17 +21,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 28677456-ce9c-4d82-a4ff-10012d461788
-            warning: null
-            width: 100
-          -
-            fieldUid: 602b45f2-9a9d-4b49-b368-c0eddd131c82
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 1af0197f-8414-489e-9690-286be1c049f0
+            uid: b4fa9762-f37b-463f-b412-3b6a1b71cfff
             warning: null
             width: 100
         name: Content
@@ -75,36 +55,6 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
-  602b45f2-9a9d-4b49-b368-c0eddd131c82:
-    columnSuffix: ituzbnou
-    contentColumnType: boolean
-    fieldGroup: null
-    handle: itemArrowDown
-    instructions: null
-    name: 'Show Arrow Down'
-    searchable: false
-    settings:
-      default: false
-      offLabel: null
-      onLabel: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
-  a607b8a6-e61c-47cc-b593-f34192c7d9a7: # Show Party Icon
-    columnSuffix: null
-    contentColumnType: boolean
-    fieldGroup: null
-    handle: itemShowIcon
-    instructions: null
-    name: 'Show Party Icon'
-    searchable: false
-    settings:
-      default: false
-      offLabel: null
-      onLabel: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
   c572752c-6407-4ce5-9d56-3cc22352646c: # Title
     columnSuffix: null
     contentColumnType: text

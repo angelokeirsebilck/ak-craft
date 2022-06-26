@@ -49,7 +49,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 03961606-fb2c-41f6-96f4-7aac72976f67 # Home Portrait Image Optimize
+            fieldUid: 03961606-fb2c-41f6-96f4-7aac72976f67 # Home Figure Image Optimize
             instructions: null
             label: null
             required: false

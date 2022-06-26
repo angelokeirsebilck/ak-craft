@@ -1,23 +1,14 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 85bcc920-ddf3-4a07-9a21-294989596b05 # aK
-handle: fieldAkHomeBanner
+handle: fieldAkUspContent
 instructions: null
-name: 'aK Home Banner'
+name: 'aK Usp Content'
 searchable: false
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 610081316
-  columns:
-    __assoc__:
-      -
-        - ce47be10-c35f-4ff2-b8e6-40055deb9614 # Figure
-        -
-          __assoc__:
-            -
-              - width
-              - ''
-  contentTable: '{{%stc_fieldakhomebanner}}'
+  changedFieldIndicator: 2105702277
+  contentTable: '{{%stc_fieldakuspcontent}}'
   fieldLayout: row
   maxRows: null
   minRows: null

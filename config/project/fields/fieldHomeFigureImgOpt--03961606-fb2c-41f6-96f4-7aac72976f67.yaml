@@ -1,9 +1,9 @@
 columnSuffix: qujsqybm
 contentColumnType: text
 fieldGroup: c964ef51-ae37-4a14-aed6-fd8dc72f17e2 # aK Image Optimize
-handle: fieldHomePortraitImgOpt
+handle: fieldHomeFigureImgOpt
 instructions: null
-name: 'Home Portrait Image Optimize'
+name: 'Home Figure Image Optimize'
 searchable: false
 settings:
   displayDominantColorPalette: true
@@ -13,78 +13,6 @@ settings:
     - image/svg
     - image/gif
   variants:
-    -
-      __assoc__:
-        -
-          - width
-          - '1280'
-        -
-          - useAspectRatio
-          - ''
-        -
-          - aspectRatioX
-          - '5'
-        -
-          - aspectRatioY
-          - '8'
-        -
-          - retinaSizes
-          -
-            - '1'
-        -
-          - quality
-          - '82'
-        -
-          - format
-          - png
-    -
-      __assoc__:
-        -
-          - width
-          - '1024'
-        -
-          - useAspectRatio
-          - ''
-        -
-          - aspectRatioX
-          - '5'
-        -
-          - aspectRatioY
-          - '8'
-        -
-          - retinaSizes
-          -
-            - '1'
-        -
-          - quality
-          - '82'
-        -
-          - format
-          - png
-    -
-      __assoc__:
-        -
-          - width
-          - '768'
-        -
-          - useAspectRatio
-          - ''
-        -
-          - aspectRatioX
-          - '5'
-        -
-          - aspectRatioY
-          - '8'
-        -
-          - retinaSizes
-          -
-            - '1'
-        -
-          - quality
-          - '60'
-        -
-          - format
-          - png
     -
       __assoc__:
         -
@@ -106,6 +34,54 @@ settings:
         -
           - quality
           - '60'
+        -
+          - format
+          - png
+    -
+      __assoc__:
+        -
+          - width
+          - '550'
+        -
+          - useAspectRatio
+          - ''
+        -
+          - aspectRatioX
+          - '16'
+        -
+          - aspectRatioY
+          - '9'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - png
+    -
+      __assoc__:
+        -
+          - width
+          - '470'
+        -
+          - useAspectRatio
+          - ''
+        -
+          - aspectRatioX
+          - '16'
+        -
+          - aspectRatioY
+          - '9'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
         -
           - format
           - png

@@ -12,11 +12,21 @@ const main = async () => {
     // app.mount('.confetti');
 }
 
-const spanBackgroundWidth = () => {}
+const addUnderlineBackgrounds = () => {
+    const heading2Underline = document.querySelectorAll('h2 strong')
+    heading2Underline.forEach((h) => {
+        h.classList.add(
+            'bg-underline',
+            'bg-no-repeat',
+            'bg-bottom',
+            'font-medium'
+        )
+    })
+}
 
 main().then(() => {
     window.onload = (event) => {
-        spanBackgroundWidth()
+        addUnderlineBackgrounds()
     }
 })
 

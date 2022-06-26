@@ -1,0 +1,183 @@
+field: dd47c6f3-2579-4634-a86b-44112604b851 # aK Content
+fieldLayouts:
+  60ef6f76-176b-41ba-ad95-a5088684d050:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 5f218619-1454-480f-af32-eb36b417b664 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c8c28e1-6354-4b60-a7ed-6f0271de9b15
+            warning: null
+            width: 50
+          -
+            fieldUid: d8769a8f-a702-4ffb-8653-95bcd669d9af
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c1afa69-f906-4460-95fd-e62837119616
+            warning: null
+            width: 50
+          -
+            fieldUid: 808473a9-f8f4-419c-b0eb-af5e1d297fa0 # Background Color
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af46f8f5-8489-47e0-a355-5a3f536c2d4d
+            warning: null
+            width: 25
+          -
+            fieldUid: 3688c405-67b9-40d1-a951-d38d09375693 # List
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f837ffe-b78b-4f7c-a3c1-9fa9c1a9e1bc
+            warning: null
+            width: 50
+        name: Content
+        uid: febe609e-382e-4bf6-b7a7-64d72a84b14b
+fields:
+  5f218619-1454-480f-af32-eb36b417b664: # Title
+    columnSuffix: rupzydte
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Title.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  3688c405-67b9-40d1-a951-d38d09375693: # List
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemList
+    instructions: null
+    name: List
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      localizeRelations: false
+      maxRelations: 3
+      minRelations: 3
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      source: null
+      sources:
+        - 'section:ed2ac2de-4798-4162-9921-19e31c6c14c4' # aK USP
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  808473a9-f8f4-419c-b0eb-af5e1d297fa0: # Background Color
+    columnSuffix: prjspsrl
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemBackgroundColor
+    instructions: null
+    name: 'Background Color'
+    searchable: false
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - 'Choose a color'
+            -
+              - value
+              - ''
+            -
+              - disabled
+              - true
+        -
+          __assoc__:
+            -
+              - label
+              - White
+            -
+              - value
+              - white
+        -
+          __assoc__:
+            -
+              - label
+              - Dark
+            -
+              - value
+              - dark
+    translationKeyFormat: null
+    translationMethod: none
+    type: custommodule\fields\BackgroundColor
+  d8769a8f-a702-4ffb-8653-95bcd669d9af:
+    columnSuffix: xeihsxje
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemText
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Simple.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+handle: typeUsp
+name: Usp
+sortOrder: 3

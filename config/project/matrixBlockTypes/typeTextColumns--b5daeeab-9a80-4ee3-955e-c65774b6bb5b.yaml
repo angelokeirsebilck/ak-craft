@@ -67,7 +67,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 2002697679
+      changedFieldIndicator: 1722055094
       columns:
         __assoc__:
           -
@@ -125,18 +125,11 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 809194936
+      changedFieldIndicator: 1583156874
       columns:
         __assoc__:
           -
             - c572752c-6407-4ce5-9d56-3cc22352646c # Title
-            -
-              __assoc__:
-                -
-                  - width
-                  - ''
-          -
-            - a607b8a6-e61c-47cc-b593-f34192c7d9a7 # Show Party Icon
             -
               __assoc__:
                 -

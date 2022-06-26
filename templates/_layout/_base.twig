@@ -21,11 +21,11 @@
 
 <body>
 
-<div id="wrapper" class="d-flex flex-column min-vh-100">
+<div id="wrapper" class="d-flex flex-column min-vh-100 text-black-default">
     {% block header %}
         {% include '_layout/_header' %}
     {% endblock %}
-    <main class="position-relative">
+    <main class="position-relative overflow-hidden">
         {% block content %}{% endblock %}
     </main>
     {% block footer %}

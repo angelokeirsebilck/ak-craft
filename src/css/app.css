@@ -3,36 +3,63 @@
 @tailwind utilities;
 
 @layer base {
-   html {
-      font-family: Poppins, sans-serif;
-   }
+    html {
+        font-family: Poppins, sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        margin: 1.2em 0 0.9em !important;
+
+        &:first-child {
+            margin-top: 0 !important;
+        }
+    }
+}
+
+@layer components {
+    .btn {
+        @apply flex items-center rounded-2xl border-2 p-3 py-2 text-[22px] lowercase leading-tight no-underline;
+    }
+
+    .btn-primary {
+        @apply border-primary-default text-primary-default;
+    }
+
+    .btn-black {
+        @apply border-black-default text-black-default;
+    }
+
+    .container {
+        @apply mx-auto w-full max-w-container px-5 md:px-10;
+    }
+
+    .section {
+        @apply my-10 md:my-32;
+    }
+
+    .section-bg {
+        @apply py-10 md:py-32;
+    }
 }
 
 @layer utilities {
-   .animation-delay-2000 {
-      animation-delay: 2s;
-   }
-   .animation-delay-4000 {
-      animation-delay: 4s;
-   }
 }
 
-.btn{
-   @apply py-3 px-6 items-center justify-center lowercase rounded-lg inline-flex text-bg-default text-center
-}
-
-.btn-primary{
-   @apply bg-primary-default
-}
-
-.container{
-   @apply max-w-container mx-auto w-full px-5 md:px-10
-}
-
-.section{
-   @apply my-10 md:my-32
-}
-
-.section-bg{
-   @apply py-10 md:py-32
+.underline {
+    background-image: url('/img/svg/underline.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 16px;
+    background-position: bottom;
+    white-space: nowrap;
 }

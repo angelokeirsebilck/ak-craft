@@ -3,14 +3,11 @@
 
 {% set homeBanner = entry.fieldAkHomeBanner.one() %}
 {% set sizes =
-    '(max-width: 375px) 222px, (max-width: 640px) 400px, (max-width: 768px) 484px, (max-width: 1024px) 508px, (max-width: 1280px) 509px, 576px'
+    '(max-width: 375px) 222px, (max-width: 640px) 400px, (max-width: 768px) 484px, (max-width: 1024px) 508px, (max-width: 1280px) 470px, 543px'
 %}
 {% block preload %}
-    {# <link rel="preload" as="image" href="/img/agkiz-8o5wp.webp"> #}
-    {% if homeBanner.itemPortrait.one() %}
-        {% set optimizedImage =
-            homeBanner.itemPortrait.one().fieldHomePortraitImgOpt
-        %}
+    {% if homeBanner.itemFigure.one() %}
+        {% set optimizedImage = homeBanner.itemFigure.one().fieldHomeFigureImgOpt %}
 
         <link rel="preload"
             as="image"
@@ -27,9 +24,7 @@
     } %}
 
     {% for block in content %}
-        {% include "/_blocks/_#{block.type.handle
-            |replace('type', '')
-            |lower}.twig" with {
+        {% include "/_blocks/_#{block.type.handle|replace('type', '')|lower}.twig" with {
             block: block
         } %}
     {% endfor %}
