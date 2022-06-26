@@ -4,6 +4,64 @@ fieldLayouts:
       -
         elements:
           -
+            fieldUid: 102ffb0a-98c4-4eaf-bfaa-73c7f769c4d1 # aK E-mail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cbedfc45-67af-4290-98dd-2da051c7b887
+            warning: null
+            width: 50
+          -
+            fieldUid: 8c28eaec-f7d2-48b3-b106-7a49dc00230f # aK Tel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49b22eee-5fd3-4e82-8043-708d9689c8fd
+            warning: null
+            width: 50
+        name: Contact
+        uid: 4c614b29-821f-451f-8866-3ca8adc51f4f
+      -
+        elements:
+          -
+            fieldUid: b317878c-900e-4b6b-aab5-1d1da11e7863 # aK Github
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a0337872-8407-4559-8333-31c5c265376f
+            warning: null
+            width: 25
+          -
+            fieldUid: c1e4cb10-56ec-44c2-b746-987ef7d21954 # aK Linkedin
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: af0868d1-f575-4caa-90fb-a260e1624756
+            warning: null
+            width: 25
+          -
+            fieldUid: 57d472cb-1abc-438c-b133-1e58a472bd26 # aK Facebook
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07241737-8659-4097-9fbf-c2a1c50c213c
+            warning: null
+            width: 25
+        name: Socials
+        uid: 455e3d0f-1e1a-4991-a718-0088f600a218
+      -
+        elements:
+          -
             fieldUid: 378bbbf1-f8ba-4c41-874b-c936fea3f11e # aK Logo Header
             instructions: null
             label: null
@@ -12,9 +70,9 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             uid: 4599651d-e0a8-40fd-9f07-0b8fc142b30c
             warning: null
-            width: 100
-        name: General
-        uid: 6736ab11-2edb-4e91-b1c3-360f6c8d7378
+            width: 50
+        name: Logo
+        uid: bd4ad18e-785e-453d-8780-d1819fbd9056
 handle: globalAkCompany
 name: 'aK Company'
 sortOrder: 8

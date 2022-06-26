@@ -16,7 +16,7 @@
                             : 'bg-white-default'
                         }} -left-[50vw] top-0 absolute h-full w-[50vw]"></div>
                 {% endif %}
-                <div class="prose md:prose-lg max-w-none bg-tertiary-default rounded-2xl p-6 relative z-10">
+                <div class="prose md:prose-lg max-w-none bg-tertiary-default rounded-2xl p-6 md:p-8 relative z-10">
                     {% if block.itemTitle %}
                         <h2 class="text-31 md:text-48 font-medium">
                             {{ block.itemTitle|nl2br }}
@@ -37,7 +37,7 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-start-9 col-span-4 mt-10 md:mt-6 flex flex-col">
+            <div class="col-start-9 col-span-4 mt-14 md:mt-6 flex flex-col">
                 <div class="flex items-start">
                     {% if block.itemRightColumn.itemTitle %}
                         <h2 class="text-31 md:text-48 font-medium">

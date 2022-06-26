@@ -29,7 +29,7 @@
 
 @layer components {
     .btn {
-        @apply flex items-center rounded-2xl border-2 p-3 py-2 text-[22px] lowercase leading-tight no-underline;
+        @apply flex items-center rounded-2xl border-2 p-3 py-2 text-[22px] font-normal lowercase leading-tight no-underline;
     }
 
     .btn-primary {
@@ -45,7 +45,7 @@
     }
 
     .section {
-        @apply my-10 md:my-32;
+        @apply my-16 md:my-40;
     }
 
     .section-bg {

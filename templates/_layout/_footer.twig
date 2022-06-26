@@ -1,8 +1,108 @@
 {% import '_macros/_tools' as macros %}
-{#{% set footerNav = globalNavigation.fieldFooterNav.all() %}#}
+{% set footerNav = globalAkNav.fieldAkFooterNav.all() %}
+{% set legalNav = craft.entries.section('AkPages').type('legalPages').all() %}
 
 {% apply spaceless %}
-	<footer class="footer mt-auto font-16 line-height-156 fw-regular text-black--footer">
+<footer class="mt-auto overflow-hidden relative after:hidden md:after:!block after:bottom-0 after:left-0 after:h-[63px] after:pointer-events-none after:z-40 after:w-full after:bg-quaternary-default after:bg-opacity-30 after:absolute">
+    <div class="container bg-tertiary-default md:!bg-transparent relative">
+        <div class="absolute hidden md:!block h-full w-[50vw] z-10 top-0 left-[calc(-50vw_+_4rem)] bg-tertiary-default pointer-events-none"></div>
+        <div class="py-6 md:py-9">
+            <div class="hidden md:!grid grid-cols-12 gap-10 absolute top-0 left-10 w-full h-full">
+                <div class="col-span-9 relative">
+                    <div class="absolute w-full h-full top-0 left-0 bg-tertiary-default rounded-tr-2xl"></div>
+                </div>
+            </div>
+            <div class="md:grid grid-cols-12 gap-10 relative z-30">
+                <div class="col-span-5">
+                    <a href="{{ siteUrl }}" class="inline-block">
+                        {% if globalAkCompany.fieldaKLogoHeader %}
+                            <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}"
+                                width="171"
+                                height="61"
+                                alt="Angelo Keirsebilck Logo" />
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="col-span-4 self-end">
+                    <span class="text-20 font-normal text-black-default hidden md:!block">Menu</span>
+                </div>
+            </div>
+            <div class="md:grid grid-cols-12 gap-10 mt-4 md:mt-7 relative z-30">
+                <div class="col-span-5">
+                    {% if globalAkCompany.fieldAkEmail.getLink() %}
+                        <div class="flex">
+                            <span class="text-primary-default font-semibold min-w-[25px] inline-block">E</span>
+                            <a href="{{ globalAkCompany.fieldAkEmail.getUrl()|replace(' ', '') }}"
+                                class="transition-colors md:hover:text-secondary-default">
+                                {{ globalAkCompany.fieldAkEmail.getUrl()|replace('mailto:', '') }}
+                            </a>
+                        </div>
+                    {% endif %}
+                    {% if globalAkCompany.fieldAkTel.getLink() %}
+                        <div class="flex">
+                            <span class="text-primary-default font-semibold min-w-[25px] inline-block">T</span>
+                            <a href="{{ globalAkCompany.fieldAkTel.getUrl()|replace(' ', '') }}"
+                                class="transition-colors md:hover:text-secondary-default">
+                                {{ globalAkCompany.fieldAkTel.getUrl()|replace('tel:', '') }}
+                            </a>
+                        </div>
+                    {% endif %}
+                    <div class="mt-4 md:mt-7">
+                        <div class="flex gap-5">
+                            {% if globalAkCompany.fieldAkLinkedin.getLink() %}
+                                <a href="{{ globalAkCompany.fieldAkLinkedin.getUrl() }}"
+                                    target="_blank"
+                                    rel="nofollow"
+                                    class="transition-colors fill-primary-default md:hover:fill-secondary-default">
+                                    {{ svg('img/svg/linkedin.svg') }}
+                                </a>
+                            {% endif %}
+                            {% if globalAkCompany.fieldAkGithub.getLink() %}
+                                <a href="{{ globalAkCompany.fieldAkGithub.getUrl() }}"
+                                    target="_blank"
+                                    rel="nofollow"
+                                    class="transition-colors fill-primary-default md:hover:fill-secondary-default">
+                                    {{ svg('img/svg/github.svg') }}
+                                </a>
+                            {% endif %}
+                            {% if globalAkCompany.fieldAkFacebook.getLink() %}
+                                <a href="{{ globalAkCompany.fieldAkFacebook.getUrl() }}"
+                                    target="_blank"
+                                    rel="nofollow"
+                                    class="transition-colors fill-primary-default md:hover:fill-secondary-default">
+                                    {{ svg('img/svg/facebook.svg') }}
+                                </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-4 mt-7 md:mt-0">
+                    <span class="text-20 font-normal text-black-default block md:!hidden mb-2">Menu</span>
+                    <ul class="columns-2 gap-x-10">
+                        {% for link in footerNav %}
+                            <li>
+                                <a href="{{ link.itemLink.getUrl() }}" class="lowercase transition-colors md:hover:text-secondary-default">
+                                    {{ link.itemLink.getText() }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-	</footer>
+        <div class="flex flex-wrap justify-between items-center py-3 md:py-0 md:h-[63px] relative z-30">
+            <div class="absolute block pointer-events-none md:hidden -left-6 top-0 h-full w-[calc(100%_+_48px)] bg-quaternary-default bg-opacity-30"></div>
+            <span class="inline-block mr-4">© {{ now|date('Y') }} angelo keirsebilck</span>
+            <div class="flex">
+                {% for link in legalNav %}
+                    <a href="{{ link.url }}" class="lowercase transition-colors md:hover:text-secondary-default">{{ link.title }}</a>
+                    {% if not loop.last %}
+                        <span class="mx-2">-</span>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</footer>
 {% endapply %}

@@ -25,7 +25,7 @@ module.exports = {
             40: [
                 '40px',
                 {
-                    lineHeight: '50px'
+                    lineHeight: '44px'
                 }
             ],
             31: [
@@ -40,10 +40,16 @@ module.exports = {
                     lineHeight: '30px'
                 }
             ],
+            22: [
+                '22px',
+                {
+                    lineHeight: '28px'
+                }
+            ],
             20: [
                 '20px',
                 {
-                    lineHeight: '28px'
+                    lineHeight: '26px'
                 }
             ]
         },
@@ -90,7 +96,7 @@ module.exports = {
                         },
                         strong: {
                             color: 'inherit',
-                            fontWeight: 'inherit',
+                            fontWeight: '300 !important',
                             backgroundImage: "url('/img/svg/marked3.svg')",
                             backgroundRepeat: 'no-repeat',
                             backgroundSize: '100% 22px',
@@ -113,6 +119,10 @@ module.exports = {
                             fontWeight: 500,
                             color: theme('colors.black.default'),
                             paddingLeft: '38px !important',
+
+                            '&:last-child': {
+                                marginBottom: '0 !important'
+                            },
 
                             '&::before': {
                                 position: 'absolute',

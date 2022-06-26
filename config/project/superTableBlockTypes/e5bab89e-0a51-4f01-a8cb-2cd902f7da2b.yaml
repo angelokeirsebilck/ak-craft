@@ -1,33 +1,71 @@
-field: 0a19b894-b243-4e76-a249-6602c5b5a90d # Left Column
+field: 0da2390c-51d1-4248-af7a-6ee8c649b48f # aK Cta Content
 fieldLayouts:
-  8e3449a3-4433-42c9-9f29-90f475371a76:
+  bdf138a9-ef40-49c7-9360-3dcad58dd015:
     tabs:
       -
         elements:
           -
-            fieldUid: 6a3e1418-ce26-4ddc-ac39-c59aff8fed94 # Text
+            fieldUid: 5a3f3bb9-8f78-4c9d-a52d-3df76229365d # Title
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 843c8831-dfdf-41fd-8e9c-d574fa574827
+            uid: d445c9f7-01df-4ba0-ae87-7b4fd6d26171
             warning: null
             width: 100
           -
-            fieldUid: 2830461d-5863-4055-a122-8d114a5fc2da # Link
+            fieldUid: 34ee3466-4339-498b-93d1-e9e1633a43e5 # Text
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fb816244-12dd-460d-a251-c796395e1ad2
+            uid: 245154a6-08c6-4d96-9e94-b94106d4a6e0
+            warning: null
+            width: 100
+          -
+            fieldUid: 9471bacf-aed1-4254-a3bb-2d6e14befc47 # Link
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07754067-8431-48ae-8473-c28aedc67985
             warning: null
             width: 100
         name: Content
-        uid: 9f169e55-86f3-48b2-8f46-73c32e760fad
+        uid: ced87750-e626-4b9e-900f-7494617e8b22
 fields:
-  6a3e1418-ce26-4ddc-ac39-c59aff8fed94: # Text
+  5a3f3bb9-8f78-4c9d-a52d-3df76229365d: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Title.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  34ee3466-4339-498b-93d1-e9e1633a43e5: # Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -44,7 +82,7 @@ fields:
       manualConfig: ''
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
+      redactorConfig: Simple.json
       removeEmptyTags: false
       removeInlineStyles: false
       removeNbsp: false
@@ -55,7 +93,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field
-  2830461d-5863-4055-a122-8d114a5fc2da: # Link
+  9471bacf-aed1-4254-a3bb-2d6e14befc47: # Link
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -116,5 +154,5 @@ fields:
           enabled: false
           sources: '*'
     translationKeyFormat: null
-    translationMethod: none
+    translationMethod: site
     type: lenz\linkfield\fields\LinkField

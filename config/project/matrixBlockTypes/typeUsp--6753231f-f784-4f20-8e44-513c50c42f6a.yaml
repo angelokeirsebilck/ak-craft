@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 50
           -
-            fieldUid: d8769a8f-a702-4ffb-8653-95bcd669d9af
+            fieldUid: d8769a8f-a702-4ffb-8653-95bcd669d9af # Text
             instructions: null
             label: null
             required: false
@@ -150,7 +150,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: custommodule\fields\BackgroundColor
-  d8769a8f-a702-4ffb-8653-95bcd669d9af:
+  d8769a8f-a702-4ffb-8653-95bcd669d9af: # Text
     columnSuffix: xeihsxje
     contentColumnType: text
     fieldGroup: null

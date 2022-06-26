@@ -8,7 +8,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-12 lg:gap-10 absolute top-0 left-0 w-full h-full">
+        <div class="grid grid-cols-12 lg:gap-10 absolute top-0 left-10 w-full h-full">
             <div class="col-span-10 md:col-span-9 bg-tertiary-default rounded-tr-2xl relative">
                 <div class="absolute w-[50vw] h-full top-0 left-[-50vw] bg-tertiary-default"></div>
             </div>
@@ -21,14 +21,7 @@
                 <span class="text-24 max-w-[700px]">{{ block.itemIntro }}</span>
                 {% if block.itemLink.getLink() %}
                     <div class="mt-8">
-                        {{
-                            macros.button(
-                                block.itemLink.getUrl(),
-                                block.itemLink.getText(),
-                                'btn-primary',
-                                'bg-primary-default'
-                            )
-                        }}
+                        {{ macros.button(block.itemLink.getUrl(), block.itemLink.getText(), 'btn-primary', 'bg-primary-default') }}
                     </div>
                 {% endif %}
             </div>
@@ -37,9 +30,7 @@
                     {% set optimizedImage = block.itemFigure.one().fieldHomeFigureImgOpt %}
                     <picture>
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
-                        <img src="{{ optimizedImage.src() }}"
-                            srcset="{{ optimizedImage.srcset() }}"
-                            sizes="{{ sizes }}" />
+                        <img src="{{ optimizedImage.src() }}" srcset="{{ optimizedImage.srcset() }}" sizes="{{ sizes }}" />
                     </picture>
                 {% endif %}
             </div>

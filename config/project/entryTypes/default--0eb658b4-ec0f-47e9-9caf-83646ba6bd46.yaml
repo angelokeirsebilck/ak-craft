@@ -1,0 +1,49 @@
+fieldLayouts:
+  67e19ce9-3413-448c-a926-1c075c695ef0:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: __blank__
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b902778e-ec1f-4b28-b6df-18e5a0fed813
+            warning: null
+            width: 100
+          -
+            fieldUid: 0da2390c-51d1-4248-af7a-6ee8c649b48f # aK Cta Content
+            instructions: null
+            label: __blank__
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cd70f41-8c77-47bb-8fb1-7945f6ba9870
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 1818d3d5-4af1-4441-8511-8fe5e31ccdbd
+handle: default
+hasTitleField: false
+name: Standaard
+section: 486d6ce3-ea2f-4adc-b36e-485764691fa3 # aK Cta
+sortOrder: 1
+titleFormat: '{fieldAkCtaContent.itemTitle|striptags}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

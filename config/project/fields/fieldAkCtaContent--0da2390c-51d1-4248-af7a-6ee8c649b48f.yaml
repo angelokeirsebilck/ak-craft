@@ -1,0 +1,44 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 85bcc920-ddf3-4a07-9a21-294989596b05 # aK
+handle: fieldAkCtaContent
+instructions: null
+name: 'aK Cta Content'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 979651102
+  columns:
+    __assoc__:
+      -
+        - 5a3f3bb9-8f78-4c9d-a52d-3df76229365d # Title
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 34ee3466-4339-498b-93d1-e9e1633a43e5 # Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 9471bacf-aed1-4254-a3bb-2d6e14befc47 # Link
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_fieldakctacontent}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: true
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

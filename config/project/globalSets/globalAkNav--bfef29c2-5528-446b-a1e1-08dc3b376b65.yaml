@@ -25,6 +25,20 @@ fieldLayouts:
             width: 100
         name: Main
         uid: 66d88879-ff94-4127-a763-8111b65edb5f
+      -
+        elements:
+          -
+            fieldUid: 43d5e63c-5af2-4340-aaac-d1cbb0357237 # aK Footer Navigation
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8d96d586-e8f1-4078-8a8b-bd698016c896
+            warning: null
+            width: 100
+        name: Footer
+        uid: 4d8582ac-e054-4277-9389-1245bfeba99c
 handle: globalAkNav
 name: 'aK Navigation'
 sortOrder: 7
