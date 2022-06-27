@@ -60,6 +60,6 @@
     background-image: url('/img/svg/underline.svg');
     background-repeat: no-repeat;
     background-size: 100% 16px;
-    background-position: bottom;
+    background-position: bottom -3px left;
     white-space: nowrap;
 }
