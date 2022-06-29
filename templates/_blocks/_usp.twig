@@ -1,14 +1,14 @@
 {% import '_macros/_tools.twig' as macros %}
 {% set uspList = block.itemList.all() %}
 
-<div class="container section relative">
+<div class="container relative section">
     <div class="relative">
         <div class="absolute h-full w-[calc(100%_/_12_*9)] z-10 top-20 left-10 bg-gradient-to-b rounded-tr-xl rounded-br-2xl from-secondary-default to-white-default"></div>
         <div class="absolute h-full w-[50vw] z-10 top-20 left-[calc(-50vw_+_4rem)] bg-gradient-to-b from-secondary-default to-white-default"></div>
-        <div class="md:grid grid-cols-12 gap-10 relative z-20">
-            <div class="col-span-7 rounded-2xl bg-white-default pt-0 p-6 md:p-8">
+        <div class="relative z-20 grid-cols-12 gap-10 md:grid">
+            <div class="col-span-7 p-6 pt-0 rounded-2xl bg-white-default md:p-8">
                 {% if block.itemTitle %}
-                    <h2 class="text-31 md:text-48 font-medium">
+                    <h2 class="font-medium text-31 md:text-48">
                         {{ block.itemTitle|nl2br }}
                     </h2>
                 {% endif %}
@@ -20,11 +20,11 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-12 gap-5 md:gap-10 mt-6 md:mt-12 relative z-20">
+        <div class="relative z-20 grid grid-cols-12 gap-5 mt-6 md:gap-10 md:mt-12">
             {% for item in uspList %}
                 {% set content = item.fieldAkUspContent.one() %}
                 <div class="col-span-12 md:!col-span-4 rounded-2xl border-3 border-secondary-default p-6 bg-white-default">
-                    <h3 class="text-24 md:text-31 font-medium">
+                    <h3 class="font-medium text-24 md:text-31">
                         {{ item.title }}
                     </h3>
 
