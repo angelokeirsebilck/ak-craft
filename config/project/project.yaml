@@ -1,4 +1,4 @@
-dateModified: 1656266613
+dateModified: 1656477326
 elementSources:
   craft\elements\Entry:
     -
@@ -123,6 +123,20 @@ fs:
       subfolder: portfolio/uploads/images
     type: vaersaagod\dospaces\Fs
     url: '@doBaseUrl'
+  videosAk:
+    hasUrls: true
+    name: 'Videos AK'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: ak/uploads/videos
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
 meta:
   __names__:
     0a19b894-b243-4e76-a249-6602c5b5a90d: 'Left Column' # Left Column
@@ -134,6 +148,7 @@ meta:
     0e3f5148-d0f0-44ba-982d-4cb08958c9d5: Image # Image
     0e29d1e7-3766-416c-a6aa-f559b86928a2: 'Kerotec CTA' # Kerotec CTA
     0eb658b4-ec0f-47e9-9caf-83646ba6bd46: Standaard # Standaard
+    0f16953f-3305-4d08-a2fc-8111aa0504e6: 'Videos Ak' # Videos Ak
     1adf90bc-b79b-41e4-90a4-736a424758cc: Link # Link
     1b153723-1ae0-47e2-869c-e118a6c0bbe2: Cta # Cta
     1d3c7a6d-c0e4-4229-928f-7d176da8e6f4: 'Text / Media' # Text / Media
@@ -235,6 +250,7 @@ meta:
     33773167-d760-4bd1-8da7-270c3802070e: 'Kerotec SEO Descripton' # Kerotec SEO Descripton
     73259272-4635-47f4-8189-da773221ec21: 'Kerotec Company Info' # Kerotec Company Info
     73565395-0f0b-4846-b8db-e5b9eb2b5ec9: SEO # SEO
+    a4ad06d6-30ff-410d-bb81-c1ea7227dd84: Video # Video
     a4c67e6a-9c78-47d7-b3f8-c5e687a624af: Portfolio # Portfolio
     a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
     a607b8a6-e61c-47cc-b593-f34192c7d9a7: 'Show Party Icon' # Show Party Icon

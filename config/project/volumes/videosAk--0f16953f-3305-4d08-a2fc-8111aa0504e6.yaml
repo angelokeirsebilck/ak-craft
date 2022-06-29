@@ -1,5 +1,5 @@
 fieldLayouts:
-  0581287c-adf6-4a6e-9379-523497a37ab2:
+  424b5dd1-acdd-4291-962a-399bdaec3ecc:
     tabs:
       -
         elementCondition: null
@@ -25,31 +25,19 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 47bf3bc2-ae32-4f68-8de3-4568e1848810
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: dd47c6f3-2579-4634-a86b-44112604b851 # aK Content
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c8a7e29c-5487-4fac-a8ff-0105eebec4f0
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 61d56068-5098-4622-b8af-73f6994f6447
             userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        uid: 9a2452c2-9a22-43bc-a184-e6abc7bde92f
+        uid: 70d54ec3-f4e9-49e3-90b4-03ea9b42d99d
         userCondition: null
-handle: default
-hasTitleField: true
-name: Standaard
-section: ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5 # aK Pages
-sortOrder: 1
-titleFormat: null
+fs: videosAk
+handle: videosAk
+name: 'Videos Ak'
+sortOrder: 5
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

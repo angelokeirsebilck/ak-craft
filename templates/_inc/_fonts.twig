@@ -11,9 +11,10 @@
     as="font"
     crossorigin="anonymous" /> #}
 <style>
-    @font-face { font-family: 'Poppins'; font-weight: 300; font-style: normal; font-display: swap; } @font-face {
-    font-family: 'Poppins'; font-weight: 400; font-style: normal; font-display: swap; } @font-face { font-family:
-    'Poppins'; font-weight: 500; font-style: normal; font-display: swap; }
+    @font-face {src:url('{{ getenv('BASE_URL') }}/fonts/Poppins-Light.woff2'); font-family: 'Poppins'; font-weight: 300; font-style: normal;
+    font-display: swap; } @font-face {src:url('{{ getenv('BASE_URL') }}/fonts/Poppins-Regular.woff2'); font-family: 'Poppins'; font-weight: 400;
+    font-style: normal; font-display: swap; } @font-face {src:url('{{ getenv('BASE_URL') }}/fonts/Poppins-Medium.woff2'); font-family: 'Poppins';
+    font-weight: 500; font-style: normal; font-display: swap; }
 
     {# @font-face { font-family: 'JetBrains Mono', monospace; font-weight: 400;
     font-style: normal; font-display: swap; }

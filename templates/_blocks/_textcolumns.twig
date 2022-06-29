@@ -9,14 +9,7 @@
         {% endif %} #}
         <div class="grid-cols-12 gap-10 md:grid">
             <div class="col-span-7 relative after:h-full after:w-full after:absolute after:top-6 after:rounded-2xl after:left-6 after:content-[''] after:z-0 after:block after:transform after:bg-secondary-default">
-                {% if block.itemSpanBackground %}
-                    <div class="{{
-                        block.itemBackgroundColor.value == 'white'
-                            ? 'bg-bg-default'
-                            : 'bg-white-default'
-                        }} -left-[50vw] top-0 absolute h-full w-[50vw]"></div>
-                {% endif %}
-                <div class="relative z-10 p-6 prose md:prose-lg max-w-none bg-tertiary-default rounded-2xl md:p-8">
+                <div class="relative z-10 h-full p-6 prose md:prose-lg max-w-none bg-tertiary-default rounded-2xl md:p-8">
                     {% if block.itemTitle %}
                         <h2 class="font-medium text-31 md:text-48">
                             {{ block.itemTitle|nl2br }}
@@ -52,4 +45,13 @@
             </div>
         </div>
     </div>
+    {% if block.itemVideo.one() %}
+        <div class="container relative z-10 mt-6 md:mt-16">
+            <div class="grid-cols-12 gap-10 md:grid">
+                <video class="col-span-10 col-start-2 rounded-2xl" width="1194" height="522" autoplay muted loop playsinline>
+                    <source src="{{ block.itemVideo.one().url }}" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    {% endif %}
 </div>

@@ -1,14 +1,14 @@
-{% extends "_layout/_base.twig" %}
-{% set content = entry.fieldContentBuilder.all() %}
+{% extends '_layout/_base.twig' %}
+{% set content = entry.fieldAkContent.all() %}
 
 {% block content %}
-    {% include "_inc/_title" with {
+    {% include '_inc/_title' with {
         title: entry.title
     } %}
+
     {% for block in content %}
-        {% include "/_blocks/_#{block.type.handle|replace('type','')|lower}.twig" with {
-            "block": block
+        {% include "/_blocks/_#{block.type.handle|replace('type', '')|lower}.twig" with {
+            block: block
         } %}
     {% endfor %}
-
 {% endblock %}

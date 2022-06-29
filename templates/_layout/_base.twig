@@ -21,11 +21,11 @@
 
 <body>
 
-<div id="wrapper" class="d-flex flex-column min-vh-100 text-black-default text-copy font-light">
+<div id="wrapper" class="flex flex-col min-h-screen font-light text-black-default text-copy">
     {% block header %}
         {% include '_layout/_header' %}
     {% endblock %}
-    <main class="position-relative overflow-hidden">
+    <main class="overflow-hidden position-relative grow">
         {% block content %}{% endblock %}
     </main>
     {% block footer %}

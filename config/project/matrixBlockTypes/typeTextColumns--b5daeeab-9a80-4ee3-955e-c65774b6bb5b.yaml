@@ -3,8 +3,10 @@ fieldLayouts:
   1fd4cffc-d3d2-48f9-8bda-a0a31c5ff79a:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 47e0d4b9-cda8-4353-b888-56e7d00e7126 # Title
             instructions: null
             label: null
@@ -12,9 +14,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a9819af6-8181-4ced-a550-a89e8ddbd558
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 0a19b894-b243-4e76-a249-6602c5b5a90d # Left Column
             instructions: null
             label: null
@@ -22,9 +26,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8b553c9c-dda3-40e0-8ed6-91632150fbe7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 71b63819-458c-4da8-a4f3-b417bed19e90 # Right Column
             instructions: null
             label: null
@@ -32,30 +38,24 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 342c7d4e-8c56-4017-9ab3-52510f8bdb45
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 99b425f2-4418-4689-8935-4a37ac7981e4 # Background Color
+            elementCondition: null
+            fieldUid: a4ad06d6-30ff-410d-bb81-c1ea7227dd84 # Video
             instructions: null
             label: null
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 95938d96-97fe-4bd1-82f0-41ee73544af1
-            warning: null
-            width: 50
-          -
-            fieldUid: 81f6e926-358d-49b5-9c11-b9b21d524b08 # Span Background
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4091c878-5ed9-45d5-a8d2-bd358f269969
+            uid: 3c89a732-b7f0-4e4b-9cd6-1b8eb27eb590
+            userCondition: null
             warning: null
             width: 25
         name: Content
         uid: b12d2eaf-dc10-4813-acef-cf21718b41dc
+        userCondition: null
 fields:
   0a19b894-b243-4e76-a249-6602c5b5a90d: # Left Column
     columnSuffix: null
@@ -67,7 +67,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1650799965
+      changedFieldIndicator: 972137399
       columns:
         __assoc__:
           -
@@ -125,7 +125,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1899246244
+      changedFieldIndicator: 464842051
       columns:
         __assoc__:
           -
@@ -153,61 +153,55 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField
-  81f6e926-358d-49b5-9c11-b9b21d524b08: # Span Background
-    columnSuffix: mivddjfc
-    contentColumnType: boolean
-    fieldGroup: null
-    handle: itemSpanBackground
-    instructions: null
-    name: 'Span Background'
-    searchable: false
-    settings:
-      default: false
-      offLabel: null
-      onLabel: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
-  99b425f2-4418-4689-8935-4a37ac7981e4: # Background Color
-    columnSuffix: izhtqggc
+  a4ad06d6-30ff-410d-bb81-c1ea7227dd84: # Video
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
-    handle: itemBackgroundColor
+    handle: itemVideo
     instructions: null
-    name: 'Background Color'
+    name: Video
     searchable: false
     settings:
-      options:
-        -
-          __assoc__:
-            -
-              - label
-              - 'Choose a color'
-            -
-              - value
-              - ''
-            -
-              - disabled
-              - true
-        -
-          __assoc__:
-            -
-              - label
-              - White
-            -
-              - value
-              - white
-        -
-          __assoc__:
-            -
-              - label
-              - Dark
-            -
-              - value
-              - dark
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - MP4
+      defaultUploadLocationSource: 'volume:0f16953f-3305-4d08-a2fc-8111aa0504e6' # Videos Ak
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources:
+        - 'volume:0f16953f-3305-4d08-a2fc-8111aa0504e6' # Videos Ak
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
     translationKeyFormat: null
-    translationMethod: none
-    type: custommodule\fields\BackgroundColor
+    translationMethod: site
+    type: craft\fields\Assets
 handle: typeTextColumns
 name: 'Text Columns'
 sortOrder: 2

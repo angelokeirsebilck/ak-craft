@@ -3,8 +3,10 @@ fieldLayouts:
   60ef6f76-176b-41ba-ad95-a5088684d050:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 5f218619-1454-480f-af32-eb36b417b664 # Title
             instructions: null
             label: null
@@ -12,9 +14,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 7c8c28e1-6354-4b60-a7ed-6f0271de9b15
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: d8769a8f-a702-4ffb-8653-95bcd669d9af # Text
             instructions: null
             label: null
@@ -22,9 +26,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 1c1afa69-f906-4460-95fd-e62837119616
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 808473a9-f8f4-419c-b0eb-af5e1d297fa0 # Background Color
             instructions: null
             label: null
@@ -32,9 +38,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: af46f8f5-8489-47e0-a355-5a3f536c2d4d
+            userCondition: null
             warning: null
             width: 25
           -
+            elementCondition: null
             fieldUid: 3688c405-67b9-40d1-a951-d38d09375693 # List
             instructions: null
             label: null
@@ -42,10 +50,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 4f837ffe-b78b-4f7c-a3c1-9fa9c1a9e1bc
+            userCondition: null
             warning: null
             width: 50
         name: Content
         uid: febe609e-382e-4bf6-b7a7-64d72a84b14b
+        userCondition: null
 fields:
   5f218619-1454-480f-af32-eb36b417b664: # Title
     columnSuffix: rupzydte
