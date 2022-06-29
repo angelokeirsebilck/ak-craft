@@ -30,7 +30,11 @@
                     {% set optimizedImage = block.itemFigure.one().fieldHomeFigureImgOpt %}
                     <picture>
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
-                        <img src="{{ optimizedImage.src() }}" srcset="{{ optimizedImage.srcset() }}" sizes="{{ sizes }}" />
+                        <img src="{{ optimizedImage.src() }}"
+                            srcset="{{ optimizedImage.srcset() }}"
+                            width="{{ block.itemFigure.one().getWidth() }}"
+                            height="{{ block.itemFigure.one().getHeight() }}"
+                            sizes="{{ sizes }}" />
                     </picture>
                 {% endif %}
             </div>
