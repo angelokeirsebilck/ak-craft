@@ -34,7 +34,10 @@ export default defineConfig(({ command }) => ({
         critical({
             criticalUrl: 'http://localhost',
             criticalBase: 'web/dist/criticalcss/',
-            criticalPages: [{ uri: '/', template: 'index' }],
+            criticalPages: [
+                { uri: '/', template: 'index' },
+                { uri: '/craft-cms', template: 'pages/_entry' }
+            ],
             criticalConfig: {
                 ignore: ['.underline']
             }
