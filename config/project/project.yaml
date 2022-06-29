@@ -1,4 +1,4 @@
-dateModified: 1656477326
+dateModified: 1656531558
 elementSources:
   craft\elements\Entry:
     -
@@ -177,6 +177,7 @@ meta:
     8b995879-332a-4e28-bb82-eb5b4e3b42e2: Title # Title
     8c28eaec-f7d2-48b3-b106-7a49dc00230f: 'aK Tel' # aK Tel
     8cf35363-80c2-4f15-aa4a-34ddbda37b68: 'Legal Pages' # Legal Pages
+    8e4ea5fe-b25a-4e8b-99b9-810b231cf066: Title # Title
     8ed4ac99-1404-4f75-9d5f-6d7454d9e078: Text # Text
     9b95db5c-d503-489b-8025-40c72a236aed: 'Link Label' # Link Label
     9ba41756-ffd1-42e9-a1ab-479d225d4919: Title # Title
@@ -220,6 +221,7 @@ meta:
     486d6ce3-ea2f-4adc-b36e-485764691fa3: 'aK Cta' # aK Cta
     501e8a5c-932c-4e25-b2c6-7dfb53db6e41: Intro # Intro
     602b45f2-9a9d-4b49-b368-c0eddd131c82: 'Show Arrow Down' # Show Arrow Down
+    713c40f9-6659-4eb7-98d8-943cfa224d0b: Text # Text
     720b40eb-b03a-414f-9325-147c8050f443: 'aK EN' # aK EN
     771bfdd2-6549-4fe3-953a-9d5415ecd1f0: Text # Text
     851e7b15-fc39-48e5-b7d5-ac9644bd6d43: 'Thanks Page' # Thanks Page
@@ -229,6 +231,7 @@ meta:
     5690ad28-4a4d-4900-b69b-02d69030f2c5: 'aK NL' # aK NL
     6081ef70-29ac-4075-a579-f5be60125444: Label # Label
     8935bcf9-eec9-483e-85c1-d7b96d0f351d: 'Background Color' # Background Color
+    09001b44-38ee-4df8-b306-1f7e833d64a3: Image # Image
     9471bacf-aed1-4254-a3bb-2d6e14befc47: Link # Link
     9559b22c-c5b0-4f50-ae0b-2d627bb0beb6: Title # Title
     20378ac5-a6a7-43d3-87a7-a0d9fcd88b44: 'Images KEROTEC' # Images KEROTEC
@@ -240,6 +243,7 @@ meta:
     91815f01-4d01-4b69-9988-b6fd3e599549: 'Background Color' # Background Color
     92213a96-10dd-4374-90e8-91000f082c2f: 'Kerotec NL' # Kerotec NL
     108034c7-d987-4de8-886e-09d9d92e2496: Text # Text
+    156625c5-4872-4742-bd80-be192c28406d: 'Accordion / Image' # Accordion / Image
     195519cf-1e81-4891-983a-4ff3756cd22a: 'aK Home Banner' # aK Home Banner
     808473a9-f8f4-419c-b0eb-af5e1d297fa0: 'Background Color' # Background Color
     2830461d-5863-4055-a122-8d114a5fc2da: Link # Link
@@ -250,6 +254,7 @@ meta:
     33773167-d760-4bd1-8da7-270c3802070e: 'Kerotec SEO Descripton' # Kerotec SEO Descripton
     73259272-4635-47f4-8189-da773221ec21: 'Kerotec Company Info' # Kerotec Company Info
     73565395-0f0b-4846-b8db-e5b9eb2b5ec9: SEO # SEO
+    a0c54731-967f-41e9-b5f1-dd8a24a0eaca: 'Accordion List' # Accordion List
     a4ad06d6-30ff-410d-bb81-c1ea7227dd84: Video # Video
     a4c67e6a-9c78-47d7-b3f8-c5e687a624af: Portfolio # Portfolio
     a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
@@ -290,6 +295,7 @@ meta:
     cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard
     ce47be10-c35f-4ff2-b8e6-40055deb9614: Figure # Figure
     cf0736f7-9894-4c14-85c7-8f4153818c72: 'Tel 1' # Tel 1
+    d0d38edf-4c1c-4adb-8f66-74e7bd8999ba: Title # Title
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
     d602b57e-889e-4854-b2c2-20f6725f0d9a: Intro # Intro
     d6037e3b-a18e-4e22-84b7-d7aac2d5c24e: Editor # Editor
@@ -450,6 +456,7 @@ plugins:
 system:
   edition: pro
   live: true
-  name: 'AK Craft'
+  name: 'Angelo Keirsebilck'
+  retryDuration: null
   schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles

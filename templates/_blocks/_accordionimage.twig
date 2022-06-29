@@ -1,0 +1,13 @@
+{% import '_macros/_tools.twig' as macros %}
+
+<div class="container">
+    <div class="grid-cols-12 gap-10 md:grid">
+        <div class="col-span-5">
+            {% if block.itemTitle %}
+                <h2 class="font-medium text-31 md:text-48">
+                    {{ block.itemTitle }}
+                </h2>
+            {% endif %}
+        </div>
+    </div>
+</div>

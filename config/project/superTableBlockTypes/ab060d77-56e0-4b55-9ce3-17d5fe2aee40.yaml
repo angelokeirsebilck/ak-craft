@@ -1,39 +1,59 @@
-field: 71b63819-458c-4da8-a4f3-b417bed19e90 # Right Column
+field: a0c54731-967f-41e9-b5f1-dd8a24a0eaca # Accordion List
 fieldLayouts:
-  49e95684-3fac-41b5-a669-69768e0041fd:
+  ba372e18-bfcf-4d61-94f3-f4d0fe81aa9b:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: c572752c-6407-4ce5-9d56-3cc22352646c # Title
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b4a4a4f6-b465-463b-9be5-1f64193a7a36
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 77b39d19-3553-4a62-9302-c3ccf418e7dd # Text
+            fieldUid: 8e4ea5fe-b25a-4e8b-99b9-810b231cf066 # Title
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0bc18d2a-ab63-4918-8df0-55d88de37763
+            uid: 057d5040-c5d5-4714-bb74-9d8129420fee
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 713c40f9-6659-4eb7-98d8-943cfa224d0b # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95f6c0ec-3b34-451c-ad50-ff1403d08bee
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 97b19736-0ac3-4bf1-b514-dc4180ad1283
+        uid: 8a3e74b8-c557-4c40-a20e-e326d7d6a303
         userCondition: null
 fields:
-  77b39d19-3553-4a62-9302-c3ccf418e7dd: # Text
+  8e4ea5fe-b25a-4e8b-99b9-810b231cf066: # Title
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemTitle
+    instructions: null
+    name: Title
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  713c40f9-6659-4eb7-98d8-943cfa224d0b: # Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -50,35 +70,7 @@ fields:
       manualConfig: ''
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: null
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      uiMode: enlarged
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\redactor\Field
-  c572752c-6407-4ce5-9d56-3cc22352646c: # Title
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: itemTitle
-    instructions: null
-    name: Title
-    searchable: false
-    settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: null
-      purifyHtml: true
-      redactorConfig: Title.json
+      redactorConfig: Simple.json
       removeEmptyTags: false
       removeInlineStyles: false
       removeNbsp: false
