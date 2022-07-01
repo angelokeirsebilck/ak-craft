@@ -1,9 +1,9 @@
-columnSuffix: qujsqybm
+columnSuffix: pphdnelx
 contentColumnType: text
 fieldGroup: c964ef51-ae37-4a14-aed6-fd8dc72f17e2 # aK Image Optimize
-handle: fieldHomeFigureImgOpt
+handle: fieldStandardImageOptimize
 instructions: null
-name: 'Home Figure Image Optimize'
+name: 'Standard Image Optimize'
 searchable: false
 settings:
   displayDominantColorPalette: true
@@ -14,11 +14,107 @@ settings:
       -
         - imagesAK
         -
-          - Home
+          - Accordion-Image
   ignoreFilesOfType:
     - image/svg
     - image/gif
   variants:
+    -
+      __assoc__:
+        -
+          - width
+          - '1536'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '16'
+        -
+          - aspectRatioY
+          - '9'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+    -
+      __assoc__:
+        -
+          - width
+          - '1280'
+        -
+          - useAspectRatio
+          - ''
+        -
+          - aspectRatioX
+          - '16'
+        -
+          - aspectRatioY
+          - '9'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+    -
+      __assoc__:
+        -
+          - width
+          - '1024'
+        -
+          - useAspectRatio
+          - ''
+        -
+          - aspectRatioX
+          - '16'
+        -
+          - aspectRatioY
+          - '9'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+    -
+      __assoc__:
+        -
+          - width
+          - '768'
+        -
+          - useAspectRatio
+          - ''
+        -
+          - aspectRatioX
+          - '4'
+        -
+          - aspectRatioY
+          - '3'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '60'
+        -
+          - format
+          - jpg
     -
       __assoc__:
         -
@@ -29,10 +125,10 @@ settings:
           - ''
         -
           - aspectRatioX
-          - '5'
+          - '4'
         -
           - aspectRatioY
-          - '8'
+          - '3'
         -
           - retinaSizes
           -
@@ -42,55 +138,7 @@ settings:
           - '60'
         -
           - format
-          - png
-    -
-      __assoc__:
-        -
-          - width
-          - '550'
-        -
-          - useAspectRatio
-          - ''
-        -
-          - aspectRatioX
-          - '16'
-        -
-          - aspectRatioY
-          - '9'
-        -
-          - retinaSizes
-          -
-            - '1'
-        -
-          - quality
-          - '82'
-        -
-          - format
-          - png
-    -
-      __assoc__:
-        -
-          - width
-          - '470'
-        -
-          - useAspectRatio
-          - ''
-        -
-          - aspectRatioX
-          - '16'
-        -
-          - aspectRatioY
-          - '9'
-        -
-          - retinaSizes
-          -
-            - '1'
-        -
-          - quality
-          - '82'
-        -
-          - format
-          - png
+          - jpg
     -
       __assoc__:
         -
@@ -98,13 +146,13 @@ settings:
           - '375'
         -
           - useAspectRatio
-          - ''
+          - '1'
         -
           - aspectRatioX
-          - '5'
+          - '16'
         -
           - aspectRatioY
-          - '8'
+          - '9'
         -
           - retinaSizes
           -
@@ -114,7 +162,7 @@ settings:
           - '82'
         -
           - format
-          - png
+          - jpg
 translationKeyFormat: null
 translationMethod: none
 type: nystudio107\imageoptimize\fields\OptimizedImages

@@ -1,13 +1,39 @@
 {% import '_macros/_tools.twig' as macros %}
+{% set accordionData = block.itemList.collect() %}
 
-<div class="container">
-    <div class="grid-cols-12 gap-10 md:grid">
-        <div class="col-span-5">
-            {% if block.itemTitle %}
-                <h2 class="font-medium text-31 md:text-48">
-                    {{ block.itemTitle }}
-                </h2>
-            {% endif %}
+{# {% dd accordionData %} #}
+
+<div class="section js-accordionImages">
+    <div class="container relative">
+        <div class="grid-cols-12 gap-10 lg:grid">
+            <div class="col-span-5">
+                {% if block.itemTitle %}
+                    <h2 class="font-medium text-31 lg:text-48">
+                        {{ block.itemTitle }}
+                    </h2>
+                {% endif %}
+            </div>
+        </div>
+        <div class="relative grid-cols-12 gap-10 lg:grid">
+            <div class="js-background bg-secondary-light absolute top-6 left-1/2 w-[50vw] rounded-2xl"></div>
+            <div class="relative z-10 col-span-5">
+                Accordion<div class="h-[450px]"></div>
+            </div>
+            <div class="relative z-10 col-span-5 col-start-8 js-imgContainer">
+                {% if block.itemImage.one() %}
+                    {% set optimizedImage = block.itemImage.one().fieldStandardImageOptimize %}
+                    {% set sizes = '(max-width: 1024px) 100vw, 50vw' %}
+                    <picture>
+                        <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
+                        <img src="{{ optimizedImage.src() }}"
+                            srcset="{{ optimizedImage.srcset() }}"
+                            width="{{ block.itemImage.one().getWidth() }}"
+                            height="{{ block.itemImage.one().getHeight() }}"
+                            sizes="{{ sizes }}"
+                            class="rounded-2xl lg:max-w-none" />
+                    </picture>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
