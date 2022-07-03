@@ -1,7 +1,7 @@
 const { url } = require('inspector')
 
 module.exports = {
-    content: ['./templates/**/*.twig'],
+    content: ['./templates/**/*.twig', './src/vue/**/*.vue'],
     theme: {
         fontSize: {
             copy: [

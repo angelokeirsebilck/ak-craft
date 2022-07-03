@@ -1,7 +1,4 @@
 {% import '_macros/_tools.twig' as macros %}
-{% set accordionData = block.itemList.collect() %}
-
-{# {% dd accordionData %} #}
 
 <div class="section js-accordionImages">
     <div class="container relative">
@@ -15,15 +12,33 @@
             </div>
         </div>
         <div class="relative grid-cols-12 gap-10 lg:grid">
-            <div class="js-background bg-secondary-light absolute top-6 left-1/2 w-[50vw] rounded-2xl"></div>
-            <div class="relative z-10 col-span-5">
-                Accordion<div class="h-[450px]"></div>
+            <div class="js-accordionImageBackground hidden lg:block bg-secondary-light absolute top-6 left-1/2 w-[50vw] rounded-2xl"></div>
+            <div class="relative z-10 col-span-5 mb-10 js-accordion lg:mb-0">
+                {% set accordionData = block.itemList.all() %}
+
+                {% set accordionDataVue = [] %}
+
+                {% for item in accordionData %}
+                    {% set accordionDataVue =
+                        accordionDataVue|merge(
+                            [
+                                {
+                                    itemTitle: item.itemTitle,
+                                    itemText: item.itemText
+                                }
+                            ]
+                        )
+                    %}
+                {% endfor %}
+
+                <Accordion :items="{{ accordionDataVue|json_encode }}"></Accordion>
             </div>
             <div class="relative z-10 col-span-5 col-start-8 js-imgContainer">
+                <div class="absolute z-10 block w-full h-full bg-secondary-light top-6 left-6 rounded-2xl lg:hidden"></div>
                 {% if block.itemImage.one() %}
                     {% set optimizedImage = block.itemImage.one().fieldStandardImageOptimize %}
                     {% set sizes = '(max-width: 1024px) 100vw, 50vw' %}
-                    <picture>
+                    <picture class="relative z-20">
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
                         <img src="{{ optimizedImage.src() }}"
                             srcset="{{ optimizedImage.srcset() }}"

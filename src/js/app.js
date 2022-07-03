@@ -1,15 +1,24 @@
 import '@/css/app.css'
 
-// import { createApp } from 'vue'
+import { createApp, defineAsyncComponent } from 'vue'
 
 // import ConfettiParty from '@/vue/ConfettiParty.vue'
 
 const main = async () => {
-    // Create our vue instance
-    // const app = createApp(ConfettiParty);
-    // // Mount the app
-    // app.mount('.confetti');
-    // app.mount('.confetti');
+    // Create our vue instances
+
+    if (document.querySelectorAll('.js-accordion').length > 0) {
+        const Accordion = defineAsyncComponent(() =>
+            import('../vue/components/accordion/Accordion.vue')
+        )
+
+        document.querySelectorAll('.js-accordion').forEach((accordion) => {
+            const app = createApp({})
+            app.component('Accordion', Accordion)
+
+            app.mount(accordion)
+        })
+    }
 }
 
 const accordionImageSize = (items) => {
@@ -21,7 +30,9 @@ const accordionImageSize = (items) => {
         const remainingWidth = (window.innerWidth - containerWidth) / 2
 
         const imageContainer = container.querySelector('.js-imgContainer')
-        const background = container.querySelector('.js-background')
+        const background = container.querySelector(
+            '.js-accordionImageBackground'
+        )
 
         const img = container.querySelector('img')
         background.style.height = `${img.offsetHeight}px`
