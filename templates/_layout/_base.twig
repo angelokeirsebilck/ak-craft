@@ -5,6 +5,9 @@
     {% apply spaceless %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1{% if devMode %},user-scalable=no{% endif %}">
+        
+        <link rel="dns-prefetch" href="{{ siteUrl }}">
+        <link rel="preconnect" href="{{ siteUrl }}" crossorigin="">
 
         {{ craft.vite.script("src/js/app.js") }}
 
