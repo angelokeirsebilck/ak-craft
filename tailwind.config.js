@@ -3,6 +3,9 @@ const { url } = require('inspector')
 module.exports = {
     content: ['./templates/**/*.twig', './src/vue/**/*.vue'],
     theme: {
+        fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+        },
         fontSize: {
             copy: [
                 '18px',
