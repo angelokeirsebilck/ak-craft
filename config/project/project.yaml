@@ -1,4 +1,4 @@
-dateModified: 1656649293
+dateModified: 1656827582
 elementSources:
   craft\elements\Entry:
     -
@@ -326,6 +326,93 @@ meta:
     fbd049a5-5396-464a-9c6d-ffc6ffbe7216: 'Kerotec SEO Title' # Kerotec SEO Title
     fd13a2dc-8740-406f-a266-ef3ec9f0f684: 'Kerotec USP' # Kerotec USP
 plugins:
+  blitz:
+    edition: standard
+    enabled: true
+    schemaVersion: 4.1.2
+    settings:
+      apiKey: ''
+      cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
+      cacheDuration: null
+      cacheElementQueries: true
+      cacheElements: true
+      cacheGeneratorSettings:
+        __assoc__:
+          -
+            - concurrency
+            - '3'
+      cacheGeneratorType: putyourlightson\blitz\drivers\generators\HttpGenerator
+      cacheNonHtmlResponses: false
+      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
+      cacheStorageSettings:
+        __assoc__:
+          -
+            - folderPath
+            - '@webroot/cache/blitz'
+          -
+            - createGzipFiles
+            - ''
+          -
+            - createBrotliFiles
+            - ''
+      cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
+      cachingEnabled: true
+      debug: false
+      deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
+      driverJobPriority: 100
+      excludedQueryStringParams:
+        -
+          __assoc__:
+            -
+              - siteId
+              - ''
+            -
+              - queryStringParam
+              - gclid
+        -
+          __assoc__:
+            -
+              - siteId
+              - ''
+            -
+              - queryStringParam
+              - fbclid
+      generatePagesWithQueryStringParams: true
+      hintsEnabled: true
+      includedQueryStringParams:
+        -
+          __assoc__:
+            -
+              - siteId
+              - ''
+            -
+              - queryStringParam
+              - '.*'
+      includedUriPatterns:
+        -
+          __assoc__:
+            -
+              - siteId
+              - '1'
+            -
+              - uriPattern
+              - '.*'
+      injectScriptEvent: DOMContentLoaded
+      integrations:
+        - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
+        - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
+      maxRetryAttempts: 10
+      mutexTimeout: 1
+      outputComments: true
+      queryStringCaching: 0
+      queueJobTtr: 300
+      refreshCacheAutomaticallyForGlobals: true
+      refreshCacheJobPriority: 10
+      refreshCacheWhenElementMovedInStructure: true
+      refreshCacheWhenElementSavedNotLive: false
+      refreshCacheWhenElementSavedUnchanged: false
+      refreshMode: 3
+      sendPoweredByHeader: true
   dospaces:
     edition: standard
     enabled: true
