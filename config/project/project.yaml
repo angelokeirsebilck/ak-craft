@@ -1,4 +1,4 @@
-dateModified: 1656827582
+dateModified: 1656870317
 elementSources:
   craft\elements\Entry:
     -
@@ -356,7 +356,7 @@ plugins:
             - createBrotliFiles
             - ''
       cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
-      cachingEnabled: true
+      cachingEnabled: false
       debug: false
       deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
       driverJobPriority: 100
