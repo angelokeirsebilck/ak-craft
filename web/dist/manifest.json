@@ -1,11 +1,23 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.b3094192.js",
+    "file": "assets/app.0ccaf679.js",
     "src": "src/js/app.js",
     "isEntry": true,
-    "css": [
-      "assets/app.661c04ad.css"
+    "dynamicImports": [
+      "src/vue/components/accordion/Accordion.vue"
     ],
-    "integrity": "sha384-ydQSSsK/Nu5L27MR/LW1f9xtmmaPUx/GjraT+C+ELSzo13EYtiw+2YAJjGdPKcux"
+    "css": [
+      "assets/app.286482f6.css"
+    ],
+    "integrity": "sha384-dMQQsn3bJoYmd2DfcurhyFmFXTNvANgK/HAzTkoHqNIE1pE0aHFNNMuNeY/Cx3Vv"
+  },
+  "src/vue/components/accordion/Accordion.vue": {
+    "file": "assets/Accordion.b0fc48a2.js",
+    "src": "src/vue/components/accordion/Accordion.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/js/app.js"
+    ],
+    "integrity": "sha384-tKHF5cGy6mOVi3wTIreG9OT+vtiiAuk0yuqhOoykZ1XNUBeksEZdHYKkuXtzF8dK"
   }
 }

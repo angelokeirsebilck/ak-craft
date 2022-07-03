@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 const props = defineProps({
     title: {
@@ -28,8 +28,6 @@ const emit = defineEmits(['change-state'])
 
 const bodyEl = ref(null)
 let height = 0
-
-onMounted(() => {})
 
 function handleClick() {
     emit('change-state', props.index)
@@ -67,15 +65,14 @@ function handleTransition() {
     <div class="w-full">
         <div class="relative border-b cursor-pointer border-tertiary-default">
             <div
-                class="flex justify-between py-5 font-medium transition-colors text-22 lg:py-7 lg:text-24"
+                class="flex justify-between py-5 font-medium transition-colors text-22 md:hover:text-secondary-default lg:py-7 lg:text-24"
                 :class="{
                     'text-secondary-default': props.isOpen,
                     'pt-0': index == 0
                 }"
-                ref="title"
                 @click="handleClick"
             >
-                <span v-html="title"></span>
+                <span v-html="props.title"></span>
                 <div
                     class="flex h-[34px] w-[34px] items-center justify-center rounded-xl bg-secondary-default"
                 >
@@ -104,7 +101,7 @@ function handleTransition() {
                     'invisible absolute opacity-0': !props.isOpen
                 }"
                 ref="bodyEl"
-                v-html="body"
+                v-html="props.body"
                 @transitionend="handleTransition"
             ></div>
         </div>
