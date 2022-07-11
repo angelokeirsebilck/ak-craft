@@ -2,8 +2,21 @@ const { url } = require('inspector')
 
 module.exports = {
     content: ['./templates/**/*.twig', './src/vue/**/*.vue'],
+    safelist: [
+        '!mb-2',
+        '!text-sm',
+        'prose-a:text-black-default',
+        'prose-a:font-light',
+        '!px-0',
+        '!leading-tight',
+        {
+            pattern: /grid/,
+            variants: ['lg']
+        }
+    ],
     theme: {
         fontSize: {
+            sm: '12px',
             copy: [
                 '18px',
                 {
@@ -90,6 +103,7 @@ module.exports = {
                 DEFAULT: {
                     css: {
                         '--tw-prose-headings': theme('colors.black.default'),
+                        '--tw-prose-links': theme('colors.primary.default'),
                         p: {
                             fontWeight: 300,
                             fontSize: '18px',
@@ -152,7 +166,6 @@ module.exports = {
     },
     plugins: [
         require('prettier-plugin-tailwindcss'),
-        require('@tailwindcss/forms'),
         require('@tailwindcss/typography')
     ]
 }

@@ -25,19 +25,66 @@
             margin-top: 0 !important;
         }
     }
+
+    textarea::-webkit-scrollbar {
+        display: none;
+    }
+
+    .form {
+        font-family: 'Poppins', sans-serif !important;
+        --fui-primary-color: theme('colors.secondary.default');
+        --fui-font: 'Poppins', sans-serif;
+        --fui-color: theme('colors.black.default');
+        --fui-error: theme('colors.primary.default');
+        --fui-border-radius: 16px !important;
+        --fui-alert-border-radius: 16px;
+        --fui-row-gutter: 24px;
+        --fui-field-gutter: 20px;
+
+        --fui-error-margin-top: 0;
+        --fui-alert-font-size: 16px;
+
+        --fui-label-font-size: 22px;
+        --fui-label-line-height: 26px;
+        --fui-label-font-weight: 400;
+        --fui-label-margin: 8px;
+
+        --fui-border-radius: 16px;
+        --fui-border-color: theme('colors.secondary.default');
+        --fui-focus-border-color: none;
+        --fui-focus-shadow: none;
+        --fui-input-border: 2px solid theme('colors.secondary.default');
+        --fui-input-border-radius: 16px;
+        --fui-input-padding: 12px 16px;
+        --fui-input-border-color-focus: none !important;
+        --fui-input-box-shadow-focus: none !important;
+        --fui-input-font-size: theme('fontSize.copy');
+        --fui-input-line-height: 1;
+        --fui-input-error-color: theme('colors.primary.default');
+        --fui-input-error-border-color: theme('colors.primary.default');
+        --fui-input-error-box-shadow-focus: none;
+
+        --fui-check-font-size: 18px;
+        --fui-check-line-height: 1;
+        --fui-check-check-border-radius: 4px;
+        --fui-check-label-border: 2px solid theme('colors.secondary.default');
+        --fui-check-label-width: 20px;
+        --fui-check-label-height: 20px;
+        --fui-check-label-top: 2px;
+    }
 }
 
 @layer components {
     .btn {
-        @apply flex items-center rounded-2xl border-2 p-3 py-2 text-[22px] font-normal lowercase leading-tight no-underline;
+        @apply items-center rounded-2xl !border-2 p-3 py-2 text-[22px] font-normal lowercase leading-tight no-underline;
     }
 
     .btn-primary {
-        @apply border-primary-default text-primary-default;
+        @apply !border-primary-default text-primary-default;
     }
 
     .btn-black {
-        @apply border-black-default text-black-default;
+        @apply !border-black-default text-black-default;
     }
 
     .container {
@@ -51,6 +98,10 @@
     .section-bg {
         @apply py-10 md:py-32;
     }
+
+    .fui-required {
+        @apply hidden;
+    }
 }
 
 @layer utilities {
@@ -62,4 +113,8 @@
     background-size: 100% 16px;
     background-position: bottom -3px left;
     white-space: nowrap;
+}
+
+.fui-required {
+    display: none;
 }

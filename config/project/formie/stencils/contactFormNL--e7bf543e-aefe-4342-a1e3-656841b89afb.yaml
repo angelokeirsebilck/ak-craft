@@ -1,0 +1,245 @@
+data:
+  availability: always
+  availabilityFrom: null
+  availabilitySubmissions: null
+  availabilityTo: null
+  dataRetention: forever
+  dataRetentionValue: ''
+  fileUploadsAction: retain
+  notifications:
+    -
+      attachAssets: null
+      attachFiles: true
+      attachPdf: ''
+      bcc: null
+      cc: null
+      conditions:
+        conditionRule: all
+        sendRule: send
+      content: '[{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"A user submission has been made on the \""},{"type":"variableTag","attrs":{"label":"Form Name","value":"{formName}"}},{"type":"text","text":"\" form on "},{"type":"variableTag","attrs":{"label":"Site Name","value":"{siteName}"}},{"type":"text","text":" at "},{"type":"variableTag","attrs":{"label":"Timestamp (yyyy-mm-dd hh:mm:ss)","value":"{timestamp}"}}]},{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Their submission details are:"}]},{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"variableTag","attrs":{"label":"All Form Fields","value":"{allFields}"}}]}]'
+      enableConditions: false
+      enabled: true
+      formId: null
+      from: null
+      fromName: null
+      id: stencilVXEE4HKMNI3WgsQO
+      name: 'Admin Notification'
+      pdfTemplateId: null
+      recipients: email
+      replyTo: null
+      replyToName: null
+      subject: 'A new submission was made on " {formName} "'
+      templateId: 1
+      to: '{systemEmail}'
+      toConditions: null
+      uid: null
+    -
+      attachAssets: null
+      attachFiles: true
+      attachPdf: ''
+      bcc: null
+      cc: null
+      conditions:
+        conditionRule: all
+        sendRule: send
+      content: '[{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Dag "},{"type":"variableTag","attrs":{"label":"Your Name","value":"{field.yourName}"}},{"type":"text","text":","},{"type":"hardBreak"}]},{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Bedankt voor je bericht. Ik contacteer je spoedig."}]},{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Overzicht van ingevulde gegevens:"}]},{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"variableTag","attrs":{"label":"All Form Fields","value":"{allFields}"}},{"type":"hardBreak"}]},{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Met vriendelijke groeten,"}]},{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Angelo Keirsebilck"}]}]'
+      enableConditions: false
+      enabled: true
+      formId: null
+      from: '{systemEmail}'
+      fromName: '{siteName}'
+      id: stencilGYWb2v6VdaCS0wkd
+      name: 'User Notification'
+      pdfTemplateId: null
+      recipients: email
+      replyTo: '{systemEmail}'
+      replyToName: null
+      subject: 'Bedankt voor je bericht.'
+      templateId: 1
+      to: '{field.emailAddress}'
+      toConditions: null
+      uid: null
+  pages:
+    -
+      id: new1272610411
+      label: 'Page 1'
+      notificationFlag: true
+      rows:
+        -
+          fields:
+            -
+              brandNewField: false
+              handle: yourName
+              hasLabel: true
+              id: new7715-7348
+              label: 'Your Name'
+              settings:
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                firstNameCollapsed: false
+                firstNameDefaultValue: ''
+                firstNameEnabled: true
+                firstNameErrorMessage: 'Dit veld is verplicht'
+                firstNameLabel: Voornaam
+                firstNamePlaceholder: ''
+                firstNameRequired: true
+                handle: yourName
+                instructions: ''
+                instructionsPosition: verbb\formie\positions\FieldsetStart
+                label: 'Your Name'
+                labelPosition: verbb\formie\positions\Hidden
+                lastNameCollapsed: false
+                lastNameDefaultValue: ''
+                lastNameEnabled: true
+                lastNameErrorMessage: 'Dit veld is verplicht'
+                lastNameLabel: Achternaam
+                lastNamePlaceholder: ''
+                lastNameRequired: true
+                limitType: characters
+                middleNameCollapsed: true
+                middleNameDefaultValue: ''
+                middleNameEnabled: false
+                middleNameLabel: 'Middle Name'
+                placeholder: 'Your name'
+                prefixCollapsed: true
+                prefixDefaultValue: ''
+                prefixEnabled: false
+                prefixLabel: Prefix
+                subfieldLabelPosition: verbb\formie\positions\AboveInput
+                useMultipleFields: true
+                visibility: ''
+              type: verbb\formie\fields\formfields\Name
+              vid: new5977-3030
+          id: new8990-9934
+        -
+          fields:
+            -
+              brandNewField: false
+              handle: emailAddress
+              hasLabel: true
+              id: new6482-9528
+              label: E-mailadres
+              settings:
+                errorMessage: 'Dit veld is verplicht'
+                handle: emailAddress
+                instructions: ''
+                instructionsPosition: ''
+                label: E-mailadres
+                labelPosition: verbb\formie\positions\AboveInput
+                limitType: characters
+                placeholder: ''
+                required: true
+                validateDomain: true
+                visibility: ''
+              type: verbb\formie\fields\formfields\Email
+              vid: new3450-1725
+            -
+              brandNewField: false
+              columnWidth: 6
+              handle: telefoonnummer
+              hasLabel: true
+              id: new1038388611
+              label: Telefoonnummer
+              settings:
+                countryCollapsed: true
+                countryDefaultValue: ''
+                countryEnabled: false
+                countryShowDialCode: true
+                errorMessage: 'Dit veld is verplicht'
+                handle: telefoonnummer
+                instructionsPosition: ''
+                label: Telefoonnummer
+                labelPosition: verbb\formie\positions\AboveInput
+                limitType: characters
+                required: true
+                visibility: ''
+              type: verbb\formie\fields\formfields\Phone
+              vid: new7925-7580
+          id: new9524-8509
+        -
+          fields:
+            -
+              brandNewField: false
+              handle: message
+              hasLabel: true
+              id: new982-7322
+              label: Bericht
+              settings:
+                conditions: '{"showRule":"show","conditionRule":"all","conditions":[]}'
+                errorMessage: 'Dit veld is verplicht'
+                handle: message
+                instructions: ''
+                instructionsPosition: ''
+                label: Bericht
+                labelPosition: verbb\formie\positions\AboveInput
+                limit: false
+                limitType: characters
+                placeholder: ''
+                required: true
+                visibility: ''
+              type: verbb\formie\fields\formfields\MultiLineText
+              vid: new4637-8958
+          id: new2177-9685
+      settings:
+        backButtonLabel: Back
+        buttonsPosition: left
+        label: 'Page 1'
+        showBackButton: false
+        submitButtonLabel: versturen
+      sortOrder: 0
+  requireUser: false
+  settings:
+    availabilityMessage: null
+    availabilityMessageDate: null
+    availabilityMessageSubmissions: null
+    collectIp: false
+    collectUser: false
+    dataRetention: null
+    dataRetentionValue: null
+    defaultEmailTemplateId: null
+    defaultInstructionsPosition: verbb\formie\positions\AboveInput
+    defaultLabelPosition: verbb\formie\positions\AboveInput
+    disableCaptchas: false
+    displayCurrentPageTitle: false
+    displayFormTitle: false
+    displayPageProgress: false
+    displayPageTabs: false
+    errorMessage: '[{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Er ging is mis bij het versturen van het formulier. Controleer het formulier en probeer opnieuw."}]}]'
+    errorMessagePosition: top-form
+    fileUploadsAction: null
+    integrations:
+      duplicate:
+        enabled: '1'
+        showAllPages: ''
+      honeypot:
+        enabled: '1'
+        showAllPages: ''
+      javascript:
+        enabled: '1'
+        showAllPages: ''
+      recaptcha:
+        enabled: '1'
+        showAllPages: ''
+    loadingIndicator: spinner
+    loadingIndicatorText: null
+    progressPosition: end
+    redirectUrl: null
+    scrollToTop: true
+    storeData: true
+    submissionTitleFormat: '{timestamp}'
+    submitAction: entry
+    submitActionFormHide: false
+    submitActionMessage: '[{"type":"paragraph","attrs":{"textAlign":"start"},"content":[{"type":"text","text":"Thank you for contacting us! Our team will get in touch shortly to follow up on your message."}]}]'
+    submitActionMessagePosition: top-form
+    submitActionMessageTimeout: null
+    submitActionTab: same-tab
+    submitActionUrl: null
+    submitMethod: page-reload
+    userDeletedAction: null
+    validationOnFocus: true
+    validationOnSubmit: true
+  userDeletedAction: retain
+defaultStatus: 34c4c843-ac45-41ab-9370-b8ecd37f731d # New
+handle: contactFormNL
+name: 'Contact Form NL'
+submitActionEntry: 469096f7-2483-4cec-9eaf-8bdf0088032b
+template: d02ec872-619b-4f23-b91b-3189b7f1e7e9 # Angelo Keirsebilck

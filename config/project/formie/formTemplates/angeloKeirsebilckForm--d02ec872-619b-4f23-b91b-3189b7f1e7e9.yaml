@@ -1,0 +1,32 @@
+fieldLayouts:
+  97d1360a-9991-409f-891e-bb97d44a4001:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 378bbbf1-f8ba-4c41-874b-c936fea3f11e # aK Logo Header
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 386ad724-ce5f-41b6-b744-c6e2c170e315
+            userCondition: null
+            warning: null
+            width: 100
+        name: Assets
+        uid: 781c7a98-a198-4e06-b2c3-79d21666ccbd
+        userCondition: null
+handle: angeloKeirsebilckForm
+name: 'Angelo Keirsebilck'
+outputCssLayout: true
+outputCssLocation: page-header
+outputCssTheme: true
+outputJsBase: true
+outputJsLocation: page-footer
+outputJsTheme: true
+sortOrder: null
+template: _form
+useCustomTemplates: false

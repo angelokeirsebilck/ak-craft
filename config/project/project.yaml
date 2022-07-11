@@ -1,4 +1,4 @@
-dateModified: 1656870317
+dateModified: 1657519772
 elementSources:
   craft\elements\Entry:
     -
@@ -78,8 +78,18 @@ elementSources:
       type: heading
 email:
   fromEmail: angelo.keirsebilck1@telenet.be
-  fromName: 'AK Craft'
-  transportType: craft\mail\transportadapters\Sendmail
+  fromName: 'Angelo Keirsebilck'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    encryptionMethod: none
+    host: $EMAIL_HOST
+    password: $EMAIL_PW
+    port: $EMAIL_PORT
+    timeout: '10'
+    useAuthentication: $EMAIL_USE_AUTH
+    username: $EMAIL_USER
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   imagesAK:
     hasUrls: true
@@ -151,7 +161,9 @@ meta:
     0f16953f-3305-4d08-a2fc-8111aa0504e6: 'Videos Ak' # Videos Ak
     1adf90bc-b79b-41e4-90a4-736a424758cc: Link # Link
     1b153723-1ae0-47e2-869c-e118a6c0bbe2: Cta # Cta
+    1ce10a31-a493-4465-bb46-b89b1880fee1: Form # Form
     1d3c7a6d-c0e4-4229-928f-7d176da8e6f4: 'Text / Media' # Text / Media
+    1d513fa9-1b15-46d1-97b0-6f0f08cb9bbd: Title # Title
     1d89545b-011e-431b-acd1-d67b21fa253b: 'Kerotec Footer' # Kerotec Footer
     2c01be0c-0ef0-43c7-a7c9-fd3f6a74a10d: 'Portfolio Pages' # Portfolio Pages
     2c532e68-55b9-46e0-8ff3-837835d606c6: 'Background Color' # Background Color
@@ -170,6 +182,7 @@ meta:
     6ec2831b-b3c9-47b9-bf52-03beb2b48691: Standaard # Standaard
     6f60c33a-ce18-4d21-bebd-6d53ea16c6d2: 'Portfolio Home' # Portfolio Home
     7ac4ed8e-eb27-4c90-8daf-0a99a4fdd693: Link # Link
+    7d3e7019-ebcc-439f-a8dd-12f751b17a7e: Intro # Intro
     7daba989-33a7-4cd0-8b14-94126c95d131: Link # Link
     7e74a447-4f0a-4130-b15e-f1df3175e103: Thanks # Thanks
     7f4a44e6-2104-45c9-a348-781fc2e32991: 'Background Color' # Background Color
@@ -179,6 +192,7 @@ meta:
     8cf35363-80c2-4f15-aa4a-34ddbda37b68: 'Legal Pages' # Legal Pages
     8e4ea5fe-b25a-4e8b-99b9-810b231cf066: Title # Title
     8ed4ac99-1404-4f75-9d5f-6d7454d9e078: Text # Text
+    9a649057-30a2-42bd-8fb9-c53cffd15c31: 'Angelo Keirsebilck' # Angelo Keirsebilck
     9b95db5c-d503-489b-8025-40c72a236aed: 'Link Label' # Link Label
     9ba41756-ffd1-42e9-a1ab-479d225d4919: Title # Title
     9bd51bcd-1aa8-4def-ae5c-bf2470665d63: Text # Text
@@ -186,10 +200,12 @@ meta:
     13a120bf-c8a5-4d82-ac79-ba44d99c869f: Media # Media
     18c36340-3798-4501-b6f0-e3330d5c86d4: References # References
     22dbbbb6-573d-49ad-875c-2a8f8451b7cc: Email # Email
+    34c4c843-ac45-41ab-9370-b8ecd37f731d: New # New
     34ee3466-4339-498b-93d1-e9e1633a43e5: Text # Text
     37b41c08-b9d5-4839-bd5e-1da7203723d3: Link # Link
     43d5e63c-5af2-4340-aaac-d1cbb0357237: 'aK Footer Navigation' # aK Footer Navigation
     47e0d4b9-cda8-4353-b888-56e7d00e7126: Title # Title
+    55e41d4d-500c-4dda-aa4f-4cd5a10f0d41: Form # Form
     56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
     57d472cb-1abc-438c-b133-1e58a472bd26: 'aK Facebook' # aK Facebook
     57f24831-8db3-4239-b500-787afe0b7422: 'Kerotec Cta Content' # Kerotec Cta Content
@@ -297,6 +313,7 @@ meta:
     ce47be10-c35f-4ff2-b8e6-40055deb9614: Figure # Figure
     cf0736f7-9894-4c14-85c7-8f4153818c72: 'Tel 1' # Tel 1
     d0d38edf-4c1c-4adb-8f66-74e7bd8999ba: Title # Title
+    d02ec872-619b-4f23-b91b-3189b7f1e7e9: 'Angelo Keirsebilck' # Angelo Keirsebilck
     d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
     d602b57e-889e-4854-b2c2-20f6725f0d9a: Intro # Intro
     d6037e3b-a18e-4e22-84b7-d7aac2d5c24e: Editor # Editor
@@ -311,6 +328,7 @@ meta:
     dffe2681-8efd-46d3-a68a-cc2f9b71cf82: Link # Link
     e00c56a0-9048-4b7f-b5d4-3036129d02f0: Standaard # Standaard
     e5fadc09-ce74-4dd2-af01-79193452c24b: Cta # Cta
+    e7bf543e-aefe-4342-a1e3-656841b89afb: 'Contact Form NL' # Contact Form NL
     e8a79905-5681-4a6f-b4f5-d4d52d9063a3: Link # Link
     e59b830a-0bb1-418a-bb93-e3d8209e4ef3: Label # Label
     e70f1d40-fc20-488d-97bb-cb61aec7cc26: Title # Title
@@ -329,6 +347,7 @@ plugins:
   blitz:
     edition: standard
     enabled: true
+    licenseKey: Y9NIHYN6JODREH9AIEXMX4TK
     schemaVersion: 4.1.2
     settings:
       apiKey: ''
@@ -356,7 +375,7 @@ plugins:
             - createBrotliFiles
             - ''
       cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
-      cachingEnabled: false
+      cachingEnabled: true
       debug: false
       deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
       driverJobPriority: 100
@@ -417,6 +436,163 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: OMSHC7NM3I0UAH6001DNZ9EY
+    schemaVersion: 2.0.2
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - $RECAPTCHA_SECRET_KEY
+                      -
+                        - siteKey
+                        - $RECAPTCHA_SITE_KEY
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.6
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - hcaptcha
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+                      -
+                        - minTime
+                        - '3'
+      defaultDateDisplayType: ''
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: angeloKeirsebilckEmail
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: angeloKeirsebilckForm
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      enableCsrfValidationForGuests: true
+      enableUnloadWarning: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Forms
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: false
+      useQueueForNotifications: false
   image-optimize:
     edition: standard
     enabled: true

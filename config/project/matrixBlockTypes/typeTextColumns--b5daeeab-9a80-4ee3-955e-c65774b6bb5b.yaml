@@ -67,7 +67,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1092897900
+      changedFieldIndicator: 1290423859
       columns:
         __assoc__:
           -
@@ -125,7 +125,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 609809326
+      changedFieldIndicator: 789851518
       columns:
         __assoc__:
           -

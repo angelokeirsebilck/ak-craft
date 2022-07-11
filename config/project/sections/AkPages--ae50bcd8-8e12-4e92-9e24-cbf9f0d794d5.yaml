@@ -14,7 +14,7 @@ previewTargets:
       -
         - refresh
         - '1'
-propagationMethod: all
+propagationMethod: siteGroup
 siteSettings:
   720b40eb-b03a-414f-9325-147c8050f443: # aK EN
     enabledByDefault: true
@@ -26,4 +26,7 @@ siteSettings:
     hasUrls: true
     template: pages/_entry.twig
     uriFormat: '{slug}'
-type: channel
+structure:
+  maxLevels: null
+  uid: cd39b00f-3916-43a9-a66b-9ed2acbb3866
+type: structure

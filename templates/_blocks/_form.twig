@@ -1,0 +1,153 @@
+<div class="section form">
+    <div class="container relative">
+        <div class="grid grid-cols-12 gap-10">
+            <div class="col-span-12 lg:col-span-6">
+                {% if block.itemTitle %}
+                    <h2 class="font-medium text-31 md:text-48">
+                        {{ block.itemTitle }}
+                    </h2>
+                {% endif %}
+                {% if block.itemIntro %}
+                    <div class="mb-6 prose md:prose-md max-w-none">
+                        {{ block.itemIntro }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="container relative">
+        <div class="absolute lg:grid w-[calc(100%_-_80px)] h-full grid-cols-12 gap-10 z-10">
+            <div class="relative col-span-12 lg:!col-span-7 bg-gradient-to-b from-secondary-default to-white-default rounded-tr-2xl"></div>
+        </div>
+        <div class="hidden lg:!block absolute top-0 h-full w-[50vw] z-10 left-[calc(-50vw_+_4rem)] bg-gradient-to-b from-secondary-default to-white-default"></div>
+        <div class="relative z-20 grid-cols-12 gap-10 lg:grid py-9">
+            <div class="!col-span-6">
+                {% set form = block.itemForm.one().handle %}
+
+                {{
+                    craft.formie.renderForm(
+                        form,
+                        {
+                            themeConfig: {
+                                submitButton: {
+                                    resetClass: true,
+                                    tag: 'span',
+                                    attributes: {
+                                        class: 'lg:group-hover:text-white-default relative z-10 self-center transition transform lg:group-hover:translate-x-3'
+                                    }
+                                },
+                                alertError: {
+                                    attributes: {
+                                        class: 'rounded-2xl'
+                                    }
+                                },
+                                row: {
+                                    resetClass: true,
+                                    attributes: {
+                                        class: 'lg:grid grid-cols-2 gap-10'
+                                    }
+                                },
+                                subFieldRow: {
+                                    resetClass: true,
+                                    attributes: {
+                                        class: 'lg:grid grid-cols-2 gap-10'
+                                    }
+                                },
+                                buttonWrapper: {
+                                    resetClass: true,
+                                    tag: 'button',
+                                    attributes: {
+                                        class: 'btn relative group inline-flex btn-black',
+                                        type: 'submit',
+                                        'data-submit-action': 'submit'
+                                    }
+                                },
+                                singleLineText: {
+                                    field: {
+                                        attributes: {
+                                            class: 'col-span-1'
+                                        }
+                                    }
+                                },
+                                multiLineText: {
+                                    field: {
+                                        attributes: {
+                                            class: 'col-span-2'
+                                        }
+                                    }
+                                },
+                                html: {
+                                    field: {
+                                        attributes: {
+                                            class: 'col-span-2'
+                                        }
+                                    }
+                                },
+                                agree: {
+                                    field: {
+                                        attributes: {
+                                            class: 'col-span-2'
+                                        }
+                                    }
+                                },
+                                field: {
+                                    attributes: {
+                                        class: '!px-0'
+                                    }
+                                }
+                            }
+                        }
+                    )
+                }}
+            </div>
+            <div class="hidden col-span-3 lg:!block md:col-start-8 lg:col-start-9 xl:col-start-10">
+                {% if globalAkCompany.fieldAkEmail.getLink() %}
+                    <div class="flex">
+                        <span class="text-primary-default font-semibold min-w-[25px] inline-block">E</span>
+                        <a href="{{ globalAkCompany.fieldAkEmail.getUrl()|replace(' ', '') }}"
+                            class="transition-colors md:hover:text-secondary-default">
+                            {{ globalAkCompany.fieldAkEmail.getUrl()|replace('mailto:', '') }}
+                        </a>
+                    </div>
+                {% endif %}
+                {% if globalAkCompany.fieldAkTel.getLink() %}
+                    <div class="flex">
+                        <span class="text-primary-default font-semibold min-w-[25px] inline-block">T</span>
+                        <a href="{{ globalAkCompany.fieldAkTel.getUrl()|replace(' ', '') }}"
+                            class="transition-colors md:hover:text-secondary-default">
+                            {{ globalAkCompany.fieldAkTel.getUrl()|replace('tel:', '') }}
+                        </a>
+                    </div>
+                {% endif %}
+                <div class="mt-4 md:mt-7">
+                    <div class="flex gap-5">
+                        {% if globalAkCompany.fieldAkLinkedin.getLink() %}
+                            <a href="{{ globalAkCompany.fieldAkLinkedin.getUrl() }}"
+                                target="_blank"
+                                rel="nofollow"
+                                class="transition-colors fill-primary-default md:hover:fill-secondary-default">
+                                {{ svg('img/svg/linkedin.svg') }}
+                            </a>
+                        {% endif %}
+                        {% if globalAkCompany.fieldAkGithub.getLink() %}
+                            <a href="{{ globalAkCompany.fieldAkGithub.getUrl() }}"
+                                target="_blank"
+                                rel="nofollow"
+                                class="transition-colors fill-primary-default md:hover:fill-secondary-default">
+                                {{ svg('img/svg/github.svg') }}
+                            </a>
+                        {% endif %}
+                        {% if globalAkCompany.fieldAkFacebook.getLink() %}
+                            <a href="{{ globalAkCompany.fieldAkFacebook.getUrl() }}"
+                                target="_blank"
+                                rel="nofollow"
+                                class="transition-colors fill-primary-default md:hover:fill-secondary-default">
+                                {{ svg('img/svg/facebook.svg') }}
+                            </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,6 +2,8 @@
 namespace modules;
 
 use Craft;
+use Twig\Environment;
+use Twig\Loader\FilesystemLoader;
 
 /**
  * Custom module class.
@@ -40,5 +42,13 @@ class Module extends \yii\base\Module
         parent::init();
 
         // Custom initialization code goes here...
+
+        Craft::$app->getView()->hook('formie.buttons.end', function(array &$context) {
+
+            $loader = new FilesystemLoader(__DIR__ . '/../templates');
+            $twig = new Environment($loader);
+            return $twig->render('_inc/_buttonsvg.twig');
+        });
+
     }
 }

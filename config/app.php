@@ -25,5 +25,5 @@ return [
         'my-module' => \modules\Module::class,
         'custom-module' => custommodule\CraftModule::class,
     ],
-    'bootstrap' => ['custom-module'],
+    'bootstrap' => ['custom-module','my-module'],
 ];

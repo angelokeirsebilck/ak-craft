@@ -47,6 +47,21 @@ const accordionImageSize = (items) => {
     })
 }
 
+const autoHeight = () => {
+    const textAreaElements = document.querySelectorAll('textarea')
+
+    textAreaElements.forEach((t) => {
+        t.addEventListener('input', () => {
+            resize(t)
+        })
+    })
+}
+
+const resize = (el) => {
+    el.style.height = 'auto'
+    el.style.height = `${el.scrollHeight}px`
+}
+
 main().then(() => {
     window.onload = () => {
         // if (document.querySelectorAll('.js-accordionImages').length > 0) {
@@ -57,6 +72,7 @@ main().then(() => {
         // }
 
         accordionImageSize(document.querySelectorAll('.js-accordionImages'))
+        autoHeight()
         window.dispatchEvent(new Event('resize'))
     }
 
