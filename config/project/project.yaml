@@ -1,4 +1,4 @@
-dateModified: 1657611961
+dateModified: 1657613618
 elementSources:
   craft\elements\Entry:
     -
@@ -399,7 +399,7 @@ plugins:
               - ''
             -
               - uriPattern
-              - contact
+              - ''
       generatePagesWithQueryStringParams: true
       hintsEnabled: true
       includedQueryStringParams:

@@ -22,7 +22,7 @@
         <div class="hidden lg:!block absolute top-0 h-full w-[50vw] z-10 left-[calc(-50vw_+_4rem)] bg-gradient-to-b from-secondary-default to-white-default"></div>
         <div class="relative z-20 grid-cols-12 gap-10 lg:grid py-9">
             <div class="!col-span-6">
-                {% set form = block.itemForm.one().handle %}
+                {% set form = block.itemForm.one() %}
 
                 {{
                     craft.formie.renderForm(
@@ -151,3 +151,47 @@
         </div>
     </div>
 </div>
+{# prettier-ignore-start #}
+{# Ensure we load polyfills for older browsers that don't support `fetch()` #}
+<script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch,Promise"></script>
+
+<script>
+    // Wait until the DOM is ready
+    document.addEventListener('DOMContentLoaded', (event) => {
+        // Fetch the form we want to deal with
+        let $form = document.querySelector('#{{ form.formId }}');
+
+        // Find the CSRF token hidden input, so we can replace it
+        let $csrfInput = $form.querySelector('input[name="CRAFT_CSRF_TOKEN"]');
+
+        // Fetch the new token for the form and replace the CSRF input with our new one
+        
+        fetch('/actions/formie/forms/refresh-tokens?form={{ form.handle }}')
+            .then(result => { return result.json(); })
+            .then(result => {
+                $csrfInput.outerHTML = result.csrf.input; 
+                
+                // Find the JavaScript captcha hidden input, so we can update it
+                if (result.captchas && result.captchas.javascript) {
+                    // JavaScript captcha
+                    let jsCaptcha = result.captchas.javascript;
+                   
+                     $form.querySelector('input[name="' + jsCaptcha.sessionKey + '"]').value = jsCaptcha.value;
+                }
+
+                // Find the Duplicate captcha hidden input, so we can update it
+                if (result.captchas && result.captchas.duplicate) {
+                    // Duplicate captcha
+                    let duplicateCaptcha = result.captchas.duplicate;
+
+                    $form.querySelector('input[name="' + duplicateCaptcha.sessionKey + '"]').value = duplicateCaptcha.value;
+                }
+
+                if ($form.form && $form.form.formTheme) {
+                    $form.form.formTheme.updateFormHash();
+                }
+                
+           });
+    });
+</script>
+{# prettier-ignore-end #}
