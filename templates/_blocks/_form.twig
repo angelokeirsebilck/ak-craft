@@ -164,24 +164,25 @@
     // Wait until the DOM is ready
     document.addEventListener('DOMContentLoaded', (event) => {
         // Fetch the form we want to deal with
-        let $form = document.querySelector('.js-contactForm');
+        let form = document.querySelector('.js-contactForm');
+        console.log(form)
 
         // Find the CSRF token hidden input, so we can replace it
-        let $csrfInput = $form.querySelector('input[name="CRAFT_CSRF_TOKEN"]');
+        let csrfInput = form.querySelector('input[name="CRAFT_CSRF_TOKEN"]');
 
         // Fetch the new token for the form and replace the CSRF input with our new one
         
         fetch('/actions/formie/forms/refresh-tokens?form={{ form.handle }}')
             .then(result => { return result.json(); })
             .then(result => {
-                $csrfInput.outerHTML = result.csrf.input; 
+                csrfInput.outerHTML = result.csrf.input; 
                 
                 // Find the JavaScript captcha hidden input, so we can update it
                 if (result.captchas && result.captchas.javascript) {
                     // JavaScript captcha
                     let jsCaptcha = result.captchas.javascript;
                    
-                     $form.querySelector('input[name="' + jsCaptcha.sessionKey + '"]').value = jsCaptcha.value;
+                     form.querySelector('input[name="' + jsCaptcha.sessionKey + '"]').value = jsCaptcha.value;
                 }
 
                 // Find the Duplicate captcha hidden input, so we can update it
@@ -189,11 +190,11 @@
                     // Duplicate captcha
                     let duplicateCaptcha = result.captchas.duplicate;
 
-                    $form.querySelector('input[name="' + duplicateCaptcha.sessionKey + '"]').value = duplicateCaptcha.value;
+                    form.querySelector('input[name="' + duplicateCaptcha.sessionKey + '"]').value = duplicateCaptcha.value;
                 }
 
-                if ($form.form && $form.form.formTheme) {
-                    $form.form.formTheme.updateFormHash();
+                if (form.form && form.form.formTheme) {
+                    form.form.formTheme.updateFormHash();
                 }
                 
            });
