@@ -1,4 +1,4 @@
-dateModified: 1657520174
+dateModified: 1657562268
 elementSources:
   craft\elements\Entry:
     -
@@ -77,19 +77,14 @@ elementSources:
       heading: ''
       type: heading
 email:
-  fromEmail: angelo.keirsebilck1@telenet.be
+  fromEmail: info@angelokeirsebilck.be
   fromName: 'Angelo Keirsebilck'
   replyToEmail: null
   template: ''
   transportSettings:
-    encryptionMethod: none
-    host: $EMAIL_HOST
-    password: $EMAIL_PW
-    port: $EMAIL_PORT
-    timeout: '10'
-    useAuthentication: $EMAIL_USE_AUTH
-    username: $EMAIL_USER
-  transportType: craft\mail\transportadapters\Smtp
+    messageStream: $POSTMARK_MSG_STREAM
+    token: $POSTMARK_SERVER_TOKEN
+  transportType: craftcms\postmark\Adapter
 fs:
   imagesAK:
     hasUrls: true
@@ -651,6 +646,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
   redactor:
     edition: standard
     enabled: true

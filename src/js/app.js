@@ -6,6 +6,7 @@ import { createApp, defineAsyncComponent } from 'vue'
 
 const main = async () => {
     // Create our vue instances
+    const app = createApp({})
 
     if (document.querySelectorAll('.js-accordion').length > 0) {
         const Accordion = defineAsyncComponent(() =>
@@ -13,12 +14,11 @@ const main = async () => {
         )
 
         document.querySelectorAll('.js-accordion').forEach((accordion) => {
-            const app = createApp({})
             app.component('Accordion', Accordion)
-
-            app.mount(accordion)
         })
     }
+
+    app.mount('#wrapper')
 }
 
 const accordionImageSize = (items) => {
@@ -64,13 +64,6 @@ const resize = (el) => {
 
 main().then(() => {
     window.onload = () => {
-        // if (document.querySelectorAll('.js-accordionImages').length > 0) {
-        //     const { default: accordionImageSize } = await import(
-        //         '/src/js/blocks/accordionImage.js'
-        //     )
-        //     accordionImageSize(document.querySelectorAll('.js-accordionImages'))
-        // }
-
         accordionImageSize(document.querySelectorAll('.js-accordionImages'))
         autoHeight()
         window.dispatchEvent(new Event('resize'))

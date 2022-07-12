@@ -25,15 +25,11 @@
 <body>
 
 <div id="wrapper" class="flex flex-col min-h-screen font-light text-black-default text-copy">
-    {% block header %}
-        {% include '_layout/_header' %}
-    {% endblock %}
+    {% include '_layout/_header' %}
     <main class="overflow-hidden position-relative grow">
         {% block content %}{% endblock %}
     </main>
-    {% block footer %}
-        {% include '_layout/_footer.twig' %}
-    {% endblock %}
+    {% include '_layout/_footer.twig' %}
 </div>
 </body>
 </html>

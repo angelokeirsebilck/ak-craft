@@ -6,16 +6,13 @@
 {% apply spaceless %}
 <header class="flex h-[70px] md:h-[125px]">
     <div class="container h-full">
-        <div class="flex justify-between items-center h-full">
+        <div class="flex items-center justify-between h-full">
             <a href="{{ siteUrl }}" class="inline-block w-[90px] md:w-[171px]">
                 {% if globalAkCompany.fieldaKLogoHeader %}
-                    <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}"
-                        width="171"
-                        height="61"
-                        alt="Angelo Keirsebilck Logo" />
+                    <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}" width="171" height="61" alt="Angelo Keirsebilck Logo" />
                 {% endif %}
             </a>
-            <div class="hidden lg:flex items-center">
+            <div class="items-center hidden lg:flex">
                 {% for navItem in mainNav %}
                     {% if navItem.itemLink.getLink() %}
                         <a href="{{ navItem.itemLink.getUrl() }}"
@@ -29,17 +26,12 @@
                 {% endfor %}
                 {% if highLightNav.getLink() %}
                     <div class="ml-14">
-                        {{
-                            macros.button(
-                                highLightNav.getUrl(),
-                                highLightNav.getText(),
-                                'btn-black',
-                                'bg-black-default'
-                            )
-                        }}
+                        {{ macros.button(highLightNav.getUrl(), highLightNav.getText(), 'btn-black', 'bg-black-default') }}
                     </div>
                 {% endif %}
             </div>
+
+            {% include '_inc/_hamburger' %}
         </div>
     </div>
 </header>
