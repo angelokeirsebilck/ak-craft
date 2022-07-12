@@ -1,4 +1,4 @@
-dateModified: 1657613618
+dateModified: 1657615892
 elementSources:
   craft\elements\Entry:
     -
@@ -391,15 +391,6 @@ plugins:
             -
               - queryStringParam
               - fbclid
-      excludedUriPatterns:
-        -
-          __assoc__:
-            -
-              - siteId
-              - ''
-            -
-              - uriPattern
-              - ''
       generatePagesWithQueryStringParams: true
       hintsEnabled: true
       includedQueryStringParams:
