@@ -29,6 +29,11 @@
                         form,
                         {
                             themeConfig: {
+                                form: {
+                                    attributes: {
+                                        class: 'js-contactForm'
+                                    }
+                                },
                                 submitButton: {
                                     resetClass: true,
                                     tag: 'span',
@@ -159,7 +164,7 @@
     // Wait until the DOM is ready
     document.addEventListener('DOMContentLoaded', (event) => {
         // Fetch the form we want to deal with
-        let $form = document.querySelector('#{{ form.formId }}');
+        let $form = document.querySelector('.js-contactForm');
 
         // Find the CSRF token hidden input, so we can replace it
         let $csrfInput = $form.querySelector('input[name="CRAFT_CSRF_TOKEN"]');
