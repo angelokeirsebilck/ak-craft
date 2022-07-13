@@ -156,16 +156,13 @@
         </div>
     </div>
 </div>
-{# prettier-ignore-start #}
-{# Ensure we load polyfills for older browsers that don't support `fetch()` #}
-<script src="https://cdn.polyfill.io/v2/polyfill.js?features=fetch,Promise"></script>
 
-<script>
+{# prettier-ignore-start #}
+{% js  %}
     // Wait until the DOM is ready
     window.addEventListener('load', (event) => {
         // Fetch the form we want to deal with
         let form = document.querySelector('.js-contactForm');
-        console.log(form)
 
         // Find the CSRF token hidden input, so we can replace it
         let csrfInput = form.querySelector('input[name="CRAFT_CSRF_TOKEN"]');
@@ -199,5 +196,7 @@
                 
            });
     });
-</script>
+{% endjs %}
+
+
 {# prettier-ignore-end #}

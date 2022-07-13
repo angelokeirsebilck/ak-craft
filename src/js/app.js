@@ -7,17 +7,14 @@ import { createApp, defineAsyncComponent } from 'vue'
 const main = async () => {
     // Create our vue instances
     const app = createApp({})
-
     if (document.querySelectorAll('.js-accordion').length > 0) {
         const Accordion = defineAsyncComponent(() =>
             import('../vue/components/accordion/Accordion.vue')
         )
-
-        document.querySelectorAll('.js-accordion').forEach((accordion) => {
+        document.querySelectorAll('.js-accordion').forEach((accordion)  => {
             app.component('Accordion', Accordion)
         })
     }
-
     app.mount('#wrapper')
 }
 
