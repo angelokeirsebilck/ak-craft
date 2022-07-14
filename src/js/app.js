@@ -1,21 +1,25 @@
 import '@/css/app.css'
 
 import { createApp, defineAsyncComponent } from 'vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
 
 // import ConfettiParty from '@/vue/ConfettiParty.vue'
 
 const main = async () => {
     // Create our vue instances
-    const app = createApp({})
+
     if (document.querySelectorAll('.js-accordion').length > 0) {
         const Accordion = defineAsyncComponent(() =>
             import('../vue/components/accordion/Accordion.vue')
         )
-        document.querySelectorAll('.js-accordion').forEach((accordion)  => {
-            app.component('Accordion', Accordion)
+        document.querySelectorAll('.js-accordion').forEach((accordion) => {
+            const accordionApp = createApp({})
+            accordionApp.component('Accordion', Accordion)
+            accordionApp.mount(accordion)
         })
     }
-    app.mount('#wrapper')
 }
 
 const accordionImageSize = (items) => {
@@ -59,10 +63,67 @@ const resize = (el) => {
     el.style.height = `${el.scrollHeight}px`
 }
 
+const mobileNavAnimation = () => {
+    ScrollTrigger.matchMedia({
+        // large
+        '(max-width: 1024px)': function () {
+            const hamburger = document.querySelector('.js-hamburger')
+            const close = document.querySelector('.js-close')
+            const menu = document.querySelector('.js-menu')
+            const green = document.querySelector('.js-green')
+            const logo = document.querySelector('.js-logo')
+            const links = gsap.utils.toArray('a:not(.js-logo)', menu)
+
+            const menuTimeline = gsap.timeline()
+            menuTimeline.pause()
+            menuTimeline.addLabel('start', 0)
+            menuTimeline
+                .to(green, {
+                    x: 0,
+                    ease: 'power4.out',
+                    duration: 1
+                })
+                .to(
+                    menu,
+                    {
+                        x: 0,
+                        ease: 'power4.out',
+                        duration: 1
+                    },
+                    'start+=0.2'
+                )
+                .to(
+                    logo,
+                    {
+                        opacity: 1
+                    },
+                    '-=0.5'
+                )
+                .from(
+                    links,
+                    {
+                        opacity: 0,
+                        stagger: 0.1
+                    },
+                    '-=0.2'
+                )
+
+            hamburger.addEventListener('click', () => {
+                menuTimeline.timeScale(1).play()
+            })
+
+            close.addEventListener('click', () => {
+                menuTimeline.timeScale(2).reverse()
+            })
+        }
+    })
+}
+
 main().then(() => {
     window.onload = () => {
         accordionImageSize(document.querySelectorAll('.js-accordionImages'))
         autoHeight()
+        mobileNavAnimation()
         window.dispatchEvent(new Event('resize'))
     }
 

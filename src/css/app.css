@@ -83,6 +83,10 @@
         @apply !border-primary-default text-primary-default;
     }
 
+    .btn-lg {
+        @apply text-31;
+    }
+
     .btn-black {
         @apply !border-black-default text-black-default;
     }

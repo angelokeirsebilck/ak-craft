@@ -12,6 +12,7 @@
     "@heroicons/vue": "^1.0.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/line-clamp": "^0.4.0",
+    "gsap": "^3.10.4",
     "pinia": "^2.0.15",
     "vue": "^3.0.5",
     "vue-confetti": "^2.3.0"
