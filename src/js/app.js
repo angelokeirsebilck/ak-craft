@@ -4,6 +4,7 @@ import { createApp, defineAsyncComponent } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 // import ConfettiParty from '@/vue/ConfettiParty.vue'
 
@@ -74,7 +75,12 @@ const mobileNavAnimation = () => {
             const logo = document.querySelector('.js-logo')
             const links = gsap.utils.toArray('a:not(.js-logo)', menu)
 
-            const menuTimeline = gsap.timeline()
+            const menuTimeline = gsap.timeline({
+                onReverseComplete: () => {
+                    gsap.set(menu, { x: '100%' })
+                    gsap.set(green, { x: '100%' })
+                }
+            })
             menuTimeline.pause()
             menuTimeline.addLabel('start', 0)
             menuTimeline
@@ -109,10 +115,12 @@ const mobileNavAnimation = () => {
                 )
 
             hamburger.addEventListener('click', () => {
+                disableBodyScroll(menu)
                 menuTimeline.timeScale(1).play()
             })
 
             close.addEventListener('click', () => {
+                enableBodyScroll(menu)
                 menuTimeline.timeScale(2).reverse()
             })
         }

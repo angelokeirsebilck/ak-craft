@@ -36,8 +36,8 @@
             <div class="relative z-10 col-span-5 col-start-8 js-imgContainer">
                 <div class="absolute z-10 block w-full h-full bg-secondary-light top-6 left-6 rounded-2xl lg:hidden"></div>
                 {% if block.itemImage.one() %}
-                    {% set optimizedImage = block.itemImage.one().fieldStandardImageOptimize %}
-                    {% set sizes = '(max-width: 1024px) 100vw, 50vw' %}
+                    {% set optimizedImage = block.itemImage.one().fieldStandardImgOpt %}
+                    {% set sizes = '100vw' %}
                     <picture class="relative z-20">
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
                         <img src="{{ optimizedImage.src() }}"

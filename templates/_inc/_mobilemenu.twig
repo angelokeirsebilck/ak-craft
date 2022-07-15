@@ -1,6 +1,6 @@
 {% import '_macros/_tools.twig' as macros %}
 <div class="fixed inset-0 z-50 block transform translate-x-full lg:hidden js-green bg-secondary-default"></div>
-<div class="fixed inset-0 z-50 flex items-center justify-center min-h-screen p-6 transform translate-x-full lg:hidden js-menu bg-tertiary-default">
+<div class="fixed inset-0 z-50 flex items-center justify-center min-h-screen p-6 pt-20 overflow-y-scroll transform translate-x-full lg:hidden js-menu bg-tertiary-default">
     <a href="{{ siteUrl }}" class="inline-block w-[110px] absolute top-5 left-5 js-logo opacity-0">
         {% if globalAkCompany.fieldaKLogoHeader %}
             <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}" width="171" height="61" alt="Angelo Keirsebilck Logo" />

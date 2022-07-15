@@ -1,7 +1,7 @@
 columnSuffix: pphdnelx
 contentColumnType: text
 fieldGroup: c964ef51-ae37-4a14-aed6-fd8dc72f17e2 # aK Image Optimize
-handle: fieldStandardImageOptimize
+handle: fieldStandardImgOpt
 instructions: null
 name: 'Standard Image Optimize'
 searchable: false
@@ -26,7 +26,7 @@ settings:
           - '1536'
         -
           - useAspectRatio
-          - '1'
+          - ''
         -
           - aspectRatioX
           - '16'
@@ -74,13 +74,13 @@ settings:
           - '1024'
         -
           - useAspectRatio
-          - ''
+          - '1'
         -
           - aspectRatioX
-          - '16'
+          - '1'
         -
           - aspectRatioY
-          - '9'
+          - '1'
         -
           - retinaSizes
           -
@@ -146,7 +146,7 @@ settings:
           - '375'
         -
           - useAspectRatio
-          - '1'
+          - ''
         -
           - aspectRatioX
           - '16'

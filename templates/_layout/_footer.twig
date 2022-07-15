@@ -6,13 +6,18 @@
 <footer class="mt-auto overflow-hidden relative after:hidden md:after:!block after:bottom-0 after:left-0 after:h-[63px] after:pointer-events-none after:z-40 after:w-full after:bg-quaternary-default after:bg-opacity-30 after:absolute">
     <div class="container bg-tertiary-default md:!bg-transparent relative">
         <div class="absolute hidden md:!block h-full w-[50vw] z-10 top-0 left-[calc(-50vw_+_4rem)] bg-tertiary-default pointer-events-none"></div>
+        <div class="absolute hidden md:!grid w-[calc(100%_-_40px)] md:w-[calc(100%_-_80px)] h-full grid-cols-12 lg:gap-10 z-10">
+            <div class="relative col-span-11 md:!col-span-9 bg-tertiary-default rounded-tr-2xl"></div>
+            <div class="absolute w-[50vw] h-full top-0 left-[-50vw] bg-tertiary-default"></div>
+        </div>
         <div class="py-6 md:py-9">
-            <div class="hidden md:!grid grid-cols-12 gap-10 absolute top-0 left-10 w-full h-full">
-                <div class="col-span-9 relative">
-                    <div class="absolute w-full h-full top-0 left-0 bg-tertiary-default rounded-tr-2xl"></div>
+            {# <div class="hidden md:!grid grid-cols-12 gap-10 absolute top-0 left-10 w-full h-full">
+                <div class="relative col-span-9">
+                    <div class="absolute top-0 left-0 w-full h-full bg-tertiary-default rounded-tr-2xl"></div>
                 </div>
-            </div>
-            <div class="md:grid grid-cols-12 gap-10 relative z-30">
+            </div> #}
+
+            <div class="relative z-30 grid-cols-12 gap-10 md:grid">
                 <div class="col-span-5">
                     <a href="{{ siteUrl }}" class="inline-block">
                         {% if globalAkCompany.fieldaKLogoHeader %}
@@ -23,11 +28,11 @@
                         {% endif %}
                     </a>
                 </div>
-                <div class="col-span-4 self-end">
+                <div class="self-end col-span-4">
                     <span class="text-20 font-normal text-black-default hidden md:!block">Menu</span>
                 </div>
             </div>
-            <div class="md:grid grid-cols-12 gap-10 mt-4 md:mt-7 relative z-30">
+            <div class="relative z-30 grid-cols-12 gap-10 mt-4 md:grid md:mt-7">
                 <div class="col-span-5">
                     {% if globalAkCompany.fieldAkEmail.getLink() %}
                         <div class="flex">

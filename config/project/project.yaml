@@ -1,4 +1,4 @@
-dateModified: 1657615892
+dateModified: 1657826529
 elementSources:
   craft\elements\Entry:
     -
@@ -301,7 +301,7 @@ meta:
     c792ad5b-761b-48be-bce6-26b76264a1d7: Title # Title
     c963b7e9-ac8f-47c6-a7eb-2de181771450: 'Kerotec SEO Content' # Kerotec SEO Content
     c964ef51-ae37-4a14-aed6-fd8dc72f17e2: 'aK Image Optimize' # aK Image Optimize
-    c1180f3e-5591-40a1-a08a-5fb3701f5356: 'Standard Image Optimize' # Standard Image Optimize
+    c1180f3e-5591-40a1-a08a-5fb3701f5356: 'Standard Image Optimize' # Accordion-Image Image Optimize
     c572752c-6407-4ce5-9d56-3cc22352646c: Title # Title
     ca46e5e1-f025-4715-a506-8ec65ef7eaab: Link # Link
     cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard

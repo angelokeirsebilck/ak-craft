@@ -2,19 +2,17 @@
 
 <div class="lg:h-[calc(100vh_-_125px)] overflow-hidden lg:max-h-[1024px]">
     <div class="container relative flex items-center h-full">
-        <div class="grid grid-cols-12 lg:gap-10 absolute right-5 lg:right-10 bottom-0 w-full h-[63px]">
-            <div class="relative z-20 col-span-12 bg-quaternary-default bg-opacity-30 rounded-tr-2xl">
-                <div class="absolute w-[50vw] h-[63px] bottom-0 left-[-50vw] bg-quaternary-default bg-opacity-30"></div>
-            </div>
+        <div class="absolute grid w-[calc(100%_-_40px)] md:w-[calc(100%_-_80px)] grid-cols-12 lg:gap-10 z-20 right-5 lg:right-10 bottom-0 h-[63px]">
+            <div class="relative col-span-12 bg-quaternary-default bg-opacity-30 rounded-tr-2xl"></div>
+            <div class="absolute w-[50vw] h-full top-0 left-[-50vw] bg-quaternary-default bg-opacity-30"></div>
         </div>
 
-        <div class="absolute top-0 grid w-full h-full grid-cols-12 lg:gap-10 left-10">
-            <div class="relative col-span-10 md:col-span-9 bg-tertiary-default rounded-tr-2xl">
-                <div class="absolute w-[50vw] h-full top-0 left-[-50vw] bg-tertiary-default"></div>
-            </div>
+        <div class="absolute grid w-[calc(100%_-_40px)] md:w-[calc(100%_-_80px)] h-full grid-cols-12 lg:gap-10 z-10">
+            <div class="relative col-span-11 lg:!col-span-9 bg-tertiary-default rounded-tr-2xl"></div>
+            <div class="absolute w-[50vw] h-full top-0 left-[-50vw] bg-tertiary-default"></div>
         </div>
         <div class="relative z-10 grid grid-cols-12 py-8 pb-24 lg:gap-10 lg:py-0">
-            <div class="flex flex-col col-span-10 lg:col-span-7">
+            <div class="flex flex-col col-span-11 pr-5 lg:col-span-7">
                 <h1 class="mb-6 font-medium text-40 lg:text-56">
                     {{ block.itemTitle }}
                 </h1>
