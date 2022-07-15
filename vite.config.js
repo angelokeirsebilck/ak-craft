@@ -39,7 +39,8 @@ export default defineConfig(({ command }) => ({
                 { uri: '/craft-cms', template: 'pages/_entry' }
             ],
             criticalConfig: {
-                ignore: ['.underline']
+                ignore: ['.underline'],
+                base: 'web/dist/criticalcss/'
             }
         }),
         // legacy({
