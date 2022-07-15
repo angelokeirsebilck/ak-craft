@@ -75,54 +75,56 @@ const mobileNavAnimation = () => {
             const logo = document.querySelector('.js-logo')
             const links = gsap.utils.toArray('a:not(.js-logo)', menu)
 
-            const menuTimeline = gsap.timeline({
-                onReverseComplete: () => {
-                    gsap.set(menu, { x: '100%' })
-                    gsap.set(green, { x: '100%' })
-                }
-            })
-            menuTimeline.pause()
-            menuTimeline.addLabel('start', 0)
-            menuTimeline
-                .to(green, {
-                    x: 0,
-                    ease: 'power4.out',
-                    duration: 1
+            if (menu) {
+                const menuTimeline = gsap.timeline({
+                    onReverseComplete: () => {
+                        gsap.set(menu, { x: '100%' })
+                        gsap.set(green, { x: '100%' })
+                    }
                 })
-                .to(
-                    menu,
-                    {
+                menuTimeline.pause()
+                menuTimeline.addLabel('start', 0)
+                menuTimeline
+                    .to(green, {
                         x: 0,
                         ease: 'power4.out',
                         duration: 1
-                    },
-                    'start+=0.2'
-                )
-                .to(
-                    logo,
-                    {
-                        opacity: 1
-                    },
-                    '-=0.5'
-                )
-                .from(
-                    links,
-                    {
-                        opacity: 0,
-                        stagger: 0.1
-                    },
-                    '-=0.2'
-                )
+                    })
+                    .to(
+                        menu,
+                        {
+                            x: 0,
+                            ease: 'power4.out',
+                            duration: 1
+                        },
+                        'start+=0.2'
+                    )
+                    .to(
+                        logo,
+                        {
+                            opacity: 1
+                        },
+                        '-=0.5'
+                    )
+                    .from(
+                        links,
+                        {
+                            opacity: 0,
+                            stagger: 0.1
+                        },
+                        '-=0.2'
+                    )
 
-            hamburger.addEventListener('click', () => {
-                disableBodyScroll(menu)
-                menuTimeline.timeScale(1).play()
-            })
+                hamburger.addEventListener('click', () => {
+                    disableBodyScroll(menu)
+                    menuTimeline.timeScale(1).play()
+                })
 
-            close.addEventListener('click', () => {
-                enableBodyScroll(menu)
-                menuTimeline.timeScale(2).reverse()
-            })
+                close.addEventListener('click', () => {
+                    enableBodyScroll(menu)
+                    menuTimeline.timeScale(2).reverse()
+                })
+            }
         }
     })
 }
