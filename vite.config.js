@@ -9,6 +9,7 @@ import { nodeResolve } from '@rollup/plugin-node-resolve'
 import critical from 'rollup-plugin-critical'
 import copy from 'rollup-plugin-copy'
 // import {ViteFaviconsPlugin} from 'vite-plugin-favicon2';
+import { partytownVite } from '@builder.io/partytown/utils'
 import * as path from 'path'
 
 // https://vitejs.dev/config/
@@ -42,6 +43,9 @@ export default defineConfig(({ command }) => ({
                 ignore: ['.underline'],
                 base: 'web/dist/criticalcss/'
             }
+        }),
+        partytownVite({
+            dest: path.join(__dirname, '/web/dist/', '~partytown')
         }),
         // legacy({
         //     targets: ['defaults', 'not IE 11']

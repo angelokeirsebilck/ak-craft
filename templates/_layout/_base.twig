@@ -2,9 +2,18 @@
 {%- set shortLang = currentSite.language|slice(0, 2) -%}
 <html lang="{{ shortLang }}">
 <head>
+    <script>
+        partytown = {
+            lib: '/dist/~partytown/',
+            forward: ['dataLayer.push'],
+        };
+    </script>
+    <script>
+        {{ craft.vite.inline("@webroot/dist/~partytown/partytown.js") }}
+    </script>
 
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script type="text/partytown">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -20,10 +29,9 @@
         
         {# Critical CSS #}
         {{ craft.vite.includeCriticalCssTags() }}
-
+        
         {{ craft.vite.script("src/js/app.js") }}
-
-      
+    
         {% include '_inc/_fonts.twig' %}
         {% include '_inc/_favicon.twig' %}
     {% endapply %}
@@ -33,6 +41,7 @@
     {% block preload %}
 
     {% endblock %}
+
 </head>
 
 <body>
