@@ -1,4 +1,4 @@
-dateModified: 1657956162
+dateModified: 1657956616
 elementSources:
   craft\elements\Entry:
     -
@@ -365,10 +365,10 @@ plugins:
             - '@webroot/cache/blitz'
           -
             - createGzipFiles
-            - ''
+            - '1'
           -
             - createBrotliFiles
-            - '1'
+            - ''
       cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
       cachingEnabled: true
       debug: false
