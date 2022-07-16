@@ -65,8 +65,7 @@ export default defineConfig(({ command }) => ({
             customElement: true
         }),
         viteCompression({
-            filter: /\.(js|mjs|json|css|map)$/i,
-            algorithm: 'brotliCompress'
+            filter: /\.(js|mjs|json|css|map)$/i
         }),
         manifestSRI()
         // visualizer({
