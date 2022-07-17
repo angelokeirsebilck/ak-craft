@@ -139,13 +139,13 @@ const homeBannerAnimation = () => {
     homeBannerTimeline
         .to(title, {
             opacity: 1,
-            duration: 0.5
+            duration: 0.2
         })
         .to(
             text,
             {
                 opacity: 1,
-                duration: 0.5
+                duration: 0.2
             },
             'start+=0.1'
         )
@@ -153,7 +153,7 @@ const homeBannerAnimation = () => {
             link,
             {
                 opacity: 1,
-                duration: 0.5
+                duration: 0.2
             },
             'start+=0.3'
         )

@@ -1,6 +1,6 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.ecffa724.js",
+    "file": "assets/app.0616b0bc.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
@@ -9,15 +9,15 @@
     "css": [
       "assets/app.2f06706c.css"
     ],
-    "integrity": "sha384-6wJutRDK/BlqW233I5Yy+t9f0PSviRgQNoFLG/t/7fFLb4OSu2VVNaMhiBsFBV3w"
+    "integrity": "sha384-rk9sIX4lPGpdEba4P2DtzMH6rW1KfZEIVWFGhq5I9mM5T1MlK1md6qKp+1SZWp4L"
   },
   "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.27ff8979.js",
+    "file": "assets/Accordion.2ea4afce.js",
     "src": "src/vue/components/accordion/Accordion.vue",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-XGAW+I+Z+OgdOayKyx/gPg3YHdeTPEwe9ebvwrlZ27sm4165WUEHRGowLJxpcL/O"
+    "integrity": "sha384-/cxyXJ4kTR3zhWpbmN1gV/6aaE/9687xO6oUQqwo9HBquNzyIGbYmbg2HNNX5ESi"
   }
 }
