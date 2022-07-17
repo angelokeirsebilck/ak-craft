@@ -1,20 +1,15 @@
 import { createApp, defineAsyncComponent } from 'vue'
 
-const accordionImageSize = (items) => {
-    items.forEach((parent) => {
-        const container = parent.querySelector('.container')
-
-        const containerWidth = container.offsetWidth
-
-        const remainingWidth = (window.innerWidth - containerWidth) / 2
-        console.log(remainingWidth)
-
-        const imageContainer = container.querySelector('.js-imgContainer')
-        const img = container.querySelector('img')
-        img.style.width = `${
-            imageContainer.offsetWidth + remainingWidth + 40
-        }px`
-    })
+const initAccordions = () => {
+    if (document.querySelectorAll('.js-accordion').length > 0) {
+        const Accordion = defineAsyncComponent(() =>
+            import('../../vue/components/accordion/Accordion.vue')
+        )
+        document.querySelectorAll('.js-accordion').forEach((accordion) => {
+            const accordionApp = createApp({})
+            accordionApp.component('Accordion', Accordion)
+            accordionApp.mount(accordion)
+        })
+    }
 }
-
-export default accordionImageSize
+export default initAccordions

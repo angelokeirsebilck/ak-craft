@@ -1,13 +1,11 @@
 import '@/css/app.css'
 
-import { createApp, defineAsyncComponent } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
+
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import FontFaceObserver from 'fontfaceobserver'
-
-// import ConfettiParty from '@/vue/ConfettiParty.vue'
 
 const main = async () => {
     const poppinsFontRegular = new FontFaceObserver('Poppins', {
@@ -28,44 +26,6 @@ const main = async () => {
         poppinsFontMedium.load()
     ]).then(function () {
         document.querySelector('body').classList.add('fonts-loaded')
-    })
-
-    // Create our vue instances
-    if (document.querySelectorAll('.js-accordion').length > 0) {
-        const Accordion = defineAsyncComponent(() =>
-            import('../vue/components/accordion/Accordion.vue')
-        )
-        document.querySelectorAll('.js-accordion').forEach((accordion) => {
-            const accordionApp = createApp({})
-            accordionApp.component('Accordion', Accordion)
-            accordionApp.mount(accordion)
-        })
-    }
-}
-
-const accordionImageSize = (items) => {
-    items.forEach((parent) => {
-        const container = parent.querySelector('.container')
-
-        const containerWidth = container.offsetWidth
-
-        const remainingWidth = (window.innerWidth - containerWidth) / 2
-
-        const imageContainer = container.querySelector('.js-imgContainer')
-        const background = container.querySelector(
-            '.js-accordionImageBackground'
-        )
-
-        const img = container.querySelector('img')
-        background.style.height = `${img.offsetHeight}px`
-
-        if (window.innerWidth > 1024) {
-            img.style.width = `${
-                imageContainer.offsetWidth + remainingWidth + 40
-            }px`
-        } else {
-            img.style.width = `auto`
-        }
     })
 }
 
@@ -179,13 +139,49 @@ const homeBannerAnimation = () => {
         )
 }
 
+const accordionImageSize = (items) => {
+    items.forEach((parent) => {
+        const container = parent.querySelector('.container')
+
+        const containerWidth = container.offsetWidth
+
+        const remainingWidth = (window.innerWidth - containerWidth) / 2
+
+        const imageContainer = container.querySelector('.js-imgContainer')
+        const background = container.querySelector(
+            '.js-accordionImageBackground'
+        )
+
+        const img = container.querySelector('img')
+        background.style.height = `${img.offsetHeight}px`
+
+        if (window.innerWidth > 1024) {
+            img.style.width = `${
+                imageContainer.offsetWidth + remainingWidth + 40
+            }px`
+        } else {
+            img.style.width = `auto`
+        }
+    })
+}
+
 main().then(() => {
-    window.onload = () => {
+    window.onload = async () => {
         accordionImageSize(document.querySelectorAll('.js-accordionImages'))
+
         autoHeight()
         mobileNavAnimation()
+
         // homeBannerAnimation()
+
         window.dispatchEvent(new Event('resize'))
+
+        if (document.querySelectorAll('.js-accordion').length > 0) {
+            let { default: initAccordions } = await import(
+                './blocks/accordionImage.js'
+            )
+            initAccordions()
+        }
     }
 
     function resizeHandler() {

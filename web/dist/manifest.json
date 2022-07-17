@@ -1,23 +1,35 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.df0ee860.js",
+    "file": "assets/app.d3efcbbd.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "src/vue/components/accordion/Accordion.vue"
+      "_accordionImage.33f34399.js"
     ],
     "css": [
       "assets/app.1401b2af.css"
     ],
-    "integrity": "sha384-Q+F6HmnC0dV4X0udxyJsII9NKY883PgNjE/JL8FwxbaUL8TdKPwyFocwMib/uYI0"
+    "integrity": "sha384-S7GMSbsO0a88WogXOw6IuI0T5NUtz633zRqFvfp3BpocE0ry/L2Y7+meMdCKTgsO"
   },
-  "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.8dd5e0f2.js",
-    "src": "src/vue/components/accordion/Accordion.vue",
+  "_accordionImage.33f34399.js": {
+    "file": "assets/accordionImage.33f34399.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-OgNGV2Gpx277hX6uaFExt785E7fnk2hivMQ9dYueNLgSLpkXNNSgg8XxcGUuHMyo"
+    "dynamicImports": [
+      "src/vue/components/accordion/Accordion.vue"
+    ],
+    "integrity": "sha384-ZCIKQ6TBaFF5Jfcf1tXP5oovsn8FFY/p497pd8hAPNAVs6jz9tMYP7elBK1PjnkJ"
+  },
+  "src/vue/components/accordion/Accordion.vue": {
+    "file": "assets/Accordion.c0c90d3c.js",
+    "src": "src/vue/components/accordion/Accordion.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_accordionImage.33f34399.js",
+      "src/js/app.js"
+    ],
+    "integrity": "sha384-dj+QY+JpjuGPjXYyqFiAjbJr213t5bnn1Rz+gewWGOObARAAS5CN5MLVWBvvgil2"
   }
 }
