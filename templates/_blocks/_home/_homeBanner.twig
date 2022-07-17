@@ -13,13 +13,20 @@
         </div>
         <div class="relative z-10 grid grid-cols-12 py-8 pb-24 lg:gap-10 lg:py-0">
             <div class="flex flex-col col-span-11 pr-5 lg:col-span-7">
-                <h1 class="mb-6 font-medium text-40 lg:text-56">
+                <h1 class="mb-6 font-medium opacity-0 text-40 lg:text-56 js-homeBannerTitle">
                     {{ block.itemTitle }}
                 </h1>
-                <span class="text-24 max-w-[700px]">{{ block.itemIntro }}</span>
+                <span class="text-24 max-w-[700px] js-homeBannerText opacity-0">{{ block.itemIntro }}</span>
                 {% if block.itemLink.getLink() %}
                     <div class="mt-8">
-                        {{ macros.button(block.itemLink.getUrl(), block.itemLink.getText(), 'btn-primary', 'bg-primary-default') }}
+                        {{
+                            macros.button(
+                                block.itemLink.getUrl(),
+                                block.itemLink.getText(),
+                                'btn-primary js-homeBannerLink opacity-0',
+                                'bg-primary-default'
+                            )
+                        }}
                     </div>
                 {% endif %}
             </div>

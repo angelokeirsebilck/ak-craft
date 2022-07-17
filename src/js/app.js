@@ -129,11 +129,31 @@ const mobileNavAnimation = () => {
     })
 }
 
+const homeBannerAnimation = () => {
+    const title = document.querySelector('.js-homeBannerTitle')
+    const text = document.querySelector('.js-homeBannerText')
+    const link = document.querySelector('.js-homeBannerLink')
+
+    const homeBannerTimeline = gsap.timeline({ delay: 0.5 })
+
+    homeBannerTimeline
+        .to(title, {
+            opacity: 1
+        })
+        .to(text, {
+            opacity: 1
+        })
+        .to(link, {
+            opacity: 1
+        })
+}
+
 main().then(() => {
     window.onload = () => {
         accordionImageSize(document.querySelectorAll('.js-accordionImages'))
         autoHeight()
         mobileNavAnimation()
+        homeBannerAnimation()
         window.dispatchEvent(new Event('resize'))
     }
 
