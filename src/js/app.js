@@ -134,18 +134,29 @@ const homeBannerAnimation = () => {
     const text = document.querySelector('.js-homeBannerText')
     const link = document.querySelector('.js-homeBannerLink')
 
-    const homeBannerTimeline = gsap.timeline({ delay: 0.5 })
-
+    const homeBannerTimeline = gsap.timeline()
+    homeBannerTimeline.addLabel('start', 0)
     homeBannerTimeline
         .to(title, {
-            opacity: 1
+            opacity: 1,
+            duration: 0.5
         })
-        .to(text, {
-            opacity: 1
-        })
-        .to(link, {
-            opacity: 1
-        })
+        .to(
+            text,
+            {
+                opacity: 1,
+                duration: 0.5
+            },
+            'start+=0.1'
+        )
+        .to(
+            link,
+            {
+                opacity: 1,
+                duration: 0.5
+            },
+            'start+=0.3'
+        )
 }
 
 main().then(() => {
