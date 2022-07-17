@@ -14,7 +14,19 @@ const main = async () => {
         weight: 400
     })
 
-    Promise.all([poppinsFontRegular.load()]).then(function () {
+    const poppinsFontLight = new FontFaceObserver('Poppins', {
+        weight: 300
+    })
+
+    const poppinsFontMedium = new FontFaceObserver('Poppins', {
+        weight: 500
+    })
+
+    Promise.all([
+        poppinsFontRegular.load(),
+        poppinsFontLight.load(),
+        poppinsFontMedium.load()
+    ]).then(function () {
         document.querySelector('body').classList.add('fonts-loaded')
     })
 
