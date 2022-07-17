@@ -137,10 +137,6 @@ const homeBannerAnimation = () => {
     const homeBannerTimeline = gsap.timeline()
     homeBannerTimeline.addLabel('start', 0)
     homeBannerTimeline
-        .to(title, {
-            opacity: 1,
-            duration: 0.2
-        })
         .to(
             text,
             {
