@@ -5,12 +5,20 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import FontFaceObserver from 'fontfaceobserver'
 
 // import ConfettiParty from '@/vue/ConfettiParty.vue'
 
 const main = async () => {
-    // Create our vue instances
+    const poppinsFontRegular = new FontFaceObserver('Poppins', {
+        weight: 400
+    })
 
+    Promise.all([poppinsFontRegular.load()]).then(function () {
+        document.querySelector('body').classList.add('fonts-loaded')
+    })
+
+    // Create our vue instances
     if (document.querySelectorAll('.js-accordion').length > 0) {
         const Accordion = defineAsyncComponent(() =>
             import('../vue/components/accordion/Accordion.vue')
@@ -137,6 +145,10 @@ const homeBannerAnimation = () => {
     const homeBannerTimeline = gsap.timeline()
     homeBannerTimeline.addLabel('start', 0)
     homeBannerTimeline
+        .to(title, {
+            opacity: 1,
+            duration: 0.2
+        })
         .to(
             text,
             {
@@ -160,7 +172,7 @@ main().then(() => {
         accordionImageSize(document.querySelectorAll('.js-accordionImages'))
         autoHeight()
         mobileNavAnimation()
-        homeBannerAnimation()
+        // homeBannerAnimation()
         window.dispatchEvent(new Event('resize'))
     }
 

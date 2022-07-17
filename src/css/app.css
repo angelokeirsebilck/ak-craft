@@ -29,6 +29,16 @@
     .js-menu::-webkit-scrollbar {
         display: none;
     }
+    body:not(.fonts-loaded) {
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        span {
+            opacity: 0;
+        }
+    }
 
     .form {
         font-family: 'Poppins', sans-serif !important;

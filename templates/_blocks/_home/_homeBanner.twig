@@ -16,17 +16,10 @@
                 <h1 class="mb-6 font-medium text-40 lg:text-56 js-homeBannerTitle">
                     {{ block.itemTitle }}
                 </h1>
-                <span class="text-24 max-w-[700px] js-homeBannerText opacity-0">{{ block.itemIntro }}</span>
+                <span class="text-24 max-w-[700px] js-homeBannerText">{{ block.itemIntro }}</span>
                 {% if block.itemLink.getLink() %}
                     <div class="mt-8">
-                        {{
-                            macros.button(
-                                block.itemLink.getUrl(),
-                                block.itemLink.getText(),
-                                'btn-primary js-homeBannerLink opacity-0',
-                                'bg-primary-default'
-                            )
-                        }}
+                        {{ macros.button(block.itemLink.getUrl(), block.itemLink.getText(), 'btn-primary js-homeBannerLink', 'bg-primary-default') }}
                     </div>
                 {% endif %}
             </div>

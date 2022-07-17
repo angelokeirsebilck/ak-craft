@@ -1,3 +1,5 @@
+import { createApp, defineAsyncComponent } from 'vue'
+
 const accordionImageSize = (items) => {
     items.forEach((parent) => {
         const container = parent.querySelector('.container')
