@@ -39,6 +39,9 @@
             opacity: 0;
         }
     }
+    body:not(.cookie-script-loaded) #cookiescript_injected {
+        display: none;
+    }
 
     .form {
         font-family: 'Poppins', sans-serif !important;

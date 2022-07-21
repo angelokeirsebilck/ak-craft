@@ -182,6 +182,9 @@ main().then(() => {
             )
             initAccordions()
         }
+        window.addEventListener('CookieScriptLoaded', function () {
+            document.querySelector('body').classList.add('cookie-script-loaded')
+        })
     }
 
     function resizeHandler() {
