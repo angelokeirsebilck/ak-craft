@@ -5,7 +5,7 @@
     <script>
         partytown = {
             resolveUrl: function (url, location, type) {
-                if (url.pathname.includes('cookie-script')) {
+                if (url.host.includes('cookie-script')) {
                     console.log("includes test")
                     var proxyUrl = new URL(
                         '{{getenv('BASE_URL')}}/cookie-script',
@@ -13,7 +13,6 @@
                     proxyUrl.searchParams.append('url', url)
                     return proxyUrl
                 }
-                return url
                 return url;
             },
             lib: '/dist/~partytown/',
