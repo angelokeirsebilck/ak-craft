@@ -4,13 +4,15 @@
 <head>
     <script>
         partytown = {
-                resolveUrl: function (url, location, type) {
-                if (type === 'script') {
-                const proxyUrl = new URL('https://cdn.builder.codes/api/v1/js-proxy');
-                proxyUrl.searchParams.append('url', url.href);
-                proxyUrl.searchParams.append('apiKey', '09b543a3391d4cd288820ff80d48da2c');  
-                return proxyUrl;
+            resolveUrl: function (url, location, type) {
+                if (url.pathname.includes('cookie-script')) {
+                    var proxyUrl = new URL(
+                        '{{getenv('BASE_URL')}}/cookie-script',
+                    )
+                    proxyUrl.searchParams.append('url', url)
+                    return proxyUrl
                 }
+                return url
                 return url;
             },
             lib: '/dist/~partytown/',
