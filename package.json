@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@builder.io/partytown": "^0.6.2",
+    "@fancyapps/ui": "^4.0.28",
     "@headlessui/vue": "^1.6.5",
     "@heroicons/vue": "^1.0.6",
     "@tailwindcss/aspect-ratio": "^0.4.0",

@@ -1,0 +1,14 @@
+{% set steps = block.itemList.collect() %}
+<div class="section js-steps">
+    <div class="container">
+        {% for step in steps %}
+            <div class="my-8 md:my-24 {{ step.itemImage.one() and loop.index is odd ? 'md:min-h-[646px]' }}">
+                {% if loop.index is odd %}
+                    {% include '_inc/_steps/_odd' %}
+                {% else %}
+                    {% include '_inc/_steps/_even' %}
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

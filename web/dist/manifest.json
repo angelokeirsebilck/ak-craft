@@ -1,18 +1,19 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.902a0e69.js",
+    "file": "assets/app.eb3c4652.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "_accordionImage.cfd39d66.js"
+      "_accordionImage.2c16be14.js",
+      "src/js/blocks/steps.js"
     ],
     "css": [
-      "assets/app.922a36f6.css"
+      "assets/app.9b201112.css"
     ],
-    "integrity": "sha384-PrGJsI6oB26LthxU71Ny2wKKHYbBS+SQlaXguD5obyYUyX6E4P2jw3m6rtz2louS"
+    "integrity": "sha384-rDFTn26L6HejrK67Ok4RBzTH42XOkjhvh4gyn8F5yWa7Fe3LFxEsVRiRUbrAcB+1"
   },
-  "_accordionImage.cfd39d66.js": {
-    "file": "assets/accordionImage.cfd39d66.js",
+  "_accordionImage.2c16be14.js": {
+    "file": "assets/accordionImage.2c16be14.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
@@ -20,16 +21,25 @@
     "dynamicImports": [
       "src/vue/components/accordion/Accordion.vue"
     ],
-    "integrity": "sha384-bDjuwjMYjdbfGhtB/ELkJXSlXMicSwzbpbC1ERIOmT368P+cABr1z7hFqa/FtFzX"
+    "integrity": "sha384-O2U4zB/V4H6Xc2H3RFzzStZmqxtTpikatqQW0WIr7YS13kUASwtrVqCAp4ZpPUs5"
+  },
+  "src/js/blocks/steps.js": {
+    "file": "assets/steps.2e1e5b34.js",
+    "src": "src/js/blocks/steps.js",
+    "isDynamicEntry": true,
+    "css": [
+      "assets/steps.798c3172.css"
+    ],
+    "integrity": "sha384-85a8vn4JCxLbBuEDcCfIrJNyVs3xpCsaMb8+qfX9OROP+s4EIb4Rjtv1QWzdiifD"
   },
   "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.5de99ded.js",
+    "file": "assets/Accordion.c0ca2656.js",
     "src": "src/vue/components/accordion/Accordion.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_accordionImage.cfd39d66.js",
+      "_accordionImage.2c16be14.js",
       "src/js/app.js"
     ],
-    "integrity": "sha384-sA+kEMaqvqpBDkB+fijeVr4FDecOVNH4RYPpZMLZvZtpKqv33w6cfN78icFc8jJm"
+    "integrity": "sha384-fDsB+mZDw2chSuyBpGjxMVKyFD1kENISJjCN+HQx9bb8ntLSqL/k2i4XRT/QVRIp"
   }
 }

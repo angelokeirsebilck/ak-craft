@@ -1,51 +1,79 @@
-field: dd47c6f3-2579-4634-a86b-44112604b851 # aK Content
+field: b91d5276-e722-46a8-ad13-b329b05633b7 # Steps List
 fieldLayouts:
-  a43db0d8-b722-4533-8e39-335952fecef8:
+  fba3a03a-6c5b-4ea0-bc18-4601e922db78:
     tabs:
       -
         elementCondition: null
         elements:
           -
             elementCondition: null
-            fieldUid: d0d38edf-4c1c-4adb-8f66-74e7bd8999ba # Title
+            fieldUid: ffb8a2fc-0664-4fe3-a0d1-9853e57355e6 # Title
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07983325-4fca-4a2c-89b7-e76e3dfa9caf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9a8262ac-e8a7-4a42-9608-01f44601e6b6 # Text
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: baa877e2-3e53-4457-a8da-e96e9155df00
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9d5cd99-d7a9-42d6-bf6b-56a1f84ba6aa # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 285ac5b6-7877-4ace-988b-762c1c0545a5
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: 09001b44-38ee-4df8-b306-1f7e833d64a3 # Image
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e6db0515-4747-4f31-9507-26c009491d69
-            userCondition: null
-            warning: null
-            width: 50
-          -
-            elementCondition: null
-            fieldUid: a0c54731-967f-41e9-b5f1-dd8a24a0eaca # Accordion List
-            instructions: null
-            label: null
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 30dd5043-7632-439e-8084-c78cd5e0db46
+            uid: 27a0776e-d1db-40ed-9ae6-f0b2c70e1756
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 7ca11670-2a02-45bf-8860-e75bb27834a6
+        uid: 82a95fb5-a7dc-49cc-b9d7-ef80171b983d
         userCondition: null
 fields:
-  09001b44-38ee-4df8-b306-1f7e833d64a3: # Image
+  9a8262ac-e8a7-4a42-9608-01f44601e6b6: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: itemText
+    instructions: null
+    name: Text
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Simple.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+  b9d5cd99-d7a9-42d6-bf6b-56a1f84ba6aa: # Image
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -60,7 +88,7 @@ fields:
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      defaultUploadLocationSubpath: Accordion-Image
+      defaultUploadLocationSubpath: null
       localizeRelations: false
       maxRelations: 1
       minRelations: null
@@ -88,52 +116,15 @@ fields:
       source: null
       sources:
         - 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+        - 'volume:a6efa4bf-47af-44a3-a00d-f2e7bab4523c' # Images aK Not Auto Resize
       targetSiteId: null
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  a0c54731-967f-41e9-b5f1-dd8a24a0eaca: # Accordion List
+  ffb8a2fc-0664-4fe3-a0d1-9853e57355e6: # Title
     columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: itemList
-    instructions: null
-    name: 'Accordion List'
-    searchable: false
-    settings:
-      blockTypeFields: 0
-      changedFieldIndicator: 423651108
-      columns:
-        __assoc__:
-          -
-            - 8e4ea5fe-b25a-4e8b-99b9-810b231cf066 # Title
-            -
-              __assoc__:
-                -
-                  - width
-                  - ''
-          -
-            - 713c40f9-6659-4eb7-98d8-943cfa224d0b # Text
-            -
-              __assoc__:
-                -
-                  - width
-                  - ''
-      contentTable: '{{%stc_14_itemlist}}'
-      fieldLayout: row
-      maxRows: null
-      minRows: null
-      propagationKeyFormat: null
-      propagationMethod: all
-      selectionLabel: null
-      staticField: null
-    translationKeyFormat: null
-    translationMethod: site
-    type: verbb\supertable\fields\SuperTableField
-  d0d38edf-4c1c-4adb-8f66-74e7bd8999ba: # Title
-    columnSuffix: jfgwirqg
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
@@ -141,25 +132,14 @@ fields:
     name: Title
     searchable: false
     settings:
-      availableTransforms: '*'
-      availableVolumes: '*'
-      columnType: text
-      configSelectionMode: choose
-      defaultTransform: ''
-      manualConfig: ''
-      purifierConfig: null
-      purifyHtml: true
-      redactorConfig: Title.json
-      removeEmptyTags: false
-      removeInlineStyles: false
-      removeNbsp: false
-      showHtmlButtonForNonAdmins: false
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      uiMode: enlarged
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
-    type: craft\redactor\Field
-handle: typeAccordionImage
-name: 'Accordion / Image'
-sortOrder: 5
+    type: craft\fields\PlainText

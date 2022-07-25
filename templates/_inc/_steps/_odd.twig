@@ -1,0 +1,49 @@
+<div class="relative flex items-end mb-4 md:block">
+    <span class="text-[90px] md:text-[150px] transfrm translate-y-[7px] md:translate-y-0 text-stroke leading-none">{{ loop.index }}.</span>
+    <span class="font-medium text-31 md:!text-48 md:absolute md:top-1/2 transform md:-translate-y-1/2 translate-x-2 md:-translate-x-6">
+        {{ step.itemTitle }}
+    </span>
+</div>
+<div class="relative">
+    {% if step.itemImage.one() %}
+        <div class="absolute top-0 left-0 z-20 hidden w-full h-full grid-cols-12 gap-5 md:grid lg:gap-10">
+            <div class="relative col-span-8 bg-tertiary-default rounded-2xl"></div>
+        </div>
+    {% endif %}
+
+    <div class="absolute z-10 grid w-full h-full grid-cols-12 gap-5 top-6 -left-6 md:left-6 lg:gap-10">
+        <div class="relative col-span-12 {{ step.itemImage.one() ? 'md:col-span-8' : 'md:col-span-7' }} bg-secondary-default rounded-2xl"></div>
+    </div>
+    <div class="relative z-30 grid grid-cols-12 gap-5 lg:gap-10">
+        <div class="col-span-12 {{ step.itemImage.one() ? 'md:col-span-5' : 'md:col-span-7' }} ">
+            <div class="p-8 {{ step.itemImage.one() ? 'md:pr-0' : 'rounded-2xl' }}  bg-tertiary-default rounded-2xl max-w-none prose md:prose-md">
+                {{ step.itemText }}
+            </div>
+        </div>
+        {% if step.itemImage.one() %}
+            <div class="col-span-12 md:col-span-7 md:transform md:translate-y-12 js-panzoomParent">
+                <div class="relative bg-white-default md:h-[50px] rounded-2xl md:rounded-tl-2xl overflow-hidden md:overflow-visible">
+                    <div class="absolute z-10 flex top-3 left-3 fill-primary-default">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-8 h-8 transition-colors cursor-pointer js-zoomOut hover:fill-secondary-default"
+                            viewBox="0 0 20 20"
+                            fill="inherit">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-8 h-8 transition-colors cursor-pointer js-zoomIn hover:fill-secondary-default"
+                            viewBox="0 0 20 20"
+                            fill="inherit">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="js-panzoom md:max-h-[400px] w-full overflow-hidden top-6 rounded-bl-2xl left-0 md:absolute relative">
+                        <img class="panzoom__content" src="{{ step.itemImage.one().getUrl({}) }}" alt="" />
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>

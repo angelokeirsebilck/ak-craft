@@ -1,0 +1,71 @@
+field: dd47c6f3-2579-4634-a86b-44112604b851 # aK Content
+fieldLayouts:
+  10bffae7-b71e-4d28-afaa-f68cba089ead:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b91d5276-e722-46a8-ad13-b329b05633b7 # Steps List
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 872ed65c-614f-436e-b18e-2fadf38af383
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c029e4ad-b514-4565-837f-8e95d81b6af5
+        userCondition: null
+fields:
+  b91d5276-e722-46a8-ad13-b329b05633b7: # Steps List
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: itemList
+    instructions: null
+    name: 'Steps List'
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1544860069
+      columns:
+        __assoc__:
+          -
+            - ffb8a2fc-0664-4fe3-a0d1-9853e57355e6 # Title
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 9a8262ac-e8a7-4a42-9608-01f44601e6b6 # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - b9d5cd99-d7a9-42d6-bf6b-56a1f84ba6aa # Image
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_16_itemlist}}'
+      fieldLayout: row
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: typeSteps
+name: Steps
+sortOrder: 7

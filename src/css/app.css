@@ -119,6 +119,12 @@
     .fui-required {
         @apply hidden;
     }
+
+    .text-stroke {
+        -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: theme('colors.secondary.default');
+    }
 }
 
 @layer utilities {

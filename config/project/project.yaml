@@ -1,4 +1,4 @@
-dateModified: 1658382935
+dateModified: 1658477854
 elementSources:
   craft\elements\Entry:
     -
@@ -100,6 +100,20 @@ fs:
       subfolder: ak/uploads/images
     type: vaersaagod\dospaces\Fs
     url: '@doBaseUrl'
+  imagesAkNotAutoResize:
+    hasUrls: true
+    name: 'Images AK Not Auto Resize'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: ak/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
   imagesKerotec:
     hasUrls: true
     name: 'Images KEROTEC'
@@ -187,6 +201,7 @@ meta:
     8cf35363-80c2-4f15-aa4a-34ddbda37b68: 'Legal Pages' # Legal Pages
     8e4ea5fe-b25a-4e8b-99b9-810b231cf066: Title # Title
     8ed4ac99-1404-4f75-9d5f-6d7454d9e078: Text # Text
+    9a8262ac-e8a7-4a42-9608-01f44601e6b6: Text # Text
     9a649057-30a2-42bd-8fb9-c53cffd15c31: 'Angelo Keirsebilck' # Angelo Keirsebilck
     9b95db5c-d503-489b-8025-40c72a236aed: 'Link Label' # Link Label
     9ba41756-ffd1-42e9-a1ab-479d225d4919: Title # Title
@@ -268,6 +283,7 @@ meta:
     a0c54731-967f-41e9-b5f1-dd8a24a0eaca: 'Accordion List' # Accordion List
     a4ad06d6-30ff-410d-bb81-c1ea7227dd84: Video # Video
     a4c67e6a-9c78-47d7-b3f8-c5e687a624af: Portfolio # Portfolio
+    a6efa4bf-47af-44a3-a00d-f2e7bab4523c: 'Images aK Not Auto Resize' # Images aK Not Auto Resize
     a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
     a607b8a6-e61c-47cc-b593-f34192c7d9a7: 'Show Party Icon' # Show Party Icon
     a97918b0-0260-45dc-ad5c-a6289f0f7041: Link # Link
@@ -279,8 +295,11 @@ meta:
     af2d83da-9397-4fdd-ae4b-3330cd82854c: KEROTEC # KEROTEC
     b1fbd584-8a4a-4b09-9fdf-41aadc84322c: 'aK Highlight Nav' # aK Highlight Nav
     b5daeeab-9a80-4ee3-955e-c65774b6bb5b: 'Text Columns' # Text Columns
+    b9d5cd99-d7a9-42d6-bf6b-56a1f84ba6aa: Image # Image
     b75a0cb6-184e-43d3-8ef0-7815036e946d: 'aK Home' # aK Home
+    b91d5276-e722-46a8-ad13-b329b05633b7: 'Steps List' # Steps List
     b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
+    b361fdf8-880b-4f7a-b84c-4611d563f0da: Steps # Steps
     b92519cf-e415-4f20-af0b-b02eabf460d4: Facebook # Facebook
     b113940c-2a49-456f-b10d-862587b1acda: 'Kerotec SEO Place' # Kerotec SEO Place
     b317878c-900e-4b6b-aab5-1d1da11e7863: 'aK Github' # aK Github
@@ -338,6 +357,7 @@ meta:
     fbaa787d-4cdf-42fe-9f76-77c086e924e3: Author # Author
     fbd049a5-5396-464a-9c6d-ffc6ffbe7216: 'Kerotec SEO Title' # Kerotec SEO Title
     fd13a2dc-8740-406f-a266-ef3ec9f0f684: 'Kerotec USP' # Kerotec USP
+    ffb8a2fc-0664-4fe3-a0d1-9853e57355e6: Title # Title
 plugins:
   blitz:
     edition: standard
@@ -643,6 +663,85 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
+    settings:
+      assetSourceSettings:
+        1:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        2:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        3:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        5:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        6:
+          __assoc__:
+            -
+              - enabled
+              - ''
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+      enabled: false
+      imageHeight: 2048
+      imageQuality: 100
+      imageWidth: 2048
+      nonDestructiveCrop: false
+      nonDestructiveResize: false
+      skipLarger: true
   minify:
     edition: standard
     enabled: true

@@ -7,7 +7,6 @@
         partytown = {
             resolveUrl: function (url, location, type) {
                 if (url.host.includes('cookie-script')) {
-                    console.log("includes test")
                     var proxyUrl = new URL(
                         '{{getenv('BASE_URL')}}/cookie-script',
                     )
