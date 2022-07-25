@@ -16,7 +16,11 @@
     </div>
     <div class="relative z-30 grid grid-cols-12 gap-5 lg:gap-10">
         <div class="col-span-12 {{ step.itemImage.one() ? 'md:col-span-5' : 'md:col-span-7' }} ">
-            <div class="p-8 {{ step.itemImage.one() ? 'md:pr-0' : 'rounded-2xl' }}  bg-tertiary-default rounded-2xl max-w-none prose md:prose-md">
+            <div class="p-4 md:p-8 {{
+                step.itemImage.one()
+                    ? 'md:pr-0'
+                    : 'rounded-2xl'
+                }}  bg-tertiary-default rounded-2xl max-w-none prose md:prose-md">
                 {{ step.itemText }}
             </div>
         </div>
