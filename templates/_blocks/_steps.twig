@@ -2,7 +2,35 @@
 <div class="section js-steps">
     <div class="container">
         {% for step in steps %}
-            <div class="my-8 md:my-24 {{ step.itemImage.one() and loop.index is odd ? 'md:min-h-[646px]' }}">
+            <div class="my-8 md:my-24 {{ step.itemImage.one() and loop.index is odd ? 'md:min-h-[646px]' }} relative">
+                {% if loop.index == 1 %}
+                    {{
+                        svg('@webroot/img/svg/step1.svg')|attr({
+                            class: 'absolute hidden xl:block -left-[12%] top-1/2'
+                        })
+                    }}
+                {% endif %}
+                {% if loop.index == 2 %}
+                    {{
+                        svg('@webroot/img/svg/step2.svg')|attr({
+                            class: 'absolute hidden xl:block right-0 -bottom-full'
+                        })
+                    }}
+                {% endif %}
+                {% if loop.index == 3 %}
+                    {{
+                        svg('@webroot/img/svg/step3.svg')|attr({
+                            class: 'absolute hidden xl:block -left-[8%] top-[85%]'
+                        })
+                    }}
+                {% endif %}
+                {% if loop.index == 4 %}
+                    {{
+                        svg('@webroot/img/svg/step4.svg')|attr({
+                            class: 'absolute hidden xl:block right-[18%] -bottom-full'
+                        })
+                    }}
+                {% endif %}
                 {% if loop.index is odd %}
                     {% include '_inc/_steps/_odd' %}
                 {% else %}

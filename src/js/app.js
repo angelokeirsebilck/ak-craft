@@ -1,5 +1,9 @@
 import '@/css/app.css'
 
+if (import.meta.env.PROD) {
+    import('@/css/fonts-loaded.css')
+}
+
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -195,7 +199,6 @@ main().then(() => {
         //     )
         //     initPanzoomSteps(panzoomItems)
         // }
-
         window.addEventListener('CookieScriptLoaded', function () {
             document.querySelector('body').classList.add('cookie-script-loaded')
         })

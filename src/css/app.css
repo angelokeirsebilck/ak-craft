@@ -29,16 +29,7 @@
     .js-menu::-webkit-scrollbar {
         display: none;
     }
-    body:not(.fonts-loaded) {
-        h1,
-        h2,
-        h3,
-        p,
-        ul,
-        span {
-            opacity: 0;
-        }
-    }
+
     body:not(.cookie-script-loaded) #cookiescript_injected {
         display: none;
     }

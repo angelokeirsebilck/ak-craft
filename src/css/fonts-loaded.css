@@ -1,0 +1,10 @@
+body:not(.fonts-loaded) {
+    h1,
+    h2,
+    h3,
+    p,
+    ul,
+    span {
+        opacity: 0;
+    }
+}

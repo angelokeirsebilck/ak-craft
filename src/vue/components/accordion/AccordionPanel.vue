@@ -96,7 +96,7 @@ function handleTransition() {
                 </div>
             </div>
             <div
-                class="prose mb-5 overflow-hidden pr-8 text-24 transition-[max-height] will-change-[max-height] lg:mb-7"
+                class="prose mb-5 overflow-hidden pr-8 text-24 transition-[max-height] will-change-[max-height] md:prose-md lg:mb-7"
                 :class="{
                     'invisible absolute opacity-0': !props.isOpen
                 }"
