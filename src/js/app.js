@@ -180,15 +180,21 @@ main().then(() => {
             let { default: initAccordions } = await import(
                 './blocks/accordionImage.js'
             )
+
             initAccordions()
         }
-        const panzoomItems = document.querySelectorAll('.js-panzoom')
-        if (panzoomItems.length > 0) {
-            let { default: initPanzoomSteps } = await import(
-                './blocks/steps.js'
-            )
-            initPanzoomSteps(panzoomItems)
+
+        if (document.querySelectorAll('.js-fancyBox').length > 0) {
+            let { default: Fancybox } = await import('./packages/fancybox.js')
         }
+
+        // const panzoomItems = document.querySelectorAll('.js-panzoom')
+        // if (panzoomItems.length > 0) {
+        //     let { default: initPanzoomSteps } = await import(
+        //         './blocks/steps.js'
+        //     )
+        //     initPanzoomSteps(panzoomItems)
+        // }
 
         window.addEventListener('CookieScriptLoaded', function () {
             document.querySelector('body').classList.add('cookie-script-loaded')

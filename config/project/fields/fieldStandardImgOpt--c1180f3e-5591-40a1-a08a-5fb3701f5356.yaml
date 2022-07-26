@@ -14,6 +14,7 @@ settings:
       -
         - imagesAK
         -
+          - Aanpak
           - Accordion-Image
   ignoreFilesOfType:
     - image/svg
@@ -74,7 +75,7 @@ settings:
           - '1024'
         -
           - useAspectRatio
-          - '1'
+          - ''
         -
           - aspectRatioX
           - '1'

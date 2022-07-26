@@ -106,8 +106,8 @@ module.exports = {
                         '--tw-prose-links': theme('colors.primary.default'),
                         p: {
                             fontWeight: 300,
-                            fontSize: '18px',
-                            lineHeight: '30px'
+                            fontSize: '16px',
+                            lineHeight: '26px'
                         },
                         strong: {
                             color: 'inherit',
@@ -158,6 +158,11 @@ module.exports = {
                             fontSize: '31px',
                             fontWeight: 500,
                             lineHeight: '36px'
+                        },
+                        p: {
+                            fontWeight: 300,
+                            fontSize: '18px',
+                            lineHeight: '30px'
                         }
                     }
                 }

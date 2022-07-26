@@ -1,19 +1,19 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.a6b490c6.js",
+    "file": "assets/app.77e3d3fc.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "_accordionImage.d6b28672.js",
-      "src/js/blocks/steps.js"
+      "_accordionImage.cb2e416e.js",
+      "src/js/packages/fancybox.js"
     ],
     "css": [
-      "assets/app.c583dd58.css"
+      "assets/app.fac29331.css"
     ],
-    "integrity": "sha384-/hQ6TXF4CfBL8b/bO3eVxff1MDpBbtzoR3nGHBSyKeRXXpzzKWK2guAGAPJ197gd"
+    "integrity": "sha384-yB5Yx8WNFz5vLi3i35chZHApJfkoBOHnG4b6xhMXrAttgcWmwKLup3LovYcCVu4Y"
   },
-  "_accordionImage.d6b28672.js": {
-    "file": "assets/accordionImage.d6b28672.js",
+  "_accordionImage.cb2e416e.js": {
+    "file": "assets/accordionImage.cb2e416e.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
@@ -21,25 +21,25 @@
     "dynamicImports": [
       "src/vue/components/accordion/Accordion.vue"
     ],
-    "integrity": "sha384-PWK2XCDeyBkDKATHAPDA2gJx1mC6YsDOo2GdSvYGOt6t3Um7H4hriU3zsbaKfJQs"
+    "integrity": "sha384-ZvPqrz3dyryY6J6+Om70EyuffTkq3D0mAuTdfGiuXA3OeOD3QwWqDw50TRQbThE7"
   },
-  "src/js/blocks/steps.js": {
-    "file": "assets/steps.2e1e5b34.js",
-    "src": "src/js/blocks/steps.js",
+  "src/js/packages/fancybox.js": {
+    "file": "assets/fancybox.70632a5f.js",
+    "src": "src/js/packages/fancybox.js",
     "isDynamicEntry": true,
     "css": [
-      "assets/steps.798c3172.css"
+      "assets/fancybox.c5b7156f.css"
     ],
-    "integrity": "sha384-85a8vn4JCxLbBuEDcCfIrJNyVs3xpCsaMb8+qfX9OROP+s4EIb4Rjtv1QWzdiifD"
+    "integrity": "sha384-kvAdbndrnOcXAWMlOFZSSZYHJtYPbGrhzT42kmGWbnGFEZVJ+5JOZxevczzzsOgr"
   },
   "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.3cc8e594.js",
+    "file": "assets/Accordion.e2efae64.js",
     "src": "src/vue/components/accordion/Accordion.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_accordionImage.d6b28672.js",
+      "_accordionImage.cb2e416e.js",
       "src/js/app.js"
     ],
-    "integrity": "sha384-TCfdNO2KH9HmIFEeeAEuL4ap/xSSTLbN6dGj8le0v5JgaOCC1XzAwENAIFcVgzDp"
+    "integrity": "sha384-vIotV6mcWss0cobWFWJ99AcyNbt4d5cZpSUxc0p8img9DynLVO7QfxCPOc1jrjtD"
   }
 }

@@ -1,6 +1,6 @@
 <div class="relative flex items-end mb-4 md:block">
     <span class="text-[90px] md:text-[150px] transfrm translate-y-[7px] md:translate-y-0 text-stroke leading-none">{{ loop.index }}.</span>
-    <span class="font-medium text-31 md:!text-48 md:absolute md:top-1/2 transform md:-translate-y-1/2 translate-x-2 md:-translate-x-6">
+    <span class="font-medium transform translate-x-2 text-31 lg:text-40 xl:text-48 md:absolute md:top-1/2 md:-translate-y-1/2 md:-translate-x-6">
         {{ step.itemTitle }}
     </span>
 </div>
@@ -15,7 +15,7 @@
         <div class="relative col-span-12 {{ step.itemImage.one() ? 'md:col-span-8' : 'md:col-span-7' }} bg-secondary-default rounded-2xl"></div>
     </div>
     <div class="relative z-30 grid grid-cols-12 gap-5 lg:gap-10">
-        <div class="col-span-12 {{ step.itemImage.one() ? 'md:col-span-5' : 'md:col-span-7' }} ">
+        <div class="col-span-12  {{ step.itemImage.one() ? 'md:col-span-5' : 'md:col-span-7' }} ">
             <div class="p-4 md:p-8 {{
                 step.itemImage.one()
                     ? 'md:pr-0'
@@ -25,8 +25,8 @@
             </div>
         </div>
         {% if step.itemImage.one() %}
-            <div class="col-span-12 md:col-span-7 md:transform md:translate-y-12 js-panzoomParent">
-                <div class="relative bg-white-default md:h-[50px] rounded-2xl md:rounded-tl-2xl overflow-hidden md:overflow-visible">
+            <div class="col-span-12 md:col-span-7 md:transform md:translate-y-12 js-fancyBox">
+                {# <div class="relative bg-white-default md:h-[50px] rounded-2xl md:rounded-tl-2xl overflow-hidden md:overflow-visible">
                     <div class="absolute z-10 flex top-3 left-3 fill-primary-default">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             class="w-8 h-8 transition-colors cursor-pointer js-zoomOut hover:fill-secondary-default"
@@ -46,7 +46,23 @@
                     <div class="js-panzoom md:max-h-[400px] w-full overflow-hidden top-6 rounded-bl-2xl left-0 md:absolute relative">
                         <img class="panzoom__content" src="{{ step.itemImage.one().getUrl({}) }}" alt="" />
                     </div>
-                </div>
+                </div> #}
+                {% set sizes =
+                    '(max-width: 375px) 334px, (max-width: 640px) 600px, (max-width: 768px) 727px, (max-width: 1024px) 541px, (max-width: 1280px) 6836px, 777px'
+                %}
+                {# {% set sizes = '100vw' %} #}
+                <a data-fancybox data-src="{{ step.itemImage.one().getUrl() }}" class="w-full md:h-[400px] md:absolute top-0 left-0">
+                    {% set optimizedImage = step.itemImage.one().fieldStandardImgOpt %}
+                    <picture class="">
+                        <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
+                        <img src="{{ optimizedImage.src() }}"
+                            srcset="{{ optimizedImage.srcset() }}"
+                            width="{{ step.itemImage.one().getWidth() }}"
+                            height="{{ step.itemImage.one().getHeight() }}"
+                            sizes="{{ sizes }}"
+                            class="object-cover object-left-top w-full h-full cursor-pointer rounded-2xl" />
+                    </picture>
+                </a>
             </div>
         {% endif %}
     </div>
