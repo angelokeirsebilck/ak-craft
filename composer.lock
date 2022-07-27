@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "556dd98c625e2c83c04274bc360372fb",
+    "content-hash": "85236c2bbc7442bad5aadaf7a3f584a4",
     "packages": [
         {
             "name": "amphp/amp",
@@ -955,11 +955,6 @@
         {
             "name": "composer/ca-bundle",
             "version": "1.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "30897edbfb15e784fe55587b4f73ceefd3c4d98c"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/composer/ca-bundle/zipball/30897edbfb15e784fe55587b4f73ceefd3c4d98c",
@@ -970,12 +965,6 @@
                 "ext-openssl": "*",
                 "ext-pcre": "*",
                 "php": "^5.3.2 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^0.12.55",
-                "psr/log": "^1.0",
-                "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0 || ^6.0"
             },
             "type": "library",
             "extra": {
@@ -988,7 +977,6 @@
                     "Composer\\CaBundle\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1006,25 +994,6 @@
                 "certificate",
                 "ssl",
                 "tls"
-            ],
-            "support": {
-                "irc": "irc://irc.freenode.org/composer",
-                "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.3.3"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/composer",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
             ],
             "time": "2022-07-20T07:14:26+00:00"
         },
@@ -1353,11 +1322,11 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.1.4.1",
+            "version": "4.2.0.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/51bce4cad7d95e25727fb0943cbdc62e2c5bdd52",
-                "reference": "51bce4cad7d95e25727fb0943cbdc62e2c5bdd52",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/be5dc3ab57c66c80a950556d9eaddcfb194ae0df",
+                "reference": "be5dc3ab57c66c80a950556d9eaddcfb194ae0df",
                 "shasum": ""
             },
             "require": {
@@ -1448,7 +1417,7 @@
                 "docs": "https://docs.craftcms.com/v3/",
                 "rss": "https://github.com/craftcms/cms/releases.atom"
             },
-            "time": "2022-07-13T17:41:28+00:00"
+            "time": "2022-07-27T00:08:54+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -2906,12 +2875,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.21.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/collections.git",
-                "reference": "9b862a8e7c0da5b00af75b1422d3a29080ef7adb"
-            },
+            "version": "v9.22.1",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/collections/zipball/9b862a8e7c0da5b00af75b1422d3a29080ef7adb",
@@ -2941,7 +2905,6 @@
                     "Illuminate\\Support\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2953,20 +2916,11 @@
             ],
             "description": "The Illuminate Collections package.",
             "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
             "time": "2022-07-18T13:54:30+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.21.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/conditionable.git",
-                "reference": "46b7beed47948bd2e67f523d0a76daa62775031e"
-            },
+            "version": "v9.22.1",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/conditionable/zipball/46b7beed47948bd2e67f523d0a76daa62775031e",
@@ -2987,7 +2941,6 @@
                     "Illuminate\\Support\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2999,24 +2952,15 @@
             ],
             "description": "The Illuminate Conditionable package.",
             "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
             "time": "2022-05-31T14:47:50+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.21.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/contracts.git",
-                "reference": "e014cf88ef46065b8b1f078893c01189b95ffb11"
-            },
+            "version": "v9.22.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/e014cf88ef46065b8b1f078893c01189b95ffb11",
-                "reference": "e014cf88ef46065b8b1f078893c01189b95ffb11",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/ac7f63520e18721f214e80fa7e8f0a5c77ed2719",
+                "reference": "ac7f63520e18721f214e80fa7e8f0a5c77ed2719",
                 "shasum": ""
             },
             "require": {
@@ -3035,7 +2979,6 @@
                     "Illuminate\\Contracts\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3047,20 +2990,11 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
-            "time": "2022-06-07T19:28:00+00:00"
+            "time": "2022-07-26T14:41:38+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.21.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/illuminate/macroable.git",
-                "reference": "25a2c6dac2b7541ecbadef952702e84ae15f5354"
-            },
+            "version": "v9.22.1",
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/illuminate/macroable/zipball/25a2c6dac2b7541ecbadef952702e84ae15f5354",
@@ -3081,7 +3015,6 @@
                     "Illuminate\\Support\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -3093,10 +3026,6 @@
             ],
             "description": "The Illuminate Macroable package.",
             "homepage": "https://laravel.com",
-            "support": {
-                "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
-            },
             "time": "2022-02-01T14:44:21+00:00"
         },
         {
@@ -4161,11 +4090,11 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.7.0",
+            "version": "2.8.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5579edf28aee1190a798bfa5be8bc16c563bd524",
-                "reference": "5579edf28aee1190a798bfa5be8bc16c563bd524",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/720488632c590286b88b80e62aa3d3d551ad4a50",
+                "reference": "720488632c590286b88b80e62aa3d3d551ad4a50",
                 "shasum": ""
             },
             "require": {
@@ -4188,7 +4117,6 @@
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
                 "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
-                "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
                 "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
@@ -4220,7 +4148,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2022-06-09T08:59:12+00:00"
+            "time": "2022-07-24T11:55:47+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -4848,18 +4776,18 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.6",
+            "version": "4.0.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5d10b32c7807d491a36611d712fea6af141c93d5",
-                "reference": "5d10b32c7807d491a36611d712fea6af141c93d5",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d6dbe3021c26ba3976a0c3a14a2f05bf5f596940",
+                "reference": "d6dbe3021c26ba3976a0c3a14a2f05bf5f596940",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0.0",
                 "davechild/textstatistics": "^1.0.3",
                 "nystudio107/craft-plugin-manifest": "^4.0.0",
-                "nystudio107/craft-twigfield": "^1.0.9",
+                "nystudio107/craft-twigfield": "^1.0.10",
                 "php": "^8.0.2",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
@@ -4904,15 +4832,15 @@
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
                 "source": "https://github.com/nystudio107/craft-seomatic"
             },
-            "time": "2022-06-30T18:06:56+00:00"
+            "time": "2022-07-23T21:02:37+00:00"
         },
         {
             "name": "nystudio107/craft-twigfield",
-            "version": "1.0.9",
+            "version": "1.0.11",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigfield/zipball/83c840ef148add14a73c990ce1d03fb588f886b7",
-                "reference": "83c840ef148add14a73c990ce1d03fb588f886b7",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigfield/zipball/1b920b9fa491256755975c9dd8e3a9a160546494",
+                "reference": "1b920b9fa491256755975c9dd8e3a9a160546494",
                 "shasum": ""
             },
             "require": {
@@ -4952,7 +4880,7 @@
                 "issues": "https://github.com/nystudio107/craft-twigfield/issues",
                 "source": "https://github.com/nystudio107/craft-twigfield"
             },
-            "time": "2022-06-25T03:05:11+00:00"
+            "time": "2022-07-24T18:06:56+00:00"
         },
         {
             "name": "nystudio107/craft-vite",
@@ -5806,11 +5734,11 @@
         },
         {
             "name": "putyourlightson/craft-blitz",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/154d21a5c80c80000dac3d0f73e88dd71bd04187",
-                "reference": "154d21a5c80c80000dac3d0f73e88dd71bd04187",
+                "url": "https://api.github.com/repos/putyourlightson/craft-blitz/zipball/56d5f306fceb8338e6b2b6071e1665b07a1341fa",
+                "reference": "56d5f306fceb8338e6b2b6071e1665b07a1341fa",
                 "shasum": ""
             },
             "require": {
@@ -5845,11 +5773,8 @@
             "keywords": [
                 "cache",
                 "caching",
-                "cms",
-                "craft",
-                "craftcms",
+                "fast",
                 "performance",
-                "plugin",
                 "speed"
             ],
             "support": {
@@ -5857,7 +5782,7 @@
                 "source": "https://github.com/putyourlightson/craft-blitz",
                 "issues": "https://github.com/putyourlightson/craft-blitz/issues"
             },
-            "time": "2022-07-05T15:48:12+00:00"
+            "time": "2022-07-21T06:45:28+00:00"
         },
         {
             "name": "putyourlightson/craft-blitz-hints",
@@ -8387,18 +8312,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/formie.git",
-                "reference": "5ab363bc892a36b9fc49f6afaec40c02aad77e25"
+                "reference": "1a63315fe39d672bb2e70b1e8a5e88d6e6c22b0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/formie/zipball/5ab363bc892a36b9fc49f6afaec40c02aad77e25",
-                "reference": "5ab363bc892a36b9fc49f6afaec40c02aad77e25",
+                "url": "https://api.github.com/repos/verbb/formie/zipball/1a63315fe39d672bb2e70b1e8a5e88d6e6c22b0b",
+                "reference": "1a63315fe39d672bb2e70b1e8a5e88d6e6c22b0b",
                 "shasum": ""
             },
             "require": {
                 "commerceguys/addressing": "^1.2",
-                "craftcms/cms": "^4.0.0-beta.1",
-                "dompdf/dompdf": "^1.0.2",
+                "craftcms/cms": "^4.0.0",
+                "dompdf/dompdf": "^1.0.2 || ^2.0.0",
                 "ezyang/htmlpurifier": "^4.13",
                 "fakerphp/faker": "^1.9.1",
                 "giggsey/libphonenumber-for-php": "^8.12",
@@ -8414,8 +8339,9 @@
                 "stripe/stripe-php": "^7.0",
                 "symfony/expression-language": "^5.3.0",
                 "thenetworg/oauth2-azure": "^2.0",
-                "verbb/base": "^2.0.0-beta"
+                "verbb/base": "^2.0.0"
             },
+            "default-branch": true,
             "type": "craft-plugin",
             "extra": {
                 "name": "Formie",
@@ -8453,7 +8379,7 @@
                 "rss": "https://github.com/verbb/formie/commits/v2.atom",
                 "source": "https://github.com/verbb/formie"
             },
-            "time": "2022-07-08T13:05:34+00:00"
+            "time": "2022-07-27T02:33:37+00:00"
         },
         {
             "name": "verbb/image-resizer",
@@ -8512,22 +8438,17 @@
         },
         {
             "name": "verbb/super-table",
-            "version": "3.0.0-beta.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/verbb/super-table.git",
-                "reference": "6f41edf3c626074287e5284cb8147e7c7223c5bb"
-            },
+            "version": "3.0.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/super-table/zipball/6f41edf3c626074287e5284cb8147e7c7223c5bb",
-                "reference": "6f41edf3c626074287e5284cb8147e7c7223c5bb",
+                "url": "https://api.github.com/repos/verbb/super-table/zipball/4c9397e5d22cec0e5fdca919533a838d54dc7bd2",
+                "reference": "4c9397e5d22cec0e5fdca919533a838d54dc7bd2",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^4.0.0-beta.1",
+                "craftcms/cms": "^4.0.0",
                 "php": "^8.0.2",
-                "verbb/base": "^2.0.0-beta"
+                "verbb/base": "^2.0.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -8543,7 +8464,6 @@
                     "verbb\\supertable\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -8555,26 +8475,20 @@
             ],
             "description": "Super-charge your Craft workflow with Super Table. Use it to group fields together or build complex Matrix-in-Matrix solutions.",
             "keywords": [
-                "Craft",
                 "cms",
+                "craft",
                 "craft-plugin",
                 "craftcms",
                 "super table"
             ],
             "support": {
-                "docs": "https://github.com/verbb/super-table",
                 "email": "support@verbb.io",
                 "issues": "https://github.com/verbb/super-table/issues?state=open",
-                "rss": "https://github.com/verbb/super-table/commits/v2.atom",
-                "source": "https://github.com/verbb/super-table"
+                "source": "https://github.com/verbb/super-table",
+                "docs": "https://github.com/verbb/super-table",
+                "rss": "https://github.com/verbb/super-table/commits/v2.atom"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/verbb",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-06-16T22:28:59+00:00"
+            "time": "2022-07-27T03:00:20+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -9697,5 +9611,5 @@
     "platform-overrides": {
         "php": "8.1"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.0.0"
 }

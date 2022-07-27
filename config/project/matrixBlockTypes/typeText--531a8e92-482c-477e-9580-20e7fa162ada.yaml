@@ -7,7 +7,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: d136c00b-5a53-42e5-9b09-7cd30f704c64
+            fieldUid: d136c00b-5a53-42e5-9b09-7cd30f704c64 # Text
             instructions: null
             label: null
             required: false
@@ -21,7 +21,7 @@ fieldLayouts:
         uid: 35701230-eae9-4b28-a551-db1c2381ad65
         userCondition: null
 fields:
-  d136c00b-5a53-42e5-9b09-7cd30f704c64:
+  d136c00b-5a53-42e5-9b09-7cd30f704c64: # Text
     columnSuffix: nhpsxrka
     contentColumnType: text
     fieldGroup: null
