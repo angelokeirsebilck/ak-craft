@@ -58,4 +58,4 @@ fields:
     type: craft\fields\Entries
 handle: typeCta
 name: Cta
-sortOrder: 4
+sortOrder: 5

@@ -14,19 +14,32 @@
             </a>
             <div class="items-center hidden lg:flex">
                 {% for navItem in mainNav %}
+                    {% set isActive = false %}
                     {% if navItem.itemLink.getLink() %}
+                        {% if entry.url == navItem.itemLink.getElement().url %}
+                            {% set isActive = true %}
+                        {% endif %}
+
                         <a href="{{ navItem.itemLink.getUrl() }}"
-                            class="leading-none lowercase font-normal text-22 text-black-default transition-colors hover:text-primary-default {{
+                            class="leading-none lowercase font-normal text-22  transition-colors hover:text-primary-default {{
                             not loop.last
                                 ? 'mr-14'
-                            }}">
+                            }} {{ isActive ? 'text-primary-default' : 'text-black-default' }}">
                             {{ navItem.itemLink.getText() }}
                         </a>
                     {% endif %}
                 {% endfor %}
                 {% if highLightNav.getLink() %}
+                    {% set isActive = false %}
+
+                    {% if entry.url == highLightNav.getUrl() %}
+                        {% set isActive = true %}
+                    {% endif %}
+
+                    {% set btnClass = isActive ? 'btn-black text-primary-default' : 'btn-black ' %}
+
                     <div class="ml-14">
-                        {{ macros.button(highLightNav.getUrl(), highLightNav.getText(), 'btn-black', 'bg-black-default') }}
+                        {{ macros.button(highLightNav.getUrl(), highLightNav.getText(), btnClass, 'bg-black-default ') }}
                     </div>
                 {% endif %}
             </div>

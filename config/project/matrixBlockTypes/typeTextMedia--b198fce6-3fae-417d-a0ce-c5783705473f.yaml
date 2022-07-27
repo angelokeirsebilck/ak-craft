@@ -43,4 +43,4 @@ fields:
     type: craft\fields\PlainText
 handle: typeTextMedia
 name: 'Text / Media'
-sortOrder: 1
+sortOrder: 2

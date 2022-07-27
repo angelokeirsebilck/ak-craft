@@ -1,0 +1,13 @@
+<div class="section">
+    <div class="container">
+        <div class="prose md:prose-md prose-li:text-copy prose-li:font-light prose-strong:!font-medium prose-strong:bg-none">
+            {{ block.itemText }}
+        </div>
+        {% if 'cookies' in entry.slug %}
+            <script type="text/javascript"
+                charset="UTF-8"
+                data-cookiescriptreport="report"
+                src="//report.cookie-script.com/r/82c92107d464709b2def136cb95ec8c7.js"></script>
+        {% endif %}
+    </div>
+</div>
