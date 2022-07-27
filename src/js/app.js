@@ -98,7 +98,7 @@ const homeBannerAnimation = () => {
     const bg1 = document.querySelector('.js-homeBannerbg1')
     const img = document.querySelector('.js-homeBannerImg')
 
-    const homeBannerTimeline = gsap.timeline({ delay: 0.5 })
+    const homeBannerTimeline = gsap.timeline()
 
     homeBannerTimeline
         .addLabel('start', 0)

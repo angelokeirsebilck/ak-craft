@@ -1,19 +1,19 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.52bd405e.js",
+    "file": "assets/app.ab651a9b.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "_accordionImage.22bfb04b.js",
+      "_accordionImage.0393c4d0.js",
       "src/js/packages/fancybox.js"
     ],
     "css": [
       "assets/app.15b57ce8.css"
     ],
-    "integrity": "sha384-BPU3DkxCoHLebEE88wXn/4Ebxvot2KpZ/Y8EMk2KMncfbwj7kQFadwpEvBcq9C+l"
+    "integrity": "sha384-KNWPDv+952f11uIf1ntOR15Q1U4pl8SkRPexrzL0m8LOwn9c2HcbxLxVY9YkgX9s"
   },
-  "_accordionImage.22bfb04b.js": {
-    "file": "assets/accordionImage.22bfb04b.js",
+  "_accordionImage.0393c4d0.js": {
+    "file": "assets/accordionImage.0393c4d0.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
@@ -21,7 +21,7 @@
     "dynamicImports": [
       "src/vue/components/accordion/Accordion.vue"
     ],
-    "integrity": "sha384-ATlY/DzudiRZcZDgp9e9sJedrX0fQBFXMBT+2AvRGWZlRlQcx9w/+8a3tImtZKbM"
+    "integrity": "sha384-wZWA4ZTXDke2Qgxmjwzhs4kvJsT/Wk7Zs0AwqIIpQ1NSEz9ICJn370ex/0zRl4EA"
   },
   "src/js/packages/fancybox.js": {
     "file": "assets/fancybox.70632a5f.js",
@@ -33,13 +33,13 @@
     "integrity": "sha384-kvAdbndrnOcXAWMlOFZSSZYHJtYPbGrhzT42kmGWbnGFEZVJ+5JOZxevczzzsOgr"
   },
   "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.11747617.js",
+    "file": "assets/Accordion.55d46723.js",
     "src": "src/vue/components/accordion/Accordion.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_accordionImage.22bfb04b.js",
+      "_accordionImage.0393c4d0.js",
       "src/js/app.js"
     ],
-    "integrity": "sha384-Jwa07Mr1xuqH4lEQk0jBHYVS+yjGFftiTKKhv9VHJUqMdH285mgk8+EoqXzo1pHE"
+    "integrity": "sha384-aDDWU42nobCipPhCrdfmzD/PR+tuWVG0mo8k0h9Av+v+OKcFaTZvuhN4mCihBlTc"
   }
 }
