@@ -3,7 +3,7 @@
 <div class="lg:h-[calc(100vh_-_125px)] overflow-hidden lg:max-h-[1024px]">
     <div class="container relative flex items-center h-full">
         <div class="absolute grid w-[calc(100%_-_40px)] md:w-[calc(100%_-_80px)] grid-cols-12 lg:gap-10 z-20 right-5 lg:right-10 bottom-0 h-[63px]">
-            <div class="relative col-span-12 bg-quaternary-default bg-opacity-30 rounded-tr-2xl"></div>
+            <div class="relative col-span-12 js-homeBannerbg1 bg-quaternary-default bg-opacity-30 rounded-tr-2xl"></div>
             <div class="absolute w-[50vw] h-full top-0 left-[-50vw] bg-quaternary-default bg-opacity-30"></div>
         </div>
 
@@ -16,17 +16,17 @@
                 <h1 class="mb-6 font-medium text-40 lg:text-56 js-homeBannerTitle">
                     {{ block.itemTitle }}
                 </h1>
-                <span class="text-24 max-w-[700px] js-homeBannerText">{{ block.itemIntro }}</span>
+                <span class="text-24 max-w-[700px] js-homeBannerText transform -translate-y-3 opacity-0">{{ block.itemIntro }}</span>
                 {% if block.itemLink.getLink() %}
-                    <div class="mt-8">
-                        {{ macros.button(block.itemLink.getUrl(), block.itemLink.getText(), 'btn-primary js-homeBannerLink', 'bg-primary-default') }}
+                    <div class="mt-8 transform -translate-y-3 opacity-0 js-homeBannerLink">
+                        {{ macros.button(block.itemLink.getUrl(), block.itemLink.getText(), 'btn-primary ', 'bg-primary-default') }}
                     </div>
                 {% endif %}
             </div>
             <div class="flex items-center col-span-12 mt-16 lg:col-span-5 lg:mt-0">
                 {% if block.itemFigure.one() %}
                     {% set optimizedImage = block.itemFigure.one().fieldHomeFigureImgOpt %}
-                    <picture>
+                    <picture class="transform -translate-x-8 opacity-0 js-homeBannerImg">
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
                         <img src="{{ optimizedImage.src() }}"
                             srcset="{{ optimizedImage.srcset() }}"

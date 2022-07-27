@@ -39,7 +39,10 @@
         <link rel="dns-prefetch" href="{{ siteUrl }}">
         <link rel="preconnect" href="{{ siteUrl }}" crossorigin="">
         {# Critical CSS #}
-        {{ craft.vite.includeCriticalCssTags() }}
+        
+        {% if not devMode %}
+            {{ craft.vite.includeCriticalCssTags() }}
+        {% endif %}
         
         {{ craft.vite.script("src/js/app.js") }}
     

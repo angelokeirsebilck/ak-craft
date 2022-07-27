@@ -1,8 +1,8 @@
 import '@/css/app.css'
 
-if (import.meta.env.PROD) {
-    import('@/css/fonts-loaded.css')
-}
+// if (import.meta.env.PROD) {
+//     import('@/css/fonts-loaded.css')
+// }
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -10,28 +10,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import FontFaceObserver from 'fontfaceobserver'
-
-const main = async () => {
-    const poppinsFontRegular = new FontFaceObserver('Poppins', {
-        weight: 400
-    })
-
-    const poppinsFontLight = new FontFaceObserver('Poppins', {
-        weight: 300
-    })
-
-    const poppinsFontMedium = new FontFaceObserver('Poppins', {
-        weight: 500
-    })
-
-    Promise.all([
-        poppinsFontRegular.load(),
-        poppinsFontLight.load(),
-        poppinsFontMedium.load()
-    ]).then(function () {
-        document.querySelector('body').classList.add('fonts-loaded')
-    })
-}
 
 const autoHeight = () => {
     const textAreaElements = document.querySelectorAll('textarea')
@@ -117,29 +95,38 @@ const homeBannerAnimation = () => {
     const title = document.querySelector('.js-homeBannerTitle')
     const text = document.querySelector('.js-homeBannerText')
     const link = document.querySelector('.js-homeBannerLink')
+    const bg1 = document.querySelector('.js-homeBannerbg1')
+    const img = document.querySelector('.js-homeBannerImg')
 
-    const homeBannerTimeline = gsap.timeline()
-    homeBannerTimeline.addLabel('start', 0)
+    const homeBannerTimeline = gsap.timeline({ delay: 0.5 })
+
     homeBannerTimeline
-        .to(title, {
+        .addLabel('start', 0)
+
+        .to(text, {
             opacity: 1,
-            duration: 0.2
+            y: 0,
+            duration: 0.3
         })
-        .to(
-            text,
+        .to(link, {
+            opacity: 1,
+            y: 0,
+            duration: 0.3
+        })
+        .from(
+            bg1,
             {
-                opacity: 1,
-                duration: 0.2
+                width: 0
             },
-            'start+=0.1'
+            'start'
         )
         .to(
-            link,
+            img,
             {
                 opacity: 1,
-                duration: 0.2
+                x: 0
             },
-            'start+=0.3'
+            'start'
         )
 }
 
@@ -169,47 +156,69 @@ const accordionImageSize = (items) => {
     })
 }
 
-main().then(() => {
-    window.onload = async () => {
-        accordionImageSize(document.querySelectorAll('.js-accordionImages'))
+const initAnimations = () => {
+    homeBannerAnimation()
+}
 
-        autoHeight()
-        mobileNavAnimation()
+window.onload = async () => {
+    const poppinsFontRegular = new FontFaceObserver('Poppins', {
+        weight: 400
+    })
 
-        // homeBannerAnimation()
+    const poppinsFontLight = new FontFaceObserver('Poppins', {
+        weight: 300
+    })
 
-        window.dispatchEvent(new Event('resize'))
+    const poppinsFontMedium = new FontFaceObserver('Poppins', {
+        weight: 500
+    })
 
-        if (document.querySelectorAll('.js-accordion').length > 0) {
-            let { default: initAccordions } = await import(
-                './blocks/accordionImage.js'
-            )
+    Promise.all([
+        poppinsFontRegular.load(),
+        poppinsFontLight.load(),
+        poppinsFontMedium.load()
+    ]).then(function () {
+        document.querySelector('body').classList.add('fonts-loaded')
+    })
 
-            initAccordions()
-        }
+    accordionImageSize(document.querySelectorAll('.js-accordionImages'))
+    autoHeight()
+    mobileNavAnimation()
 
-        if (document.querySelectorAll('.js-fancyBox').length > 0) {
-            let { default: Fancybox } = await import('./packages/fancybox.js')
-        }
+    initAnimations()
 
-        // const panzoomItems = document.querySelectorAll('.js-panzoom')
-        // if (panzoomItems.length > 0) {
-        //     let { default: initPanzoomSteps } = await import(
-        //         './blocks/steps.js'
-        //     )
-        //     initPanzoomSteps(panzoomItems)
-        // }
-        window.addEventListener('CookieScriptLoaded', function () {
-            document.querySelector('body').classList.add('cookie-script-loaded')
-        })
+    window.dispatchEvent(new Event('resize'))
+
+    if (document.querySelectorAll('.js-accordion').length > 0) {
+        let { default: initAccordions } = await import(
+            './blocks/accordionImage.js'
+        )
+
+        initAccordions()
     }
 
-    function resizeHandler() {
-        accordionImageSize(document.querySelectorAll('.js-accordionImages'))
+    if (document.querySelectorAll('.js-fancyBox').length > 0) {
+        let { default: Fancybox } = await import('./packages/fancybox.js')
     }
 
-    window.addEventListener('resize', resizeHandler)
-})
+    // const panzoomItems = document.querySelectorAll('.js-panzoom')
+    // if (panzoomItems.length > 0) {
+    //     let { default: initPanzoomSteps } = await import(
+    //         './blocks/steps.js'
+    //     )
+    //     initPanzoomSteps(panzoomItems)
+    // }
+
+    window.addEventListener('CookieScriptLoaded', function () {
+        document.querySelector('body').classList.add('cookie-script-loaded')
+    })
+}
+
+function resizeHandler() {
+    accordionImageSize(document.querySelectorAll('.js-accordionImages'))
+}
+
+window.addEventListener('resize', resizeHandler)
 
 if (import.meta.hot) {
     import.meta.hot.accept(() => {
