@@ -1,8 +1,8 @@
 import '@/css/app.css'
 
-// if (import.meta.env.PROD) {
-//     import('@/css/fonts-loaded.css')
-// }
+if (import.meta.env.PROD) {
+    import('@/css/fonts-loaded.css')
+}
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -92,7 +92,6 @@ const mobileNavAnimation = () => {
 }
 
 const homeBannerAnimation = () => {
-    const title = document.querySelector('.js-homeBannerTitle')
     const text = document.querySelector('.js-homeBannerText')
     const link = document.querySelector('.js-homeBannerLink')
     const bg1 = document.querySelector('.js-homeBannerbg1')
@@ -157,7 +156,32 @@ const accordionImageSize = (items) => {
 }
 
 const initAnimations = () => {
-    homeBannerAnimation()
+    if (document.querySelector('.js-homeBanner')) homeBannerAnimation()
+
+    const titleEls = document.querySelectorAll('.js-title')
+
+    titleEls.forEach((title) => {
+        gsap.to(title, {
+            scrollTrigger: {
+                trigger: title,
+                start: 'top 80%'
+            },
+            y: 0
+        })
+    })
+
+    const textEls = document.querySelectorAll('.js-text')
+
+    textEls.forEach((text) => {
+        gsap.from(text, {
+            scrollTrigger: {
+                trigger: text,
+                start: 'top 75%'
+            },
+            opacity: 0,
+            y: 30
+        })
+    })
 }
 
 window.onload = async () => {
@@ -197,17 +221,25 @@ window.onload = async () => {
         initAccordions()
     }
 
+    const textColumnEls = document.querySelectorAll('.js-textColumns')
+    if (textColumnEls.length > 0) {
+        let { default: initTextColumns } = await import('./blocks/textColumns')
+        textColumnEls.forEach((tc) => {
+            initTextColumns(tc)
+        })
+    }
+
+    const uspEls = document.querySelectorAll('.js-usp')
+    if (uspEls.length > 0) {
+        let { default: initUsp } = await import('./blocks/usp')
+        uspEls.forEach((usp) => {
+            initUsp(usp)
+        })
+    }
+
     if (document.querySelectorAll('.js-fancyBox').length > 0) {
         let { default: Fancybox } = await import('./packages/fancybox.js')
     }
-
-    // const panzoomItems = document.querySelectorAll('.js-panzoom')
-    // if (panzoomItems.length > 0) {
-    //     let { default: initPanzoomSteps } = await import(
-    //         './blocks/steps.js'
-    //     )
-    //     initPanzoomSteps(panzoomItems)
-    // }
 
     window.addEventListener('CookieScriptLoaded', function () {
         document.querySelector('body').classList.add('cookie-script-loaded')
