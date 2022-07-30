@@ -1,10 +1,10 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.10777495.js",
+    "file": "assets/app.ff415e38.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "_accordionImage.7a0043af.js",
+      "_accordionImage.f8657fde.js",
       "src/js/blocks/textColumns.js",
       "src/js/blocks/usp.js",
       "src/js/packages/fancybox.js"
@@ -12,10 +12,10 @@
     "css": [
       "assets/app.db6c21f2.css"
     ],
-    "integrity": "sha384-XClFHOa18g4HVbK7r7snsxIQOglbZeh6ctO9qanEsPdrnOzRrxhg68dxR23VMjWU"
+    "integrity": "sha384-F5+pNIH+I3/gh7L8ppUIwsESRHWqG/v3rbroAZgOMNs5lbTRabiQv6UsxiHZ/WPw"
   },
-  "_accordionImage.7a0043af.js": {
-    "file": "assets/accordionImage.7a0043af.js",
+  "_accordionImage.f8657fde.js": {
+    "file": "assets/accordionImage.f8657fde.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
@@ -23,25 +23,25 @@
     "dynamicImports": [
       "src/vue/components/accordion/Accordion.vue"
     ],
-    "integrity": "sha384-an4JpyZcnqyegFIwR2Cfs7RnVI8U8YyKsG9jju+GvoWkHCJw81LwgHvBOs3FG2TA"
+    "integrity": "sha384-+JoOwbXO/uXORVOiP5jC1/vjHnOIHHHzLVXA52s05RsZgKzCWb+NDd1xJpksUJIo"
   },
   "src/js/blocks/textColumns.js": {
-    "file": "assets/textColumns.d009b278.js",
+    "file": "assets/textColumns.073848b3.js",
     "src": "src/js/blocks/textColumns.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-93AQtRbebmAD/bgN1eciO19kGe07o8juwPr9kOVIx13qRZaaY+etIxeI5XCpAOGU"
+    "integrity": "sha384-JE9VyUZXpsb19DuRk50gj2R0iF6IDSGtuHAZSuaTF3mWyA3f/aSXqiT9cAuZ11nx"
   },
   "src/js/blocks/usp.js": {
-    "file": "assets/usp.b04fd188.js",
+    "file": "assets/usp.ac0f54c9.js",
     "src": "src/js/blocks/usp.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-CzvhJ3NMms4s/5M3pquiqRC0zBRHk88kU0WmB/mq0vXbpHxwpYsOjbRKgXXatf8X"
+    "integrity": "sha384-YFMmSaJY2N5RtyP2q/foJCqfkShxtKhqHvwxOAko3BJ1KoC2YK1YM99hdFkub/rF"
   },
   "src/js/packages/fancybox.js": {
     "file": "assets/fancybox.70632a5f.js",
@@ -53,13 +53,13 @@
     "integrity": "sha384-kvAdbndrnOcXAWMlOFZSSZYHJtYPbGrhzT42kmGWbnGFEZVJ+5JOZxevczzzsOgr"
   },
   "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.a7b812b3.js",
+    "file": "assets/Accordion.1ca6c62d.js",
     "src": "src/vue/components/accordion/Accordion.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_accordionImage.7a0043af.js",
+      "_accordionImage.f8657fde.js",
       "src/js/app.js"
     ],
-    "integrity": "sha384-uYcuqaBf9zCVAHUQ0Z8KImLvpyYKvZYIhuh1u83m7j84lT0ho8X266KJH21rj6UC"
+    "integrity": "sha384-nfdBU42z+vgmADx3wWfIOlXmRtc+avRBBswkIysNwjIjUBbrcFULQz5iIf8htHka"
   }
 }

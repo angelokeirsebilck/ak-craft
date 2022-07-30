@@ -11,6 +11,28 @@ gsap.registerPlugin(ScrollTrigger)
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import FontFaceObserver from 'fontfaceobserver'
 
+const main = async () => {
+    const poppinsFontRegular = new FontFaceObserver('Poppins', {
+        weight: 400
+    })
+
+    const poppinsFontLight = new FontFaceObserver('Poppins', {
+        weight: 300
+    })
+
+    const poppinsFontMedium = new FontFaceObserver('Poppins', {
+        weight: 500
+    })
+
+    Promise.all([
+        poppinsFontRegular.load(),
+        poppinsFontLight.load(),
+        poppinsFontMedium.load()
+    ]).then(function () {
+        document.querySelector('body').classList.add('fonts-loaded')
+    })
+}
+
 const autoHeight = () => {
     const textAreaElements = document.querySelectorAll('textarea')
 
@@ -183,68 +205,51 @@ const initAnimations = () => {
         })
     })
 }
+main().then(() => {
+    window.onload = async () => {
+        accordionImageSize(document.querySelectorAll('.js-accordionImages'))
+        autoHeight()
+        mobileNavAnimation()
 
-window.onload = async () => {
-    const poppinsFontRegular = new FontFaceObserver('Poppins', {
-        weight: 400
-    })
+        initAnimations()
 
-    const poppinsFontLight = new FontFaceObserver('Poppins', {
-        weight: 300
-    })
+        window.dispatchEvent(new Event('resize'))
 
-    const poppinsFontMedium = new FontFaceObserver('Poppins', {
-        weight: 500
-    })
+        if (document.querySelectorAll('.js-accordion').length > 0) {
+            let { default: initAccordions } = await import(
+                './blocks/accordionImage.js'
+            )
 
-    Promise.all([
-        poppinsFontRegular.load(),
-        poppinsFontLight.load(),
-        poppinsFontMedium.load()
-    ]).then(function () {
-        document.querySelector('body').classList.add('fonts-loaded')
-    })
+            initAccordions()
+        }
 
-    accordionImageSize(document.querySelectorAll('.js-accordionImages'))
-    autoHeight()
-    mobileNavAnimation()
+        const textColumnEls = document.querySelectorAll('.js-textColumns')
+        if (textColumnEls.length > 0) {
+            let { default: initTextColumns } = await import(
+                './blocks/textColumns'
+            )
+            textColumnEls.forEach((tc) => {
+                initTextColumns(tc)
+            })
+        }
 
-    initAnimations()
+        const uspEls = document.querySelectorAll('.js-usp')
+        if (uspEls.length > 0) {
+            let { default: initUsp } = await import('./blocks/usp')
+            uspEls.forEach((usp) => {
+                initUsp(usp)
+            })
+        }
 
-    window.dispatchEvent(new Event('resize'))
+        if (document.querySelectorAll('.js-fancyBox').length > 0) {
+            let { default: Fancybox } = await import('./packages/fancybox.js')
+        }
 
-    if (document.querySelectorAll('.js-accordion').length > 0) {
-        let { default: initAccordions } = await import(
-            './blocks/accordionImage.js'
-        )
-
-        initAccordions()
-    }
-
-    const textColumnEls = document.querySelectorAll('.js-textColumns')
-    if (textColumnEls.length > 0) {
-        let { default: initTextColumns } = await import('./blocks/textColumns')
-        textColumnEls.forEach((tc) => {
-            initTextColumns(tc)
+        window.addEventListener('CookieScriptLoaded', function () {
+            document.querySelector('body').classList.add('cookie-script-loaded')
         })
     }
-
-    const uspEls = document.querySelectorAll('.js-usp')
-    if (uspEls.length > 0) {
-        let { default: initUsp } = await import('./blocks/usp')
-        uspEls.forEach((usp) => {
-            initUsp(usp)
-        })
-    }
-
-    if (document.querySelectorAll('.js-fancyBox').length > 0) {
-        let { default: Fancybox } = await import('./packages/fancybox.js')
-    }
-
-    window.addEventListener('CookieScriptLoaded', function () {
-        document.querySelector('body').classList.add('cookie-script-loaded')
-    })
-}
+})
 
 function resizeHandler() {
     accordionImageSize(document.querySelectorAll('.js-accordionImages'))
