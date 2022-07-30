@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: a4c67e6a-9c78-47d7-b3f8-c5e687a624af # Portfolio
 handle: fieldPortfolioContent
-instructions: ''
+instructions: null
 name: 'Portfolio Content'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_fieldportfoliocontent}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

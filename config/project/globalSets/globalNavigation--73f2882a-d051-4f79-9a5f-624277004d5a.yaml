@@ -2,40 +2,53 @@ fieldLayouts:
   a759d86f-e995-4eef-8b07-0b4ce74c0828:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: c19c0798-f619-458c-9795-738cd74c4d10 # Main Nav
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 31fd0a28-f91f-4517-92e8-509441e2fd1e
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: a407fca4-ef49-4264-abf2-e0bfb0afb24f # Main Nav Highlight
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 755263a3-5cfd-4fe8-a381-3ea75bdb6eef
+            userCondition: null
             warning: null
             width: 50
         name: Main
-        sortOrder: 1
+        uid: 17760d03-2a24-4d5d-9b1b-537e1988facd
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 5b31df2d-3af7-44b6-88fd-211d07122274 # Footer Nav
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 432fe101-93f1-4914-876b-51058148c7d4
+            userCondition: null
             warning: null
             width: 50
         name: Footer
-        sortOrder: 2
+        uid: f29cc822-1471-4f32-82ef-b1f3ba530df1
+        userCondition: null
 handle: globalNavigation
 name: 'Kerotec Navigation'
 sortOrder: 1

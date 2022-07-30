@@ -2,51 +2,71 @@ fieldLayouts:
   34bc981c-b433-4958-bb14-df0f92025b33:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             heading: Contact
             type: craft\fieldlayoutelements\Heading
+            uid: d1cb16e5-80cd-4a52-97cc-20d54c7f534e
+            userCondition: null
           -
+            elementCondition: null
             fieldUid: cf0736f7-9894-4c14-85c7-8f4153818c72 # Tel 1
-            instructions: ''
+            instructions: null
             label: 'Tel Diego'
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 35e3ee1c-87d7-4cb0-a6a9-e65ea22741c1
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: eeb3731d-1450-4343-975c-602a8f77fd79 # Tel 2
-            instructions: ''
+            instructions: null
             label: 'Tel Jeroen'
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ce1b7713-67c9-4306-bbff-6197e5b34466
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 22dbbbb6-573d-49ad-875c-2a8f8451b7cc # Email
-            instructions: ''
-            label: ''
-            required: '1'
+            instructions: null
+            label: null
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f1dade2e-f62a-4569-a133-5d178bac00d9
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             heading: Socials
             type: craft\fieldlayoutelements\Heading
+            uid: a6139218-df09-4c60-be19-854d5f5cec3d
+            userCondition: null
           -
+            elementCondition: null
             fieldUid: b92519cf-e415-4f20-af0b-b02eabf460d4 # Facebook
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: eedbc381-2424-42a2-811b-d3a875404541
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: 5b87e742-4b7f-4981-964b-f003e21ccedd
+        userCondition: null
 handle: globalKerotecCompanyInfo
 name: 'Kerotec Company Info'
 sortOrder: 3

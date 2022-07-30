@@ -2,10 +2,12 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: af2d83da-9397-4fdd-ae4b-3330cd82854c # KEROTEC
 handle: fieldKerotecCtaContent
-instructions: ''
+instructions: null
 name: 'Kerotec Cta Content'
 searchable: false
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   columns:
     __assoc__:
       -
@@ -38,13 +40,12 @@ settings:
               - ''
   contentTable: '{{%stc_fieldkerotecctacontent}}'
   fieldLayout: row
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: ''
-  staticField: '1'
+  selectionLabel: null
+  staticField: true
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

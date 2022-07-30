@@ -3,40 +3,49 @@ fieldLayouts:
   6fd9382e-a8b9-44b4-91c9-028b60765d2f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 6d3f9446-799c-4acb-9ab8-d9e11b148b54 # Link
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6e56f917-2e99-43a7-8f62-aa4ac29130ac
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 6081ef70-29ac-4075-a579-f5be60125444 # Label
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: effd9dca-c7ed-4f6e-817a-20c75155fd5c
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: d07e5a0c-87e6-43dd-9d89-5161e991c953
+        userCondition: null
 fields:
   6d3f9446-799c-4acb-9ab8-d9e11b148b54: # Link
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       selectionLabel: 'Select page'
       showSiteMenu: false
       source: null
@@ -53,16 +62,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemLabel
-    instructions: ''
+    instructions: null
     name: Label
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

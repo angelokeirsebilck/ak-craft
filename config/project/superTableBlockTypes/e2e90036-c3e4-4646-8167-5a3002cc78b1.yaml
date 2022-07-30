@@ -3,41 +3,50 @@ fieldLayouts:
   a2429d06-1d67-4da6-8dd4-3ebe19fe40b7:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: c7c98775-2843-4fd6-b368-8443519e870e # Link
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8373794f-0d38-4a17-ae0c-93bd0a3cc4fe
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: e59b830a-0bb1-418a-bb93-e3d8209e4ef3 # Label
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6647d0e0-7650-43f2-8588-99d59e36e7d1
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 0341a650-d55d-4c03-bac4-9060ab980660
+        userCondition: null
 fields:
   c7c98775-2843-4fd6-b368-8443519e870e: # Link
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: false
       source: null
       sources:
@@ -54,16 +63,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemLabel
-    instructions: ''
+    instructions: null
     name: Label
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

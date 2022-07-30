@@ -2,6 +2,7 @@ fieldLayouts:
   65b3dfe5-e22a-488c-80a9-20a6c24636f9:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,32 +26,43 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 0aca344f-7bd9-4735-a700-8e5b872bf6f3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a4b4e8fb-53b5-416d-b427-e22c78bc2d35
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
+        uid: 6adf819d-eca3-4ed0-a3e7-11974ceafb65
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 73565395-0f0b-4846-b8db-e5b9eb2b5ec9 # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 613fdb28-81ab-4f40-82fc-508b64537027
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 9b3c56d1-27a2-4710-9bcb-6a778965df50
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Standaard

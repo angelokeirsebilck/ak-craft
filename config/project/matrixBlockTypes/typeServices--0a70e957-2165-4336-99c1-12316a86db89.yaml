@@ -3,38 +3,45 @@ fieldLayouts:
   0ac71dfc-7cae-4b6e-af00-c8f80228687b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 35894e6f-c18b-4f35-8a91-b12f97b81452 # Title
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a38fc205-eaff-4221-8cac-5d8f269ecb7e
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 293c8a21-558c-40da-bae9-ecd978e0a424 # Background Color
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fac311dd-2c47-440b-b8ec-77785dcb2b2b
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: 69fb4c1e-5f85-4291-8530-bac6c98fb1ef
+        userCondition: null
 fields:
   293c8a21-558c-40da-bae9-ecd978e0a424: # Background Color
     columnSuffix: ejiagrct
     contentColumnType: string
     fieldGroup: null
     handle: itemBackgroundColor
-    instructions: ''
+    instructions: null
     name: 'Background Color'
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
@@ -59,10 +66,10 @@ fields:
           __assoc__:
             -
               - label
-              - 'Light Green'
+              - Dark
             -
               - value
-              - light
+              - dark
     translationKeyFormat: null
     translationMethod: none
     type: custommodule\fields\BackgroundColor
@@ -71,16 +78,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
-    instructions: ''
+    instructions: null
     name: Title
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

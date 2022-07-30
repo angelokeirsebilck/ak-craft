@@ -3,8 +3,10 @@ fieldLayouts:
   a73b5556-04ea-48bd-b4eb-bb460eb3c9c4:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: bc3b158f-80ae-479a-a32a-315706955aef # Title
             instructions: null
             label: null
@@ -12,9 +14,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: bf3f9828-973e-45b0-a205-de7cca994789
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: d602b57e-889e-4854-b2c2-20f6725f0d9a # Intro
             instructions: null
             label: null
@@ -22,9 +26,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 4ee4052a-5e93-4af2-bef5-a6feabc32cfe
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7daba989-33a7-4cd0-8b14-94126c95d131 # Link
             instructions: null
             label: null
@@ -32,9 +38,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 52f6f567-7de2-4ff4-9121-33fd16d941a8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: ce47be10-c35f-4ff2-b8e6-40055deb9614 # Figure
             instructions: null
             label: null
@@ -42,10 +50,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 6565498b-3dae-441c-b780-88452ebb243a
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: ade3a5c9-33b7-4e04-bc7d-12dae230e81e
+        userCondition: null
 fields:
   7daba989-33a7-4cd0-8b14-94126c95d131: # Link
     columnSuffix: null

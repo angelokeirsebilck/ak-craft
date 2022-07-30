@@ -2,19 +2,20 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: a4c67e6a-9c78-47d7-b3f8-c5e687a624af # Portfolio
 handle: fieldPortfolioMainNav
-instructions: ''
+instructions: null
 name: 'Portfolio Main Nav'
 searchable: false
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   contentTable: '{{%stc_fieldportfoliomainnav}}'
   fieldLayout: row
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: ''
-  staticField: ''
+  selectionLabel: null
+  staticField: null
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

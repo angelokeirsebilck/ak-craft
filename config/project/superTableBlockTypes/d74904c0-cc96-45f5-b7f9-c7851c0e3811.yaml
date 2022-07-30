@@ -3,32 +3,38 @@ fieldLayouts:
   c833e978-98ab-41e0-b930-cb19f5f131b5:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: e8a79905-5681-4a6f-b4f5-d4d52d9063a3 # Link
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d799bc0d-c100-471c-a626-9deecdeca64e
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f371e56a-9852-4279-8f4b-ab230f73f3a0
+        userCondition: null
 fields:
   e8a79905-5681-4a6f-b4f5-d4d52d9063a3: # Link
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: false
       source: null
       sources:

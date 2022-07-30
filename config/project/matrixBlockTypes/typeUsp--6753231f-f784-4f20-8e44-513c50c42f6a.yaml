@@ -190,4 +190,4 @@ fields:
     type: craft\redactor\Field
 handle: typeUsp
 name: Usp
-sortOrder: 4
+sortOrder: 3

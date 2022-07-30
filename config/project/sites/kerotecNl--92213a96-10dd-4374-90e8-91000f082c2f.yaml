@@ -1,5 +1,5 @@
 baseUrl: '@webKerotec'
-enabled: true
+enabled: '1'
 handle: kerotecNl
 hasUrls: true
 language: nl

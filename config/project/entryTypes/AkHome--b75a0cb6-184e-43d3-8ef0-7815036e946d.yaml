@@ -2,6 +2,7 @@ fieldLayouts:
   a738d624-abd1-4be4-8faf-f9aacbe05926:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,9 +27,11 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: c7ab9ec1-2b19-42de-9010-10897f6ed145
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: dd47c6f3-2579-4634-a86b-44112604b851 # aK Content
             instructions: null
             label: null
@@ -35,13 +39,17 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 7381fe63-db1b-4a3c-8a75-bebc6e4d7f0a
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
         uid: 1e4b8790-67e2-4dc6-88cb-9827807e806a
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 195519cf-1e81-4891-983a-4ff3756cd22a # aK Home Banner
             instructions: null
             label: null
@@ -49,10 +57,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: b1aec8eb-a56a-43c9-b1bc-99da161a3b3e
+            userCondition: null
             warning: null
             width: 100
         name: General
         uid: 4a7d67a2-06d5-4b63-8d57-4c1bc149bcf8
+        userCondition: null
 handle: AkHome
 hasTitleField: false
 name: 'aK Home'

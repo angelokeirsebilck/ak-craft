@@ -126,4 +126,4 @@ fields:
     type: craft\redactor\Field
 handle: typeForm
 name: Form
-sortOrder: 7
+sortOrder: 6

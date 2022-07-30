@@ -3,52 +3,63 @@ fieldLayouts:
   5af8b09e-7c29-476b-bdcb-8455734b160f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 386ffdca-58d6-49a9-91d0-2a601508dd26 # Icon
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a68c7d7c-7bac-4187-8a92-9079d4ee8a4d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 66f1be27-81fd-4669-9a51-be3292e7462a # Title
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e5afb192-d8b3-42bd-abda-b7252050dbd2
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 56ee6bef-32e6-4203-b7a3-1a99768b2894 # Text
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6cc0eb08-0096-4342-bc17-adab489a6de8
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 9747d913-e3fe-4f3e-9aee-04a427390a58
+        userCondition: null
 fields:
   56ee6bef-32e6-4203-b7a3-1a99768b2894: # Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemText
-    instructions: ''
+    instructions: null
     name: Text
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -59,16 +70,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
-    instructions: ''
+    instructions: null
     name: Title
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -79,31 +90,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemIcon
-    instructions: ''
+    instructions: null
     name: Icon
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - svg
       defaultUploadLocationSource: 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
       defaultUploadLocationSubpath: /icons
-      limit: '1'
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      singleUploadLocationSubpath: ''
       source: null
       sources:
         - 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null

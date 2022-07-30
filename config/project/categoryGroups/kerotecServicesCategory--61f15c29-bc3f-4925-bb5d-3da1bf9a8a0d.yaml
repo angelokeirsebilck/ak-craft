@@ -3,6 +3,7 @@ fieldLayouts:
   5589bc77-007d-4353-8e0c-b1f69d8c1608:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -10,6 +11,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,19 +27,25 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 4789beea-a182-4b6d-9ef7-3a1bdb13bc1d
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: da642b21-f45b-4456-9422-08fe4f3b8418 # Simple Text
-            instructions: ''
+            instructions: null
             label: Text
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a81d0dbf-4f6a-49d3-8d6f-f44d6d415d39
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
+        uid: dcd9d590-cf17-4cc7-9546-cd098de275d7
+        userCondition: null
 handle: kerotecServicesCategory
 name: 'Kerotec Services Category'
 siteSettings:

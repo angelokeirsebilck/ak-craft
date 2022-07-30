@@ -2,13 +2,13 @@ columnSuffix: kmjiabyo
 contentColumnType: text
 fieldGroup: a4c67e6a-9c78-47d7-b3f8-c5e687a624af # Portfolio
 handle: fieldPortfolioDefaultImgOpt
-instructions: ''
+instructions: null
 name: 'Portfolio Default Img Opt'
 searchable: false
 settings:
-  displayDominantColorPalette: '1'
-  displayLazyLoadPlaceholderImages: '1'
-  displayOptimizedImageVariants: '1'
+  displayDominantColorPalette: true
+  displayLazyLoadPlaceholderImages: true
+  displayOptimizedImageVariants: true
   fieldVolumeSettings:
     __assoc__:
       -

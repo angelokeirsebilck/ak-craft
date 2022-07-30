@@ -3,34 +3,42 @@ fieldLayouts:
   5e20512f-8d45-4bf7-913c-21d854d22b99:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 501e8a5c-932c-4e25-b2c6-7dfb53db6e41 # Intro
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e6065bd8-70ff-4d38-b42e-e2854b4fb994
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 851e7b15-fc39-48e5-b7d5-ac9644bd6d43 # Thanks Page
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 079b34ae-2f51-45b0-8ac2-764f2dc0c854
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: 69570086-011c-4e19-a159-8744716e0db3
+        userCondition: null
 fields:
   501e8a5c-932c-4e25-b2c6-7dfb53db6e41: # Intro
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemIntro
-    instructions: ''
+    instructions: null
     name: Intro
     searchable: false
     settings:
@@ -40,13 +48,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -58,14 +66,15 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemThanksPage
-    instructions: ''
+    instructions: null
     name: 'Thanks Page'
     searchable: false
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: false
       source: null
       sources:

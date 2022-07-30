@@ -2,13 +2,13 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: af2d83da-9397-4fdd-ae4b-3330cd82854c # KEROTEC
 handle: fieldContentKerotec
-instructions: ''
+instructions: null
 name: 'Kerotec Content'
 searchable: false
 settings:
   contentTable: '{{%matrixcontent_fieldcontentkerotec}}'
-  maxBlocks: ''
-  minBlocks: ''
+  maxBlocks: null
+  minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all
 translationKeyFormat: null

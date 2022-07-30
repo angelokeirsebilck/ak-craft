@@ -2,6 +2,7 @@ fieldLayouts:
   7d9a5664-db92-4fd8-a48f-75c86e79b489:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,9 +27,11 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
             uid: 693f01ea-3993-4705-8c3f-23706a1123ee
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: e858e6e9-26e4-4e72-aa50-13999c183bb1 # Portfolio Default Img Opt
             instructions: null
             label: null
@@ -35,9 +39,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: cf244337-4d88-4d74-822f-b91c5b9d2def
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: aed1c586-a3d3-4f18-b962-19ef9a594b6a # Portfolio Homebanner Opt Img
             instructions: null
             label: null
@@ -45,10 +51,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 7215bb5d-cdf0-4b8c-9075-6d61ef946466
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
         uid: 7624605c-319e-4c24-a622-caa5b2d49881
+        userCondition: null
 fs: imagesPortfolio
 handle: imagesPortfolio
 name: 'Images Portfolio'

@@ -1,47 +1,47 @@
-description: ''
+description: null
 handle: editor
 name: Editor
 permissions:
   - accesscp
-  - 'editsite:92213a96-10dd-4374-90e8-91000f082c2f' # Kerotec NL
-  - 'deletepeerentrydrafts:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
+  - 'assignusergroup:d6037e3b-a18e-4e22-84b7-d7aac2d5c24e' # Editor
   - 'createentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'deleteentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'deletepeerentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'deletepeerentrydrafts:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
   - 'createentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'createfolders:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'deleteassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'deleteentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
   - 'deleteentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'deletepeerassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'deletepeerentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
   - 'deletepeerentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'deletepeerentrydrafts:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
   - 'deletepeerentrydrafts:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'deletepeerentrydrafts:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
+  - 'editglobalset:1d89545b-011e-431b-acd1-d67b21fa253b' # Kerotec Footer
+  - 'editglobalset:73259272-4635-47f4-8189-da773221ec21' # Kerotec Company Info
   - 'editglobalset:73f2882a-d051-4f79-9a5f-624277004d5a' # Kerotec Navigation
   - 'editglobalset:fd13a2dc-8740-406f-a266-ef3ec9f0f684' # Kerotec USP
-  - 'editglobalset:73259272-4635-47f4-8189-da773221ec21' # Kerotec Company Info
-  - 'editglobalset:1d89545b-011e-431b-acd1-d67b21fa253b' # Kerotec Footer
-  - 'viewassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'saveassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'deleteassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'replacefiles:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
   - 'editimages:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'viewpeerassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'savepeerassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'replacepeerfiles:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'deletepeerassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
   - 'editpeerimages:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'createfolders:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
-  - 'viewentries:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
-  - 'saveentries:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
-  - 'viewpeerentrydrafts:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
-  - 'savepeerentrydrafts:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
-  - 'viewentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+  - 'editsite:92213a96-10dd-4374-90e8-91000f082c2f' # Kerotec NL
+  - 'replacefiles:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'replacepeerfiles:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'saveassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
   - 'saveentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'viewpeerentrydrafts:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'savepeerentrydrafts:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'viewpeerentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'savepeerentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-  - 'viewentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
   - 'saveentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
-  - 'viewpeerentrydrafts:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
-  - 'savepeerentrydrafts:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
-  - 'viewpeerentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'saveentries:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
+  - 'savepeerassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'savepeerentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
   - 'savepeerentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
-  - 'assignusergroup:d6037e3b-a18e-4e22-84b7-d7aac2d5c24e' # Editor
+  - 'savepeerentrydrafts:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+  - 'savepeerentrydrafts:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'savepeerentrydrafts:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
+  - 'viewassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'viewentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+  - 'viewentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'viewentries:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec
+  - 'viewpeerassets:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
+  - 'viewpeerentries:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+  - 'viewpeerentries:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'viewpeerentrydrafts:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+  - 'viewpeerentrydrafts:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+  - 'viewpeerentrydrafts:c5f9eef8-26da-4424-bb7e-34fde589e608' # Home Kerotec

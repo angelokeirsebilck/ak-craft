@@ -2,18 +2,23 @@ fieldLayouts:
   efdca61e-dbf3-47ec-aa41-91ecb5da2072:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: ad6e8279-954b-405f-ba63-dce6223d9ebc # Kerotec USP
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 7f359fca-e1f6-4fc9-b257-7f47a6d8270e
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 375c7ee8-8314-4e91-b0ef-0f3837a759e3
+        userCondition: null
 handle: globalUspKerotec
 name: 'Kerotec USP'
 sortOrder: 2

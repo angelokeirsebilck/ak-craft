@@ -4,7 +4,7 @@ data:
   availabilitySubmissions: null
   availabilityTo: null
   dataRetention: forever
-  dataRetentionValue: ''
+  dataRetentionValue: null
   fileUploadsAction: retain
   notifications:
     -
@@ -195,7 +195,7 @@ data:
     collectUser: false
     dataRetention: null
     dataRetentionValue: null
-    defaultEmailTemplateId: null
+    defaultEmailTemplateId: '1'
     defaultInstructionsPosition: verbb\formie\positions\AboveInput
     defaultLabelPosition: verbb\formie\positions\AboveInput
     disableCaptchas: false
@@ -224,7 +224,6 @@ data:
     progressPosition: end
     redirectUrl: null
     scrollToTop: true
-    storeData: true
     submissionTitleFormat: '{timestamp}'
     submitAction: entry
     submitActionFormHide: false
@@ -234,12 +233,11 @@ data:
     submitActionTab: same-tab
     submitActionUrl: null
     submitMethod: page-reload
-    userDeletedAction: null
     validationOnFocus: true
     validationOnSubmit: true
   userDeletedAction: retain
 defaultStatus: 34c4c843-ac45-41ab-9370-b8ecd37f731d # New
 handle: contactFormNL
 name: 'Contact Form NL'
-submitActionEntry: 469096f7-2483-4cec-9eaf-8bdf0088032b
+submitActionEntry: null
 template: d02ec872-619b-4f23-b91b-3189b7f1e7e9 # Angelo Keirsebilck

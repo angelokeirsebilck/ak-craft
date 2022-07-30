@@ -3,52 +3,66 @@ fieldLayouts:
   236d54e8-65ab-4a92-af15-72e282f49c5e:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: c792ad5b-761b-48be-bce6-26b76264a1d7 # Title
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 54275399-6789-4d73-9f19-856de8321306
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 216a063d-0eac-465e-9a4e-24018fbf1ea9 # Intro
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2019102f-a83b-4d89-954e-6156d3a137a7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 61098cc8-fe0c-42f3-911e-089d747658ff # Image
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e16be04d-eb19-4a89-bb3d-14a9f44ea878
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: a97918b0-0260-45dc-ad5c-a6289f0f7041 # Link
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 63d7c090-6e06-4e6e-9bea-dab70f8a183b
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: a6edd037-0fb4-4e18-a87e-d42fb19dab8e
+        userCondition: null
 fields:
   216a063d-0eac-465e-9a4e-24018fbf1ea9: # Intro
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemIntro
-    instructions: ''
+    instructions: null
     name: Intro
     searchable: false
     settings:
@@ -59,13 +73,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Title.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -77,31 +91,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemImage
-    instructions: ''
+    instructions: null
     name: Image
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
       defaultUploadLocationSubpath: home
-      limit: '1'
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      singleUploadLocationSubpath: ''
       source: null
       sources:
         - 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
@@ -112,13 +129,13 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
       contentTable: '{{%matrixcontent_itemlink}}'
-      maxBlocks: '1'
-      minBlocks: ''
+      maxBlocks: 1
+      minBlocks: null
       propagationKeyFormat: null
       propagationMethod: all
     translationKeyFormat: null
@@ -129,7 +146,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
-    instructions: ''
+    instructions: null
     name: Title
     searchable: false
     settings:
@@ -140,13 +157,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Title.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged

@@ -3,29 +3,33 @@ fieldLayouts:
   afcd3567-ef94-42c5-90ab-821352e86148:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 8935bcf9-eec9-483e-85c1-d7b96d0f351d # Background Color
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b075b896-3717-4530-89d6-2e9cab90614e
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: d3654845-df5b-4052-8caa-f71df41c0fff
+        userCondition: null
 fields:
   8935bcf9-eec9-483e-85c1-d7b96d0f351d: # Background Color
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemBackgroundColor
-    instructions: ''
+    instructions: null
     name: 'Background Color'
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
@@ -50,10 +54,10 @@ fields:
           __assoc__:
             -
               - label
-              - 'Light Green'
+              - Dark
             -
               - value
-              - light
+              - dark
     translationKeyFormat: null
     translationMethod: none
     type: custommodule\fields\BackgroundColor

@@ -3,43 +3,54 @@ fieldLayouts:
   b4e958b6-d4ea-4342-b42d-2457f7f80ffb:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 9ba41756-ffd1-42e9-a1ab-479d225d4919 # Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1d0fe7bf-7575-4253-992e-ec6cc327de3b
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 3e7fdee3-0860-47ba-a8cf-516bc6e161dc # Text
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 10fb0c65-242b-45da-a6ce-26a9057be47b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: db1862c9-bc64-439c-86a8-cf4335bb24fd # Link
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d48267fa-8333-437b-8f18-31b669aba1ff
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: 9027402e-ac14-4c58-9bf5-5893c10fe3d8
+        userCondition: null
 fields:
   3e7fdee3-0860-47ba-a8cf-516bc6e161dc: # Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemText
-    instructions: ''
+    instructions: null
     name: Text
     searchable: false
     settings:
@@ -50,13 +61,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -68,7 +79,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
-    instructions: ''
+    instructions: null
     name: Title
     searchable: false
     settings:
@@ -78,13 +89,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: Title.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -96,10 +107,12 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
+      blockTypeFields: 0
+      changedFieldIndicator: null
       columns:
         __assoc__:
           -
@@ -118,13 +131,12 @@ fields:
                   - ''
       contentTable: '{{%stc_3_itemlink}}'
       fieldLayout: row
-      maxRows: '1'
-      minRows: ''
-      placeholderKey: null
+      maxRows: 1
+      minRows: null
       propagationKeyFormat: null
       propagationMethod: all
-      selectionLabel: ''
-      staticField: ''
+      selectionLabel: null
+      staticField: null
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField

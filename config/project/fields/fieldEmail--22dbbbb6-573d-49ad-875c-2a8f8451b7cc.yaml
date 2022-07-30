@@ -2,16 +2,16 @@ columnSuffix: njzmgzwl
 contentColumnType: text
 fieldGroup: ec9da726-1b22-4a29-9ba2-b6d45638c18c # Common
 handle: fieldEmail
-instructions: ''
+instructions: null
 name: Email
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

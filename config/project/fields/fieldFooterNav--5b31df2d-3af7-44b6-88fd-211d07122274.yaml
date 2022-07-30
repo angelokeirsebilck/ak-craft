@@ -2,19 +2,20 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: ec9da726-1b22-4a29-9ba2-b6d45638c18c # Common
 handle: fieldFooterNav
-instructions: ''
+instructions: null
 name: 'Footer Nav'
 searchable: false
 settings:
+  blockTypeFields: 0
+  changedFieldIndicator: null
   contentTable: '{{%stc_fieldfooternav}}'
   fieldLayout: row
-  maxRows: ''
-  minRows: ''
-  placeholderKey: null
+  maxRows: null
+  minRows: null
   propagationKeyFormat: null
   propagationMethod: all
   selectionLabel: 'Add page'
-  staticField: ''
+  staticField: null
 translationKeyFormat: null
 translationMethod: site
 type: verbb\supertable\fields\SuperTableField

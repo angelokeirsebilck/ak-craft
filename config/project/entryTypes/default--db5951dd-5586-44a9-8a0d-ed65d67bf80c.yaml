@@ -2,6 +2,7 @@ fieldLayouts:
   ea66a99e-53ca-4be7-bcc6-d75f54b936e8:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,8 +10,9 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
-            instructions: ''
+            instructions: null
             label: __blank__
             max: null
             min: null
@@ -24,50 +26,67 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2e4a1744-26d1-4660-828e-4f48eef464a1
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: fbd049a5-5396-464a-9c6d-ffc6ffbe7216 # Kerotec SEO Title
-            instructions: ''
+            instructions: null
             label: Title
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3b2f8af0-37aa-4249-b39a-09fcdbd4d3bf
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b113940c-2a49-456f-b10d-862587b1acda # Kerotec SEO Place
-            instructions: ''
+            instructions: null
             label: Place
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: a1b0052d-e92a-40c7-b44c-12059700b3bd
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: c963b7e9-ac8f-47c6-a7eb-2de181771450 # Kerotec SEO Content
-            instructions: ''
+            instructions: null
             label: 'SEO Content Item'
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b11ddce9-5bae-4ade-9f44-066ca4fdf072
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
+        uid: 0313c7af-c365-446d-940c-d903f48076ee
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 73565395-0f0b-4846-b8db-e5b9eb2b5ec9 # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 938632cf-4d06-4458-b440-7a8b4a330b39
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 0e1e8c4d-769f-4603-9b33-f1bd4c99acd5
+        userCondition: null
 handle: default
 hasTitleField: false
 name: Standaard

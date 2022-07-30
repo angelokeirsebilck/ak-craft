@@ -2,8 +2,10 @@ fieldLayouts:
   c178f7b3-3dcc-4c05-8beb-41ad737bb16d:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 102ffb0a-98c4-4eaf-bfaa-73c7f769c4d1 # aK E-mail
             instructions: null
             label: null
@@ -11,9 +13,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: cbedfc45-67af-4290-98dd-2da051c7b887
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 8c28eaec-f7d2-48b3-b106-7a49dc00230f # aK Tel
             instructions: null
             label: null
@@ -21,13 +25,17 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 49b22eee-5fd3-4e82-8043-708d9689c8fd
+            userCondition: null
             warning: null
             width: 50
         name: Contact
         uid: 4c614b29-821f-451f-8866-3ca8adc51f4f
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: b317878c-900e-4b6b-aab5-1d1da11e7863 # aK Github
             instructions: null
             label: null
@@ -35,9 +43,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: a0337872-8407-4559-8333-31c5c265376f
+            userCondition: null
             warning: null
             width: 25
           -
+            elementCondition: null
             fieldUid: c1e4cb10-56ec-44c2-b746-987ef7d21954 # aK Linkedin
             instructions: null
             label: null
@@ -45,9 +55,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: af0868d1-f575-4caa-90fb-a260e1624756
+            userCondition: null
             warning: null
             width: 25
           -
+            elementCondition: null
             fieldUid: 57d472cb-1abc-438c-b133-1e58a472bd26 # aK Facebook
             instructions: null
             label: null
@@ -55,13 +67,17 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 07241737-8659-4097-9fbf-c2a1c50c213c
+            userCondition: null
             warning: null
             width: 25
         name: Socials
         uid: 455e3d0f-1e1a-4991-a718-0088f600a218
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 378bbbf1-f8ba-4c41-874b-c936fea3f11e # aK Logo Header
             instructions: null
             label: null
@@ -69,10 +85,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 4599651d-e0a8-40fd-9f07-0b8fc142b30c
+            userCondition: null
             warning: null
             width: 50
         name: Logo
         uid: bd4ad18e-785e-453d-8780-d1819fbd9056
+        userCondition: null
 handle: globalAkCompany
 name: 'aK Company'
 sortOrder: 8

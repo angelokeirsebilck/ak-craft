@@ -2,18 +2,23 @@ fieldLayouts:
   054ca4f5-cf58-4ec6-8e98-bc854c6ff5a4:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 914da9e8-cd79-4ed2-81fa-fac242b24f4b # Portfolio Main Nav
-            instructions: ''
+            instructions: null
             label: Nav
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 0f95b869-0899-430f-8eb5-a2512230728a
+            userCondition: null
             warning: null
             width: 100
         name: Main
-        sortOrder: 1
+        uid: 1ac3da1d-8283-4e3a-9e0c-528e455c13e4
+        userCondition: null
 handle: globalPortfolioNavigation
 name: 'Portfolio Navigation'
 sortOrder: 5

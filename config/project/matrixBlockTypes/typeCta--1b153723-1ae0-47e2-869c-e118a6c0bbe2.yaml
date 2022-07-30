@@ -3,41 +3,50 @@ fieldLayouts:
   df4aa729-bb29-4800-9392-c5313288fb18:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 6eb16d71-fd69-4587-8d3c-56a87696049e # Cta
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 52aae689-c082-464d-9e0a-c301b16d38f7
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 7f4a44e6-2104-45c9-a348-781fc2e32991 # Background Color
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 688abb25-14b4-443a-9e74-e639c00bdcbe
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: 146b1df7-f4de-472b-893e-ab6aabdb4115
+        userCondition: null
 fields:
   6eb16d71-fd69-4587-8d3c-56a87696049e: # Cta
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemCta
-    instructions: ''
+    instructions: null
     name: Cta
     searchable: false
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: false
       source: null
       sources:
@@ -53,11 +62,10 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemBackgroundColor
-    instructions: ''
+    instructions: null
     name: 'Background Color'
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
@@ -82,10 +90,10 @@ fields:
           __assoc__:
             -
               - label
-              - 'Light Green'
+              - Dark
             -
               - value
-              - light
+              - dark
     translationKeyFormat: null
     translationMethod: none
     type: custommodule\fields\BackgroundColor

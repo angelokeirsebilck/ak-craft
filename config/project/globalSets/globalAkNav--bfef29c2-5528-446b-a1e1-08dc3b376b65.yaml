@@ -2,8 +2,10 @@ fieldLayouts:
   647de0e4-b480-464f-9936-ddbc31285cf0:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 109e1841-623b-4f66-9626-8cfdcf23c016 # aK Main Navigation
             instructions: null
             label: null
@@ -11,9 +13,11 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 12d7a456-1cf8-4bd3-9047-2cf62b555428
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: b1fbd584-8a4a-4b09-9fdf-41aadc84322c # aK Highlight Nav
             instructions: null
             label: null
@@ -21,13 +25,17 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 780b0ecd-5e32-4dba-aabb-fc76577c524d
+            userCondition: null
             warning: null
             width: 100
         name: Main
         uid: 66d88879-ff94-4127-a763-8111b65edb5f
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 43d5e63c-5af2-4340-aaac-d1cbb0357237 # aK Footer Navigation
             instructions: null
             label: null
@@ -35,10 +43,12 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8d96d586-e8f1-4078-8a8b-bd698016c896
+            userCondition: null
             warning: null
             width: 100
         name: Footer
         uid: 4d8582ac-e054-4277-9389-1245bfeba99c
+        userCondition: null
 handle: globalAkNav
 name: 'aK Navigation'
 sortOrder: 7

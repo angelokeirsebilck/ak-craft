@@ -2,14 +2,15 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: af2d83da-9397-4fdd-ae4b-3330cd82854c # KEROTEC
 handle: fieldKerotecFooterLink
-instructions: ''
+instructions: null
 name: 'Kerotec Footer Link'
 searchable: false
 settings:
   allowSelfRelations: false
-  limit: '1'
   localizeRelations: false
-  selectionLabel: ''
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
   showSiteMenu: false
   source: null
   sources:

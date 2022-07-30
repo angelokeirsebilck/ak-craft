@@ -3,47 +3,57 @@ fieldLayouts:
   1e40a4e5-c22e-4582-b2a0-f88bab7009fc:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: e70f1d40-fc20-488d-97bb-cb61aec7cc26 # Title
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c8b01979-d6b3-4252-b335-4d984140f9f8
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 61f62f82-cbc9-49d8-a8ca-33c3a3b98231 # References
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6730c870-bc11-4db2-8843-2940e08d0ee6
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 2c532e68-55b9-46e0-8ff3-837835d606c6 # Background Color
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 56f5edd8-b6b1-4a6a-8b80-cc1ce647c4c0
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: e40bd8d1-49b7-4c07-9da6-76cbc0621a49
+        userCondition: null
 fields:
   2c532e68-55b9-46e0-8ff3-837835d606c6: # Background Color
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemBackgroundColor
-    instructions: ''
+    instructions: null
     name: 'Background Color'
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
@@ -68,10 +78,10 @@ fields:
           __assoc__:
             -
               - label
-              - 'Light Green'
+              - Dark
             -
               - value
-              - light
+              - dark
     translationKeyFormat: null
     translationMethod: none
     type: custommodule\fields\BackgroundColor
@@ -80,10 +90,12 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemRefs
-    instructions: ''
+    instructions: null
     name: References
     searchable: false
     settings:
+      blockTypeFields: 0
+      changedFieldIndicator: null
       columns:
         __assoc__:
           -
@@ -102,13 +114,12 @@ fields:
                   - ''
       contentTable: '{{%stc_7_itemrefs}}'
       fieldLayout: row
-      maxRows: ''
-      minRows: ''
-      placeholderKey: null
+      maxRows: null
+      minRows: null
       propagationKeyFormat: null
       propagationMethod: all
-      selectionLabel: ''
-      staticField: ''
+      selectionLabel: null
+      staticField: null
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField
@@ -117,16 +128,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
-    instructions: ''
+    instructions: null
     name: Title
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

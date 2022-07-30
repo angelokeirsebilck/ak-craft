@@ -2,6 +2,7 @@ fieldLayouts:
   0b72c7e9-d60e-4ba1-87a9-95802ec074c2:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,41 +26,55 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 68e09085-97d7-4674-abb9-aba3148a9fba
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 39546ded-9c49-42f1-93dd-10d03d9ee427 # Home Banner Kerotec
-            instructions: ''
+            instructions: null
             label: Banner
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 33526128-b62d-4c44-8a88-754837eee3ef
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: f7b2f612-da3a-4044-9230-47616d46e132 # Kerotec Content
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 675f1fa9-5384-4c71-8ad0-f9bb13fbe36b
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
+        uid: 947801ad-5bfc-4cc7-b178-14532e569089
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 73565395-0f0b-4846-b8db-e5b9eb2b5ec9 # SEO
-            instructions: ''
+            instructions: null
             label: __blank__
-            required: ''
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c8f83e2e-47f4-4d0e-a365-57bcd7d99d8f
+            userCondition: null
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 6e51224b-54bb-4dfc-a8b9-cfec76e651aa
+        userCondition: null
 handle: homeKerotec
 hasTitleField: false
 name: 'Home Kerotec'

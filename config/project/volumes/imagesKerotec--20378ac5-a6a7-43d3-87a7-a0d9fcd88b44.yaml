@@ -2,6 +2,7 @@ fieldLayouts:
   915b1b74-8d32-49bf-abdc-6ecf839f6219:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -25,10 +27,12 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
             uid: 6c370339-a6a1-42c8-a087-54e0bcfaf33b
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
         uid: 729279e1-f38f-443a-abbc-1c334b23aa19
+        userCondition: null
 fs: imagesKerotec
 handle: imagesKerotec
 name: 'Images KEROTEC'

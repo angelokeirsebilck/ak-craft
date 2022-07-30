@@ -3,43 +3,51 @@ fieldLayouts:
   d510f2cd-1de7-4a66-baf1-7b466a0db162:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 108034c7-d987-4de8-886e-09d9d92e2496 # Text
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bfb3f337-b93c-49a4-998c-bd9885612895
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: fbaa787d-4cdf-42fe-9f76-77c086e924e3 # Author
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1663a925-edb2-432b-a660-ce3126a640d8
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 6fedb6be-008c-4627-8d7c-da225d325619
+        userCondition: null
 fields:
   108034c7-d987-4de8-886e-09d9d92e2496: # Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: itemText
-    instructions: ''
+    instructions: null
     name: Text
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -50,16 +58,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemAuthor
-    instructions: ''
+    instructions: null
     name: Author
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

@@ -3,34 +3,42 @@ fieldLayouts:
   7163407d-cde3-42f5-b142-f18e6db31873:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 8ed4ac99-1404-4f75-9d5f-6d7454d9e078 # Text
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c4afa91a-3cf3-4ae0-bdcc-0db6d0ed4487
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 13a120bf-c8a5-4d82-ac79-ba44d99c869f # Media
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bd13c1a2-a5c0-4b13-81c7-e2adc2e787d0
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 2e6a2be5-a21d-458b-aee1-8eff170a4fc2
+        userCondition: null
 fields:
   8ed4ac99-1404-4f75-9d5f-6d7454d9e078: # Text
     columnSuffix: tebwoywx
     contentColumnType: text
     fieldGroup: null
     handle: itemText
-    instructions: ''
+    instructions: null
     name: Text
     searchable: false
     settings:
@@ -40,13 +48,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -58,31 +66,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemMedia
-    instructions: ''
+    instructions: null
     name: Media
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:bdbc04de-8344-4c00-bdf0-b816a54c869b' # Images Portfolio
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      singleUploadLocationSubpath: ''
       source: null
       sources:
         - 'volume:bdbc04de-8344-4c00-bdf0-b816a54c869b' # Images Portfolio
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null

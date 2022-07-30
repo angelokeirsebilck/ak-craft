@@ -2,6 +2,7 @@ fieldLayouts:
   54c6a94c-7c91-4220-a676-a91c8189e500:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,19 +26,25 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 53c82d75-4715-4f2a-9e2f-23fdd822749b
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 57f24831-8db3-4239-b500-787afe0b7422 # Kerotec Cta Content
-            instructions: ''
+            instructions: null
             label: __blank__
-            required: '1'
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 791e66d7-75b5-4569-bd0e-674d472416a3
+            userCondition: null
             warning: null
             width: 100
         name: Inhoud
-        sortOrder: 1
+        uid: 2ea73e69-f468-4423-bb23-2734bbba9a32
+        userCondition: null
 handle: default
 hasTitleField: false
 name: Standaard

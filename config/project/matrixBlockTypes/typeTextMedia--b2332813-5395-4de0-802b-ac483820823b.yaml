@@ -3,83 +3,105 @@ fieldLayouts:
   9b3bdb5f-c558-4106-99c3-32ba2f48d3d5:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            elementCondition: null
             fieldUid: 4455348d-5047-4b0e-91ae-79e6599d7f6a # Title
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ae4c2a15-0496-4ca9-ba66-19ca02259dc3
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 771bfdd2-6549-4fe3-953a-9d5415ecd1f0 # Text
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4f2e0bcd-7b6e-4a4e-bf27-ec3a2db7f589
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 98f33ea8-d57c-4bff-bf01-4fef7666c145 # Link
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 18b66c86-fad0-4bfb-b98e-8053c27806d3
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: c39b2c60-002c-4db1-ad99-3e3465d32e19 # Image
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ef161741-6c22-4c40-9a65-26746ad140dd
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 91815f01-4d01-4b69-9988-b6fd3e599549 # Background Color
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 49e29478-7e07-4bcc-ad78-34859198f839
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: 0d490fc5-8be5-4e2d-88e6-4dd5a45a558b # Text Alignment
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2ebc4fa1-82b5-466e-9a0e-a74ec89b8fc1
+            userCondition: null
             warning: null
             width: 50
           -
+            elementCondition: null
             fieldUid: d630936a-542d-48c6-9549-34144ec0a96c # Media Position
             instructions: null
             label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 23674518-df8a-42fe-a5d1-a60ce0a7b3a7
+            userCondition: null
             warning: null
             width: 50
         name: Content
-        sortOrder: 1
+        uid: 04c9c0a3-05bd-458d-9a4f-cb36f92346ab
+        userCondition: null
 fields:
   0d490fc5-8be5-4e2d-88e6-4dd5a45a558b: # Text Alignment
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: itemTextAlignment
-    instructions: ''
+    instructions: null
     name: 'Text Alignment'
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
@@ -111,10 +133,12 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemLink
-    instructions: ''
+    instructions: null
     name: Link
     searchable: false
     settings:
+      blockTypeFields: 0
+      changedFieldIndicator: null
       columns:
         __assoc__:
           -
@@ -133,13 +157,12 @@ fields:
                   - ''
       contentTable: '{{%stc_1_itemlink}}'
       fieldLayout: row
-      maxRows: '1'
-      minRows: ''
-      placeholderKey: null
+      maxRows: 1
+      minRows: null
       propagationKeyFormat: null
       propagationMethod: all
       selectionLabel: 'Add link'
-      staticField: ''
+      staticField: null
     translationKeyFormat: null
     translationMethod: site
     type: verbb\supertable\fields\SuperTableField
@@ -148,7 +171,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemText
-    instructions: ''
+    instructions: null
     name: Text
     searchable: false
     settings:
@@ -158,13 +181,13 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
-      redactorConfig: ''
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
-      showHtmlButtonForNonAdmins: '1'
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       uiMode: enlarged
@@ -176,11 +199,10 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemBackgroundColor
-    instructions: ''
+    instructions: null
     name: 'Background Color'
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
@@ -205,10 +227,10 @@ fields:
           __assoc__:
             -
               - label
-              - 'Light Green'
+              - Dark
             -
               - value
-              - light
+              - dark
     translationKeyFormat: null
     translationMethod: none
     type: custommodule\fields\BackgroundColor
@@ -217,16 +239,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: itemTitle
-    instructions: ''
+    instructions: null
     name: Title
     searchable: false
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -237,31 +259,34 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemImage
-    instructions: ''
+    instructions: null
     name: Image
     searchable: false
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: false
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:d21b4646-668b-477d-b8bd-0b619d836508' # Images AK
-      singleUploadLocationSubpath: ''
       source: null
       sources:
         - 'volume:20378ac5-a6a7-43d3-87a7-a0d9fcd88b44' # Images KEROTEC
       targetSiteId: null
-      useSingleFolder: false
       validateRelatedElements: false
       viewMode: list
     translationKeyFormat: null
@@ -272,11 +297,10 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: itemMediaPosition
-    instructions: ''
+    instructions: null
     name: 'Media Position'
     searchable: false
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
