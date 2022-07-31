@@ -1,13 +1,14 @@
-{% extends "_layout/_base.twig" %}
+{% extends '_layout/_base.twig' %}
 
-{% set entry = craft.entries()
-    .slug('503').one() %}
+{% set entry = craft.entries().slug('503').one() %}
 
 {% block content %}
-    {% set content = entry.fieldContentBuilder.all() %}
-    {% for block in content %}
-        {% include "/_blocks/_#{block.type.handle|replace('type','')|lower}.twig" with {
-            "block": block
+    {% include '_inc/_title' with {
+        title: entry.title
+    } %}
+    {% set content = entry.fieldAkContent.all() %}404{% for block in content %}
+        {% include "/_blocks/_#{block.type.handle|replace('type', '')|lower}.twig" with {
+            block: block
         } %}
     {% endfor %}
 {% endblock %}

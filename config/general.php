@@ -64,4 +64,6 @@ return [
             'extensions' => ['png']
         ]
     ],
+
+    'errorTemplatePrefix' => '_errors'
 ];
