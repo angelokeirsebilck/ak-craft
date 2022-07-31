@@ -1,23 +1,37 @@
-import '@fancyapps/ui/dist/panzoom.css'
-import { Panzoom } from '@fancyapps/ui'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import basicParallax from '../basicparallax'
+gsap.registerPlugin(ScrollTrigger)
 
-const initPanzoomSteps = (panzoomItems) => {
-    panzoomItems.forEach((element) => {
-        const zoomOut = element
-            .closest('.js-panzoomParent')
-            .querySelector('.js-zoomOut')
-        const zoomIn = element
-            .closest('.js-panzoomParent')
-            .querySelector('.js-zoomIn')
-        const panZoom = new Panzoom(element)
+const stepsAnimations = (parent) => {
+    const oddPictures = parent.querySelectorAll('.js-stepsPictureOdd')
+    oddPictures.forEach((picture) => {
+        basicParallax(picture, 20, false)
+    })
+    const evenEls = parent.querySelectorAll('.js-stepsEven')
 
-        zoomOut.addEventListener('click', () => {
-            panZoom.zoomOut()
+    evenEls.forEach((el) => {
+        const bg = el.querySelector('.js-stepsEvenBg')
+        const evenTextEl = el.querySelectorAll('.js-stepsEvenText')
+        const bgTl = gsap.timeline({
+            scrollTrigger: {
+                trigger: bg,
+                start: 'top 70%'
+                // markers: true
+            }
         })
 
-        zoomIn.addEventListener('click', () => {
-            panZoom.zoomIn()
-        })
+        bgTl.from(bg, {
+            height: '0%',
+            duration: 1.7
+        }).from(
+            evenTextEl,
+            {
+                opacity: 0,
+                y: 30
+            },
+            '-=1.3'
+        )
     })
 }
-export default initPanzoomSteps
+export { stepsAnimations }

@@ -104,7 +104,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1937612246
+      changedFieldIndicator: 766521406
       columns:
         __assoc__:
           -
@@ -162,4 +162,4 @@ fields:
     type: craft\redactor\Field
 handle: typeAccordionImage
 name: 'Accordion / Image'
-sortOrder: 5
+sortOrder: 6

@@ -1,3 +1,5 @@
+{% import '_macros/_tools.twig' as macros %}
+
 <div class="section">
     <div class="container">
         <div class="prose md:prose-md prose-li:text-copy prose-li:font-light prose-strong:!font-medium prose-strong:bg-none">
@@ -8,6 +10,11 @@
                 charset="UTF-8"
                 data-cookiescriptreport="report"
                 src="//report.cookie-script.com/r/82c92107d464709b2def136cb95ec8c7.js"></script>
+        {% endif %}
+        {% if block.itemLink.getLink() %}
+            <div class="mt-3 md:mt-6">
+                {{ macros.button(block.itemLink.getUrl(), block.itemLink.getText(), 'btn-black', 'bg-black-default') }}
+            </div>
         {% endif %}
     </div>
 </div>

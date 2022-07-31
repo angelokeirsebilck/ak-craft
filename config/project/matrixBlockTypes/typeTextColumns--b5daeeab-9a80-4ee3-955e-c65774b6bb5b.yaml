@@ -67,7 +67,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 374128372
+      changedFieldIndicator: 55357260
       columns:
         __assoc__:
           -
@@ -125,7 +125,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1882029471
+      changedFieldIndicator: 681286846
       columns:
         __assoc__:
           -
@@ -204,4 +204,4 @@ fields:
     type: craft\fields\Assets
 handle: typeTextColumns
 name: 'Text Columns'
-sortOrder: 2
+sortOrder: 3

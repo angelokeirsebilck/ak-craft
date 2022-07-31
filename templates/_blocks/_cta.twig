@@ -7,8 +7,8 @@
             <div class="!col-start-3 col-span-10 relative after:z-10 after:absolute after:-top-6 after:-left-6 after:rounded-2xl after:bg-secondary-default after:w-full after:h-full after:block">
                 <div class="p-4 md:p-8 bg-tertiary-default z-20 relative rounded-tl-xl rounded-bl-2xl after:block after:top-0 after:right-[-50vw] after:w-[50vw] after:h-full after:bg-inherit after:absolute">
                     {% if content.itemTitle %}
-                        <h2 class="font-medium text-31 md:!text-48">
-                            {{ content.itemTitle }}
+                        <h2 class="font-medium text-31 md:!text-48 overflow-hidden">
+                            <span class="inline-block pb-2 transform translate-y-full js-title">{{ content.itemTitle }}</span>
                         </h2>
                     {% endif %}
                     {% if content.itemText %}

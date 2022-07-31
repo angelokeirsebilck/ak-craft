@@ -222,6 +222,13 @@ main().then(() => {
 
             initAccordions()
         }
+        const stepsEls = document.querySelectorAll('.js-steps')
+        if (stepsEls.length > 0) {
+            let { stepsAnimations } = await import('./blocks/steps.js')
+            stepsEls.forEach((parent) => {
+                stepsAnimations(parent)
+            })
+        }
 
         const textColumnEls = document.querySelectorAll('.js-textColumns')
         if (textColumnEls.length > 0) {
@@ -230,6 +237,14 @@ main().then(() => {
             )
             textColumnEls.forEach((tc) => {
                 initTextColumns(tc)
+            })
+        }
+
+        const formEls = document.querySelectorAll('.js-form')
+        if (formEls.length > 0) {
+            let { formAnimation } = await import('./blocks/form')
+            formEls.forEach((form) => {
+                formAnimation(form)
             })
         }
 

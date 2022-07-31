@@ -31,7 +31,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1544860069
+      changedFieldIndicator: 346927249
       columns:
         __assoc__:
           -
@@ -68,4 +68,4 @@ fields:
     type: verbb\supertable\fields\SuperTableField
 handle: typeSteps
 name: Steps
-sortOrder: 7
+sortOrder: 8

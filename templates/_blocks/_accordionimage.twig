@@ -5,9 +5,11 @@
         <div class="grid-cols-12 gap-10 lg:grid">
             <div class="col-span-5">
                 {% if block.itemTitle %}
-                    <h2 class="font-medium text-31 lg:!text-48">
-                        {{ block.itemTitle }}
-                    </h2>
+                    <div class="overflow-hidden">
+                        <h2 class="font-medium text-31 lg:!text-48 transform translate-y-full js-title">
+                            {{ block.itemTitle }}
+                        </h2>
+                    </div>
                 {% endif %}
             </div>
         </div>

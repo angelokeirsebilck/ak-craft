@@ -17,6 +17,7 @@ module.exports = {
     theme: {
         fontSize: {
             sm: '12px',
+            md: '15px',
             copy: [
                 '18px',
                 {

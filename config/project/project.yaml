@@ -1,715 +1,829 @@
-dateModified: 1659158687
+dateModified: 1659279130
 elementSources:
-    craft\elements\Entry:
-        - key: '*'
-          tableAttributes:
-              - section
-              - postDate
-              - expiryDate
-              - author
-              - link
-          type: native
-        - disabled: false
-          key: singles
-          tableAttributes:
-              - link
-          type: native
-        - heading: Content
-          type: heading
-        - key: 'section:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
-          type: native
-        - key: 'section:7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd' # Kerotec SEO Pages Content
-          type: native
-        - key: 'section:ed2ac2de-4798-4162-9921-19e31c6c14c4' # aK USP
-          type: native
-        - disabled: false
-          key: 'section:486d6ce3-ea2f-4adc-b36e-485764691fa3' # aK Cta
-          tableAttributes:
-              - postDate
-              - expiryDate
-              - author
-              - link
-          type: native
-        - heading: Pages
-          type: heading
-        - key: 'section:ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5' # aK Pages
-          tableAttributes:
-              - postDate
-              - expiryDate
-              - author
-              - link
-          type: native
-        - key: 'section:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
-          tableAttributes:
-              - postDate
-              - expiryDate
-              - author
-              - link
-              - slug
-              - 'field:73565395-0f0b-4846-b8db-e5b9eb2b5ec9' # SEO
-          type: native
-        - key: 'section:5f9e8b14-1faf-4f70-97ae-db745b38d643' # Kerotec SEO Pages
-          tableAttributes:
-              - postDate
-              - expiryDate
-              - author
-              - link
-              - slug
-          type: native
-        - key: 'section:3973a73c-440e-4767-b7a2-967c259a7331' # Legal KEROTEC
-          type: native
-        - key: 'section:2c01be0c-0ef0-43c7-a7c9-fd3f6a74a10d' # Portfolio Pages
-          type: native
-        - heading: ''
-          type: heading
+  craft\elements\Entry:
+    -
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: Content
+      type: heading
+    -
+      key: 'section:0e29d1e7-3766-416c-a6aa-f559b86928a2' # Kerotec CTA
+      type: native
+    -
+      key: 'section:7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd' # Kerotec SEO Pages Content
+      type: native
+    -
+      key: 'section:ed2ac2de-4798-4162-9921-19e31c6c14c4' # aK USP
+      type: native
+    -
+      disabled: false
+      key: 'section:486d6ce3-ea2f-4adc-b36e-485764691fa3' # aK Cta
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      heading: Pages
+      type: heading
+    -
+      key: 'section:ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5' # aK Pages
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:29159395-d6dc-45e5-aa30-5347f769d03d' # Pages KEROTEC
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+        - slug
+        - 'field:73565395-0f0b-4846-b8db-e5b9eb2b5ec9' # SEO
+      type: native
+    -
+      key: 'section:5f9e8b14-1faf-4f70-97ae-db745b38d643' # Kerotec SEO Pages
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+        - slug
+      type: native
+    -
+      key: 'section:3973a73c-440e-4767-b7a2-967c259a7331' # Legal KEROTEC
+      type: native
+    -
+      key: 'section:2c01be0c-0ef0-43c7-a7c9-fd3f6a74a10d' # Portfolio Pages
+      type: native
+    -
+      heading: ''
+      type: heading
 email:
-    fromEmail: info@angelokeirsebilck.be
-    fromName: 'Angelo Keirsebilck'
-    replyToEmail: null
-    template: ''
-    transportSettings:
-        messageStream: $POSTMARK_MSG_STREAM
-        token: $POSTMARK_SERVER_TOKEN
-    transportType: craftcms\postmark\Adapter
+  fromEmail: info@angelokeirsebilck.be
+  fromName: 'Angelo Keirsebilck'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    messageStream: $POSTMARK_MSG_STREAM
+    token: $POSTMARK_SERVER_TOKEN
+  transportType: craftcms\postmark\Adapter
 fs:
-    imagesAK:
-        hasUrls: true
-        name: 'Images AK'
-        settings:
-            bucket: angelokeirsebilck
-            contentDisposition: ''
-            endpoint: 'https://ams3.digitaloceanspaces.com'
-            expires: '6 months'
-            keyId: $DO_SPACES_API_KEY
-            region: ams3
-            secret: $DO_SPACES_SECRET
-            subfolder: ak/uploads/images
-        type: vaersaagod\dospaces\Fs
-        url: '@doBaseUrl'
-    imagesAkNotAutoResize:
-        hasUrls: true
-        name: 'Images AK Not Auto Resize'
-        settings:
-            bucket: angelokeirsebilck
-            contentDisposition: ''
-            endpoint: 'https://ams3.digitaloceanspaces.com'
-            expires: '6 months'
-            keyId: $DO_SPACES_API_KEY
-            region: ams3
-            secret: $DO_SPACES_SECRET
-            subfolder: ak/uploads/images
-        type: vaersaagod\dospaces\Fs
-        url: '@doBaseUrl'
-    imagesKerotec:
-        hasUrls: true
-        name: 'Images KEROTEC'
-        settings:
-            bucket: angelokeirsebilck
-            contentDisposition: ''
-            endpoint: 'https://ams3.digitaloceanspaces.com'
-            expires: '6 months'
-            keyId: $DO_SPACES_API_KEY
-            region: ams3
-            secret: $DO_SPACES_SECRET
-            subfolder: kerotec/uploads/images
-        type: vaersaagod\dospaces\Fs
-        url: '@doBaseUrl'
-    imagesPortfolio:
-        hasUrls: true
-        name: 'Images Portfolio'
-        settings:
-            bucket: angelokeirsebilck
-            contentDisposition: ''
-            endpoint: 'https://ams3.digitaloceanspaces.com'
-            expires: '6 months'
-            keyId: $DO_SPACES_API_KEY
-            region: ams3
-            secret: $DO_SPACES_SECRET
-            subfolder: portfolio/uploads/images
-        type: vaersaagod\dospaces\Fs
-        url: '@doBaseUrl'
-    videosAk:
-        hasUrls: true
-        name: 'Videos AK'
-        settings:
-            bucket: angelokeirsebilck
-            contentDisposition: ''
-            endpoint: 'https://ams3.digitaloceanspaces.com'
-            expires: '6 months'
-            keyId: $DO_SPACES_API_KEY
-            region: ams3
-            secret: $DO_SPACES_SECRET
-            subfolder: ak/uploads/videos
-        type: vaersaagod\dospaces\Fs
-        url: '@doBaseUrl'
+  imagesAK:
+    hasUrls: true
+    name: 'Images AK'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: ak/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
+  imagesAkNotAutoResize:
+    hasUrls: true
+    name: 'Images AK Not Auto Resize'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: ak/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
+  imagesKerotec:
+    hasUrls: true
+    name: 'Images KEROTEC'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: kerotec/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
+  imagesPortfolio:
+    hasUrls: true
+    name: 'Images Portfolio'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: portfolio/uploads/images
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
+  videosAk:
+    hasUrls: true
+    name: 'Videos AK'
+    settings:
+      bucket: angelokeirsebilck
+      contentDisposition: ''
+      endpoint: 'https://ams3.digitaloceanspaces.com'
+      expires: '6 months'
+      keyId: $DO_SPACES_API_KEY
+      region: ams3
+      secret: $DO_SPACES_SECRET
+      subfolder: ak/uploads/videos
+    type: vaersaagod\dospaces\Fs
+    url: '@doBaseUrl'
 meta:
-    __names__:
-        0a19b894-b243-4e76-a249-6602c5b5a90d: 'Left Column' # Left Column
-        0a70e957-2165-4336-99c1-12316a86db89: Services # Services
-        0b6cd4f6-3599-4b39-8eaa-6975556e68f1: SubTitle # SubTitle
-        0d490fc5-8be5-4e2d-88e6-4dd5a45a558b: 'Text Alignment' # Text Alignment
-        0da2390c-51d1-4248-af7a-6ee8c649b48f: 'aK Cta Content' # aK Cta Content
-        0ddcbf11-8b53-4839-b2af-3b18f9581e0a: Preview # Preview
-        0e3f5148-d0f0-44ba-982d-4cb08958c9d5: Image # Image
-        0e29d1e7-3766-416c-a6aa-f559b86928a2: 'Kerotec CTA' # Kerotec CTA
-        0eb658b4-ec0f-47e9-9caf-83646ba6bd46: Standaard # Standaard
-        0f16953f-3305-4d08-a2fc-8111aa0504e6: 'Videos Ak' # Videos Ak
-        1adf90bc-b79b-41e4-90a4-736a424758cc: Link # Link
-        1b153723-1ae0-47e2-869c-e118a6c0bbe2: Cta # Cta
-        1ce10a31-a493-4465-bb46-b89b1880fee1: Form # Form
-        1d3c7a6d-c0e4-4229-928f-7d176da8e6f4: 'Text / Media' # Text / Media
-        1d513fa9-1b15-46d1-97b0-6f0f08cb9bbd: Title # Title
-        1d89545b-011e-431b-acd1-d67b21fa253b: 'Kerotec Footer' # Kerotec Footer
-        2c01be0c-0ef0-43c7-a7c9-fd3f6a74a10d: 'Portfolio Pages' # Portfolio Pages
-        2c532e68-55b9-46e0-8ff3-837835d606c6: 'Background Color' # Background Color
-        2cad2871-83ab-4d53-adec-fd96958a90a5: Image # Image
-        2f3d4ce1-ea73-40cf-a413-7ddc74c8332e: 'Portfolio Home' # Portfolio Home
-        3e7fdee3-0860-47ba-a8cf-516bc6e161dc: Text # Text
-        4f2d371f-babc-42bf-9015-c504775f085b: Portfolio # Portfolio
-        4fd9f2ab-dfaa-4404-ba4a-47548a90d471: 'Home Kerotec' # Home Kerotec
-        5a3f3bb9-8f78-4c9d-a52d-3df76229365d: Title # Title
-        5b31df2d-3af7-44b6-88fd-211d07122274: 'Footer Nav' # Footer Nav
-        5f9e8b14-1faf-4f70-97ae-db745b38d643: 'Kerotec SEO Pages' # Kerotec SEO Pages
-        5f218619-1454-480f-af32-eb36b417b664: Title # Title
-        6a3e1418-ce26-4ddc-ac39-c59aff8fed94: Text # Text
-        6d3f9446-799c-4acb-9ab8-d9e11b148b54: Link # Link
-        6eb16d71-fd69-4587-8d3c-56a87696049e: Cta # Cta
-        6ec2831b-b3c9-47b9-bf52-03beb2b48691: Standaard # Standaard
-        6f60c33a-ce18-4d21-bebd-6d53ea16c6d2: 'Portfolio Home' # Portfolio Home
-        7ac4ed8e-eb27-4c90-8daf-0a99a4fdd693: Link # Link
-        7d3e7019-ebcc-439f-a8dd-12f751b17a7e: Intro # Intro
-        7daba989-33a7-4cd0-8b14-94126c95d131: Link # Link
-        7e74a447-4f0a-4130-b15e-f1df3175e103: Thanks # Thanks
-        7f4a44e6-2104-45c9-a348-781fc2e32991: 'Background Color' # Background Color
-        7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd: 'Kerotec SEO Pages Content' # Kerotec SEO Pages Content
-        8b995879-332a-4e28-bb82-eb5b4e3b42e2: Title # Title
-        8c28eaec-f7d2-48b3-b106-7a49dc00230f: 'aK Tel' # aK Tel
-        8cf35363-80c2-4f15-aa4a-34ddbda37b68: 'Legal Pages' # Legal Pages
-        8e4ea5fe-b25a-4e8b-99b9-810b231cf066: Title # Title
-        8ed4ac99-1404-4f75-9d5f-6d7454d9e078: Text # Text
-        9a8262ac-e8a7-4a42-9608-01f44601e6b6: Text # Text
-        9a649057-30a2-42bd-8fb9-c53cffd15c31: 'Angelo Keirsebilck' # Angelo Keirsebilck
-        9b95db5c-d503-489b-8025-40c72a236aed: 'Link Label' # Link Label
-        9ba41756-ffd1-42e9-a1ab-479d225d4919: Title # Title
-        9bd51bcd-1aa8-4def-ae5c-bf2470665d63: Text # Text
-        9f70fad4-911f-44e3-a43f-fdb17a9dfe38: 'Portfolio NL' # Portfolio NL
-        13a120bf-c8a5-4d82-ac79-ba44d99c869f: Media # Media
-        18c36340-3798-4501-b6f0-e3330d5c86d4: References # References
-        22dbbbb6-573d-49ad-875c-2a8f8451b7cc: Email # Email
-        34c4c843-ac45-41ab-9370-b8ecd37f731d: New # New
-        34ee3466-4339-498b-93d1-e9e1633a43e5: Text # Text
-        37b41c08-b9d5-4839-bd5e-1da7203723d3: Link # Link
-        43d5e63c-5af2-4340-aaac-d1cbb0357237: 'aK Footer Navigation' # aK Footer Navigation
-        47e0d4b9-cda8-4353-b888-56e7d00e7126: Title # Title
-        55e41d4d-500c-4dda-aa4f-4cd5a10f0d41: Form # Form
-        56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
-        57d472cb-1abc-438c-b133-1e58a472bd26: 'aK Facebook' # aK Facebook
-        57f24831-8db3-4239-b500-787afe0b7422: 'Kerotec Cta Content' # Kerotec Cta Content
-        61ed6125-1194-4538-94b9-9c530f78a246: 'aK Company' # aK Company
-        61f15c29-bc3f-4925-bb5d-3da1bf9a8a0d: 'Kerotec Services Category' # Kerotec Services Category
-        61f62f82-cbc9-49d8-a8ca-33c3a3b98231: References # References
-        64eed068-1f00-44e1-9210-e8ff7f8a693c: 'Portfolio Home Banner' # Portfolio Home Banner
-        66e1fced-0bd0-4780-af2f-5e29d1db66e7: Cta # Cta
-        66f1be27-81fd-4669-9a51-be3292e7462a: Title # Title
-        71b63819-458c-4da8-a4f3-b417bed19e90: 'Right Column' # Right Column
-        71cad8ae-bad6-4639-a39f-5e54e0bd626b: USP # USP
-        73f2882a-d051-4f79-9a5f-624277004d5a: 'Kerotec Navigation' # Kerotec Navigation
-        77b39d19-3553-4a62-9302-c3ccf418e7dd: Text # Text
-        80bdfde6-b6a4-45a2-8d64-45438ba278e0: Standaard # Standaard
-        81f6e926-358d-49b5-9c11-b9b21d524b08: 'Span Background' # Span Background
-        85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
-        86be1713-0ffe-4406-b8ee-4f18b6ea52a0: Label # Label
-        98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
-        99b425f2-4418-4689-8935-4a37ac7981e4: 'Background Color' # Background Color
-        102ffb0a-98c4-4eaf-bfaa-73c7f769c4d1: 'aK E-mail' # aK E-mail
-        109e1841-623b-4f66-9626-8cfdcf23c016: 'aK Main Navigation' # aK Main Navigation
-        181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
-        216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
-        292de821-3f7e-401a-aacb-cd0c9eab1022: Text # Text
-        293c8a21-558c-40da-bae9-ecd978e0a424: 'Background Color' # Background Color
-        378bbbf1-f8ba-4c41-874b-c936fea3f11e: 'aK Logo Header' # aK Logo Header
-        386ffdca-58d6-49a9-91d0-2a601508dd26: Icon # Icon
-        402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
-        486d6ce3-ea2f-4adc-b36e-485764691fa3: 'aK Cta' # aK Cta
-        501e8a5c-932c-4e25-b2c6-7dfb53db6e41: Intro # Intro
-        531a8e92-482c-477e-9580-20e7fa162ada: Text # Text
-        602b45f2-9a9d-4b49-b368-c0eddd131c82: 'Show Arrow Down' # Show Arrow Down
-        713c40f9-6659-4eb7-98d8-943cfa224d0b: Text # Text
-        720b40eb-b03a-414f-9325-147c8050f443: 'aK EN' # aK EN
-        771bfdd2-6549-4fe3-953a-9d5415ecd1f0: Text # Text
-        851e7b15-fc39-48e5-b7d5-ac9644bd6d43: 'Thanks Page' # Thanks Page
-        914da9e8-cd79-4ed2-81fa-fac242b24f4b: 'Portfolio Main Nav' # Portfolio Main Nav
-        3688c405-67b9-40d1-a951-d38d09375693: List # List
-        3973a73c-440e-4767-b7a2-967c259a7331: 'Legal KEROTEC' # Legal KEROTEC
-        5690ad28-4a4d-4900-b69b-02d69030f2c5: 'aK NL' # aK NL
-        6081ef70-29ac-4075-a579-f5be60125444: Label # Label
-        8935bcf9-eec9-483e-85c1-d7b96d0f351d: 'Background Color' # Background Color
-        09001b44-38ee-4df8-b306-1f7e833d64a3: Image # Image
-        9471bacf-aed1-4254-a3bb-2d6e14befc47: Link # Link
-        9559b22c-c5b0-4f50-ae0b-2d627bb0beb6: Title # Title
-        20378ac5-a6a7-43d3-87a7-a0d9fcd88b44: 'Images KEROTEC' # Images KEROTEC
-        35894e6f-c18b-4f35-8a91-b12f97b81452: Title # Title
-        39546ded-9c49-42f1-93dd-10d03d9ee427: 'Home Banner Kerotec' # Home Banner Kerotec
-        47142bfd-e33e-4883-ac89-050ffdc2a9cd: 'Public Schema' # Public Schema
-        55658d56-4318-4db7-98c2-924a8d56a102: Standaard # Standaard
-        61098cc8-fe0c-42f3-911e-089d747658ff: Image # Image
-        91815f01-4d01-4b69-9988-b6fd3e599549: 'Background Color' # Background Color
-        92213a96-10dd-4374-90e8-91000f082c2f: 'Kerotec NL' # Kerotec NL
-        108034c7-d987-4de8-886e-09d9d92e2496: Text # Text
-        156625c5-4872-4742-bd80-be192c28406d: 'Accordion / Image' # Accordion / Image
-        195519cf-1e81-4891-983a-4ff3756cd22a: 'aK Home Banner' # aK Home Banner
-        808473a9-f8f4-419c-b0eb-af5e1d297fa0: 'Background Color' # Background Color
-        2830461d-5863-4055-a122-8d114a5fc2da: Link # Link
-        03961606-fb2c-41f6-96f4-7aac72976f67: 'Home Figure Image Optimize' # Home Figure Image Optimize
-        4455348d-5047-4b0e-91ae-79e6599d7f6a: Title # Title
-        6753231f-f784-4f20-8e44-513c50c42f6a: Usp # Usp
-        29159395-d6dc-45e5-aa30-5347f769d03d: 'Pages KEROTEC' # Pages KEROTEC
-        33773167-d760-4bd1-8da7-270c3802070e: 'Kerotec SEO Descripton' # Kerotec SEO Descripton
-        73259272-4635-47f4-8189-da773221ec21: 'Kerotec Company Info' # Kerotec Company Info
-        73565395-0f0b-4846-b8db-e5b9eb2b5ec9: SEO # SEO
-        a0c54731-967f-41e9-b5f1-dd8a24a0eaca: 'Accordion List' # Accordion List
-        a4ad06d6-30ff-410d-bb81-c1ea7227dd84: Video # Video
-        a4c67e6a-9c78-47d7-b3f8-c5e687a624af: Portfolio # Portfolio
-        a6efa4bf-47af-44a3-a00d-f2e7bab4523c: 'Images aK Not Auto Resize' # Images aK Not Auto Resize
-        a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
-        a607b8a6-e61c-47cc-b593-f34192c7d9a7: 'Show Party Icon' # Show Party Icon
-        a97918b0-0260-45dc-ad5c-a6289f0f7041: Link # Link
-        a1441023-555b-45a7-8461-ba6613008258: 'Portfolio Content' # Portfolio Content
-        acb2dfe1-3f16-48b9-ae0f-0923977e23a7: Standaard # Standaard
-        ad6e8279-954b-405f-ba63-dce6223d9ebc: 'Kerotec USP' # Kerotec USP
-        ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5: 'aK Pages' # aK Pages
-        aed1c586-a3d3-4f18-b962-19ef9a594b6a: 'Portfolio Homebanner Opt Img' # Portfolio Homebanner Opt Img
-        af2d83da-9397-4fdd-ae4b-3330cd82854c: KEROTEC # KEROTEC
-        b1fbd584-8a4a-4b09-9fdf-41aadc84322c: 'aK Highlight Nav' # aK Highlight Nav
-        b5daeeab-9a80-4ee3-955e-c65774b6bb5b: 'Text Columns' # Text Columns
-        b9d5cd99-d7a9-42d6-bf6b-56a1f84ba6aa: Image # Image
-        b75a0cb6-184e-43d3-8ef0-7815036e946d: 'aK Home' # aK Home
-        b91d5276-e722-46a8-ad13-b329b05633b7: 'Steps List' # Steps List
-        b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
-        b361fdf8-880b-4f7a-b84c-4611d563f0da: Steps # Steps
-        b92519cf-e415-4f20-af0b-b02eabf460d4: Facebook # Facebook
-        b113940c-2a49-456f-b10d-862587b1acda: 'Kerotec SEO Place' # Kerotec SEO Place
-        b317878c-900e-4b6b-aab5-1d1da11e7863: 'aK Github' # aK Github
-        b2332813-5395-4de0-802b-ac483820823b: 'Text / Media' # Text / Media
-        bae4c5fc-38f8-4dfc-92ff-0cd99f421e40: 'Portfolio Navigation' # Portfolio Navigation
-        bc3b158f-80ae-479a-a32a-315706955aef: Title # Title
-        bd8a53d4-23ba-4940-8ce4-fe197eaee782: 'aK Usp Content' # aK Usp Content
-        bdbc04de-8344-4c00-bdf0-b816a54c869b: 'Images Portfolio' # Images Portfolio
-        bfaf1252-6172-43fa-a05b-2bac23a46f4e: 'aK Home' # aK Home
-        bfef29c2-5528-446b-a1e1-08dc3b376b65: 'aK Navigation' # aK Navigation
-        c1e4cb10-56ec-44c2-b746-987ef7d21954: 'aK Linkedin' # aK Linkedin
-        c5be86d8-4831-4e27-a131-35c7f71d2b04: Link # Link
-        c5f9eef8-26da-4424-bb7e-34fde589e608: 'Home Kerotec' # Home Kerotec
-        c7c98775-2843-4fd6-b368-8443519e870e: Link # Link
-        c8dde2ad-0261-4602-977c-f192e36b6bfb: 'Kerotec Footer Link' # Kerotec Footer Link
-        c19c0798-f619-458c-9795-738cd74c4d10: 'Main Nav' # Main Nav
-        c39b2c60-002c-4db1-ad99-3e3465d32e19: Image # Image
-        c792ad5b-761b-48be-bce6-26b76264a1d7: Title # Title
-        c963b7e9-ac8f-47c6-a7eb-2de181771450: 'Kerotec SEO Content' # Kerotec SEO Content
-        c964ef51-ae37-4a14-aed6-fd8dc72f17e2: 'aK Image Optimize' # aK Image Optimize
-        c1180f3e-5591-40a1-a08a-5fb3701f5356: 'Standard Image Optimize' # Standard Image Optimize
-        c572752c-6407-4ce5-9d56-3cc22352646c: Title # Title
-        ca46e5e1-f025-4715-a506-8ec65ef7eaab: Link # Link
-        cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard
-        ce47be10-c35f-4ff2-b8e6-40055deb9614: Figure # Figure
-        cf0736f7-9894-4c14-85c7-8f4153818c72: 'Tel 1' # Tel 1
-        d0d38edf-4c1c-4adb-8f66-74e7bd8999ba: Title # Title
-        d02ec872-619b-4f23-b91b-3189b7f1e7e9: 'Angelo Keirsebilck' # Angelo Keirsebilck
-        d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
-        d136c00b-5a53-42e5-9b09-7cd30f704c64: Text # Text
-        d602b57e-889e-4854-b2c2-20f6725f0d9a: Intro # Intro
-        d6037e3b-a18e-4e22-84b7-d7aac2d5c24e: Editor # Editor
-        d8769a8f-a702-4ffb-8653-95bcd669d9af: Text # Text
-        d630936a-542d-48c6-9549-34144ec0a96c: 'Media Position' # Media Position
-        da642b21-f45b-4456-9422-08fe4f3b8418: 'Simple Text' # Simple Text
-        db1862c9-bc64-439c-86a8-cf4335bb24fd: Link # Link
-        db5951dd-5586-44a9-8a0d-ed65d67bf80c: Standaard # Standaard
-        dd47c6f3-2579-4634-a86b-44112604b851: 'aK Content' # aK Content
-        dd5517ea-70f5-48bf-ab6d-38c6f70ea79d: 'JS Icos' # JS Icos
-        dfd3ecdb-749b-4fc2-9812-00946dc09d63: Standaard # Standaard
-        dffe2681-8efd-46d3-a68a-cc2f9b71cf82: Link # Link
-        e00c56a0-9048-4b7f-b5d4-3036129d02f0: Standaard # Standaard
-        e5fadc09-ce74-4dd2-af01-79193452c24b: Cta # Cta
-        e7bf543e-aefe-4342-a1e3-656841b89afb: 'Contact Form NL' # Contact Form NL
-        e8a79905-5681-4a6f-b4f5-d4d52d9063a3: Link # Link
-        e59b830a-0bb1-418a-bb93-e3d8209e4ef3: Label # Label
-        e70f1d40-fc20-488d-97bb-cb61aec7cc26: Title # Title
-        e858e6e9-26e4-4e72-aa50-13999c183bb1: 'Portfolio Default Img Opt' # Portfolio Default Img Opt
-        ebb2fbd0-c538-4f49-b238-94b2fc1956d6: Form # Form
-        ec9da726-1b22-4a29-9ba2-b6d45638c18c: Common # Common
-        ed012596-c927-4b00-9e7d-9fec3eb45f27: Text # Text
-        ed2ac2de-4798-4162-9921-19e31c6c14c4: 'aK USP' # aK USP
-        ee14404d-54f0-4e77-a5f7-33a7103eebcf: Link # Link
-        eeb3731d-1450-4343-975c-602a8f77fd79: 'Tel 2' # Tel 2
-        f7b2f612-da3a-4044-9230-47616d46e132: 'Kerotec Content' # Kerotec Content
-        fbaa787d-4cdf-42fe-9f76-77c086e924e3: Author # Author
-        fbd049a5-5396-464a-9c6d-ffc6ffbe7216: 'Kerotec SEO Title' # Kerotec SEO Title
-        fd13a2dc-8740-406f-a266-ef3ec9f0f684: 'Kerotec USP' # Kerotec USP
-        ffb8a2fc-0664-4fe3-a0d1-9853e57355e6: Title # Title
+  __names__:
+    0a19b894-b243-4e76-a249-6602c5b5a90d: 'Left Column' # Left Column
+    0a70e957-2165-4336-99c1-12316a86db89: Services # Services
+    0b6cd4f6-3599-4b39-8eaa-6975556e68f1: SubTitle # SubTitle
+    0d490fc5-8be5-4e2d-88e6-4dd5a45a558b: 'Text Alignment' # Text Alignment
+    0da2390c-51d1-4248-af7a-6ee8c649b48f: 'aK Cta Content' # aK Cta Content
+    0ddcbf11-8b53-4839-b2af-3b18f9581e0a: Preview # Preview
+    0e3f5148-d0f0-44ba-982d-4cb08958c9d5: Image # Image
+    0e29d1e7-3766-416c-a6aa-f559b86928a2: 'Kerotec CTA' # Kerotec CTA
+    0eb658b4-ec0f-47e9-9caf-83646ba6bd46: Standaard # Standaard
+    0f16953f-3305-4d08-a2fc-8111aa0504e6: 'Videos Ak' # Videos Ak
+    1adf90bc-b79b-41e4-90a4-736a424758cc: Link # Link
+    1b153723-1ae0-47e2-869c-e118a6c0bbe2: Cta # Cta
+    1ce10a31-a493-4465-bb46-b89b1880fee1: Form # Form
+    1d3c7a6d-c0e4-4229-928f-7d176da8e6f4: 'Text / Media' # Text / Media
+    1d513fa9-1b15-46d1-97b0-6f0f08cb9bbd: Title # Title
+    1d89545b-011e-431b-acd1-d67b21fa253b: 'Kerotec Footer' # Kerotec Footer
+    2c01be0c-0ef0-43c7-a7c9-fd3f6a74a10d: 'Portfolio Pages' # Portfolio Pages
+    2c532e68-55b9-46e0-8ff3-837835d606c6: 'Background Color' # Background Color
+    2cad2871-83ab-4d53-adec-fd96958a90a5: Image # Image
+    2f3d4ce1-ea73-40cf-a413-7ddc74c8332e: 'Portfolio Home' # Portfolio Home
+    3e7fdee3-0860-47ba-a8cf-516bc6e161dc: Text # Text
+    4d34c68c-9a37-4980-8faa-e5c304fcf4f6: Link # Link
+    4f2d371f-babc-42bf-9015-c504775f085b: Portfolio # Portfolio
+    4fd9f2ab-dfaa-4404-ba4a-47548a90d471: 'Home Kerotec' # Home Kerotec
+    5a3f3bb9-8f78-4c9d-a52d-3df76229365d: Title # Title
+    5b31df2d-3af7-44b6-88fd-211d07122274: 'Footer Nav' # Footer Nav
+    5f9e8b14-1faf-4f70-97ae-db745b38d643: 'Kerotec SEO Pages' # Kerotec SEO Pages
+    5f218619-1454-480f-af32-eb36b417b664: Title # Title
+    6a3e1418-ce26-4ddc-ac39-c59aff8fed94: Text # Text
+    6d3f9446-799c-4acb-9ab8-d9e11b148b54: Link # Link
+    6eb16d71-fd69-4587-8d3c-56a87696049e: Cta # Cta
+    6ec2831b-b3c9-47b9-bf52-03beb2b48691: Standaard # Standaard
+    6f60c33a-ce18-4d21-bebd-6d53ea16c6d2: 'Portfolio Home' # Portfolio Home
+    7ac4ed8e-eb27-4c90-8daf-0a99a4fdd693: Link # Link
+    7d3e7019-ebcc-439f-a8dd-12f751b17a7e: Intro # Intro
+    7daba989-33a7-4cd0-8b14-94126c95d131: Link # Link
+    7e74a447-4f0a-4130-b15e-f1df3175e103: Thanks # Thanks
+    7f4a44e6-2104-45c9-a348-781fc2e32991: 'Background Color' # Background Color
+    7f5bab1a-0b5c-4d3d-8549-c9a5f32ecfbd: 'Kerotec SEO Pages Content' # Kerotec SEO Pages Content
+    8b995879-332a-4e28-bb82-eb5b4e3b42e2: Title # Title
+    8c28eaec-f7d2-48b3-b106-7a49dc00230f: 'aK Tel' # aK Tel
+    8cf35363-80c2-4f15-aa4a-34ddbda37b68: 'Legal Pages' # Legal Pages
+    8e4ea5fe-b25a-4e8b-99b9-810b231cf066: Title # Title
+    8ed4ac99-1404-4f75-9d5f-6d7454d9e078: Text # Text
+    9a8262ac-e8a7-4a42-9608-01f44601e6b6: Text # Text
+    9a649057-30a2-42bd-8fb9-c53cffd15c31: 'Angelo Keirsebilck' # Angelo Keirsebilck
+    9b95db5c-d503-489b-8025-40c72a236aed: 'Link Label' # Link Label
+    9ba41756-ffd1-42e9-a1ab-479d225d4919: Title # Title
+    9bd51bcd-1aa8-4def-ae5c-bf2470665d63: Text # Text
+    9f70fad4-911f-44e3-a43f-fdb17a9dfe38: 'Portfolio NL' # Portfolio NL
+    13a120bf-c8a5-4d82-ac79-ba44d99c869f: Media # Media
+    18c36340-3798-4501-b6f0-e3330d5c86d4: References # References
+    22dbbbb6-573d-49ad-875c-2a8f8451b7cc: Email # Email
+    34c4c843-ac45-41ab-9370-b8ecd37f731d: New # New
+    34ee3466-4339-498b-93d1-e9e1633a43e5: Text # Text
+    37b41c08-b9d5-4839-bd5e-1da7203723d3: Link # Link
+    43d5e63c-5af2-4340-aaac-d1cbb0357237: 'aK Footer Navigation' # aK Footer Navigation
+    47e0d4b9-cda8-4353-b888-56e7d00e7126: Title # Title
+    55e41d4d-500c-4dda-aa4f-4cd5a10f0d41: Form # Form
+    56ee6bef-32e6-4203-b7a3-1a99768b2894: Text # Text
+    57d472cb-1abc-438c-b133-1e58a472bd26: 'aK Facebook' # aK Facebook
+    57f24831-8db3-4239-b500-787afe0b7422: 'Kerotec Cta Content' # Kerotec Cta Content
+    61ed6125-1194-4538-94b9-9c530f78a246: 'aK Company' # aK Company
+    61f15c29-bc3f-4925-bb5d-3da1bf9a8a0d: 'Kerotec Services Category' # Kerotec Services Category
+    61f62f82-cbc9-49d8-a8ca-33c3a3b98231: References # References
+    64eed068-1f00-44e1-9210-e8ff7f8a693c: 'Portfolio Home Banner' # Portfolio Home Banner
+    66e1fced-0bd0-4780-af2f-5e29d1db66e7: Cta # Cta
+    66f1be27-81fd-4669-9a51-be3292e7462a: Title # Title
+    71b63819-458c-4da8-a4f3-b417bed19e90: 'Right Column' # Right Column
+    71cad8ae-bad6-4639-a39f-5e54e0bd626b: USP # USP
+    73f2882a-d051-4f79-9a5f-624277004d5a: 'Kerotec Navigation' # Kerotec Navigation
+    77b39d19-3553-4a62-9302-c3ccf418e7dd: Text # Text
+    80bdfde6-b6a4-45a2-8d64-45438ba278e0: Standaard # Standaard
+    81f6e926-358d-49b5-9c11-b9b21d524b08: 'Span Background' # Span Background
+    85bcc920-ddf3-4a07-9a21-294989596b05: aK # aK
+    86be1713-0ffe-4406-b8ee-4f18b6ea52a0: Label # Label
+    98f33ea8-d57c-4bff-bf01-4fef7666c145: Link # Link
+    99b425f2-4418-4689-8935-4a37ac7981e4: 'Background Color' # Background Color
+    102ffb0a-98c4-4eaf-bfaa-73c7f769c4d1: 'aK E-mail' # aK E-mail
+    109e1841-623b-4f66-9626-8cfdcf23c016: 'aK Main Navigation' # aK Main Navigation
+    181f7be8-f62e-4cb0-869e-fa81544c806c: KEROTEC # KEROTEC
+    216a063d-0eac-465e-9a4e-24018fbf1ea9: Intro # Intro
+    292de821-3f7e-401a-aacb-cd0c9eab1022: Text # Text
+    293c8a21-558c-40da-bae9-ecd978e0a424: 'Background Color' # Background Color
+    378bbbf1-f8ba-4c41-874b-c936fea3f11e: 'aK Logo Header' # aK Logo Header
+    386ffdca-58d6-49a9-91d0-2a601508dd26: Icon # Icon
+    402cf776-37d6-4867-a9cf-44e518322e88: aK # aK
+    486d6ce3-ea2f-4adc-b36e-485764691fa3: 'aK Cta' # aK Cta
+    501e8a5c-932c-4e25-b2c6-7dfb53db6e41: Intro # Intro
+    531a8e92-482c-477e-9580-20e7fa162ada: Text # Text
+    602b45f2-9a9d-4b49-b368-c0eddd131c82: 'Show Arrow Down' # Show Arrow Down
+    713c40f9-6659-4eb7-98d8-943cfa224d0b: Text # Text
+    720b40eb-b03a-414f-9325-147c8050f443: 'aK EN' # aK EN
+    771bfdd2-6549-4fe3-953a-9d5415ecd1f0: Text # Text
+    851e7b15-fc39-48e5-b7d5-ac9644bd6d43: 'Thanks Page' # Thanks Page
+    914da9e8-cd79-4ed2-81fa-fac242b24f4b: 'Portfolio Main Nav' # Portfolio Main Nav
+    3688c405-67b9-40d1-a951-d38d09375693: List # List
+    3973a73c-440e-4767-b7a2-967c259a7331: 'Legal KEROTEC' # Legal KEROTEC
+    5690ad28-4a4d-4900-b69b-02d69030f2c5: 'aK NL' # aK NL
+    6081ef70-29ac-4075-a579-f5be60125444: Label # Label
+    8935bcf9-eec9-483e-85c1-d7b96d0f351d: 'Background Color' # Background Color
+    09001b44-38ee-4df8-b306-1f7e833d64a3: Image # Image
+    9471bacf-aed1-4254-a3bb-2d6e14befc47: Link # Link
+    9559b22c-c5b0-4f50-ae0b-2d627bb0beb6: Title # Title
+    20378ac5-a6a7-43d3-87a7-a0d9fcd88b44: 'Images KEROTEC' # Images KEROTEC
+    35894e6f-c18b-4f35-8a91-b12f97b81452: Title # Title
+    39546ded-9c49-42f1-93dd-10d03d9ee427: 'Home Banner Kerotec' # Home Banner Kerotec
+    47142bfd-e33e-4883-ac89-050ffdc2a9cd: 'Public Schema' # Public Schema
+    55658d56-4318-4db7-98c2-924a8d56a102: Standaard # Standaard
+    61098cc8-fe0c-42f3-911e-089d747658ff: Image # Image
+    91815f01-4d01-4b69-9988-b6fd3e599549: 'Background Color' # Background Color
+    92213a96-10dd-4374-90e8-91000f082c2f: 'Kerotec NL' # Kerotec NL
+    108034c7-d987-4de8-886e-09d9d92e2496: Text # Text
+    156625c5-4872-4742-bd80-be192c28406d: 'Accordion / Image' # Accordion / Image
+    195519cf-1e81-4891-983a-4ff3756cd22a: 'aK Home Banner' # aK Home Banner
+    808473a9-f8f4-419c-b0eb-af5e1d297fa0: 'Background Color' # Background Color
+    2830461d-5863-4055-a122-8d114a5fc2da: Link # Link
+    03961606-fb2c-41f6-96f4-7aac72976f67: 'Home Figure Image Optimize' # Home Figure Image Optimize
+    4455348d-5047-4b0e-91ae-79e6599d7f6a: Title # Title
+    6753231f-f784-4f20-8e44-513c50c42f6a: Usp # Usp
+    29159395-d6dc-45e5-aa30-5347f769d03d: 'Pages KEROTEC' # Pages KEROTEC
+    33773167-d760-4bd1-8da7-270c3802070e: 'Kerotec SEO Descripton' # Kerotec SEO Descripton
+    73259272-4635-47f4-8189-da773221ec21: 'Kerotec Company Info' # Kerotec Company Info
+    73565395-0f0b-4846-b8db-e5b9eb2b5ec9: SEO # SEO
+    a0c54731-967f-41e9-b5f1-dd8a24a0eaca: 'Accordion List' # Accordion List
+    a4ad06d6-30ff-410d-bb81-c1ea7227dd84: Video # Video
+    a4c67e6a-9c78-47d7-b3f8-c5e687a624af: Portfolio # Portfolio
+    a6efa4bf-47af-44a3-a00d-f2e7bab4523c: 'Images aK Not Auto Resize' # Images aK Not Auto Resize
+    a407fca4-ef49-4264-abf2-e0bfb0afb24f: 'Main Nav Highlight' # Main Nav Highlight
+    a607b8a6-e61c-47cc-b593-f34192c7d9a7: 'Show Party Icon' # Show Party Icon
+    a97918b0-0260-45dc-ad5c-a6289f0f7041: Link # Link
+    a1441023-555b-45a7-8461-ba6613008258: 'Portfolio Content' # Portfolio Content
+    acb2dfe1-3f16-48b9-ae0f-0923977e23a7: Standaard # Standaard
+    ad6e8279-954b-405f-ba63-dce6223d9ebc: 'Kerotec USP' # Kerotec USP
+    ae50bcd8-8e12-4e92-9e24-cbf9f0d794d5: 'aK Pages' # aK Pages
+    aed1c586-a3d3-4f18-b962-19ef9a594b6a: 'Portfolio Homebanner Opt Img' # Portfolio Homebanner Opt Img
+    af2d83da-9397-4fdd-ae4b-3330cd82854c: KEROTEC # KEROTEC
+    b1fbd584-8a4a-4b09-9fdf-41aadc84322c: 'aK Highlight Nav' # aK Highlight Nav
+    b5daeeab-9a80-4ee3-955e-c65774b6bb5b: 'Text Columns' # Text Columns
+    b9d5cd99-d7a9-42d6-bf6b-56a1f84ba6aa: Image # Image
+    b75a0cb6-184e-43d3-8ef0-7815036e946d: 'aK Home' # aK Home
+    b91d5276-e722-46a8-ad13-b329b05633b7: 'Steps List' # Steps List
+    b198fce6-3fae-417d-a0ce-c5783705473f: 'Text / Media' # Text / Media
+    b361fdf8-880b-4f7a-b84c-4611d563f0da: Steps # Steps
+    b92519cf-e415-4f20-af0b-b02eabf460d4: Facebook # Facebook
+    b113940c-2a49-456f-b10d-862587b1acda: 'Kerotec SEO Place' # Kerotec SEO Place
+    b317878c-900e-4b6b-aab5-1d1da11e7863: 'aK Github' # aK Github
+    b2332813-5395-4de0-802b-ac483820823b: 'Text / Media' # Text / Media
+    bae4c5fc-38f8-4dfc-92ff-0cd99f421e40: 'Portfolio Navigation' # Portfolio Navigation
+    bc3b158f-80ae-479a-a32a-315706955aef: Title # Title
+    bd8a53d4-23ba-4940-8ce4-fe197eaee782: 'aK Usp Content' # aK Usp Content
+    bdbc04de-8344-4c00-bdf0-b816a54c869b: 'Images Portfolio' # Images Portfolio
+    bfaf1252-6172-43fa-a05b-2bac23a46f4e: 'aK Home' # aK Home
+    bfef29c2-5528-446b-a1e1-08dc3b376b65: 'aK Navigation' # aK Navigation
+    c1e4cb10-56ec-44c2-b746-987ef7d21954: 'aK Linkedin' # aK Linkedin
+    c3df22c9-ea3d-4606-a89c-bf8c59655caf: 'Error Pages'
+    c5be86d8-4831-4e27-a131-35c7f71d2b04: Link # Link
+    c5f9eef8-26da-4424-bb7e-34fde589e608: 'Home Kerotec' # Home Kerotec
+    c7c98775-2843-4fd6-b368-8443519e870e: Link # Link
+    c8dde2ad-0261-4602-977c-f192e36b6bfb: 'Kerotec Footer Link' # Kerotec Footer Link
+    c19c0798-f619-458c-9795-738cd74c4d10: 'Main Nav' # Main Nav
+    c39b2c60-002c-4db1-ad99-3e3465d32e19: Image # Image
+    c792ad5b-761b-48be-bce6-26b76264a1d7: Title # Title
+    c963b7e9-ac8f-47c6-a7eb-2de181771450: 'Kerotec SEO Content' # Kerotec SEO Content
+    c964ef51-ae37-4a14-aed6-fd8dc72f17e2: 'aK Image Optimize' # aK Image Optimize
+    c1180f3e-5591-40a1-a08a-5fb3701f5356: 'Standard Image Optimize' # Standard Image Optimize
+    c572752c-6407-4ce5-9d56-3cc22352646c: Title # Title
+    ca46e5e1-f025-4715-a506-8ec65ef7eaab: Link # Link
+    cd364aa4-c870-4611-93ec-f51df6990d5a: Standaard # Standaard
+    ce47be10-c35f-4ff2-b8e6-40055deb9614: Figure # Figure
+    cf0736f7-9894-4c14-85c7-8f4153818c72: 'Tel 1' # Tel 1
+    d0d38edf-4c1c-4adb-8f66-74e7bd8999ba: Title # Title
+    d02ec872-619b-4f23-b91b-3189b7f1e7e9: 'Angelo Keirsebilck' # Angelo Keirsebilck
+    d21b4646-668b-477d-b8bd-0b619d836508: 'Images AK' # Images AK
+    d136c00b-5a53-42e5-9b09-7cd30f704c64: Text # Text
+    d602b57e-889e-4854-b2c2-20f6725f0d9a: Intro # Intro
+    d6037e3b-a18e-4e22-84b7-d7aac2d5c24e: Editor # Editor
+    d8769a8f-a702-4ffb-8653-95bcd669d9af: Text # Text
+    d630936a-542d-48c6-9549-34144ec0a96c: 'Media Position' # Media Position
+    da642b21-f45b-4456-9422-08fe4f3b8418: 'Simple Text' # Simple Text
+    db1862c9-bc64-439c-86a8-cf4335bb24fd: Link # Link
+    db5951dd-5586-44a9-8a0d-ed65d67bf80c: Standaard # Standaard
+    dd47c6f3-2579-4634-a86b-44112604b851: 'aK Content' # aK Content
+    dd5517ea-70f5-48bf-ab6d-38c6f70ea79d: 'JS Icos' # JS Icos
+    dfd3ecdb-749b-4fc2-9812-00946dc09d63: Standaard # Standaard
+    dffe2681-8efd-46d3-a68a-cc2f9b71cf82: Link # Link
+    e00c56a0-9048-4b7f-b5d4-3036129d02f0: Standaard # Standaard
+    e5fadc09-ce74-4dd2-af01-79193452c24b: Cta # Cta
+    e7bf543e-aefe-4342-a1e3-656841b89afb: 'Contact Form NL' # Contact Form NL
+    e8a79905-5681-4a6f-b4f5-d4d52d9063a3: Link # Link
+    e59b830a-0bb1-418a-bb93-e3d8209e4ef3: Label # Label
+    e70f1d40-fc20-488d-97bb-cb61aec7cc26: Title # Title
+    e858e6e9-26e4-4e72-aa50-13999c183bb1: 'Portfolio Default Img Opt' # Portfolio Default Img Opt
+    ebb2fbd0-c538-4f49-b238-94b2fc1956d6: Form # Form
+    ec9da726-1b22-4a29-9ba2-b6d45638c18c: Common # Common
+    ed012596-c927-4b00-9e7d-9fec3eb45f27: Text # Text
+    ed2ac2de-4798-4162-9921-19e31c6c14c4: 'aK USP' # aK USP
+    ee14404d-54f0-4e77-a5f7-33a7103eebcf: Link # Link
+    eeb3731d-1450-4343-975c-602a8f77fd79: 'Tel 2' # Tel 2
+    f7b2f612-da3a-4044-9230-47616d46e132: 'Kerotec Content' # Kerotec Content
+    fbaa787d-4cdf-42fe-9f76-77c086e924e3: Author # Author
+    fbd049a5-5396-464a-9c6d-ffc6ffbe7216: 'Kerotec SEO Title' # Kerotec SEO Title
+    fd13a2dc-8740-406f-a266-ef3ec9f0f684: 'Kerotec USP' # Kerotec USP
+    ffb8a2fc-0664-4fe3-a0d1-9853e57355e6: Title # Title
 plugins:
-    blitz:
-        edition: standard
-        enabled: true
-        licenseKey: Y9NIHYN6JODREH9AIEXMX4TK
-        schemaVersion: 4.2.0
-        settings:
-            apiKey: ''
-            cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
-            cacheDuration: null
-            cacheElementQueries: true
-            cacheElements: true
-            cacheGeneratorSettings:
-                __assoc__:
-                    - - concurrency
-                      - '3'
-            cacheGeneratorType: putyourlightson\blitz\drivers\generators\HttpGenerator
-            cacheNonHtmlResponses: false
-            cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
-            cacheStorageSettings:
-                __assoc__:
-                    - - folderPath
-                      - '@webroot/cache/blitz'
-                    - - createGzipFiles
-                      - '1'
-                    - - createBrotliFiles
-                      - ''
-            cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
-            cachingEnabled: true
-            debug: false
-            deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
-            driverJobPriority: 100
-            excludedQueryStringParams:
-                - __assoc__:
-                      - - siteId
-                        - ''
-                      - - queryStringParam
-                        - gclid
-                - __assoc__:
-                      - - siteId
-                        - ''
-                      - - queryStringParam
-                        - fbclid
-            generatePagesWithQueryStringParams: true
-            hintsEnabled: true
-            includedQueryStringParams:
-                - __assoc__:
-                      - - siteId
-                        - ''
-                      - - queryStringParam
-                        - '.*'
-            includedUriPatterns:
-                - __assoc__:
-                      - - siteId
-                        - '1'
-                      - - uriPattern
-                        - '.*'
-            injectScriptEvent: DOMContentLoaded
-            integrations:
-                - putyourlightson\blitz\drivers\integrations\CommerceIntegration
-                - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
-                - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
-            maxRetryAttempts: 10
-            mutexTimeout: 1
-            outputComments: true
-            queryStringCaching: 0
-            queueJobTtr: 300
-            refreshCacheAutomaticallyForGlobals: true
-            refreshCacheJobPriority: 10
-            refreshCacheWhenElementMovedInStructure: true
-            refreshCacheWhenElementSavedNotLive: false
-            refreshCacheWhenElementSavedUnchanged: false
-            refreshMode: 3
-            sendPoweredByHeader: true
-    dospaces:
-        edition: standard
-        enabled: true
-        schemaVersion: 2.0.0
-    formie:
-        edition: standard
-        enabled: true
-        licenseKey: OMSHC7NM3I0UAH6001DNZ9EY
-        schemaVersion: 2.0.2
-        settings:
-            ajaxTimeout: 10
-            alertEmails: null
-            captchas:
-                __assoc__:
-                    - - recaptcha
-                      - __assoc__:
-                            - - type
-                              - verbb\formie\integrations\captchas\Recaptcha
-                            - - enabled
-                              - true
-                            - - settings
-                              - __assoc__:
-                                    - - handle
-                                      - recaptcha
-                                    - - secretKey
-                                      - $RECAPTCHA_SECRET_KEY
-                                    - - siteKey
-                                      - $RECAPTCHA_SITE_KEY
-                                    - - type
-                                      - v3
-                                    - - size
-                                      - normal
-                                    - - theme
-                                      - light
-                                    - - badge
-                                      - bottomright
-                                    - - language
-                                      - en
-                                    - - minScore
-                                      - 0.6
-                    - - hcaptcha
-                      - __assoc__:
-                            - - type
-                              - verbb\formie\integrations\captchas\Hcaptcha
-                            - - settings
-                              - __assoc__:
-                                    - - handle
-                                      - hcaptcha
-                                    - - size
-                                      - normal
-                                    - - theme
-                                      - light
-                                    - - language
-                                      - en
-                                    - - minScore
-                                      - 0.5
-                    - - duplicate
-                      - __assoc__:
-                            - - type
-                              - verbb\formie\integrations\captchas\Duplicate
-                            - - enabled
-                              - true
-                            - - settings
-                              - __assoc__:
-                                    - - handle
-                                      - duplicate
-                    - - honeypot
-                      - __assoc__:
-                            - - type
-                              - verbb\formie\integrations\captchas\Honeypot
-                            - - enabled
-                              - true
-                            - - settings
-                              - __assoc__:
-                                    - - handle
-                                      - honeypot
-                    - - javascript
-                      - __assoc__:
-                            - - type
-                              - verbb\formie\integrations\captchas\Javascript
-                            - - enabled
-                              - true
-                            - - settings
-                              - __assoc__:
-                                    - - handle
-                                      - javascript
-                                    - - minTime
-                                      - '3'
-            defaultDateDisplayType: ''
-            defaultDateTime: null
-            defaultDateValueOption: ''
-            defaultEmailTemplate: angeloKeirsebilckEmail
-            defaultFileUploadVolume: ''
-            defaultFormTemplate: angeloKeirsebilckForm
-            defaultInstructionsPosition: verbb\formie\positions\AboveInput
-            defaultLabelPosition: verbb\formie\positions\AboveInput
-            defaultPage: forms
-            enableCsrfValidationForGuests: true
-            enableUnloadWarning: false
-            maxIncompleteSubmissionAge: 30
-            maxSentNotificationsAge: 30
-            pdfPaperOrientation: portrait
-            pdfPaperSize: letter
-            pluginName: Forms
-            saveSpam: true
-            sendEmailAlerts: false
-            sentNotifications: true
-            spamBehaviour: showSuccess
-            spamBehaviourMessage: ''
-            spamEmailNotifications: false
-            spamKeywords: ''
-            spamLimit: 500
-            useQueueForIntegrations: false
-            useQueueForNotifications: false
-    image-optimize:
-        edition: standard
-        enabled: true
-        licenseKey: TXKNV97P3IUTH1J78O993USD
-        schemaVersion: 1.0.0
-        settings:
-            allowUpScaledImageVariants: false
-            assetVolumeSubFolders: true
-            autoSharpenScaledImages: true
-            capSilhouetteSvgSize: true
-            createColorPalette: true
-            createPlaceholderSilhouettes: false
-            imageTransformTypeSettings:
-                __assoc__:
-                    - - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
-                      - __assoc__:
-                            - - domain
-                              - ''
-                            - - apiKey
-                              - ''
-                            - - securityToken
-                              - ''
-                            - - unsharpMask
-                              - '20'
-                    - - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
-                      - __assoc__:
-                            - - baseUrl
-                              - ''
-                    - - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
-                      - __assoc__:
-                            - - baseUrl
-                              - ''
-                            - - securityKey
-                              - ''
-            lowerQualityRetinaImageVariants: true
-            sharpenScaledImagePercentage: 50
-            transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
-    image-resizer:
-        edition: standard
-        enabled: true
-        schemaVersion: 2.0.0
-        settings:
-            assetSourceSettings:
-                1:
+  blitz:
+    edition: standard
+    enabled: true
+    licenseKey: Y9NIHYN6JODREH9AIEXMX4TK
+    schemaVersion: 4.2.0
+    settings:
+      apiKey: ''
+      cacheControlHeader: 'public, s-maxage=31536000, max-age=0'
+      cacheDuration: null
+      cacheElementQueries: true
+      cacheElements: true
+      cacheGeneratorSettings:
+        __assoc__:
+          -
+            - concurrency
+            - '3'
+      cacheGeneratorType: putyourlightson\blitz\drivers\generators\HttpGenerator
+      cacheNonHtmlResponses: false
+      cachePurgerType: putyourlightson\blitz\drivers\purgers\DummyPurger
+      cacheStorageSettings:
+        __assoc__:
+          -
+            - folderPath
+            - '@webroot/cache/blitz'
+          -
+            - createGzipFiles
+            - '1'
+          -
+            - createBrotliFiles
+            - ''
+      cacheStorageType: putyourlightson\blitz\drivers\storage\FileStorage
+      cachingEnabled: false
+      debug: false
+      deployerType: putyourlightson\blitz\drivers\deployers\DummyDeployer
+      driverJobPriority: 100
+      excludedQueryStringParams:
+        -
+          __assoc__:
+            -
+              - siteId
+              - ''
+            -
+              - queryStringParam
+              - gclid
+        -
+          __assoc__:
+            -
+              - siteId
+              - ''
+            -
+              - queryStringParam
+              - fbclid
+      generatePagesWithQueryStringParams: true
+      hintsEnabled: true
+      includedQueryStringParams:
+        -
+          __assoc__:
+            -
+              - siteId
+              - ''
+            -
+              - queryStringParam
+              - '.*'
+      includedUriPatterns:
+        -
+          __assoc__:
+            -
+              - siteId
+              - '1'
+            -
+              - uriPattern
+              - '.*'
+      injectScriptEvent: DOMContentLoaded
+      integrations:
+        - putyourlightson\blitz\drivers\integrations\CommerceIntegration
+        - putyourlightson\blitz\drivers\integrations\FeedMeIntegration
+        - putyourlightson\blitz\drivers\integrations\SeomaticIntegration
+      maxRetryAttempts: 10
+      mutexTimeout: 1
+      outputComments: true
+      queryStringCaching: 0
+      queueJobTtr: 300
+      refreshCacheAutomaticallyForGlobals: true
+      refreshCacheJobPriority: 10
+      refreshCacheWhenElementMovedInStructure: true
+      refreshCacheWhenElementSavedNotLive: false
+      refreshCacheWhenElementSavedUnchanged: false
+      refreshMode: 3
+      sendPoweredByHeader: true
+  dospaces:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: OMSHC7NM3I0UAH6001DNZ9EY
+    schemaVersion: 2.0.2
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
                     __assoc__:
-                        - - enabled
-                          - '1'
-                        - - imageWidth
-                          - ''
-                        - - imageHeight
-                          - ''
-                        - - imageQuality
-                          - ''
-                2:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - secretKey
+                        - $RECAPTCHA_SECRET_KEY
+                      -
+                        - siteKey
+                        - $RECAPTCHA_SITE_KEY
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.6
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - settings
+                  -
                     __assoc__:
-                        - - enabled
-                          - '1'
-                        - - imageWidth
-                          - ''
-                        - - imageHeight
-                          - ''
-                        - - imageQuality
-                          - ''
-                3:
+                      -
+                        - handle
+                        - hcaptcha
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
                     __assoc__:
-                        - - enabled
-                          - '1'
-                        - - imageWidth
-                          - ''
-                        - - imageHeight
-                          - ''
-                        - - imageQuality
-                          - ''
-                5:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
                     __assoc__:
-                        - - enabled
-                          - '1'
-                        - - imageWidth
-                          - ''
-                        - - imageHeight
-                          - ''
-                        - - imageQuality
-                          - ''
-                6:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - true
+                -
+                  - settings
+                  -
                     __assoc__:
-                        - - enabled
-                          - ''
-                        - - imageWidth
-                          - ''
-                        - - imageHeight
-                          - ''
-                        - - imageQuality
-                          - ''
-            enabled: false
-            imageHeight: 2048
-            imageQuality: 100
-            imageWidth: 2048
-            nonDestructiveCrop: false
-            nonDestructiveResize: false
-            skipLarger: true
-    minify:
-        edition: standard
-        enabled: true
-        schemaVersion: 1.0.0
-    postmark:
-        edition: standard
-        enabled: true
-        schemaVersion: 2.0.1
-    redactor:
-        edition: standard
-        enabled: true
-        schemaVersion: 2.3.0
-    seomatic:
-        edition: standard
-        enabled: true
-        licenseKey: 8M2SOA5DXRZ6TCZ2GIMFN2VQ
-        schemaVersion: 3.0.11
-        settings:
-            addHrefLang: true
-            addPaginatedHreflang: true
-            addXDefaultHrefLang: true
-            alwaysIncludeCanonicalUrls: false
-            cpTitlePrefix: '⚙ '
-            cspNonce: ''
-            cspScriptSrcPolicies:
-                - __assoc__:
-                      - - policy
-                        - "'self'"
-            devModeCpTitlePrefix: '&#x1f6a7;⚙ '
-            devModeTitlePrefix: '&#x1f6a7; '
-            displayAnalysisSidebar: true
-            displayPreviewSidebar: true
-            enableJsonLdEndpoint: false
-            enableMetaContainerEndpoint: false
-            enableSeoFileLinkEndpoint: false
-            environment: live
-            excludeNonCanonicalUrls: false
-            generatorEnabled: true
-            headersEnabled: true
-            includeHomepageInBreadcrumbs: true
-            lowercaseCanonicalUrl: true
-            manuallySetEnvironment: false
-            maxDescriptionLength: 155
-            maxTitleLength: 70
-            metaCacheDuration: 0
-            pluginName: SEOmatic
-            regenerateSitemapsAutomatically: true
-            renderEnabled: true
-            separatorChar: '|'
-            sidebarDisplayPreviewTypes:
-                - google
-                - twitter
-                - facebook
-            siteGroupsSeparate: true
-            siteUrlOverride: ''
-            sitemapsEnabled: true
-            socialMediaPreviewTarget: true
-            submitSitemaps: true
-            truncateDescriptionTags: true
-            truncateTitleTags: true
-    super-table:
-        edition: standard
-        enabled: true
-        schemaVersion: 3.0.0
-    typedlinkfield:
-        edition: standard
-        enabled: true
-        schemaVersion: 2.0.0
-    vite:
-        edition: standard
-        enabled: true
-        schemaVersion: 1.0.0
+                      -
+                        - handle
+                        - javascript
+                      -
+                        - minTime
+                        - '3'
+      defaultDateDisplayType: ''
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: angeloKeirsebilckEmail
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: angeloKeirsebilckForm
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      enableCsrfValidationForGuests: true
+      enableUnloadWarning: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Forms
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: false
+      useQueueForNotifications: false
+  image-optimize:
+    edition: standard
+    enabled: true
+    licenseKey: TXKNV97P3IUTH1J78O993USD
+    schemaVersion: 1.0.0
+    settings:
+      allowUpScaledImageVariants: false
+      assetVolumeSubFolders: true
+      autoSharpenScaledImages: true
+      capSilhouetteSvgSize: true
+      createColorPalette: true
+      createPlaceholderSilhouettes: false
+      imageTransformTypeSettings:
+        __assoc__:
+          -
+            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
+            -
+              __assoc__:
+                -
+                  - domain
+                  - ''
+                -
+                  - apiKey
+                  - ''
+                -
+                  - securityToken
+                  - ''
+                -
+                  - unsharpMask
+                  - '20'
+          -
+            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+          -
+            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+                -
+                  - securityKey
+                  - ''
+      lowerQualityRetinaImageVariants: true
+      sharpenScaledImagePercentage: 50
+      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
+  image-resizer:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+    settings:
+      assetSourceSettings:
+        1:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        2:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        3:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        5:
+          __assoc__:
+            -
+              - enabled
+              - '1'
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+        6:
+          __assoc__:
+            -
+              - enabled
+              - ''
+            -
+              - imageWidth
+              - ''
+            -
+              - imageHeight
+              - ''
+            -
+              - imageQuality
+              - ''
+      enabled: false
+      imageHeight: 2048
+      imageQuality: 100
+      imageWidth: 2048
+      nonDestructiveCrop: false
+      nonDestructiveResize: false
+      skipLarger: true
+  minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 8M2SOA5DXRZ6TCZ2GIMFN2VQ
+    schemaVersion: 3.0.11
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  typedlinkfield:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
-    edition: pro
-    live: true
-    name: 'Angelo Keirsebilck'
-    retryDuration: null
-    schemaVersion: 4.0.0.9
-    timeZone: Europe/Amsterdam
+  edition: pro
+  live: true
+  name: 'Angelo Keirsebilck'
+  retryDuration: null
+  schemaVersion: 4.0.0.9
+  timeZone: Europe/Amsterdam

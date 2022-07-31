@@ -1,2 +1,0 @@
-import{g as t,S as s}from"./app.ff415e38.js";t.registerPlugin(s);const n=e=>{const r=e.querySelector(".js-textColumnsBg"),o=t.timeline();o.fromTo(r,{yPercent:10,ease:"none"},{yPercent:-10}),s.create({trigger:e,scrub:1,animation:o});let i=t.utils.toArray([".js-textColumnsBg",".js-textRight"],e);new t.timeline({scrollTrigger:{trigger:r,start:"top 80%"}}).to(i,{opacity:1,stagger:.2})};export{n as default};
-//# sourceMappingURL=textColumns.073848b3.js.map

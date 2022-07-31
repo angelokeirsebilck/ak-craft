@@ -1,5 +1,5 @@
-<div class="relative">
-    <div class="absolute -left-6 md:left-0 z-20 w-full h-[calc(100%_-_7.5rem)] grid-cols-12 gap-5 top-24 md:top-[7.5rem] grid lg:gap-10">
+<div class="relative js-stepsEven">
+    <div class="absolute js-stepsEvenBg -left-6 md:left-0 z-20 w-full h-[calc(100%_-_7.5rem)] grid-cols-12 gap-5 top-24 md:top-[7.5rem] grid lg:gap-10">
         <div class="relative col-span-12 md:col-span-8 md:col-start-5 bg-gradient-to-b from-secondary-default to-white-default rounded-2xl"></div>
         <div class="absolute w-[50vw] h-full top-0 right-[-50vw] bg-gradient-to-b from-secondary-default"></div>
     </div>
@@ -11,7 +11,7 @@
                 %}
                 <a data-fancybox data-src="{{ step.itemImage.one().getUrl() }}">
                     {% set optimizedImage = step.itemImage.one().fieldStandardImgOpt %}
-                    <picture class="">
+                    <picture class="block js-stepsPictureEven">
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
                         <img src="{{ optimizedImage.src() }}"
                             srcset="{{ optimizedImage.srcset() }}"
@@ -25,15 +25,17 @@
         {% endif %}
         <div class="col-span-12 row-start-1 md:col-start-6 md:col-span-7">
             <div class="bg-white-default  {{ step.itemImage.one() ? 'p-4 md:p-8 rounded-2xl' : 'p-4 pb-0 md:p-8 rounded-tr-2xl rounded-tl-2xl' }}">
-                <div class="relative flex items-end mb-4 md:block">
-                    <span class="text-[90px] md:text-[150px] transform translate-y-[7px] md:translate-y-0 text-stroke leading-none">
-                        {{ loop.index }}.
-                    </span>
-                    <span class="font-medium transform translate-x-2 text-31 lg:text-40 xl:text-48 md:absolute md:top-1/2 md:-translate-y-1/2 md:-translate-x-6">
-                        {{ step.itemTitle }}
-                    </span>
+                <div class="overflow-hidden">
+                    <div class="relative flex items-end mb-4 transform translate-y-full md:block js-title">
+                        <span class="text-[90px] md:text-[150px] transfrm translate-y-[7px] md:translate-y-0 text-stroke leading-none">
+                            {{ loop.index }}.
+                        </span>
+                        <span class="font-medium transform translate-x-2 text-31 lg:text-40 xl:text-48 md:absolute md:top-1/2 md:-translate-y-1/2 md:-translate-x-6">
+                            {{ step.itemTitle }}
+                        </span>
+                    </div>
                 </div>
-                <div class="prose max-w-none md:prose-md">
+                <div class="prose max-w-none md:prose-md js-stepsEvenText">
                     {{ step.itemText }}
                 </div>
             </div>

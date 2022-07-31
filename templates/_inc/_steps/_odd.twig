@@ -1,9 +1,12 @@
-<div class="relative flex items-end mb-4 md:block">
-    <span class="text-[90px] md:text-[150px] transfrm translate-y-[7px] md:translate-y-0 text-stroke leading-none">{{ loop.index }}.</span>
-    <span class="font-medium transform translate-x-2 text-31 lg:text-40 xl:text-48 md:absolute md:top-1/2 md:-translate-y-1/2 md:-translate-x-6">
-        {{ step.itemTitle }}
-    </span>
+<div class="overflow-hidden">
+    <div class="relative flex items-end mb-4 transform translate-y-full md:block js-title">
+        <span class="text-[90px] md:text-[150px] transfrm translate-y-[7px] md:translate-y-0 text-stroke leading-none">{{ loop.index }}.</span>
+        <span class="font-medium transform translate-x-2 text-31 lg:text-40 xl:text-48 md:absolute md:top-1/2 md:-translate-y-1/2 md:-translate-x-6">
+            {{ step.itemTitle }}
+        </span>
+    </div>
 </div>
+
 <div class="relative">
     {% if step.itemImage.one() %}
         <div class="absolute top-0 left-0 z-20 hidden w-full h-full grid-cols-12 gap-5 md:grid lg:gap-10">
@@ -53,7 +56,7 @@
                 {# {% set sizes = '100vw' %} #}
                 <a data-fancybox data-src="{{ step.itemImage.one().getUrl() }}" class="w-full md:h-[400px] md:absolute top-0 left-0">
                     {% set optimizedImage = step.itemImage.one().fieldStandardImgOpt %}
-                    <picture class="">
+                    <picture class="block js-stepsPictureOdd">
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
                         <img src="{{ optimizedImage.src() }}"
                             srcset="{{ optimizedImage.srcset() }}"

@@ -1,21 +1,23 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.ff415e38.js",
+    "file": "assets/app.98e734de.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "_accordionImage.f8657fde.js",
+      "_accordionImage.ef583f7e.js",
+      "src/js/blocks/steps.js",
       "src/js/blocks/textColumns.js",
+      "src/js/blocks/form.js",
       "src/js/blocks/usp.js",
       "src/js/packages/fancybox.js"
     ],
     "css": [
-      "assets/app.db6c21f2.css"
+      "assets/app.458cf6eb.css"
     ],
-    "integrity": "sha384-F5+pNIH+I3/gh7L8ppUIwsESRHWqG/v3rbroAZgOMNs5lbTRabiQv6UsxiHZ/WPw"
+    "integrity": "sha384-ImYA3p3iyY3GWRP+FIgpWHkYFCJ72CG8pglXRn7QjYIv+DpJ6Y8lBcp9ZTk/HuNI"
   },
-  "_accordionImage.f8657fde.js": {
-    "file": "assets/accordionImage.f8657fde.js",
+  "_accordionImage.ef583f7e.js": {
+    "file": "assets/accordionImage.ef583f7e.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
@@ -23,25 +25,43 @@
     "dynamicImports": [
       "src/vue/components/accordion/Accordion.vue"
     ],
-    "integrity": "sha384-+JoOwbXO/uXORVOiP5jC1/vjHnOIHHHzLVXA52s05RsZgKzCWb+NDd1xJpksUJIo"
+    "integrity": "sha384-sTKfEemGkWm0MpeAg5j/qYNVboGsI9AcWArZHT2LsQtEtUV4kpxRdNfGuu09W5EB"
+  },
+  "src/js/blocks/steps.js": {
+    "file": "assets/steps.c95ca70c.js",
+    "src": "src/js/blocks/steps.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/js/app.js"
+    ],
+    "integrity": "sha384-2VMka5byHaYdNrmAX24tE4WP8RmbANk7Np2LA/jkOxZ31iot746lvcM/8qzXITF1"
   },
   "src/js/blocks/textColumns.js": {
-    "file": "assets/textColumns.073848b3.js",
+    "file": "assets/textColumns.2b75de81.js",
     "src": "src/js/blocks/textColumns.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-JE9VyUZXpsb19DuRk50gj2R0iF6IDSGtuHAZSuaTF3mWyA3f/aSXqiT9cAuZ11nx"
+    "integrity": "sha384-+PPlik8PHHF1coG+eNasT4viz2bQ30ZwvklID3oJ5c1u1zpp7pmPwsQGkfoz6oPK"
+  },
+  "src/js/blocks/form.js": {
+    "file": "assets/form.128dd9f5.js",
+    "src": "src/js/blocks/form.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/js/app.js"
+    ],
+    "integrity": "sha384-p7NIP571IGvpYBMCgbRN6LfcGyLIekctmip86rJo9WA5DyIO4QQpO39uzpKki5wE"
   },
   "src/js/blocks/usp.js": {
-    "file": "assets/usp.ac0f54c9.js",
+    "file": "assets/usp.8610de2c.js",
     "src": "src/js/blocks/usp.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-YFMmSaJY2N5RtyP2q/foJCqfkShxtKhqHvwxOAko3BJ1KoC2YK1YM99hdFkub/rF"
+    "integrity": "sha384-hqEMslYo7g+cD82gZrbu+18/Lzi83zPeiPwakA0ZMVtyejGU+kL8YCrbVY67LWla"
   },
   "src/js/packages/fancybox.js": {
     "file": "assets/fancybox.70632a5f.js",
@@ -53,13 +73,13 @@
     "integrity": "sha384-kvAdbndrnOcXAWMlOFZSSZYHJtYPbGrhzT42kmGWbnGFEZVJ+5JOZxevczzzsOgr"
   },
   "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.1ca6c62d.js",
+    "file": "assets/Accordion.37cfc27a.js",
     "src": "src/vue/components/accordion/Accordion.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_accordionImage.f8657fde.js",
+      "_accordionImage.ef583f7e.js",
       "src/js/app.js"
     ],
-    "integrity": "sha384-nfdBU42z+vgmADx3wWfIOlXmRtc+avRBBswkIysNwjIjUBbrcFULQz5iIf8htHka"
+    "integrity": "sha384-WvExm2+x2ouVJxAAUOMPRypWmkNxt3uL6SfV8LXvpHdsW4we1d9hPwjxA1B+qezU"
   }
 }
