@@ -65,5 +65,5 @@ return [
         ]
     ],
 
-    'errorTemplatePrefix' => '_errors'
+    'errorTemplatePrefix' => '_errors/'
 ];
