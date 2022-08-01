@@ -18,7 +18,7 @@
  */
 use craft\helpers\App;
 
-$isProd = App::env('ENVIRONMENT') === 'production';
+$cacheEnabled = App::env('ENVIRONMENT') === 'production' || App::env('ENVIRONMENT') === 'staging';
 
 return [
     '*' => [
@@ -29,7 +29,7 @@ return [
         //'hintsEnabled' => true,
 
         // With this setting enabled, Blitz will begin caching pages according to the included/excluded URI patterns. Disable this setting to prevent Blitz from caching any new pages.
-        'cachingEnabled' => $isProd,
+        'cachingEnabled' => $cacheEnabled,
 
         // Determines when and how the cache should be refreshed.
         // - `0`: Expire the cache, regenerate manually or organically
