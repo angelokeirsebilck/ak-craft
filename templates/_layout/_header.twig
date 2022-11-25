@@ -7,9 +7,9 @@
 <header class="flex h-[70px] md:h-[125px]">
     <div class="container h-full">
         <div class="flex items-center justify-between h-full">
-            <a href="{{ siteUrl }}" class="inline-block w-[110px] md:w-[171px]">
-                {% if globalAkCompany.fieldaKLogoHeader %}
-                    <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}" width="171" height="61" alt="Angelo Keirsebilck Logo" />
+            <a href="{{ siteUrl }}" class="inline-block w-[110px] md:w-[200px]">
+                {% if globalAkCompany.fieldaKLogoHeader|length > 0 %}
+                    <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}" width="200" height="61" alt="Angelo Keirsebilck Logo" />
                 {% endif %}
             </a>
             <div class="items-center hidden lg:flex">

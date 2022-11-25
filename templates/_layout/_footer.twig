@@ -20,7 +20,7 @@
             <div class="relative z-30 grid-cols-12 gap-10 md:grid">
                 <div class="col-span-5">
                     <a href="{{ siteUrl }}" class="inline-block">
-                        {% if globalAkCompany.fieldaKLogoHeader %}
+                        {% if globalAkCompany.fieldaKLogoHeader|length > 0 %}
                             <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}"
                                 width="171"
                                 height="61"

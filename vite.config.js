@@ -1,14 +1,11 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import legacy from '@vitejs/plugin-legacy'
 import ViteRestart from 'vite-plugin-restart'
 import viteCompression from 'vite-plugin-compression'
 import manifestSRI from 'vite-plugin-manifest-sri'
-// import {visualizer} from 'rollup-plugin-visualizer';
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import critical from 'rollup-plugin-critical'
 import copy from 'rollup-plugin-copy'
-// import {ViteFaviconsPlugin} from 'vite-plugin-favicon2';
 import { partytownVite } from '@builder.io/partytown/utils'
 import * as path from 'path'
 

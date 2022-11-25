@@ -1,40 +1,41 @@
 import '@/css/app.css'
 
-if (import.meta.env.PROD) {
-    import('@/css/fonts-loaded.css')
-}
+// if (import.meta.env.PROD) {
+//     import('@/css/fonts-loaded.css')
+// }
 
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-import FontFaceObserver from 'fontfaceobserver'
+// import FontFaceObserver from 'fontfaceobserver'
 
 const main = async () => {
-    const poppinsFontRegular = new FontFaceObserver('Poppins', {
-        weight: 400
-    })
+    
+    // const poppinsFontRegular = new FontFaceObserver('Poppins', {
+    //     weight: 400
+    // })
 
-    const poppinsFontLight = new FontFaceObserver('Poppins', {
-        weight: 300
-    })
+    // const poppinsFontLight = new FontFaceObserver('Poppins', {
+    //     weight: 300
+    // })
 
-    const poppinsFontMedium = new FontFaceObserver('Poppins', {
-        weight: 500
-    })
+    // const poppinsFontMedium = new FontFaceObserver('Poppins', {
+    //     weight: 500
+    // })
 
-    Promise.all([
-        poppinsFontRegular.load(),
-        poppinsFontLight.load(),
-        poppinsFontMedium.load()
-    ]).then(function () {
-        document.querySelector('body').classList.add('fonts-loaded')
-    })
+    // Promise.all([
+    //     poppinsFontRegular.load(),
+    //     poppinsFontLight.load(),
+    //     poppinsFontMedium.load()
+    // ]).then(function () {
+    //     document.querySelector('body').classList.add('fonts-loaded')
+    // })
+    
 }
-
 const autoHeight = () => {
-    const textAreaElements = document.querySelectorAll('textarea')
+    const textAreaElements = document.querySelectorAll('textarea') 
 
     textAreaElements.forEach((t) => {
         t.addEventListener('input', () => {
