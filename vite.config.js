@@ -30,7 +30,7 @@ export default defineConfig(({ command }) => ({
     },
     plugins: [
         critical({
-            criticalUrl: 'http://localhost',
+            criticalUrl: 'https://staging.angelokeirsebilck.be',
             criticalBase: 'web/dist/criticalcss/',
             criticalPages: [
                 { uri: '/', template: 'index' },
