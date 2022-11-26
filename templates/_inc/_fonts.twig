@@ -8,11 +8,20 @@
     @font-face { src:url('{{ getenv('BASE_URL') }}/fonts/subset-Poppins-Light.woff2') format("truetype"); font-family: 'Poppins'; font-weight: 300;
     font-style: normal; font-display: swap; }
 
+    @font-face { font-family: 'Poppins Fallback'; font-style: normal; font-weight: 400; src: local('Arial'); ascent-override: 93.76%;
+    descent-override: 31.25%; line-gap-override: 8.93%; size-adjust: 111.99%; }
+
     @font-face {src:url('{{ getenv('BASE_URL') }}/fonts/subset-Poppins-Regular.woff2'); font-family: 'Poppins'; font-weight: 400; font-style: normal;
     font-display: swap; }
 
+    @font-face { font-family: 'Poppins Fallback'; font-style: normal; font-weight: 400; src: local('Arial'); ascent-override: 92.83%;
+    descent-override: 30.94%; line-gap-override: 8.84%; size-adjust: 113.11%; }
+
     @font-face {src:url('{{ getenv('BASE_URL') }}/fonts/subset-Poppins-Medium.woff2'); font-family: 'Poppins'; font-weight: 500; font-style: normal;
     font-display: swap; }
+
+    @font-face { font-family: 'Poppins Fallback'; font-style: normal; font-weight: 400; src: local('Arial'); ascent-override: 91.82%;
+    descent-override: 30.61%; line-gap-override: 8.74%; size-adjust: 114.36%; }
 </style>
 
 {% endminify %}

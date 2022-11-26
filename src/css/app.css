@@ -4,7 +4,7 @@
 
 @layer base {
     html {
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Poppins', 'Poppins Fallback', sans-serif;
     }
     h1,
     h2,
@@ -96,7 +96,7 @@
     }
 
     .container {
-        @apply w-full px-5 mx-auto max-w-container md:px-10;
+        @apply mx-auto w-full max-w-container px-5 md:px-10;
     }
 
     .section {
