@@ -35,9 +35,9 @@
     }
 
     .form {
-        font-family: 'Poppins', sans-serif !important;
+        font-family: 'Poppins', 'Poppins Fallback', sans-serif !important;
         --fui-primary-color: theme('colors.secondary.default');
-        --fui-font: 'Poppins', sans-serif;
+        --fui-font: 'Poppins', 'Poppins Fallback', sans-serif;
         --fui-color: theme('colors.black.default');
         --fui-error: theme('colors.primary.default');
         --fui-border-radius: 16px !important;

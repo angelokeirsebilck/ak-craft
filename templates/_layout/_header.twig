@@ -9,7 +9,8 @@
         <div class="flex items-center justify-between h-full">
             <a href="{{ siteUrl }}" class="inline-block w-[110px] md:w-[200px]">
                 {% if globalAkCompany.fieldaKLogoHeader|length > 0 %}
-                    <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}" width="200" height="61" alt="Angelo Keirsebilck Logo" />
+                    <twic-img src={{ globalAkCompany.fieldaKLogoHeader.one().url }} ratio="200/61" alt="Angelo Keirsebilck Logo" />
+                    {# <img src="{{ globalAkCompany.fieldaKLogoHeader.one().getUrl({}) }}" width="200" height="61" alt="Angelo Keirsebilck Logo" /> #}
                 {% endif %}
             </a>
             <div class="items-center hidden lg:flex">

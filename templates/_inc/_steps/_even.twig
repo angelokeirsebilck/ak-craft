@@ -10,7 +10,8 @@
                     '(max-width: 375px) 334px, (max-width: 640px) 600px, (max-width: 768px) 727px, (max-width: 1024px) 381px, (max-width: 1280px) 476px, 543px'
                 %}
                 <a data-fancybox data-src="{{ step.itemImage.one().getUrl() }}">
-                    {% set optimizedImage = step.itemImage.one().fieldStandardImgOpt %}
+                    <twic-img src={{ step.itemImage.one().url }} class="cursor-pointer rounded-2xl" alt={{ step.itemImage.one().title }} />
+                    {# {% set optimizedImage = step.itemImage.one().fieldStandardImgOpt %}
                     <picture class="block js-stepsPictureEven">
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
                         <img src="{{ optimizedImage.src() }}"
@@ -19,7 +20,7 @@
                             height="{{ step.itemImage.one().getHeight() }}"
                             sizes="{{ sizes }}"
                             class="cursor-pointer rounded-2xl" />
-                    </picture>
+                    </picture> #}
                 </a>
             </div>
         {% endif %}

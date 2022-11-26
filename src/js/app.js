@@ -1,5 +1,8 @@
 import '@/css/app.css'
 
+import { installTwicPics, TwicImg } from '@twicpics/components/webcomponents'
+import '@twicpics/components/style.css'
+
 // if (import.meta.env.PROD) {
 //     import('@/css/fonts-loaded.css')
 // }
@@ -9,22 +12,27 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { clearConfigCache } from 'prettier'
 // import FontFaceObserver from 'fontfaceobserver'
 
 const main = async () => {
-    
+    installTwicPics({
+        // domain is mandatory
+        domain: `https://angelokeirsebilck.twic.pics`,
+        env: import.meta.env.VITE_TWIC_PIC_MODE
+    })
+
+    customElements.define(`twic-img`, TwicImg)
+
     // const poppinsFontRegular = new FontFaceObserver('Poppins', {
     //     weight: 400
     // })
-
     // const poppinsFontLight = new FontFaceObserver('Poppins', {
     //     weight: 300
     // })
-
     // const poppinsFontMedium = new FontFaceObserver('Poppins', {
     //     weight: 500
     // })
-
     // Promise.all([
     //     poppinsFontRegular.load(),
     //     poppinsFontLight.load(),
@@ -32,10 +40,9 @@ const main = async () => {
     // ]).then(function () {
     //     document.querySelector('body').classList.add('fonts-loaded')
     // })
-    
 }
 const autoHeight = () => {
-    const textAreaElements = document.querySelectorAll('textarea') 
+    const textAreaElements = document.querySelectorAll('textarea')
 
     textAreaElements.forEach((t) => {
         t.addEventListener('input', () => {
@@ -165,7 +172,7 @@ const accordionImageSize = (items) => {
             '.js-accordionImageBackground'
         )
 
-        const img = container.querySelector('img')
+        const img = container.querySelector('twic-img')
         background.style.height = `${img.offsetHeight}px`
 
         if (window.innerWidth > 1024) {

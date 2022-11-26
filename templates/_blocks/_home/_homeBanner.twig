@@ -24,7 +24,9 @@
                 {% endif %}
             </div>
             <div class="flex items-center col-span-12 mt-16 lg:col-span-5 lg:mt-0">
-                {% if block.itemFigure.one() %}
+                {# {% dd block.itemFigure.one().url %} #}
+                <twic-img src={{ block.itemFigure.one().url }} ratio="576/292" alt="Angelo Keirsebilck Figure Home" />
+                {# {% if block.itemFigure.one() %}
                     {% set optimizedImage = block.itemFigure.one().fieldHomeFigureImgOpt %}
                     <picture class="transform -translate-x-8 opacity-0 js-homeBannerImg">
                         <source srcset="{{ optimizedImage.srcsetWebP() }}" sizes="{{ sizes }}" type="image/webp" />
@@ -34,7 +36,7 @@
                             height="{{ block.itemFigure.one().getHeight() }}"
                             sizes="{{ sizes }}" />
                     </picture>
-                {% endif %}
+                {% endif %} #}
             </div>
         </div>
     </div>

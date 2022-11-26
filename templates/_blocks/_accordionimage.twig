@@ -38,6 +38,8 @@
             <div class="relative z-10 col-span-5 col-start-8 js-imgContainer">
                 <div class="absolute z-10 block w-full h-full bg-secondary-light top-6 left-6 rounded-2xl lg:hidden"></div>
                 {% if block.itemImage.one() %}
+                <twic-img src={{ block.itemImage.one().url }} class="rounded-2xl" ratio="1143/700" alt={{ block.itemImage.one().title }} />
+{# 
                     {% set optimizedImage = block.itemImage.one().fieldStandardImgOpt %}
                     {% set sizes = '100vw' %}
                     <picture class="relative z-20">
@@ -48,7 +50,7 @@
                             height="{{ block.itemImage.one().getHeight() }}"
                             sizes="{{ sizes }}"
                             class="rounded-2xl lg:max-w-none lg:object-cover lg:object-left-top lg:h-[700px]" />
-                    </picture>
+                    </picture> #}
                 {% endif %}
             </div>
         </div>
