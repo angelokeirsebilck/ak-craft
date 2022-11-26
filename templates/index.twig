@@ -6,7 +6,7 @@
     '(max-width: 375px) 222px, (max-width: 640px) 400px, (max-width: 768px) 484px, (max-width: 1024px) 508px, (max-width: 1280px) 470px, 543px'
 %}
 {% block preload %}
-    {% if homeBanner.itemFigure.one() %}
+    {# {% if homeBanner.itemFigure.one() %}
         {% set optimizedImage = homeBanner.itemFigure.one().fieldHomeFigureImgOpt %}
 
         <link rel="preload"
@@ -14,7 +14,7 @@
             type="image/webp"
             imagesrcset="{{ optimizedImage.srcsetWebP() }}"
             imagesizes="{{ sizes }}" />
-    {% endif %}
+    {% endif %} #}
 {% endblock %}
 
 {% block content %}

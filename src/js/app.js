@@ -7,6 +7,9 @@ import '@twicpics/components/style.css'
 //     import('@/css/fonts-loaded.css')
 // }
 
+import Alpine from 'alpinejs'
+import collapse from '@alpinejs/collapse'
+
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
@@ -23,6 +26,10 @@ const main = async () => {
     })
 
     customElements.define(`twic-img`, TwicImg)
+
+    window.Alpine = Alpine
+    Alpine.plugin(collapse)
+    Alpine.start()
 
     // const poppinsFontRegular = new FontFaceObserver('Poppins', {
     //     weight: 400
@@ -223,13 +230,13 @@ main().then(() => {
 
         window.dispatchEvent(new Event('resize'))
 
-        if (document.querySelectorAll('.js-accordion').length > 0) {
-            let { default: initAccordions } = await import(
-                './blocks/accordionImage.js'
-            )
+        // if (document.querySelectorAll('.js-accordion').length > 0) {
+        //     let { default: initAccordions } = await import(
+        //         './blocks/accordionImage.js'
+        //     )
 
-            initAccordions()
-        }
+        //     initAccordions()
+        // }
         const stepsEls = document.querySelectorAll('.js-steps')
         if (stepsEls.length > 0) {
             let { stepsAnimations } = await import('./blocks/steps.js')
