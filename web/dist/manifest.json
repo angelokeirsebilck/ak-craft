@@ -1,10 +1,9 @@
 {
   "src/js/app.js": {
-    "file": "assets/app.cf8a5ac7.js",
+    "file": "assets/app.189e3a90.js",
     "src": "src/js/app.js",
     "isEntry": true,
     "dynamicImports": [
-      "_accordionImage.c123dbcf.js",
       "src/js/blocks/steps.js",
       "src/js/blocks/textColumns.js",
       "src/js/blocks/form.js",
@@ -12,56 +11,45 @@
       "src/js/packages/fancybox.js"
     ],
     "css": [
-      "assets/app.67f61469.css"
+      "assets/app.1de44ae6.css"
     ],
-    "integrity": "sha384-pmA+CYwl5TXvAlWRRw3nwmKItLbluhOGeF5qFhXjzQxxezpUTW0pTCcGqS94QuC6"
-  },
-  "_accordionImage.c123dbcf.js": {
-    "file": "assets/accordionImage.c123dbcf.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/js/app.js"
-    ],
-    "dynamicImports": [
-      "src/vue/components/accordion/Accordion.vue"
-    ],
-    "integrity": "sha384-GPQ5YbHwW6+bYlsa7+2EThSyVMrUOWwPnnzLMrpx0UlfeV4vUbDmCEF1WIBg3lm/"
+    "integrity": "sha384-3eqA/MBZ2lEM2ORpDSKAHJNpo5vBDeovUKhcf5w+JS2P35696f/1n8HeZZ1oQIBb"
   },
   "src/js/blocks/steps.js": {
-    "file": "assets/steps.231aea79.js",
+    "file": "assets/steps.c2b30655.js",
     "src": "src/js/blocks/steps.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-zcAxIEcENbfX5JdIjCyiuGLq1HgDqNBFuH0AX/p6hULc4/oaHFyTtTSccJPNIEz4"
+    "integrity": "sha384-XUcBXMGsOeWKgnt6OLkA4nnE0rczgKinOzxsnmOIM5EvInCHB5o+dhVuFra5nyfB"
   },
   "src/js/blocks/textColumns.js": {
-    "file": "assets/textColumns.4a2995a1.js",
+    "file": "assets/textColumns.d32bea8f.js",
     "src": "src/js/blocks/textColumns.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-wMMYeoh3zQpI1ooBn0ZlUYDmDl0dM37XIJN/neyheI4nhBEYJt698xd5oz7zoiQK"
+    "integrity": "sha384-3PErJXckSRsFRdEdhLKgZqZm1y2t86IpoS3SKmUTsNZ7CO/Q0dtXUdFaxsO2oZAi"
   },
   "src/js/blocks/form.js": {
-    "file": "assets/form.338fac73.js",
+    "file": "assets/form.e50cee86.js",
     "src": "src/js/blocks/form.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-O1u6nQzVjIr7G188kUgYnT0G8Yp2/V4mTEgpRYzVl43U5DJlu8oRuj7UxFj46IyY"
+    "integrity": "sha384-8JKsJzB5Cp9m70GexMXfgUtY2Za/3azJ4kN2d9NX+Ee70uicCe6ATtE94ufL1Mqx"
   },
   "src/js/blocks/usp.js": {
-    "file": "assets/usp.a9f917fc.js",
+    "file": "assets/usp.7814a427.js",
     "src": "src/js/blocks/usp.js",
     "isDynamicEntry": true,
     "imports": [
       "src/js/app.js"
     ],
-    "integrity": "sha384-NdEs/gShq3EdtwXQ4qPYqrYAqwHJBmg7zvGTSeTj/yVbtSm1NME1BmGKGeuckotH"
+    "integrity": "sha384-Gy4OytNHxTrCKdm8YrEC02nbz0q7lo4sDBHMHcN7qbBlDhaDgjGERUsIRwBM+YDA"
   },
   "src/js/packages/fancybox.js": {
     "file": "assets/fancybox.f55e4185.js",
@@ -72,24 +60,14 @@
     ],
     "integrity": "sha384-S164wwwZiuxSH2nXuqhLnWuqNBAjvkdf17yuX91+ENobRCWMhYyEj7uoYKfMXxZw"
   },
-  "src/vue/components/accordion/Accordion.vue": {
-    "file": "assets/Accordion.fa9d4ae7.js",
-    "src": "src/vue/components/accordion/Accordion.vue",
-    "isDynamicEntry": true,
-    "imports": [
-      "_accordionImage.c123dbcf.js",
-      "src/js/app.js"
-    ],
-    "integrity": "sha384-uDA8GHZsX3ltZNb8wyTTmj9we6PJp2KXTS9Luy0fKv/XZ2JSYjrvydgCv0qTtJh9"
-  },
   "src/js/packages/fancybox.css": {
     "file": "assets/fancybox.e6eeffea.css",
     "src": "src/js/packages/fancybox.css",
     "integrity": "sha384-pFuxghBbUUuXIGCGjI/aZRCrWfLmPAWwISK0UnezDbFsc3vZbVY3SK9nIvJ4zR7H"
   },
   "src/js/app.css": {
-    "file": "assets/app.67f61469.css",
+    "file": "assets/app.1de44ae6.css",
     "src": "src/js/app.css",
-    "integrity": "sha384-bQuldOO+nquo4muVFXcH6z07KlellrGRFiJdTp411Ttk+DLPkkH4UNkB72BB9Le2"
+    "integrity": "sha384-HBZ/AJIpuDbFXQinMDdqKM/wN6y9NmH4xFYlMMsErcCSolzuVi6un1FeokXID/KP"
   }
 }

@@ -15,7 +15,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-import { clearConfigCache } from 'prettier'
+
 // import FontFaceObserver from 'fontfaceobserver'
 
 const main = async () => {

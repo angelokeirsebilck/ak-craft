@@ -6,6 +6,7 @@ import manifestSRI from 'vite-plugin-manifest-sri'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import critical from 'rollup-plugin-critical'
 import copy from 'rollup-plugin-copy'
+import { visualizer } from 'rollup-plugin-visualizer'
 import { partytownVite } from '@builder.io/partytown/utils'
 import * as path from 'path'
 
@@ -34,7 +35,9 @@ export default defineConfig(({ command }) => ({
             criticalBase: 'web/dist/criticalcss/',
             criticalPages: [
                 { uri: '/', template: 'index' },
-                { uri: '/craft-cms', template: 'pages/_entry' }
+                { uri: '/craft-cms', template: 'pages/_entry' },
+                { uri: '/aanpak', template: 'pages/_entry' },
+                { uri: '/contact', template: 'pages/_entry' }
             ],
             criticalConfig: {
                 // ignore: ['.underline'],
@@ -64,12 +67,12 @@ export default defineConfig(({ command }) => ({
         viteCompression({
             filter: /\.(js|mjs|json|css|map)$/i
         }),
-        manifestSRI()
-        // visualizer({
-        //     filename: 'web/dist/assets/stats.html',
-        //     template: 'treemap',
-        //     sourcemap: true,
-        // }),
+        manifestSRI(),
+        visualizer({
+            filename: 'web/dist/assets/stats.html',
+            template: 'treemap',
+            sourcemap: true
+        })
         // copy({
         //     targets: [{src: 'src/fonts/*', dest: 'web/dist/fonts'}],
         //     hook: 'writeBundle'
