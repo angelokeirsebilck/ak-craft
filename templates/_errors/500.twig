@@ -6,7 +6,9 @@
     {% include '_inc/_title' with {
         title: entry.title
     } %}
-    {% set content = entry.fieldAkContent.all() %}404{% for block in content %}
+    {% set content = entry.fieldAkContent.all() %}
+
+    {% for block in content %}
         {% include "/_blocks/_#{block.type.handle|replace('type', '')|lower}.twig" with {
             block: block
         } %}
