@@ -45,6 +45,24 @@ fieldLayouts:
         name: Inhoud
         uid: 9a2452c2-9a22-43bc-a184-e6abc7bde92f
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 73565395-0f0b-4846-b8db-e5b9eb2b5ec9 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2902d0bd-23b5-4995-a002-73a73c874a62
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: c8313586-ae2b-4d3e-a6a6-5bcc9c3e6961
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Standaard

@@ -45,6 +45,24 @@ fieldLayouts:
         name: Inhoud
         uid: 2f6f2931-e347-41fe-9e77-74dd675606c7
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 73565395-0f0b-4846-b8db-e5b9eb2b5ec9 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac5d2978-a75a-47e1-b2dc-acc1c7b8a546
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: c17b2b53-b153-48a4-8c3c-c0ca064d9f27
+        userCondition: null
 handle: legalPages
 hasTitleField: true
 name: 'Legal Pages'

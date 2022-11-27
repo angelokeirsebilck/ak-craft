@@ -1,4 +1,4 @@
-dateModified: 1669317248
+dateModified: 1669545242
 elementSources:
   craft\elements\Entry:
     -
@@ -616,7 +616,7 @@ plugins:
       useQueueForNotifications: false
   image-optimize:
     edition: standard
-    enabled: true
+    enabled: false
     licenseKey: TXKNV97P3IUTH1J78O993USD
     schemaVersion: 1.0.0
     settings:
