@@ -4,22 +4,25 @@
 <html lang="{{ shortLang }}">
 
 <head>
-    <script>
-        partytown = {
-            resolveUrl: function (url, location, type) {
-                if (url.host.includes('cookie-script')) {
-                    var proxyUrl = new URL(
-                        '{{getenv('BASE_URL')}}/cookie-script',
-                    )
-                    proxyUrl.searchParams.append('url', url)
-                    return proxyUrl
-                }
-                return url;
-            },
-            lib: '/dist/~partytown/',
-            forward: ['dataLayer.push'],
-        };
-    </script>
+    {% minify js %}
+        <script>
+            partytown = {
+                resolveUrl: function (url, location, type) {
+                    if (url.host.includes('cookie-script')) {
+                        var proxyUrl = new URL(
+                            '{{getenv('BASE_URL')}}/cookie-script',
+                        )
+                        proxyUrl.searchParams.append('url', url)
+                        return proxyUrl
+                    }
+                    return url;
+                },
+                lib: '/dist/~partytown/',
+                forward: ['dataLayer.push'],
+            };
+        </script>
+    
+
     <script>
         {{ craft.vite.inline("@webroot/dist/~partytown/partytown.js") }}
     </script>
@@ -32,15 +35,15 @@
             })(window,document,'script','dataLayer','GTM-MBV7S2T');</script>
             <!-- End Google Tag Manager -->
         {% endif %}
-
+    {% endminify %}
     {% apply spaceless %}
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1{% if devMode %},user-scalable=no{% endif %}">
         
         <link rel="dns-prefetch" href="{{ siteUrl }}">
         <link rel="preconnect" href="{{ siteUrl }}" crossorigin="">
+
         {# Critical CSS #}
-        
         {% if not devMode %}
             {{ craft.vite.includeCriticalCssTags() }}
         {% endif %}

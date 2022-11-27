@@ -28,6 +28,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 50
+          -
+            elementCondition: null
+            fieldUid: d80ac48c-bf7f-4389-b5b7-3d6b81d9b552 # aK Btw Number
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 79faa2ff-e00e-4bab-887b-74e377f1597c
+            userCondition: null
+            warning: null
+            width: 50
         name: Contact
         uid: 4c614b29-821f-451f-8866-3ca8adc51f4f
         userCondition: null

@@ -1,0 +1,19 @@
+columnSuffix: iklwbqem
+contentColumnType: text
+fieldGroup: 85bcc920-ddf3-4a07-9a21-294989596b05 # aK
+handle: fieldAkBtwNumber
+instructions: null
+name: 'aK Btw Number'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

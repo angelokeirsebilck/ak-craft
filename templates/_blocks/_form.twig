@@ -124,6 +124,14 @@
                         </a>
                     </div>
                 {% endif %}
+                {% if globalAkCompany.fieldAkBtwNumber %}
+                    <div class="flex">
+                        <span 
+                            class="">
+                            {{ globalAkCompany.fieldAkBtwNumber }}
+                        </a>
+                    </div>
+                {% endif %}
                 <div class="mt-4 md:mt-7">
                     <div class="flex gap-5">
                         {% if globalAkCompany.fieldAkLinkedin.getLink() %}
