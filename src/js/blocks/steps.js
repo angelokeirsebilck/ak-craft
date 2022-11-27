@@ -22,7 +22,7 @@ const stepsAnimations = (parent) => {
         })
 
         bgTl.to(bg, {
-            height: '76%',
+            height: '73%',
             duration: 1.7
         }).from(
             evenTextEl,
